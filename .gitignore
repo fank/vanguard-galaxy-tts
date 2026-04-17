@@ -1,0 +1,24 @@
+# Build
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# Game DLL reference (user-specific absolute path, do not commit)
+VGTTS/lib/*.dll
+VGTTS/lib/*.pdb
+!VGTTS/lib/.gitkeep
+
+# Cache / generated TTS
+cache/
+*.wav
+*.ogg
+*.mp3
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Bundled TTS tools (large binaries; re-downloadable via make)
+tools/
