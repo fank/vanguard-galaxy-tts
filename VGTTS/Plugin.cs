@@ -16,7 +16,7 @@ public class Plugin : BaseUnityPlugin
 {
     public const string PluginGuid = "dev.fankserver.vgtts";
     public const string PluginName = "Vanguard Galaxy TTS";
-    public const string PluginVersion = "0.7.1";
+    public const string PluginVersion = "0.8.0";
 
     internal static Plugin Instance { get; private set; } = null!;
     internal static ManualLogSource Log { get; private set; } = null!;

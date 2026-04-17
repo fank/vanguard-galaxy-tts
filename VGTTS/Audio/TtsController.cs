@@ -5,6 +5,7 @@ using Behaviour.Util;
 using Source.AudioSystem;
 using UnityEngine;
 using VGTTS.Cache;
+using VGTTS.Text;
 using VGTTS.TTS;
 using VGTTS.Voice;
 
@@ -57,11 +58,12 @@ internal sealed class TtsController
     private IEnumerator SpeakCoroutine(string speaker, string text, CancellationToken ct)
     {
         var resolution = _voices.Resolve(speaker);
-        var path = _cache.PathFor(text, resolution.Voice);
+        var synthText = TextNormalizer.ForTts(text);
+        var path = _cache.PathFor(synthText, resolution.Voice);
 
         if (!_cache.Exists(path))
         {
-            var task = _provider.SynthesizeAsync(text, resolution.Voice, path, ct);
+            var task = _provider.SynthesizeAsync(synthText, resolution.Voice, path, ct);
             while (!task.IsCompleted)
             {
                 if (ct.IsCancellationRequested) yield break;
