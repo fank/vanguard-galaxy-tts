@@ -2,7 +2,7 @@
 
 BepInEx plugin that speaks dialogue lines in Vanguard Galaxy using text-to-speech.
 
-Strategy: **hybrid** — pre-rendered voice lines for known dialogue, live TTS fallback with on-disk caching for anything unseen. Per-character voice mapping.
+Strategy: offline neural TTS (Kokoro v1.0 primary, Piper as optional fallback) with on-disk caching and per-character voice profiles.
 
 ## Status
 
@@ -11,8 +11,17 @@ Early scaffold. Current milestone: logs every dialogue line to the BepInEx conso
 ## Requirements
 
 - Vanguard Galaxy (Steam)
-- [BepInEx 5.x](https://github.com/BepInEx/BepInEx/releases) installed into the game folder
-- .NET SDK 8+ for building (on WSL, the Makefile auto-detects a local install at `/tmp/dnsdk/dotnet`)
+- [BepInEx 5.x](https://github.com/BepInEx/BepInEx/releases) installed into the game folder (`make install-bepinex`)
+- .NET SDK 8+ for building
+- ~1.1 GB free for the bundled Kokoro + Piper voice models
+
+## One-shot setup
+
+```bash
+make install-bepinex        # downloads + unpacks BepInEx into the game folder
+make download-tools         # fetches piper + sherpa + Kokoro v1.0 (~1 GB total)
+make deploy                 # builds and copies everything into BepInEx/plugins/
+```
 
 ## Build + deploy (WSL)
 

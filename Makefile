@@ -15,7 +15,8 @@ DOTNET   ?= $(shell command -v dotnet 2>/dev/null || echo /tmp/dnsdk/dotnet/dotn
 BEPINEX_VERSION := 5.4.23.2
 BEPINEX_URL     := https://github.com/BepInEx/BepInEx/releases/download/v$(BEPINEX_VERSION)/BepInEx_win_x64_$(BEPINEX_VERSION).zip
 
-.PHONY: all build link-asm clean deploy deploy-bundle install-bepinex check-bepinex download-piper
+.PHONY: all build link-asm clean deploy deploy-bundle install-bepinex check-bepinex \
+        download-tools download-piper download-kokoro
 
 all: build
 
@@ -97,6 +98,31 @@ download-piper:
 		fi ; \
 	done
 	@echo "Piper bundle ready in tools/"
+
+# Sherpa-onnx-tts CLI + Kokoro v1.0 multi-lang model bundle (~400 MB extracted)
+SHERPA_VERSION := 1.12.39
+SHERPA_URL := https://github.com/k2-fsa/sherpa-onnx/releases/download/v$(SHERPA_VERSION)/sherpa-onnx-v$(SHERPA_VERSION)-win-x64-static-MT-Release.tar.bz2
+KOKORO_URL := https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-multi-lang-v1_0.tar.bz2
+
+download-kokoro:
+	@mkdir -p tools/sherpa tools/kokoro /tmp/vgtts-dl
+	@if [ ! -f tools/sherpa/sherpa-onnx-tts.exe ]; then \
+		echo "Downloading sherpa-onnx CLI..." ; \
+		curl -sSL -o /tmp/vgtts-dl/sherpa.tar.bz2 "$(SHERPA_URL)" ; \
+		tar -xjf /tmp/vgtts-dl/sherpa.tar.bz2 -C /tmp/vgtts-dl \
+			sherpa-onnx-v$(SHERPA_VERSION)-win-x64-static-MT-Release/bin/sherpa-onnx-offline-tts.exe ; \
+		mv /tmp/vgtts-dl/sherpa-onnx-v$(SHERPA_VERSION)-win-x64-static-MT-Release/bin/sherpa-onnx-offline-tts.exe \
+		   tools/sherpa/sherpa-onnx-tts.exe ; \
+	fi
+	@if [ ! -f tools/kokoro/model.onnx ]; then \
+		echo "Downloading Kokoro v1.0 model..." ; \
+		curl -sSL -o /tmp/vgtts-dl/kokoro.tar.bz2 "$(KOKORO_URL)" ; \
+		tar -xjf /tmp/vgtts-dl/kokoro.tar.bz2 -C tools/kokoro --strip-components=1 ; \
+	fi
+	@echo "Kokoro bundle ready in tools/"
+
+# Fetch both Piper and Kokoro — run once on a fresh clone.
+download-tools: download-piper download-kokoro
 
 clean:
 	$(DOTNET) clean VGTTS/VGTTS.csproj

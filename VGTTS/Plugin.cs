@@ -16,7 +16,10 @@ public class Plugin : BaseUnityPlugin
 {
     public const string PluginGuid = "dev.fankserver.vgtts";
     public const string PluginName = "Vanguard Galaxy TTS";
-    public const string PluginVersion = "0.8.2";
+    // Unreleased Kokoro experiment — not yet committed. BepInEx parses PluginVersion
+    // through System.Version which rejects SemVer pre-release suffixes, so stick to
+    // the plain four-part form.
+    public const string PluginVersion = "0.9.0";
 
     internal static Plugin Instance { get; private set; } = null!;
     internal static ManualLogSource Log { get; private set; } = null!;
@@ -26,6 +29,7 @@ public class Plugin : BaseUnityPlugin
     internal ConfigEntry<bool> CfgEcho = null!;
     internal ConfigEntry<string> CfgProvider = null!;
     internal ConfigEntry<string> CfgPiperDefaultVoice = null!;
+    internal ConfigEntry<int> CfgKokoroDefaultSpeaker = null!;
 
     private Harmony _harmony = null!;
 
@@ -44,11 +48,19 @@ public class Plugin : BaseUnityPlugin
             "en_US-amy-medium, en_US-hfc_female-medium, en_US-kristin-medium, " +
             "en_US-ryan-medium, en_US-ryan-high, en_US-lessac-high, " +
             "en_GB-alan-medium, en_GB-jenny_dioco-medium.");
+        CfgKokoroDefaultSpeaker = Config.Bind("Kokoro", "DefaultSpeaker", 0,
+            "Default Kokoro speaker ID (0-102 in v1.1) when a Voices entry is " +
+            "'kokoro:' with no number. Voices prefixed 'kokoro:' use Kokoro " +
+            "regardless of the [General] Provider setting — set 'Voices.ECHO = kokoro:23' " +
+            "to route only that character to Kokoro.");
 
-        ITtsProvider provider = CreateProvider();
+        ITtsProvider primary = CreateProvider();
+        ITtsProvider? kokoro = TryCreateKokoroProvider();
+        ITtsProvider router = new ProviderRouter(primary, kokoro);
+
         var voiceMapper = new VoiceMapper(Config, CfgPiperDefaultVoice.Value, DefaultVoiceMap.Seeds);
-        TtsController.Instance = new TtsController(provider, new DiskCache(), voiceMapper);
-        Log.LogInfo($"TTS provider: {provider.Name}, NPC profiles seeded: {DefaultVoiceMap.Seeds.Count}");
+        TtsController.Instance = new TtsController(router, new DiskCache(), voiceMapper);
+        Log.LogInfo($"TTS provider: {router.Name}, NPC profiles seeded: {DefaultVoiceMap.Seeds.Count}");
 
         _harmony = new Harmony(PluginGuid);
         _harmony.PatchAll(typeof(Patches.DialogueManagerPatches));
@@ -73,6 +85,20 @@ public class Plugin : BaseUnityPlugin
             case "sapi":
             default:
                 return new SapiProvider();
+        }
+    }
+
+    private ITtsProvider? TryCreateKokoroProvider()
+    {
+        try
+        {
+            return new KokoroProvider(CfgKokoroDefaultSpeaker.Value);
+        }
+        catch (System.IO.FileNotFoundException)
+        {
+            // Kokoro bundle is optional — any `kokoro:` voice entry just falls
+            // through to the primary provider in its absence.
+            return null;
         }
     }
 
