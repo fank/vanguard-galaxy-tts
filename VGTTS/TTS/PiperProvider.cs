@@ -39,16 +39,19 @@ internal sealed class PiperProvider : ITtsProvider
     {
         return Task.Run(() =>
         {
-            var voiceId = string.IsNullOrWhiteSpace(voice) ? _defaultVoice : voice;
-            var modelPath = Path.Combine(_voicesDir, voiceId + ".onnx");
+            var (modelId, speakerId) = ParseVoice(voice);
+            var modelPath = Path.Combine(_voicesDir, modelId + ".onnx");
             if (!File.Exists(modelPath))
                 throw new FileNotFoundException($"Piper voice model not found: {modelPath}");
 
             Directory.CreateDirectory(Path.GetDirectoryName(outputPath)!);
 
+            var args = $"--model \"{modelPath}\" --output_file \"{outputPath}\"";
+            if (speakerId.HasValue) args += $" --speaker {speakerId.Value}";
+
             var psi = new ProcessStartInfo(_piperExe)
             {
-                Arguments = $"--model \"{modelPath}\" --output_file \"{outputPath}\"",
+                Arguments = args,
                 WorkingDirectory = Path.GetDirectoryName(_piperExe),
                 UseShellExecute = false,
                 CreateNoWindow = true,
@@ -74,5 +77,20 @@ internal sealed class PiperProvider : ITtsProvider
 
             return outputPath;
         }, ct);
+    }
+
+    /// <summary>
+    /// Parse "modelId" or "modelId/speakerId" into its components.
+    /// Empty/null returns the configured default voice with no speaker override.
+    /// </summary>
+    private (string Model, int? Speaker) ParseVoice(string voice)
+    {
+        if (string.IsNullOrWhiteSpace(voice)) return (_defaultVoice, null);
+        var slash = voice.IndexOf('/');
+        if (slash < 0) return (voice, null);
+        var model = voice.Substring(0, slash);
+        var speakerPart = voice.Substring(slash + 1);
+        if (int.TryParse(speakerPart, out var spk)) return (model, spk);
+        return (model, null);
     }
 }

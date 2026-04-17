@@ -16,7 +16,7 @@ public class Plugin : BaseUnityPlugin
 {
     public const string PluginGuid = "dev.fankserver.vgtts";
     public const string PluginName = "Vanguard Galaxy TTS";
-    public const string PluginVersion = "0.6.0";
+    public const string PluginVersion = "0.7.1";
 
     internal static Plugin Instance { get; private set; } = null!;
     internal static ManualLogSource Log { get; private set; } = null!;
@@ -48,7 +48,7 @@ public class Plugin : BaseUnityPlugin
         ITtsProvider provider = CreateProvider();
         var voiceMapper = new VoiceMapper(Config, CfgPiperDefaultVoice.Value, DefaultVoiceMap.Seeds);
         TtsController.Instance = new TtsController(provider, new DiskCache(), voiceMapper);
-        Log.LogInfo($"TTS provider: {provider.Name}, voice seeds: {DefaultVoiceMap.Seeds.Count}");
+        Log.LogInfo($"TTS provider: {provider.Name}, NPC profiles seeded: {DefaultVoiceMap.Seeds.Count}");
 
         _harmony = new Harmony(PluginGuid);
         _harmony.PatchAll(typeof(Patches.DialogueManagerPatches));

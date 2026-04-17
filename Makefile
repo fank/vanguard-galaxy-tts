@@ -76,7 +76,8 @@ VOICES := \
   en_US-kristin-medium:en_US/kristin/medium \
   en_GB-jenny_dioco-medium:en_GB/jenny_dioco/medium \
   en_US-lessac-high:en_US/lessac/high \
-  en_US-ryan-high:en_US/ryan/high
+  en_US-ryan-high:en_US/ryan/high \
+  en_US-libritts_r-medium:en_US/libritts_r/medium
 
 download-piper:
 	@mkdir -p tools/piper tools/voices /tmp/piper-dl

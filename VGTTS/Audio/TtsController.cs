@@ -56,12 +56,12 @@ internal sealed class TtsController
 
     private IEnumerator SpeakCoroutine(string speaker, string text, CancellationToken ct)
     {
-        var voice = _voices.Resolve(speaker);
-        var path = _cache.PathFor(text, voice);
+        var resolution = _voices.Resolve(speaker);
+        var path = _cache.PathFor(text, resolution.Voice);
 
         if (!_cache.Exists(path))
         {
-            var task = _provider.SynthesizeAsync(text, voice, path, ct);
+            var task = _provider.SynthesizeAsync(text, resolution.Voice, path, ct);
             while (!task.IsCompleted)
             {
                 if (ct.IsCancellationRequested) yield break;
@@ -80,10 +80,10 @@ internal sealed class TtsController
         yield return AudioClipLoader.LoadWav(path, c => clip = c);
         if (clip == null || ct.IsCancellationRequested) yield break;
 
-        PlayClip(clip);
+        PlayClip(clip, resolution.Pitch);
     }
 
-    private void PlayClip(AudioClip clip)
+    private void PlayClip(AudioClip clip, float pitch)
     {
         StopCurrent();
 
@@ -101,6 +101,15 @@ internal sealed class TtsController
                 frequentSound = false,
             };
             _currentEmitter = mgr.CreateSound().WithSoundData(soundData).PlayReturn();
+
+            // SoundEmitter::Init sets audioSource.pitch = 1f; override here so the
+            // per-character pitch lands. [RequireComponent(AudioSource)] guarantees
+            // the component is on the same GameObject.
+            if (_currentEmitter != null && !Mathf.Approximately(pitch, 1.0f))
+            {
+                var audioSource = _currentEmitter.GetComponent<AudioSource>();
+                if (audioSource != null) audioSource.pitch = pitch;
+            }
             return;
         }
 
@@ -110,8 +119,9 @@ internal sealed class TtsController
         var src = _fallbackGo.AddComponent<AudioSource>();
         src.clip = clip;
         src.volume = 1.0f;
+        src.pitch = pitch;
         src.Play();
-        Object.Destroy(_fallbackGo, clip.length + 0.5f);
+        Object.Destroy(_fallbackGo, clip.length / Mathf.Max(0.1f, pitch) + 0.5f);
     }
 
     private void StopCurrent()
