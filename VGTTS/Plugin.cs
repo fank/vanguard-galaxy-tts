@@ -16,7 +16,7 @@ public class Plugin : BaseUnityPlugin
 {
     public const string PluginGuid = "dev.fankserver.vgtts";
     public const string PluginName = "Vanguard Galaxy TTS";
-    public const string PluginVersion = "0.8.0";
+    public const string PluginVersion = "0.8.1";
 
     internal static Plugin Instance { get; private set; } = null!;
     internal static ManualLogSource Log { get; private set; } = null!;
@@ -26,6 +26,8 @@ public class Plugin : BaseUnityPlugin
     internal ConfigEntry<bool> CfgEcho = null!;
     internal ConfigEntry<string> CfgProvider = null!;
     internal ConfigEntry<string> CfgPiperDefaultVoice = null!;
+    internal ConfigEntry<bool> CfgNormalizeExclamation = null!;
+    internal ConfigEntry<bool> CfgNormalizeQuestion = null!;
 
     private Harmony _harmony = null!;
 
@@ -38,6 +40,15 @@ public class Plugin : BaseUnityPlugin
         CfgDialogue          = Config.Bind("General", "DialogueTTS",       true,  "Speak NPC dialogue lines.");
         CfgEcho              = Config.Bind("General", "EchoTTS",           true,  "Speak ECHO ambient HUD tips.");
         CfgProvider          = Config.Bind("General", "Provider",          "piper", "TTS backend: sapi | piper");
+        CfgNormalizeExclamation = Config.Bind("Text", "NormalizeExclamation", true,
+            "If true, rewrite '!' to '.' before synthesis. Piper's excitement " +
+            "intonation often sounds clipped or robotic; a period gives flatter " +
+            "but more reliable pacing. Disable if you want exclamations preserved.");
+        CfgNormalizeQuestion = Config.Bind("Text", "NormalizeQuestion", true,
+            "If true, rewrite '?' to '.' before synthesis. Piper's question-rise " +
+            "intonation is voice-dependent and inconsistent. Disable if your voices " +
+            "handle questions well and you prefer the rising tone.");
+
         CfgPiperDefaultVoice = Config.Bind("Piper",   "DefaultVoice",      "en_US-hfc_female-medium",
             "Default Piper voice ID (filename without .onnx extension), used when a " +
             "character has no per-speaker entry under [Voices]. Bundled voices: " +
