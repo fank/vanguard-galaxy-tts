@@ -30,25 +30,10 @@ internal static class TextNormalizer
     private static readonly Regex MidSentenceEllipsis =
         new(@"(?:\.\s*){2,}", RegexOptions.Compiled);
 
-    // Runs of exclamation marks (e.g. "Wait!!") collapse to a single char; the
-    // Exclamation/Question regexes then handle that single char.
-    private static readonly Regex RepeatedExclaim = new(@"!{2,}", RegexOptions.Compiled);
-    private static readonly Regex RepeatedQuestion = new(@"\?{2,}", RegexOptions.Compiled);
-
-    // Mixed interrobang (?!, !?, ?!?! etc) → single "?" keeps question intonation.
-    private static readonly Regex Interrobang = new(@"[!?]{2,}", RegexOptions.Compiled);
-
     // Collapse runs of whitespace introduced by substitutions.
     private static readonly Regex MultiSpace = new(@"\s{2,}", RegexOptions.Compiled);
 
-    /// <summary>
-    /// Normalize dialogue text for TTS synthesis.
-    /// </summary>
-    /// <param name="normalizeExclamation">If true, "!" is rewritten to "." (Piper's
-    /// excitement intonation tends to sound clipped / unnatural).</param>
-    /// <param name="normalizeQuestion">If true, "?" is rewritten to "." (Piper's
-    /// question-rise intonation is inconsistent voice-to-voice).</param>
-    public static string ForTts(string text, bool normalizeExclamation, bool normalizeQuestion)
+    public static string ForTts(string text)
     {
         if (string.IsNullOrEmpty(text)) return text;
 
@@ -58,15 +43,6 @@ internal static class TextNormalizer
         text = TrailingEllipsis.Replace(text, ".");
         text = SentenceBreakEllipsis.Replace(text, ". ");
         text = MidSentenceEllipsis.Replace(text, ", ");
-
-        // Collapse runs + interrobangs *before* the optional punct-to-period rewrite,
-        // so "Wait!!!" ends up as one glyph regardless of which flags are set.
-        text = Interrobang.Replace(text, m => m.Value.Contains('?') ? "?" : "!");
-        text = RepeatedExclaim.Replace(text, "!");
-        text = RepeatedQuestion.Replace(text, "?");
-
-        if (normalizeExclamation) text = text.Replace('!', '.');
-        if (normalizeQuestion)    text = text.Replace('?', '.');
 
         text = MultiSpace.Replace(text, " ").Trim();
         return text;

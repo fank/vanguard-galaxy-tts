@@ -58,10 +58,7 @@ internal sealed class TtsController
     private IEnumerator SpeakCoroutine(string speaker, string text, CancellationToken ct)
     {
         var resolution = _voices.Resolve(speaker);
-        var synthText = TextNormalizer.ForTts(
-            text,
-            normalizeExclamation: Plugin.Instance.CfgNormalizeExclamation.Value,
-            normalizeQuestion:    Plugin.Instance.CfgNormalizeQuestion.Value);
+        var synthText = TextNormalizer.ForTts(text);
         var path = _cache.PathFor(synthText, resolution.Voice);
 
         if (!_cache.Exists(path))
