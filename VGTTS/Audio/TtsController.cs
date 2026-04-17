@@ -36,13 +36,22 @@ internal sealed class TtsController
     {
         if (string.IsNullOrWhiteSpace(text) || Plugin.Instance == null) return;
 
-        // Interrupt anything in flight.
-        _currentCts?.Cancel();
-        StopCurrent();
+        Stop();
 
         var cts = new CancellationTokenSource();
         _currentCts = cts;
         Plugin.Instance.StartCoroutine(SpeakCoroutine(speaker, text, cts.Token));
+    }
+
+    /// <summary>
+    /// Interrupt any in-flight synthesis and fade out any currently playing audio.
+    /// Called on dialogue advance, dialogue close, and ECHO tip dismiss.
+    /// </summary>
+    public void Stop()
+    {
+        _currentCts?.Cancel();
+        _currentCts = null;
+        StopCurrent();
     }
 
     private IEnumerator SpeakCoroutine(string speaker, string text, CancellationToken ct)
@@ -107,10 +116,11 @@ internal sealed class TtsController
 
     private void StopCurrent()
     {
-        // SoundEmitter doesn't expose a public Stop on its interface — we let it
-        // finish naturally. New Speak() still interrupts by creating a new emitter
-        // while the old one continues briefly (acceptable: dialogue advance is rare).
-        _currentEmitter = null;
+        if (_currentEmitter != null)
+        {
+            try { _currentEmitter.Stop(); } catch { /* emitter may already be returning to pool */ }
+            _currentEmitter = null;
+        }
 
         if (_fallbackGo != null)
         {

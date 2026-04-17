@@ -7,9 +7,12 @@ using VGTTS.Audio;
 namespace VGTTS.Patches;
 
 /// <summary>
-/// Prefix on <see cref="DialogueManager"/>.ShowDialogueLine — fires once per line,
-/// before the typewriter coroutine. <c>currentLineIndex</c> is set by callers, not
-/// mutated inside the method, so reading the line here is stable.
+/// Patches on <see cref="DialogueManager"/>:
+///   • Prefix on <c>ShowDialogueLine</c> — synth each line as it appears. Advancing
+///     past the previous line naturally routes through here again, and <c>Speak</c>
+///     interrupts whatever was playing.
+///   • Prefix on <c>CloseDialogue</c> — stop audio when the dialogue window closes
+///     (escape / click-close / natural end-of-conversation).
 /// </summary>
 [HarmonyPatch(typeof(DialogueManager))]
 internal static class DialogueManagerPatches
@@ -33,5 +36,12 @@ internal static class DialogueManagerPatches
             return;
 
         TtsController.Instance?.Speak(speaker, text);
+    }
+
+    [HarmonyPrefix]
+    [HarmonyPatch(nameof(DialogueManager.CloseDialogue))]
+    private static void CloseDialogue_Prefix()
+    {
+        TtsController.Instance?.Stop();
     }
 }
