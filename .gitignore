@@ -43,3 +43,4 @@ tools/prerender/echo_tips.json
 # Must explicitly un-ignore both dir + contents since *.wav matches files
 !tools/prerender/references/
 !tools/prerender/references/*.wav
+.claude/
