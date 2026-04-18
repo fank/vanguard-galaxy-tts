@@ -7,13 +7,13 @@
       "workable": "Kokoro has a related speaker — accent flavor is present but not canonical",
       "placeholder": "No direct match — using closest English baseline; flagged for external reference sourcing"
     },
-    "gaps": [
-      "Russian / Slavic (Kolyatov faction + Keril) — no Kokoro speaker",
-      "Scottish (Elias McIntire name hint) — no Kokoro speaker",
-      "Scandinavian/Nordic (Olga Skarsgard name hint) — no Kokoro speaker",
-      "German (Sergio Weisartz, mad scientist) — no Kokoro speaker"
-    ],
-    "future_work": "Gap-filling references could come from: LibriVox audiobooks in target accents, VCTK corpus (109 English speakers with accent labels), Common Voice, or ElevenLabs voice library (paid)."
+    "gaps_filled": {
+      "Russian": "Piper ru_RU-dmitri-medium (Kolyatov), ru_RU-denis-medium (Keril)",
+      "Scottish": "Piper en_GB-alba-medium (Elias McIntire)",
+      "Nordic/Swedish": "Piper sv_SE-alma-medium (Olga Skarsgard)",
+      "German": "Piper de_DE-thorsten_emotional-medium (Sergio Weisartz)"
+    },
+    "two_tts_pipeline": "Non-English Piper voices render the probe phrase in English (phoneme shapes of the native language carry over), then F5-TTS clones that English output as its reference voice. Result: authentic accented English on any line we synth."
   },
   "assignments": [
     {"name": "ECHO",                "reference": "kokoro_bf_emma_21",     "fidelity": "strong", "notes": "Validated in v1.0.0 ECHO pack"},
@@ -30,7 +30,7 @@
     {"name": "Arle",                "reference": "sid32_hf_beta",         "fidelity": "workable", "notes": "Female commander — Hindi F gives commanding non-Western flavor fitting Luminate Commander role"},
     {"name": "Prison Guard",        "reference": "kokoro_af_sky_10",      "fidelity": "strong", "notes": "AI-portrait reuse — clean neutral female"},
     {"name": "John Raythor",        "reference": "sid16_am_michael",      "fidelity": "strong", "notes": "American older captain, grandfatherly"},
-    {"name": "Keril",               "reference": "sid52_zm_yunyang",      "fidelity": "placeholder", "notes": "Kolyatov Conscript — no Russian in Kokoro; Mandarin male used as 'Eastern non-English' stand-in. NEEDS external Russian-accented ref."},
+    {"name": "Keril",               "reference": "ru_RU_denis",           "fidelity": "strong", "notes": "Kolyatov Conscript — Piper ru_RU-denis-medium (young Russian male), English clone via F5"},
     {"name": "Thundo Klipz",        "reference": "sid13_am_eric",         "fidelity": "strong", "notes": "American gritty salvager — need to add am_eric probe"},
 
     {"name": "Adeline Lorentz",     "reference": "kokoro_bf_emma_21",     "fidelity": "strong", "notes": "British station commander (same voice fam as ECHO; different pitch should distinguish)"},
@@ -42,8 +42,8 @@
 
     {"name": "Melloy",              "reference": "sid18_am_puck",         "fidelity": "strong", "notes": "American wisecracker — puck is lively"},
 
-    {"name": "Elias McIntire",      "reference": "sid24_bm_daniel",       "fidelity": "placeholder", "notes": "Scottish hint from McIntire name; no Scottish in Kokoro — British M stands in"},
-    {"name": "Olga Skarsgard",      "reference": "sid23_bf_lily",         "fidelity": "placeholder", "notes": "Nordic surname hint; no Scandinavian voice — British F with clipped tone as closest"},
+    {"name": "Elias McIntire",      "reference": "en_GB_alba_scottish",   "fidelity": "strong", "notes": "Piper en_GB-alba-medium — 'Alba' = Scottish Gaelic for Scotland. Authentic Scottish accent"},
+    {"name": "Olga Skarsgard",      "reference": "sv_SE_alma",            "fidelity": "strong", "notes": "Piper sv_SE-alma-medium — authentic Swedish F matches Nordic surname"},
     {"name": "Alice Okono",         "reference": "sid31_hf_alpha",        "fidelity": "workable", "notes": "Young African-descent — Hindi F gives non-Western warmth"},
     {"name": "Brandon Wallace",     "reference": "sid13_am_eric",         "fidelity": "strong", "notes": "American bearded forgemaster"},
     {"name": "Oron",                "reference": "sid43_pm_alex",         "fidelity": "workable", "notes": "'Machine Shepherd' + dreads — Portuguese M for Caribbean/pan-African flavor"},
@@ -54,13 +54,13 @@
     {"name": "Amalia Rodriguez",    "reference": "sid28_ef_dora",         "fidelity": "strong", "notes": "Latina bounty hunter — Spanish F authentic"},
     {"name": "Gabriel Ramos",       "reference": "sid29_em_alex",         "fidelity": "strong", "notes": "Latino security liaison — Spanish M"},
     {"name": "Edar Thopter",        "reference": "sid22_bf_isabella",     "fidelity": "strong", "notes": "CORRECTED: portrait reads female. British trade director."},
-    {"name": "Sergio Weisartz",     "reference": "sid36_im_nicola",       "fidelity": "placeholder", "notes": "'Doctor?' German eccentric; no German in Kokoro — Italian M for Old-World mad-scientist flavor"},
+    {"name": "Sergio Weisartz",     "reference": "de_DE_thorsten_emotional", "fidelity": "strong", "notes": "Piper de_DE-thorsten_emotional — German M with emotion support, fits 'Doctor?' eccentric persona"},
     {"name": "Brenda Diamond",      "reference": "sid06_af_nicole",       "fidelity": "strong", "notes": "Mature American HR officer — need af_nicole probe"},
     {"name": "Anton Havel",         "reference": "sid17_am_onyx",         "fidelity": "strong", "notes": "Smooth sales pitch"},
 
     {"name": "Cade Callahan",       "reference": "sid16_am_michael",      "fidelity": "strong", "notes": "Canisec Commander — American police-chief"},
     {"name": "Victor Hale",         "reference": "sid17_am_onyx",         "fidelity": "strong", "notes": "Stellar exec villain — cold, calculating"},
-    {"name": "Mikhail Kolyatov",    "reference": "sid52_zm_yunyang",      "fidelity": "placeholder", "notes": "Russian High Commissar. No Russian in Kokoro; Mandarin male is closest non-Western male. NEEDS external Russian-accented ref for fidelity."},
+    {"name": "Mikhail Kolyatov",    "reference": "ru_RU_dmitri",          "fidelity": "strong", "notes": "Piper ru_RU-dmitri-medium — stern Russian M, ideal for High Commissar authoritarian voice"},
     {"name": "Triane Solis",        "reference": "sid31_hf_alpha",        "fidelity": "strong", "notes": "Mystical Luminate admin — Hindi F fits spiritual/pan-Asian aesthetic perfectly"},
 
     {"name": "Waldo Everson",       "reference": "sid14_am_fenrir",       "fidelity": "strong", "notes": "American frontier miner"},
