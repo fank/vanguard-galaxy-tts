@@ -17,10 +17,11 @@ cache/
 *.mp3
 
 # Pre-rendering pipeline: large artifacts — track code, ship audio as release asset
-prerender/
-tools/prerender/variants/
-tools/prerender/references/
-tools/prerender/__pycache__/
+/prerender/
+/tools/prerender/variants/
+/tools/prerender/references/
+/tools/prerender/echo_tips.json
+**/__pycache__/
 
 # OS
 .DS_Store
