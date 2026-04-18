@@ -40,12 +40,18 @@ def _resolve_ref(voice: str) -> tuple[str, str]:
 
 
 def _post_process(wav: np.ndarray, sr: int) -> np.ndarray:
-    """Normalize peak + trim generous edge silence F5 sometimes emits."""
+    """Normalize peak + trim generous edge silence F5 sometimes emits.
+
+    Peak target is -2 dBFS (0.794) — OGG Vorbis encoding tends to produce
+    microoveriews of ±1-3% on decode, so leaving ~2 dB headroom prevents
+    downstream clipping inside Unity's AudioSource.
+    """
     wav = np.asarray(wav, dtype=np.float32)
-    # Peak-normalize to -1 dBFS (0.89) so AudioSource doesn't hit digital clip.
     peak = np.abs(wav).max()
     if peak > 0.001:
-        wav = wav * (0.89 / peak)
+        wav = wav * (0.794 / peak)
+    # Hard clamp as paranoia belt-and-suspenders
+    wav = np.clip(wav, -0.9, 0.9)
     # Trim silence below -40 dBFS at edges, preserving 80 ms of padding
     silence = np.abs(wav) < 0.01
     nz = np.where(~silence)[0]

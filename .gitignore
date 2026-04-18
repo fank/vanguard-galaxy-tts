@@ -10,14 +10,17 @@ VGTTS/lib/*.dll
 VGTTS/lib/*.pdb
 !VGTTS/lib/.gitkeep
 
-# Cache / generated TTS (legacy cache dir; plugin uses BepInEx/cache/VGTTS)
+# Legacy runtime TTS caches (plugin uses BepInEx/cache/VGTTS at runtime)
 cache/
 *.wav
 *.mp3
 
-# Pre-render output (shipped as GitHub release asset, not in git)
-/prerender/
-*.ogg
+# Pre-render artifacts
+# Track: prerender/echo/*.ogg and manifest.json (small pack, shipped in repo)
+# Skip: shootout/review intermediates
+prerender/shootout/
+prerender/echo/review_report.*
+prerender/echo/variants/
 
 # OS
 .DS_Store
