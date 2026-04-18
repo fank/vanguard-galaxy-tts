@@ -16,6 +16,10 @@
     "two_tts_pipeline": "Non-English Piper voices render the probe phrase in English (phoneme shapes of the native language carry over), then F5-TTS clones that English output as its reference voice. Result: authentic accented English on any line we synth."
   },
   "assignments": [
+    {"name": "captain",             "reference": "sid14_am_fenrir",       "fidelity": "strong", "notes": "Player character — no portrait (it's the PC). Rugged American explorer voice fits the space-captain archetype. Users override via config to match their own captain's imagined voice."},
+    {"name": "_generic_salesman",   "reference": "sid18_am_puck",         "fidelity": "strong", "notes": "Procedural station merchants/salesmen. Cheerful American."},
+    {"name": "_generic_crew",       "reference": "kokoro_af_sky_10",      "fidelity": "strong", "notes": "Random crew members offering their services. Friendly young American female."},
+
     {"name": "ECHO",                "reference": "kokoro_bf_emma_21",     "fidelity": "strong", "notes": "Validated in v1.0.0 ECHO pack"},
 
     {"name": "Greg",                "reference": "sid16_am_michael",      "fidelity": "strong", "notes": "American gruff outpost chief"},
