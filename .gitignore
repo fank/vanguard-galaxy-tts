@@ -40,5 +40,6 @@ tools/prerender/echo_tips.json
 **/__pycache__/
 
 # Track reference WAVs (needed for reproducible renders across machines)
-# but skip the F5 test outputs
+# Must explicitly un-ignore both dir + contents since *.wav matches files
 !tools/prerender/references/
+!tools/prerender/references/*.wav
