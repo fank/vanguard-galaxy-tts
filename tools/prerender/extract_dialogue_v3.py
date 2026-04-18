@@ -22,12 +22,107 @@ import json, re, sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from extract_dialogue_v2 import (
-    DECOMP, DIALOGUE_FILES, balance_parens, split_top_level_commas,
-    build_character_name_map, unescape_cs,
-)
 
+DECOMP = Path("/tmp/decomp")
 GAME_RESOURCES = Path("/mnt/c/Program Files (x86)/Steam/steamapps/common/Vanguard Galaxy/VanguardGalaxy_Data/resources.assets")
+
+DIALOGUE_FILES = [
+    "Behaviour.Dialogues/DialogueManager.cs",
+    "Source.Dialogues/DialogueLine.cs",
+    "Source.Dialogues.Content/SkilltreeMissions.cs",
+    "Source.Dialogues.Content/SideMissions.cs",
+    "Source.Dialogues.Content/ConquestMissions.cs",
+    "Source.Simulation.World.POI/DistressCombat.cs",
+    "Source.Galaxy.POI.Station.Patrons/Salesman.cs",
+    "Source.Galaxy.POI.Station.Patrons/CrewMember.cs",
+    "Source.Simulation.Story/Puppeteers.cs",
+    "Source.Simulation.Story/Tutorial.cs",
+]
+
+
+def unescape_cs(s: str) -> str:
+    return s.replace('\\"', '"').replace("\\n", "\n").replace("\\r", "\r").replace("\\t", "\t").replace("\\\\", "\\")
+
+
+def balance_parens(src: str, start: int) -> int:
+    depth = 0; in_str = False; escape = False
+    i = start
+    while i < len(src):
+        c = src[i]
+        if in_str:
+            if escape: escape = False
+            elif c == "\\": escape = True
+            elif c == '"': in_str = False
+        else:
+            if c == '"': in_str = True
+            elif c == "(": depth += 1
+            elif c == ")":
+                depth -= 1
+                if depth == 0: return i
+        i += 1
+    return -1
+
+
+def split_top_level_commas(args: str) -> list[str]:
+    parts: list[str] = []
+    depth = 0; in_str = False; escape = False
+    buf: list[str] = []
+    for c in args:
+        if in_str:
+            buf.append(c)
+            if escape: escape = False
+            elif c == "\\": escape = True
+            elif c == '"': in_str = False
+        else:
+            if c == '"': in_str = True; buf.append(c)
+            elif c == "(": depth += 1; buf.append(c)
+            elif c == ")": depth -= 1; buf.append(c)
+            elif c == "," and depth == 0:
+                parts.append("".join(buf).strip()); buf = []
+            else: buf.append(c)
+    if buf: parts.append("".join(buf).strip())
+    return parts
+
+
+def build_character_name_map() -> dict[str, str]:
+    """Parse Characters.cs for property → factory → CreateCharacter("name") chains.
+    Extracts each factory's body via brace-matching to avoid cross-function bleed."""
+    src = (DECOMP / "Source.Dialogues/Characters.cs").read_text()
+
+    prop_to_factory: dict[str, str] = {}
+    for m in re.finditer(
+        r'public\s+static\s+Character\s+(\w+)\s*=>\s*\w+\s*\?\?\s*\(\w+\s*=\s*(\w+)\(\)\)',
+        src,
+    ):
+        prop_to_factory[m.group(1)] = m.group(2)
+
+    # Brace-match each factory body, then find CreateCharacter("literal") inside it.
+    factory_to_name: dict[str, str] = {}
+    i = 0
+    while True:
+        m = re.search(r'public\s+static\s+Character\s+(\w+)\s*\([^)]*\)\s*\{', src[i:])
+        if not m: break
+        func_name = m.group(1)
+        start = i + m.end() - 1
+        depth = 0; j = start
+        while j < len(src):
+            if src[j] == '{': depth += 1
+            elif src[j] == '}':
+                depth -= 1
+                if depth == 0: break
+            j += 1
+        body = src[start+1:j]
+        cc = re.search(r'CreateCharacter\s*\(\s*"([^"]+)"', body)
+        if cc: factory_to_name[func_name] = cc.group(1)
+        i = j + 1
+
+    result: dict[str, str] = {}
+    for prop, factory in prop_to_factory.items():
+        if factory in factory_to_name:
+            result[prop] = factory_to_name[factory]
+
+    result["shipAi"] = "ECHO"
+    return result
 OUT = Path("/tmp/dialogue_lines_v3.json")
 
 

@@ -4464,12 +4464,12 @@
   "335f0ae206c3db234472e8003dd5f04bbea5d54f85536bc5441ec944284fc6da": {
     "key": "335f0ae206c3db234472e8003dd5f04bbea5d54f85536bc5441ec944284fc6da",
     "speaker": "Elias McIntire",
-    "reference": "en_GB_alba_scottish",
+    "reference": "kokoro:15",
     "text_raw": "Hey, look who's back with a fat stack of cash. Ready to get started?",
     "text_normalized": "Hey, look who's back with a fat stack of cash. Ready to get started?",
-    "engine": "f5",
+    "engine": "kokoro",
     "params": {
-      "seed": 0,
+      "sid": 15,
       "speed": 1.0
     },
     "score_total": 0.7416666666666666,
@@ -4482,20 +4482,23 @@
       "voicing_holes": 1.0,
       "repeat_fidelity": 1.0
     },
-    "ogg": "Elias_McIntire/335f0ae206c3db234472e8003dd5f04bbea5d54f85536bc5441ec944284fc6da.ogg"
+    "ogg": "Elias_McIntire/335f0ae206c3db234472e8003dd5f04bbea5d54f85536bc5441ec944284fc6da.ogg",
+    "voice": "kokoro:15",
+    "voice_name": "kokoro_am_liam_15",
+    "source": "alba-to-am_liam-fix"
   },
   "c003411a945c313a4a00f260f36f54454c72435c59bc517c0ce7d0d935c4a96d": {
     "key": "c003411a945c313a4a00f260f36f54454c72435c59bc517c0ce7d0d935c4a96d",
     "speaker": "Elias McIntire",
-    "reference": "en_GB_alba_scottish",
+    "reference": "kokoro:15",
     "text_raw": "Alright, let me just flick this switch here, and... done!",
     "text_normalized": "Alright, let me just flick this switch here, and, done!",
-    "engine": "f5",
+    "engine": "kokoro",
     "params": {
-      "seed": 0,
+      "sid": 15,
       "speed": 1.0
     },
-    "score_total": 1.0,
+    "score_total": 0.9083333333333333,
     "score_components": {
       "duration_sanity": 1.0,
       "loudness_sanity": 1.0,
@@ -4505,20 +4508,23 @@
       "voicing_holes": 1.0,
       "repeat_fidelity": 1.0
     },
-    "ogg": "Elias_McIntire/c003411a945c313a4a00f260f36f54454c72435c59bc517c0ce7d0d935c4a96d.ogg"
+    "ogg": "Elias_McIntire/c003411a945c313a4a00f260f36f54454c72435c59bc517c0ce7d0d935c4a96d.ogg",
+    "voice": "kokoro:15",
+    "voice_name": "kokoro_am_liam_15",
+    "source": "alba-to-am_liam-fix"
   },
   "c4f8fedd0c85f9d7b224f5b21da6b0656023599ab9eab2b845b09b101006941c": {
     "key": "c4f8fedd0c85f9d7b224f5b21da6b0656023599ab9eab2b845b09b101006941c",
     "speaker": "Elias McIntire",
-    "reference": "en_GB_alba_scottish",
+    "reference": "kokoro:15",
     "text_raw": "You seem like a hard-working fellow. Interested in doing some surveying work for us? Mindus will make it worth your time.",
     "text_normalized": "You seem like a hard-working fellow. Interested in doing some surveying work for us? Mindus will make it worth your time.",
-    "engine": "f5",
+    "engine": "kokoro",
     "params": {
-      "seed": 0,
+      "sid": 15,
       "speed": 1.0
     },
-    "score_total": 0.908258731360776,
+    "score_total": 0.7416666666666666,
     "score_components": {
       "duration_sanity": 1.0,
       "loudness_sanity": 1.0,
@@ -4528,20 +4534,23 @@
       "voicing_holes": 1.0,
       "repeat_fidelity": 1.0
     },
-    "ogg": "Elias_McIntire/c4f8fedd0c85f9d7b224f5b21da6b0656023599ab9eab2b845b09b101006941c.ogg"
+    "ogg": "Elias_McIntire/c4f8fedd0c85f9d7b224f5b21da6b0656023599ab9eab2b845b09b101006941c.ogg",
+    "voice": "kokoro:15",
+    "voice_name": "kokoro_am_liam_15",
+    "source": "alba-to-am_liam-fix"
   },
   "7a585a0b4b047f750af21e9ae36fc11c65cf33a2e338663bc9d510578deed905": {
     "key": "7a585a0b4b047f750af21e9ae36fc11c65cf33a2e338663bc9d510578deed905",
     "speaker": "Elias McIntire",
-    "reference": "en_GB_alba_scottish",
+    "reference": "kokoro:15",
     "text_raw": "Ready to enroll in Mindus Academy yet?",
     "text_normalized": "Ready to enroll in Mindus Academy yet?",
-    "engine": "f5",
+    "engine": "kokoro",
     "params": {
-      "seed": 0,
+      "sid": 15,
       "speed": 1.0
     },
-    "score_total": 0.75,
+    "score_total": 0.95,
     "score_components": {
       "duration_sanity": 0.7,
       "loudness_sanity": 1.0,
@@ -4551,20 +4560,23 @@
       "voicing_holes": 1.0,
       "repeat_fidelity": 1.0
     },
-    "ogg": "Elias_McIntire/7a585a0b4b047f750af21e9ae36fc11c65cf33a2e338663bc9d510578deed905.ogg"
+    "ogg": "Elias_McIntire/7a585a0b4b047f750af21e9ae36fc11c65cf33a2e338663bc9d510578deed905.ogg",
+    "voice": "kokoro:15",
+    "voice_name": "kokoro_am_liam_15",
+    "source": "alba-to-am_liam-fix"
   },
   "9cef9b4df3de7d34805ca8c644fb744f507d5dde8f7c9a9c1a4c4f2a656b0b4a": {
     "key": "9cef9b4df3de7d34805ca8c644fb744f507d5dde8f7c9a9c1a4c4f2a656b0b4a",
     "speaker": "Elias McIntire",
-    "reference": "en_GB_alba_scottish",
+    "reference": "kokoro:15",
     "text_raw": "Hey, welcome to Mindus, the galaxy's foremost asteroid mining corporation. What can I do for you?",
     "text_normalized": "Hey, welcome to Mindus, the galaxy's foremost asteroid mining corporation. What can I do for you?",
-    "engine": "f5",
+    "engine": "kokoro",
     "params": {
-      "seed": 0,
+      "sid": 15,
       "speed": 1.0
     },
-    "score_total": 0.7916666666666666,
+    "score_total": 0.95,
     "score_components": {
       "duration_sanity": 1.0,
       "loudness_sanity": 1.0,
@@ -4574,20 +4586,23 @@
       "voicing_holes": 1.0,
       "repeat_fidelity": 1.0
     },
-    "ogg": "Elias_McIntire/9cef9b4df3de7d34805ca8c644fb744f507d5dde8f7c9a9c1a4c4f2a656b0b4a.ogg"
+    "ogg": "Elias_McIntire/9cef9b4df3de7d34805ca8c644fb744f507d5dde8f7c9a9c1a4c4f2a656b0b4a.ogg",
+    "voice": "kokoro:15",
+    "voice_name": "kokoro_am_liam_15",
+    "source": "alba-to-am_liam-fix"
   },
   "c139e7367ed0f708c2cff6ce1c0b35b077626b34225a5e3a39d70654cff0dc79": {
     "key": "c139e7367ed0f708c2cff6ce1c0b35b077626b34225a5e3a39d70654cff0dc79",
     "speaker": "Elias McIntire",
-    "reference": "en_GB_alba_scottish",
+    "reference": "kokoro:15",
     "text_raw": "Sure thing, but you'll have to show me your skills first. Go out there and collect some ore, then we can talk. Oh, and don't forget about the application fee.",
     "text_normalized": "Sure thing, but you'll have to show me your skills first. Go out there and collect some ore, then we can talk. Oh, and don't forget about the application fee.",
-    "engine": "f5",
+    "engine": "kokoro",
     "params": {
-      "seed": 0,
+      "sid": 15,
       "speed": 1.0
     },
-    "score_total": 0.8541666666666667,
+    "score_total": 0.8458333333333333,
     "score_components": {
       "duration_sanity": 1.0,
       "loudness_sanity": 1.0,
@@ -4597,20 +4612,23 @@
       "voicing_holes": 1.0,
       "repeat_fidelity": 1.0
     },
-    "ogg": "Elias_McIntire/c139e7367ed0f708c2cff6ce1c0b35b077626b34225a5e3a39d70654cff0dc79.ogg"
+    "ogg": "Elias_McIntire/c139e7367ed0f708c2cff6ce1c0b35b077626b34225a5e3a39d70654cff0dc79.ogg",
+    "voice": "kokoro:15",
+    "voice_name": "kokoro_am_liam_15",
+    "source": "alba-to-am_liam-fix"
   },
   "1b8c6dffd6fd381a17590d19526a76fa29b750a8a83fb386ef30c984339b513b": {
     "key": "1b8c6dffd6fd381a17590d19526a76fa29b750a8a83fb386ef30c984339b513b",
     "speaker": "Elias McIntire",
-    "reference": "en_GB_alba_scottish",
+    "reference": "kokoro:15",
     "text_raw": "Wow, what's all that dust on your uniform? Looks like you'll make a proper miner after all!",
     "text_normalized": "Wow, what's all that dust on your uniform? Looks like you'll make a proper miner after all!",
-    "engine": "f5",
+    "engine": "kokoro",
     "params": {
-      "seed": 0,
+      "sid": 15,
       "speed": 1.0
     },
-    "score_total": 1.0,
+    "score_total": 0.95,
     "score_components": {
       "duration_sanity": 1.0,
       "loudness_sanity": 1.0,
@@ -4620,20 +4638,23 @@
       "voicing_holes": 1.0,
       "repeat_fidelity": 1.0
     },
-    "ogg": "Elias_McIntire/1b8c6dffd6fd381a17590d19526a76fa29b750a8a83fb386ef30c984339b513b.ogg"
+    "ogg": "Elias_McIntire/1b8c6dffd6fd381a17590d19526a76fa29b750a8a83fb386ef30c984339b513b.ogg",
+    "voice": "kokoro:15",
+    "voice_name": "kokoro_am_liam_15",
+    "source": "alba-to-am_liam-fix"
   },
   "cc4036d4b572ee9fe102e7e58d5b5f8a68b9ef4ee5e7847dc611cdcccde6261d": {
     "key": "cc4036d4b572ee9fe102e7e58d5b5f8a68b9ef4ee5e7847dc611cdcccde6261d",
     "speaker": "Elias McIntire",
-    "reference": "en_GB_alba_scottish",
+    "reference": "kokoro:15",
     "text_raw": "Don't worry, you can get back to relaxing after this. Here's your reward.",
     "text_normalized": "Don't worry, you can get back to relaxing after this. Here's your reward.",
-    "engine": "f5",
+    "engine": "kokoro",
     "params": {
-      "seed": 0,
+      "sid": 15,
       "speed": 1.0
     },
-    "score_total": 0.9981953739217861,
+    "score_total": 0.7416666666666666,
     "score_components": {
       "duration_sanity": 1.0,
       "loudness_sanity": 1.0,
@@ -4643,20 +4664,23 @@
       "voicing_holes": 1.0,
       "repeat_fidelity": 1.0
     },
-    "ogg": "Elias_McIntire/cc4036d4b572ee9fe102e7e58d5b5f8a68b9ef4ee5e7847dc611cdcccde6261d.ogg"
+    "ogg": "Elias_McIntire/cc4036d4b572ee9fe102e7e58d5b5f8a68b9ef4ee5e7847dc611cdcccde6261d.ogg",
+    "voice": "kokoro:15",
+    "voice_name": "kokoro_am_liam_15",
+    "source": "alba-to-am_liam-fix"
   },
   "c17c8e908a14dd6e5722bd2311892dc290c60c83dc5438979e8b2b45337de50e": {
     "key": "c17c8e908a14dd6e5722bd2311892dc290c60c83dc5438979e8b2b45337de50e",
     "speaker": "Elias McIntire",
-    "reference": "en_GB_alba_scottish",
+    "reference": "kokoro:15",
     "text_raw": "How's that survey coming along?",
     "text_normalized": "How's that survey coming along?",
-    "engine": "f5",
+    "engine": "kokoro",
     "params": {
-      "seed": 0,
+      "sid": 15,
       "speed": 1.0
     },
-    "score_total": 0.7916666666666666,
+    "score_total": 0.7416666666666666,
     "score_components": {
       "duration_sanity": 1.0,
       "loudness_sanity": 1.0,
@@ -4666,20 +4690,23 @@
       "voicing_holes": 1.0,
       "repeat_fidelity": 1.0
     },
-    "ogg": "Elias_McIntire/c17c8e908a14dd6e5722bd2311892dc290c60c83dc5438979e8b2b45337de50e.ogg"
+    "ogg": "Elias_McIntire/c17c8e908a14dd6e5722bd2311892dc290c60c83dc5438979e8b2b45337de50e.ogg",
+    "voice": "kokoro:15",
+    "voice_name": "kokoro_am_liam_15",
+    "source": "alba-to-am_liam-fix"
   },
   "4043aec85ed97c149d1d4b12ae01c8756c18be83fd2bad5027d91dbd59f773b4": {
     "key": "4043aec85ed97c149d1d4b12ae01c8756c18be83fd2bad5027d91dbd59f773b4",
     "speaker": "Elias McIntire",
-    "reference": "en_GB_alba_scottish",
+    "reference": "kokoro:15",
     "text_raw": "Hey, you look like you know a thing or two about asteroid mining. How about you do some work for us?",
     "text_normalized": "Hey, you look like you know a thing or two about asteroid mining. How about you do some work for us?",
-    "engine": "f5",
+    "engine": "kokoro",
     "params": {
-      "seed": 0,
+      "sid": 15,
       "speed": 1.0
     },
-    "score_total": 0.8613916947250281,
+    "score_total": 0.7833333333333332,
     "score_components": {
       "duration_sanity": 1.0,
       "loudness_sanity": 1.0,
@@ -4689,20 +4716,23 @@
       "voicing_holes": 1.0,
       "repeat_fidelity": 1.0
     },
-    "ogg": "Elias_McIntire/4043aec85ed97c149d1d4b12ae01c8756c18be83fd2bad5027d91dbd59f773b4.ogg"
+    "ogg": "Elias_McIntire/4043aec85ed97c149d1d4b12ae01c8756c18be83fd2bad5027d91dbd59f773b4.ogg",
+    "voice": "kokoro:15",
+    "voice_name": "kokoro_am_liam_15",
+    "source": "alba-to-am_liam-fix"
   },
   "f53508b7158a70702695bb9ea751d269e1dc110823cd4fc976516065b66a4ac6": {
     "key": "f53508b7158a70702695bb9ea751d269e1dc110823cd4fc976516065b66a4ac6",
     "speaker": "Elias McIntire",
-    "reference": "en_GB_alba_scottish",
+    "reference": "kokoro:15",
     "text_raw": "Don't worry about it. We're conducting a survey of the area. You won't even have to go out of your way for it, just log the types and quantities of asteroid ore you collect.",
     "text_normalized": "Don't worry about it. We're conducting a survey of the area. You won't even have to go out of your way for it, just log the types and quantities of asteroid ore you collect.",
-    "engine": "f5",
+    "engine": "kokoro",
     "params": {
-      "seed": 0,
+      "sid": 15,
       "speed": 1.0
     },
-    "score_total": 1.0,
+    "score_total": 0.8458333333333333,
     "score_components": {
       "duration_sanity": 1.0,
       "loudness_sanity": 1.0,
@@ -4712,7 +4742,10 @@
       "voicing_holes": 1.0,
       "repeat_fidelity": 1.0
     },
-    "ogg": "Elias_McIntire/f53508b7158a70702695bb9ea751d269e1dc110823cd4fc976516065b66a4ac6.ogg"
+    "ogg": "Elias_McIntire/f53508b7158a70702695bb9ea751d269e1dc110823cd4fc976516065b66a4ac6.ogg",
+    "voice": "kokoro:15",
+    "voice_name": "kokoro_am_liam_15",
+    "source": "alba-to-am_liam-fix"
   },
   "24b3519fe99843e6c9fa453345cce742e5771a06290d942e0f7fde960f347d23": {
     "key": "24b3519fe99843e6c9fa453345cce742e5771a06290d942e0f7fde960f347d23",

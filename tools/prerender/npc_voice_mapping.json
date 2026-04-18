@@ -7,14 +7,13 @@
       "workable": "Kokoro has a related speaker — accent flavor is present but not canonical",
       "placeholder": "No direct match — using closest English baseline; flagged for external reference sourcing"
     },
-    "gaps_filled": {
-      "Scottish": "Piper en_GB-alba-medium (Elias McIntire) — works because Alba is English-language, Scottish-accented"
-    },
+    "gaps_filled": {},
     "gaps_open": {
       "Russian": "Keril + Mikhail Kolyatov — need Russian-accented ENGLISH (not Russian-language). Candidates: Mozilla Common Voice `accent='Russian'` samples, L2-ARCTIC is missing Russian but has adjacent Slavic options, or ElevenLabs paid voices tagged Russian.",
       "German": "Sergio Weisartz — need German-accented ENGLISH. Same sources.",
       "Nordic": "Olga Skarsgard — need Swedish/Norwegian-accented ENGLISH.",
-      "_note": "Piper voices tagged ru_RU / de_DE / sv_SE were wrongly assumed to speak English with accent; in reality they're single-language trained and produce unintelligible output when fed English text. Reverted these to English-native placeholders on 2026-04-18."
+      "_note": "Piper voices tagged ru_RU / de_DE / sv_SE were wrongly assumed to speak English with accent; in reality they're single-language trained and produce unintelligible output when fed English text. Reverted these to English-native placeholders on 2026-04-18.",
+      "Scottish": "Elias McIntire — need Scottish-accented MALE ENGLISH. Previously used Piper en_GB-alba-medium but verified 2026-04-19 that Alba is female despite the Scottish-Gaelic name meaning 'Scotland'. Candidates: Common Voice accent='Scottish' samples, ElevenLabs Scottish male voices."
     },
     "lessons_learned": "Automated scoring (F0 rise, loudness, duration) cannot detect phonetic unintelligibility — a Piper voice happily produces correct F0 contours while saying nonsense words. Always audibly verify new reference voices before locking them into the mapping."
   },
@@ -205,9 +204,10 @@
     },
     {
       "name": "Elias McIntire",
-      "reference": "en_GB_alba_scottish",
-      "fidelity": "strong",
-      "notes": "Piper en_GB-alba-medium — 'Alba' = Scottish Gaelic for Scotland. Authentic Scottish accent"
+      "reference": "kokoro:15",
+      "fidelity": "workable",
+      "notes": "am_liam — SWITCHED 2026-04-19: was en_GB-alba-medium (authentic Scottish) but Alba is a FEMALE voice and Elias is male. Lost Scottish accent, gained gender match. Kokoro has no Scottish speaker; using American male for now.",
+      "engine": "kokoro"
     },
     {
       "name": "Olga Skarsgard",
