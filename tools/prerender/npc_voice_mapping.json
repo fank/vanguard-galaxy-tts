@@ -1,0 +1,71 @@
+{
+  "_schema": {
+    "version": 1,
+    "purpose": "Per-NPC F5-TTS reference voice picks, sourced from Kokoro v1.0 speakers. Combines the descriptive profile (gender, age, accent hint) with what the engine can actually produce. References live in tools/prerender/references/<name>.wav + .txt.",
+    "fidelity_levels": {
+      "strong": "Kokoro has a speaker in the right language family — accent transfers authentically through F5",
+      "workable": "Kokoro has a related speaker — accent flavor is present but not canonical",
+      "placeholder": "No direct match — using closest English baseline; flagged for external reference sourcing"
+    },
+    "gaps": [
+      "Russian / Slavic (Kolyatov faction + Keril) — no Kokoro speaker",
+      "Scottish (Elias McIntire name hint) — no Kokoro speaker",
+      "Scandinavian/Nordic (Olga Skarsgard name hint) — no Kokoro speaker",
+      "German (Sergio Weisartz, mad scientist) — no Kokoro speaker"
+    ],
+    "future_work": "Gap-filling references could come from: LibriVox audiobooks in target accents, VCTK corpus (109 English speakers with accent labels), Common Voice, or ElevenLabs voice library (paid)."
+  },
+  "assignments": [
+    {"name": "ECHO",                "reference": "kokoro_bf_emma_21",     "fidelity": "strong", "notes": "Validated in v1.0.0 ECHO pack"},
+
+    {"name": "Greg",                "reference": "sid16_am_michael",      "fidelity": "strong", "notes": "American gruff outpost chief"},
+    {"name": "Elena",               "reference": "kokoro_af_jessica_4",   "fidelity": "strong", "notes": "Young American mechanic, warm"},
+    {"name": "Creed",               "reference": "sid33_hm_omega",        "fidelity": "workable", "notes": "Deep authoritative; Hindi M provides gravitas"},
+    {"name": "Virgil",              "reference": "sid25_bm_fable",        "fidelity": "strong", "notes": "British rogue — need to generate ref from bm_fable"},
+
+    {"name": "Unknown Contact",     "reference": "sid25_bm_fable",        "fidelity": "strong", "notes": "British RP mysterious villain; low pitch at play time"},
+    {"name": "Umbral",              "reference": "sid25_bm_fable",        "fidelity": "strong", "notes": "Same cold-handler persona"},
+    {"name": "Midas",               "reference": "sid24_bm_daniel",       "fidelity": "strong", "notes": "British pirate-gangster"},
+
+    {"name": "Arle",                "reference": "sid32_hf_beta",         "fidelity": "workable", "notes": "Female commander — Hindi F gives commanding non-Western flavor fitting Luminate Commander role"},
+    {"name": "Prison Guard",        "reference": "kokoro_af_sky_10",      "fidelity": "strong", "notes": "AI-portrait reuse — clean neutral female"},
+    {"name": "John Raythor",        "reference": "sid16_am_michael",      "fidelity": "strong", "notes": "American older captain, grandfatherly"},
+    {"name": "Keril",               "reference": "sid52_zm_yunyang",      "fidelity": "placeholder", "notes": "Kolyatov Conscript — no Russian in Kokoro; Mandarin male used as 'Eastern non-English' stand-in. NEEDS external Russian-accented ref."},
+    {"name": "Thundo Klipz",        "reference": "sid13_am_eric",         "fidelity": "strong", "notes": "American gritty salvager — need to add am_eric probe"},
+
+    {"name": "Adeline Lorentz",     "reference": "kokoro_bf_emma_21",     "fidelity": "strong", "notes": "British station commander (same voice fam as ECHO; different pitch should distinguish)"},
+    {"name": "Mick Flank",          "reference": "sid41_jm_kumo",         "fidelity": "strong", "notes": "Asian portrait, Japanese M matches"},
+    {"name": "James Fleddon",       "reference": "sid17_am_onyx",         "fidelity": "strong", "notes": "American deep-voiced smuggler (African-descent portrait)"},
+    {"name": "Claude",              "reference": "sid30_ff_siwis",        "fidelity": "strong", "notes": "French smuggler — ff_siwis is authentic French"},
+
+    {"name": "Stella Chion",        "reference": "sid40_jf_tebukuro",     "fidelity": "strong", "notes": "Japanese F — kimono portrait, soft"},
+
+    {"name": "Melloy",              "reference": "sid18_am_puck",         "fidelity": "strong", "notes": "American wisecracker — puck is lively"},
+
+    {"name": "Elias McIntire",      "reference": "sid24_bm_daniel",       "fidelity": "placeholder", "notes": "Scottish hint from McIntire name; no Scottish in Kokoro — British M stands in"},
+    {"name": "Olga Skarsgard",      "reference": "sid23_bf_lily",         "fidelity": "placeholder", "notes": "Nordic surname hint; no Scandinavian voice — British F with clipped tone as closest"},
+    {"name": "Alice Okono",         "reference": "sid31_hf_alpha",        "fidelity": "workable", "notes": "Young African-descent — Hindi F gives non-Western warmth"},
+    {"name": "Brandon Wallace",     "reference": "sid13_am_eric",         "fidelity": "strong", "notes": "American bearded forgemaster"},
+    {"name": "Oron",                "reference": "sid43_pm_alex",         "fidelity": "workable", "notes": "'Machine Shepherd' + dreads — Portuguese M for Caribbean/pan-African flavor"},
+    {"name": "Sergeant Ogolin",     "reference": "sid23_bf_lily",         "fidelity": "strong", "notes": "CORRECTED: portrait is female. British drill-sergeant clipped."},
+    {"name": "Margot Cash",         "reference": "kokoro_bf_emma_21",     "fidelity": "strong", "notes": "Posh British economist"},
+
+    {"name": "Etienne Briggs",      "reference": "sid30_ff_siwis",        "fidelity": "strong", "notes": "Etienne = French name; ff_siwis authentic French"},
+    {"name": "Amalia Rodriguez",    "reference": "sid28_ef_dora",         "fidelity": "strong", "notes": "Latina bounty hunter — Spanish F authentic"},
+    {"name": "Gabriel Ramos",       "reference": "sid29_em_alex",         "fidelity": "strong", "notes": "Latino security liaison — Spanish M"},
+    {"name": "Edar Thopter",        "reference": "sid22_bf_isabella",     "fidelity": "strong", "notes": "CORRECTED: portrait reads female. British trade director."},
+    {"name": "Sergio Weisartz",     "reference": "sid36_im_nicola",       "fidelity": "placeholder", "notes": "'Doctor?' German eccentric; no German in Kokoro — Italian M for Old-World mad-scientist flavor"},
+    {"name": "Brenda Diamond",      "reference": "sid06_af_nicole",       "fidelity": "strong", "notes": "Mature American HR officer — need af_nicole probe"},
+    {"name": "Anton Havel",         "reference": "sid17_am_onyx",         "fidelity": "strong", "notes": "Smooth sales pitch"},
+
+    {"name": "Cade Callahan",       "reference": "sid16_am_michael",      "fidelity": "strong", "notes": "Canisec Commander — American police-chief"},
+    {"name": "Victor Hale",         "reference": "sid17_am_onyx",         "fidelity": "strong", "notes": "Stellar exec villain — cold, calculating"},
+    {"name": "Mikhail Kolyatov",    "reference": "sid52_zm_yunyang",      "fidelity": "placeholder", "notes": "Russian High Commissar. No Russian in Kokoro; Mandarin male is closest non-Western male. NEEDS external Russian-accented ref for fidelity."},
+    {"name": "Triane Solis",        "reference": "sid31_hf_alpha",        "fidelity": "strong", "notes": "Mystical Luminate admin — Hindi F fits spiritual/pan-Asian aesthetic perfectly"},
+
+    {"name": "Waldo Everson",       "reference": "sid14_am_fenrir",       "fidelity": "strong", "notes": "American frontier miner"},
+    {"name": "Lynn Bree",           "reference": "kokoro_af_sky_10",      "fidelity": "strong", "notes": "Young bright salvage opportunist"},
+    {"name": "Horace the Red",      "reference": "sid24_bm_daniel",       "fidelity": "strong", "notes": "British pirate scout"},
+    {"name": "Mirthe Coman",        "reference": "kokoro_bf_emma_21",     "fidelity": "strong", "notes": "Elder British analyst"}
+  ]
+}

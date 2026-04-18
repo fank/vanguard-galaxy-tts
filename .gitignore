@@ -35,6 +35,10 @@ tools/voices/
 
 # Within the pipeline dir, exclude only data/cache subdirs
 tools/prerender/variants/
-tools/prerender/references/
+tools/prerender/accent_probes/
 tools/prerender/echo_tips.json
 **/__pycache__/
+
+# Track reference WAVs (needed for reproducible renders across machines)
+# but skip the F5 test outputs
+!tools/prerender/references/
