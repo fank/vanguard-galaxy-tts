@@ -66,13 +66,13 @@ deploy: build check-bepinex
 # Deploy the pre-rendered ECHO (and future) pack. OGG files + manifest go into
 # plugins/VGTTS/prerender/ which the C# PrerenderLookup reads on startup.
 deploy-prerender:
-	@if [ -d prerender/echo ]; then \
+	@if [ -f prerender/echo/manifest.json ]; then \
 		mkdir -p "$(PLUGIN_DIR)/VGTTS/prerender" ; \
-		cp -r prerender/echo/* "$(PLUGIN_DIR)/VGTTS/prerender/" ; \
+		cp prerender/echo/*.ogg prerender/echo/manifest.json "$(PLUGIN_DIR)/VGTTS/prerender/" ; \
 		count=$$(ls "$(PLUGIN_DIR)/VGTTS/prerender/"*.ogg 2>/dev/null | wc -l) ; \
 		echo "Deployed $$count prerendered OGGs to $(PLUGIN_DIR)/VGTTS/prerender/" ; \
 	else \
-		echo "No prerender/echo/ — skipping prerender deploy" ; \
+		echo "No prerender/echo/manifest.json — skipping prerender deploy" ; \
 	fi
 
 # Deploy the Piper bundle (piper.exe + voice models) if present.
