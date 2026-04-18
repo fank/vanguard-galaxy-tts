@@ -1,0 +1,70 @@
+[
+  {
+    "speaker": "Cade Callahan",
+    "template": "But whatever you choose, Captain {captain}... remember who's still trying to keep the peace around here."
+  },
+  {
+    "speaker": "Unknown Contact",
+    "template": "Captain {captain}, you took your time..."
+  },
+  {
+    "speaker": "John Raythor",
+    "template": "It's you! {captain}, right? We haven't properly met but I've seen your name on the mission manifest."
+  },
+  {
+    "speaker": "ECHO",
+    "template": "I present to you... Captain {captain}."
+  },
+  {
+    "speaker": "John Raythor",
+    "template": "{captain}, since my ship is a goner. Can I join your crew?"
+  },
+  {
+    "speaker": "John Raythor",
+    "template": "Keril, yes, thanks to {captain} here"
+  },
+  {
+    "speaker": "Mick Flank",
+    "template": "Oye, you Captain {captain}?"
+  },
+  {
+    "speaker": "Claude",
+    "template": "Captain {captain}, thank you!"
+  },
+  {
+    "speaker": "James Fleddon",
+    "template": "I am, {captain}... We have a shipment ready, but we fear the plans have been leaked to some pirates."
+  },
+  {
+    "speaker": "Unknown Contact",
+    "template": "Captain {captain}, the constructor fleet is about to be finished. Meet us at the location to be briefed on our next steps."
+  },
+  {
+    "speaker": "Stella Chion",
+    "template": "We meet again, {captain}."
+  },
+  {
+    "speaker": "Umbral",
+    "template": "So {captain}, it is time for us to establish a foothold from which we can grow, don't you think?"
+  },
+  {
+    "speaker": "Umbral",
+    "template": "Great job, Captain {captain}."
+  },
+  {
+    "speaker": "Stella Chion",
+    "template": "Captain {captain}, how are you?"
+  },
+  {
+    "speaker": "Stella Chion",
+    "template": "Captain {captain}."
+  },
+  {
+    "speaker": "ECHO",
+    "template": "Captain {captain}, respond!"
+  },
+  {
+    "speaker": "Greg",
+    "template": "No, {captain}... this is Ravon on the galaxy's edge."
+  }
+]

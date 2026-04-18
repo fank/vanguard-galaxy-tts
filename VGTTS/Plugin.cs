@@ -75,6 +75,7 @@ public class Plugin : BaseUnityPlugin
         _harmony = new Harmony(PluginGuid);
         _harmony.PatchAll(typeof(Patches.DialogueManagerPatches));
         _harmony.PatchAll(typeof(Patches.EchoRemarksPatches));
+        _harmony.PatchAll(typeof(Patches.CharactersPatches));
         Log.LogInfo($"{PluginName} v{PluginVersion} loaded ({_harmony.GetPatchedMethods().Count()} patches)");
     }
 

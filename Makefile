@@ -71,6 +71,9 @@ deploy-prerender:
 	@if [ -f prerender/manifest.json ]; then \
 		mkdir -p "$(PLUGIN_DIR)/VGTTS/prerender" ; \
 		cp prerender/manifest.json "$(PLUGIN_DIR)/VGTTS/prerender/" ; \
+		if [ -f prerender/captain_name_templates.json ]; then \
+			cp prerender/captain_name_templates.json "$(PLUGIN_DIR)/VGTTS/prerender/" ; \
+		fi ; \
 		for d in prerender/*/ ; do \
 			case "$$d" in prerender/variants/) continue ;; esac ; \
 			cp -r "$$d" "$(PLUGIN_DIR)/VGTTS/prerender/" ; \

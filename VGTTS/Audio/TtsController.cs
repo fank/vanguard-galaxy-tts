@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Threading;
+using System.Threading.Tasks;
 using Behaviour.AudioSystem;
 using Behaviour.Util;
 using Source.AudioSystem;
@@ -48,6 +49,23 @@ internal sealed class TtsController
         var cts = new CancellationTokenSource();
         _currentCts = cts;
         Plugin.Instance.StartCoroutine(SpeakCoroutine(speaker, text, cts.Token));
+    }
+
+    /// <summary>
+    /// Ensure the disk cache holds a synth of (text, voice-for-speaker) without
+    /// playing anything. Used by <see cref="CaptainNameCache"/> to pre-warm
+    /// name-substituted dialogue lines on a background task so the first
+    /// utterance in dialogue doesn't pay a synth penalty.
+    /// </summary>
+    public async Task<WarmResult> WarmCacheAsync(string speaker, string text, CancellationToken ct)
+    {
+        if (string.IsNullOrWhiteSpace(text)) return WarmResult.Skipped;
+        var synthText = TextNormalizer.ForTts(text);
+        var resolution = _voices.Resolve(speaker);
+        var path = _cache.PathFor(synthText, resolution.Voice);
+        if (_cache.Exists(path)) return WarmResult.AlreadyCached;
+        await _provider.SynthesizeAsync(synthText, resolution.Voice, path, ct).ConfigureAwait(false);
+        return WarmResult.Synthesized;
     }
 
     /// <summary>
