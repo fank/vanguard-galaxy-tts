@@ -23,7 +23,7 @@
     {"name": "_generic_salesman",   "reference": "sid18_am_puck",         "fidelity": "strong", "notes": "Procedural station merchants/salesmen. Cheerful American."},
     {"name": "_generic_crew",       "reference": "kokoro_af_sky_10",      "fidelity": "strong", "notes": "Random crew members offering their services. Friendly young American female."},
 
-    {"name": "ECHO",                "reference": "kokoro_bf_emma_21",     "fidelity": "strong", "notes": "Validated in v1.0.0 ECHO pack"},
+    {"name": "ECHO",                "reference": "kokoro:1",              "engine": "kokoro",   "fidelity": "strong", "notes": "af_aoede, Kokoro-direct. User rejected F5-cloned bf_emma in v1.0.0 for cloning fragments on repeated listening; aoede is smoother and fatigue-resistant."},
 
     {"name": "Greg",                "reference": "sid16_am_michael",      "fidelity": "strong", "notes": "American gruff outpost chief"},
     {"name": "Elena",               "reference": "kokoro_af_jessica_4",   "fidelity": "strong", "notes": "Young American mechanic, warm"},

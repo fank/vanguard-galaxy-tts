@@ -23,7 +23,7 @@ internal static class DefaultVoiceMap
         new Dictionary<string, (string, float)>
         {
             // Spotlight — hand-pinned
-            ["ECHO"]              = ("kokoro:21", 1.00f),  // bf_emma  — British female, validated
+            ["ECHO"]              = ("kokoro:1",  1.00f),  // af_aoede — smooth & fatigue-resistant (was kokoro:21 bf_emma, rejected for cloning fragments)
 
             // Starter zone
             ["Greg"]              = ("kokoro:25", 1.00f),  // bm_fable

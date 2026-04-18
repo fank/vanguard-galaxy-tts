@@ -23,6 +23,7 @@ import numpy as np
 sys.path.insert(0, str(Path(__file__).parent))
 sys.path.insert(0, str(Path(__file__).parent / "engines"))
 import f5_engine as f5
+import kokoro_engine as kokoro
 from score import score_wav
 
 ROOT   = Path("/home/fank/repo/vanguard-galaxy")
@@ -61,8 +62,11 @@ def main():
     args = ap.parse_args()
 
     mapping_data = json.loads(MAPPING.read_text())
-    refmap = {a["name"]: a["reference"] for a in mapping_data["assignments"]}
-    default_ref = refmap.get("captain", "kokoro_af_sky_10")
+    # Build per-speaker (reference, engine) so we can route kokoro:N to Kokoro-direct
+    # and named references to F5-TTS cloning (default).
+    voicemap = {a["name"]: (a["reference"], a.get("engine", "f5"))
+                for a in mapping_data["assignments"]}
+    default_voice = voicemap.get("captain", ("kokoro_af_sky_10", "f5"))
 
     manifest_path = PACK / "manifest.json"
     manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
@@ -80,32 +84,48 @@ def main():
           f"manifest has {len(manifest)} already)")
 
     for i, (key, speaker, text) in enumerate(rows):
-        ref = refmap.get(speaker, default_ref)
-        best = (0.0, None, None, None)
-        for seed in range(args.seeds):
+        ref, engine = voicemap.get(speaker, default_voice)
+
+        if engine == "kokoro":
+            # Kokoro-direct is deterministic per-SID — no seed search needed.
+            sid = ref.split(":", 1)[1] if ref.startswith("kokoro:") else ref
             try:
-                x, sr = f5.synth(text, ref, seed=seed)
+                x, sr = kokoro.synth(text, sid)
                 s = score_wav(x, sr, text)
-                if s.total > best[0]:
-                    best = (s.total, x, sr, seed)
+                best = (s.total, x, sr, 0)
             except Exception as e:
-                print(f"  seed {seed} failed: {e}")
-        if best[1] is None:
-            print(f"[{i+1}/{len(rows)}] {speaker}: ALL VARIANTS FAILED")
-            continue
+                print(f"[{i+1}/{len(rows)}] {speaker}: Kokoro synth failed: {e}")
+                continue
+        else:
+            # F5-TTS cloning — try N seeds, keep the best-scoring variant.
+            best = (0.0, None, None, None)
+            for seed in range(args.seeds):
+                try:
+                    x, sr = f5.synth(text, ref, seed=seed)
+                    s = score_wav(x, sr, text)
+                    if s.total > best[0]:
+                        best = (s.total, x, sr, seed)
+                except Exception as e:
+                    print(f"  seed {seed} failed: {e}")
+            if best[1] is None:
+                print(f"[{i+1}/{len(rows)}] {speaker}: ALL VARIANTS FAILED")
+                continue
+
         wav_path = VARDIR / f"{key}.wav"
         ogg_path = PACK / f"{key}.ogg"
         write_wav(wav_path, best[1], best[2])
         encode_ogg(wav_path, ogg_path)
+        params = {"sid": int(ref.split(":", 1)[1]), "speed": 1.0} if engine == "kokoro" \
+            else {"seed": best[3], "speed": 1.0}
         manifest[key] = {
             "key": key, "speaker": speaker, "reference": ref,
             "text_normalized": text, "text_raw": text,
-            "engine": "f5", "params": {"seed": best[3], "speed": 1.0},
+            "engine": engine, "params": params,
             "score_total": best[0],
             "ogg": f"{key}.ogg",
             "source": "delta-render",
         }
-        print(f"[{i+1}/{len(rows)}] {speaker:<25s} s={best[0]:.2f}  seed={best[3]}")
+        print(f"[{i+1}/{len(rows)}] {speaker:<25s} engine={engine} s={best[0]:.2f}")
         if (i + 1) % 20 == 0:
             manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
 
