@@ -17,10 +17,9 @@ public class Plugin : BaseUnityPlugin
 {
     public const string PluginGuid = "dev.fankserver.vgtts";
     public const string PluginName = "Vanguard Galaxy TTS";
-    // Unreleased Kokoro experiment — not yet committed. BepInEx parses PluginVersion
-    // through System.Version which rejects SemVer pre-release suffixes, so stick to
-    // the plain four-part form.
-    public const string PluginVersion = "0.9.0";
+    // BepInEx parses PluginVersion through System.Version which rejects SemVer
+    // pre-release suffixes, so stick to the plain N.N.N form.
+    public const string PluginVersion = "1.0.0";
 
     internal static Plugin Instance { get; private set; } = null!;
     internal static ManualLogSource Log { get; private set; } = null!;
