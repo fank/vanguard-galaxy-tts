@@ -19,7 +19,12 @@
     "lessons_learned": "Automated scoring (F0 rise, loudness, duration) cannot detect phonetic unintelligibility — a Piper voice happily produces correct F0 contours while saying nonsense words. Always audibly verify new reference voices before locking them into the mapping."
   },
   "assignments": [
-    {"name": "captain",             "reference": "sid14_am_fenrir",       "fidelity": "strong", "notes": "Player character — no portrait (it's the PC). Rugged American explorer voice fits the space-captain archetype. Users override via config to match their own captain's imagined voice."},
+    {"name": "captain_m1",          "reference": "kokoro:14",             "engine": "kokoro",   "fidelity": "strong", "notes": "am_fenrir — rugged American explorer. Default preset for male commanders."},
+    {"name": "captain_m2",          "reference": "kokoro:17",             "engine": "kokoro",   "fidelity": "strong", "notes": "am_onyx — deep, confident American."},
+    {"name": "captain_m3",          "reference": "kokoro:25",             "engine": "kokoro",   "fidelity": "strong", "notes": "bm_fable — British rogue/charismatic."},
+    {"name": "captain_f1",          "reference": "kokoro:0",              "engine": "kokoro",   "fidelity": "strong", "notes": "af_alloy — calm teacher. Default preset for female commanders."},
+    {"name": "captain_f2",          "reference": "kokoro:20",             "engine": "kokoro",   "fidelity": "strong", "notes": "bf_alice — British female."},
+    {"name": "captain_f3",          "reference": "kokoro:3",              "engine": "kokoro",   "fidelity": "strong", "notes": "af_heart — Kokoro's warm flagship voice."},
     {"name": "_generic_salesman",   "reference": "sid18_am_puck",         "fidelity": "strong", "notes": "Procedural station merchants/salesmen. Cheerful American."},
     {"name": "_generic_crew",       "reference": "kokoro_af_sky_10",      "fidelity": "strong", "notes": "Random crew members offering their services. Friendly young American female."},
 

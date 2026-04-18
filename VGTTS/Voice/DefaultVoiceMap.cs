@@ -25,6 +25,16 @@ internal static class DefaultVoiceMap
             // Spotlight — hand-pinned
             ["ECHO"]              = ("kokoro:1",  1.00f),  // af_aoede — smooth & fatigue-resistant (was kokoro:21 bf_emma, rejected for cloning fragments)
 
+            // Player captain — 6 presets, end-player picks via [Voice] CaptainPreset.
+            // DialogueManagerPatches detects line.character == Characters.captain and
+            // substitutes speaker = "captain_" + preset before Speak().
+            ["captain_m1"]        = ("kokoro:14", 1.00f),  // am_fenrir  — rugged American explorer (default for male)
+            ["captain_m2"]        = ("kokoro:17", 1.00f),  // am_onyx    — deep, confident
+            ["captain_m3"]        = ("kokoro:25", 1.00f),  // bm_fable   — British rogue
+            ["captain_f1"]        = ("kokoro:0",  1.00f),  // af_alloy   — calm teacher (default for female)
+            ["captain_f2"]        = ("kokoro:20", 1.00f),  // bf_alice   — British
+            ["captain_f3"]        = ("kokoro:3",  1.00f),  // af_heart   — warm flagship
+
             // Starter zone
             ["Greg"]              = ("kokoro:25", 1.00f),  // bm_fable
             ["Elena"]             = ("kokoro:3",  1.00f),  // af_heart

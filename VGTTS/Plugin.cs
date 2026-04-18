@@ -30,6 +30,7 @@ public class Plugin : BaseUnityPlugin
     internal ConfigEntry<string> CfgProvider = null!;
     internal ConfigEntry<string> CfgPiperDefaultVoice = null!;
     internal ConfigEntry<int> CfgKokoroDefaultSpeaker = null!;
+    internal ConfigEntry<string> CfgCaptainPreset = null!;
 
     private Harmony _harmony = null!;
 
@@ -53,6 +54,11 @@ public class Plugin : BaseUnityPlugin
             "'kokoro:' with no number. Voices prefixed 'kokoro:' use Kokoro " +
             "regardless of the [General] Provider setting — set 'Voices.ECHO = kokoro:23' " +
             "to route only that character to Kokoro.");
+        CfgCaptainPreset = Config.Bind("Voice", "CaptainPreset", "auto",
+            "Voice preset for the player captain. 'auto' picks m1 or f1 based on " +
+            "commander gender. Options: auto, m1 (am_fenrir rugged American), " +
+            "m2 (am_onyx deep), m3 (bm_fable British rogue), f1 (af_alloy calm), " +
+            "f2 (bf_alice British), f3 (af_heart warm flagship).");
 
         ITtsProvider primary = CreateProvider();
         ITtsProvider? kokoro = TryCreateKokoroProvider();

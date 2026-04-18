@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using Behaviour.Dialogues;
 using HarmonyLib;
+using Source.Crew;
 using Source.Dialogues;
+using Source.Player;
 using VGTTS.Audio;
 
 namespace VGTTS.Patches;
@@ -27,8 +29,8 @@ internal static class DialogueManagerPatches
             return;
 
         var line = ___dialogue[___currentLineIndex];
-        var speaker = line?.character?.name ?? "<unknown>";
         var text = line?.text ?? string.Empty;
+        var speaker = ResolveSpeakerName(line?.character);
 
         Plugin.Log.LogInfo($"[dialogue] {speaker}: \"{text}\"");
 
@@ -36,6 +38,30 @@ internal static class DialogueManagerPatches
             return;
 
         TtsController.Instance?.Speak(speaker, text);
+    }
+
+    /// <summary>
+    /// Map a dialogue character to the speaker name used for voice/prerender lookup.
+    /// The player captain's Character.name is the user's chosen callsign/firstName,
+    /// so we detect it by reference to <c>Characters.captain</c> and substitute one
+    /// of the six captain preset names so prerender + voice mapping can find it.
+    /// </summary>
+    private static string ResolveSpeakerName(Character? character)
+    {
+        if (character == null) return "<unknown>";
+        if (character == Characters.captain)
+            return "captain_" + ResolveCaptainPreset();
+        return character.name ?? "<unknown>";
+    }
+
+    private static string ResolveCaptainPreset()
+    {
+        var cfg = Plugin.Instance.CfgCaptainPreset.Value?.ToLowerInvariant() ?? "auto";
+        if (cfg is "m1" or "m2" or "m3" or "f1" or "f2" or "f3") return cfg;
+
+        // "auto" (or any invalid value) — pick by commander gender.
+        var isFemale = GamePlayer.current?.commander?.gender == Gender.Female;
+        return isFemale ? "f1" : "m1";
     }
 
     [HarmonyPrefix]
