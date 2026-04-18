@@ -1,7 +1,7 @@
 {
   "_schema": {
     "version": 1,
-    "purpose": "Per-NPC F5-TTS reference voice picks, sourced from Kokoro v1.0 speakers. Combines the descriptive profile (gender, age, accent hint) with what the engine can actually produce. References live in tools/prerender/references/<name>.wav + .txt.",
+    "purpose": "Per-NPC voice picks. 'engine' is 'kokoro' for direct-Kokoro speakers (matches runtime live-TTS exactly, deterministic) or 'f5' for voice-cloned non-English accents. English-Kokoro F5 refs were migrated to Kokoro-direct on 2026-04-18 — 56% of F5 usage was redundant since Kokoro has those voices natively.",
     "fidelity_levels": {
       "strong": "Kokoro has a speaker in the right language family — accent transfers authentically through F5",
       "workable": "Kokoro has a related speaker — accent flavor is present but not canonical",
@@ -12,72 +12,343 @@
     },
     "gaps_open": {
       "Russian": "Keril + Mikhail Kolyatov — need Russian-accented ENGLISH (not Russian-language). Candidates: Mozilla Common Voice `accent='Russian'` samples, L2-ARCTIC is missing Russian but has adjacent Slavic options, or ElevenLabs paid voices tagged Russian.",
-      "German":  "Sergio Weisartz — need German-accented ENGLISH. Same sources.",
-      "Nordic":  "Olga Skarsgard — need Swedish/Norwegian-accented ENGLISH.",
+      "German": "Sergio Weisartz — need German-accented ENGLISH. Same sources.",
+      "Nordic": "Olga Skarsgard — need Swedish/Norwegian-accented ENGLISH.",
       "_note": "Piper voices tagged ru_RU / de_DE / sv_SE were wrongly assumed to speak English with accent; in reality they're single-language trained and produce unintelligible output when fed English text. Reverted these to English-native placeholders on 2026-04-18."
     },
     "lessons_learned": "Automated scoring (F0 rise, loudness, duration) cannot detect phonetic unintelligibility — a Piper voice happily produces correct F0 contours while saying nonsense words. Always audibly verify new reference voices before locking them into the mapping."
   },
   "assignments": [
-    {"name": "captain_m1",          "reference": "kokoro:14",             "engine": "kokoro",   "fidelity": "strong", "notes": "am_fenrir — rugged American explorer. Default preset for male commanders."},
-    {"name": "captain_m2",          "reference": "kokoro:17",             "engine": "kokoro",   "fidelity": "strong", "notes": "am_onyx — deep, confident American."},
-    {"name": "captain_m3",          "reference": "kokoro:25",             "engine": "kokoro",   "fidelity": "strong", "notes": "bm_fable — British rogue/charismatic."},
-    {"name": "captain_f1",          "reference": "kokoro:0",              "engine": "kokoro",   "fidelity": "strong", "notes": "af_alloy — calm teacher. Default preset for female commanders."},
-    {"name": "captain_f2",          "reference": "kokoro:20",             "engine": "kokoro",   "fidelity": "strong", "notes": "bf_alice — British female."},
-    {"name": "captain_f3",          "reference": "kokoro:3",              "engine": "kokoro",   "fidelity": "strong", "notes": "af_heart — Kokoro's warm flagship voice."},
-    {"name": "_generic_salesman",   "reference": "sid18_am_puck",         "fidelity": "strong", "notes": "Procedural station merchants/salesmen. Cheerful American."},
-    {"name": "_generic_crew",       "reference": "kokoro_af_sky_10",      "fidelity": "strong", "notes": "Random crew members offering their services. Friendly young American female."},
-
-    {"name": "ECHO",                "reference": "kokoro:1",              "engine": "kokoro",   "fidelity": "strong", "notes": "af_aoede, Kokoro-direct. User rejected F5-cloned bf_emma in v1.0.0 for cloning fragments on repeated listening; aoede is smoother and fatigue-resistant."},
-
-    {"name": "Greg",                "reference": "sid16_am_michael",      "fidelity": "strong", "notes": "American gruff outpost chief"},
-    {"name": "Elena",               "reference": "kokoro_af_jessica_4",   "fidelity": "strong", "notes": "Young American mechanic, warm"},
-    {"name": "Creed",               "reference": "sid33_hm_omega",        "fidelity": "workable", "notes": "Deep authoritative; Hindi M provides gravitas"},
-    {"name": "Virgil",              "reference": "sid25_bm_fable",        "fidelity": "strong", "notes": "British rogue — need to generate ref from bm_fable"},
-
-    {"name": "Unknown Contact",     "reference": "sid25_bm_fable",        "fidelity": "strong", "notes": "British RP mysterious villain; low pitch at play time"},
-    {"name": "Umbral",              "reference": "sid25_bm_fable",        "fidelity": "strong", "notes": "Same cold-handler persona"},
-    {"name": "Midas",               "reference": "sid24_bm_daniel",       "fidelity": "strong", "notes": "British pirate-gangster"},
-
-    {"name": "Arle",                "reference": "sid32_hf_beta",         "fidelity": "workable", "notes": "Female commander — Hindi F gives commanding non-Western flavor fitting Luminate Commander role"},
-    {"name": "Prison Guard",        "reference": "kokoro_af_sky_10",      "fidelity": "strong", "notes": "AI-portrait reuse — clean neutral female"},
-    {"name": "John Raythor",        "reference": "sid16_am_michael",      "fidelity": "strong", "notes": "American older captain, grandfatherly"},
-    {"name": "Keril",               "reference": "sid16_am_michael",      "fidelity": "placeholder", "notes": "Kolyatov Conscript — ACCENT GAP: Piper ru_RU is Russian-language-only and produces unintelligible English. Using generic American M until we source Russian-accented English audio (Common Voice / L2-ARCTIC / ElevenLabs)."},
-    {"name": "Thundo Klipz",        "reference": "sid13_am_eric",         "fidelity": "strong", "notes": "American gritty salvager — need to add am_eric probe"},
-
-    {"name": "Adeline Lorentz",     "reference": "kokoro_bf_emma_21",     "fidelity": "strong", "notes": "British station commander (same voice fam as ECHO; different pitch should distinguish)"},
-    {"name": "Mick Flank",          "reference": "sid41_jm_kumo",         "fidelity": "strong", "notes": "Asian portrait, Japanese M matches"},
-    {"name": "James Fleddon",       "reference": "sid17_am_onyx",         "fidelity": "strong", "notes": "American deep-voiced smuggler (African-descent portrait)"},
-    {"name": "Claude",              "reference": "sid30_ff_siwis",        "fidelity": "strong", "notes": "French smuggler — ff_siwis is authentic French"},
-
-    {"name": "Stella Chion",        "reference": "sid40_jf_tebukuro",     "fidelity": "strong", "notes": "Japanese F — kimono portrait, soft"},
-
-    {"name": "Melloy",              "reference": "sid18_am_puck",         "fidelity": "strong", "notes": "American wisecracker — puck is lively"},
-
-    {"name": "Elias McIntire",      "reference": "en_GB_alba_scottish",   "fidelity": "strong", "notes": "Piper en_GB-alba-medium — 'Alba' = Scottish Gaelic for Scotland. Authentic Scottish accent"},
-    {"name": "Olga Skarsgard",      "reference": "sid23_bf_lily",         "fidelity": "placeholder", "notes": "ACCENT GAP: Piper sv_SE is Swedish-language-only. Using crisp British F (clipped military tone fits the Combat Veteran role) until we source Swedish-accented English."},
-    {"name": "Alice Okono",         "reference": "sid31_hf_alpha",        "fidelity": "workable", "notes": "Young African-descent — Hindi F gives non-Western warmth"},
-    {"name": "Brandon Wallace",     "reference": "sid13_am_eric",         "fidelity": "strong", "notes": "American bearded forgemaster"},
-    {"name": "Oron",                "reference": "sid43_pm_alex",         "fidelity": "workable", "notes": "'Machine Shepherd' + dreads — Portuguese M for Caribbean/pan-African flavor"},
-    {"name": "Sergeant Ogolin",     "reference": "sid23_bf_lily",         "fidelity": "strong", "notes": "CORRECTED: portrait is female. British drill-sergeant clipped."},
-    {"name": "Margot Cash",         "reference": "kokoro_bf_emma_21",     "fidelity": "strong", "notes": "Posh British economist"},
-
-    {"name": "Etienne Briggs",      "reference": "sid30_ff_siwis",        "fidelity": "strong", "notes": "Etienne = French name; ff_siwis authentic French"},
-    {"name": "Amalia Rodriguez",    "reference": "sid28_ef_dora",         "fidelity": "strong", "notes": "Latina bounty hunter — Spanish F authentic"},
-    {"name": "Gabriel Ramos",       "reference": "sid29_em_alex",         "fidelity": "strong", "notes": "Latino security liaison — Spanish M"},
-    {"name": "Edar Thopter",        "reference": "sid22_bf_isabella",     "fidelity": "strong", "notes": "CORRECTED: portrait reads female. British trade director."},
-    {"name": "Sergio Weisartz",     "reference": "sid18_am_puck",         "fidelity": "placeholder", "notes": "ACCENT GAP: Piper de_DE is German-language-only and catastrophically unintelligible in English. Using lively American M (captures the 'quirky doctor' energy, loses the German accent) until we source German-accented English."},
-    {"name": "Brenda Diamond",      "reference": "sid06_af_nicole",       "fidelity": "strong", "notes": "Mature American HR officer — need af_nicole probe"},
-    {"name": "Anton Havel",         "reference": "sid17_am_onyx",         "fidelity": "strong", "notes": "Smooth sales pitch"},
-
-    {"name": "Cade Callahan",       "reference": "sid16_am_michael",      "fidelity": "strong", "notes": "Canisec Commander — American police-chief"},
-    {"name": "Victor Hale",         "reference": "sid17_am_onyx",         "fidelity": "strong", "notes": "Stellar exec villain — cold, calculating"},
-    {"name": "Mikhail Kolyatov",    "reference": "sid17_am_onyx",         "fidelity": "placeholder", "notes": "ACCENT GAP: Piper ru_RU is Russian-language-only. Using deep American M for cold-commissar feel until we source Russian-accented English."},
-    {"name": "Triane Solis",        "reference": "sid31_hf_alpha",        "fidelity": "strong", "notes": "Mystical Luminate admin — Hindi F fits spiritual/pan-Asian aesthetic perfectly"},
-
-    {"name": "Waldo Everson",       "reference": "sid14_am_fenrir",       "fidelity": "strong", "notes": "American frontier miner"},
-    {"name": "Lynn Bree",           "reference": "kokoro_af_sky_10",      "fidelity": "strong", "notes": "Young bright salvage opportunist"},
-    {"name": "Horace the Red",      "reference": "sid24_bm_daniel",       "fidelity": "strong", "notes": "British pirate scout"},
-    {"name": "Mirthe Coman",        "reference": "kokoro_bf_emma_21",     "fidelity": "strong", "notes": "Elder British analyst"}
+    {
+      "name": "captain_m1",
+      "reference": "kokoro:14",
+      "engine": "kokoro",
+      "fidelity": "strong",
+      "notes": "am_fenrir — rugged American explorer. Default preset for male commanders."
+    },
+    {
+      "name": "captain_m2",
+      "reference": "kokoro:17",
+      "engine": "kokoro",
+      "fidelity": "strong",
+      "notes": "am_onyx — deep, confident American."
+    },
+    {
+      "name": "captain_m3",
+      "reference": "kokoro:25",
+      "engine": "kokoro",
+      "fidelity": "strong",
+      "notes": "bm_fable — British rogue/charismatic."
+    },
+    {
+      "name": "captain_f1",
+      "reference": "kokoro:0",
+      "engine": "kokoro",
+      "fidelity": "strong",
+      "notes": "af_alloy — calm teacher. Default preset for female commanders."
+    },
+    {
+      "name": "captain_f2",
+      "reference": "kokoro:20",
+      "engine": "kokoro",
+      "fidelity": "strong",
+      "notes": "bf_alice — British female."
+    },
+    {
+      "name": "captain_f3",
+      "reference": "kokoro:3",
+      "engine": "kokoro",
+      "fidelity": "strong",
+      "notes": "af_heart — Kokoro's warm flagship voice."
+    },
+    {
+      "name": "_generic_salesman",
+      "reference": "kokoro:18",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid18_am_puck: Procedural station merchants/salesmen. Cheerful American.",
+      "engine": "kokoro"
+    },
+    {
+      "name": "_generic_crew",
+      "reference": "kokoro:10",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+kokoro_af_sky_10: Random crew members offering their services. Friendly young American female.",
+      "engine": "kokoro"
+    },
+    {
+      "name": "ECHO",
+      "reference": "kokoro:1",
+      "engine": "kokoro",
+      "fidelity": "strong",
+      "notes": "af_aoede, Kokoro-direct. User rejected F5-cloned bf_emma in v1.0.0 for cloning fragments on repeated listening; aoede is smoother and fatigue-resistant."
+    },
+    {
+      "name": "Greg",
+      "reference": "kokoro:16",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid16_am_michael: American gruff outpost chief",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Elena",
+      "reference": "kokoro:4",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+kokoro_af_jessica_4: Young American mechanic, warm",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Creed",
+      "reference": "sid33_hm_omega",
+      "fidelity": "workable",
+      "notes": "Deep authoritative; Hindi M provides gravitas"
+    },
+    {
+      "name": "Virgil",
+      "reference": "kokoro:25",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid25_bm_fable: British rogue — need to generate ref from bm_fable",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Unknown Contact",
+      "reference": "kokoro:25",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid25_bm_fable: British RP mysterious villain; low pitch at play time",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Umbral",
+      "reference": "kokoro:25",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid25_bm_fable: Same cold-handler persona",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Midas",
+      "reference": "kokoro:24",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid24_bm_daniel: British pirate-gangster",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Arle",
+      "reference": "sid32_hf_beta",
+      "fidelity": "workable",
+      "notes": "Female commander — Hindi F gives commanding non-Western flavor fitting Luminate Commander role"
+    },
+    {
+      "name": "Prison Guard",
+      "reference": "kokoro:10",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+kokoro_af_sky_10: AI-portrait reuse — clean neutral female",
+      "engine": "kokoro"
+    },
+    {
+      "name": "John Raythor",
+      "reference": "kokoro:16",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid16_am_michael: American older captain, grandfatherly",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Keril",
+      "reference": "kokoro:16",
+      "fidelity": "placeholder",
+      "notes": "MIGRATED from F5+sid16_am_michael: Kolyatov Conscript — ACCENT GAP: Piper ru_RU is Russian-language-only and produces unintelligible English. Using generic American M until we source Russian-accented English audio (Common Voice / L2-ARCTIC / ElevenLabs).",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Thundo Klipz",
+      "reference": "kokoro:13",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid13_am_eric: American gritty salvager — need to add am_eric probe",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Adeline Lorentz",
+      "reference": "kokoro:21",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+kokoro_bf_emma_21: British station commander (same voice fam as ECHO; different pitch should distinguish)",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Mick Flank",
+      "reference": "sid41_jm_kumo",
+      "fidelity": "strong",
+      "notes": "Asian portrait, Japanese M matches"
+    },
+    {
+      "name": "James Fleddon",
+      "reference": "kokoro:17",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid17_am_onyx: American deep-voiced smuggler (African-descent portrait)",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Claude",
+      "reference": "sid30_ff_siwis",
+      "fidelity": "strong",
+      "notes": "French smuggler — ff_siwis is authentic French"
+    },
+    {
+      "name": "Stella Chion",
+      "reference": "sid40_jf_tebukuro",
+      "fidelity": "strong",
+      "notes": "Japanese F — kimono portrait, soft"
+    },
+    {
+      "name": "Melloy",
+      "reference": "kokoro:18",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid18_am_puck: American wisecracker — puck is lively",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Elias McIntire",
+      "reference": "en_GB_alba_scottish",
+      "fidelity": "strong",
+      "notes": "Piper en_GB-alba-medium — 'Alba' = Scottish Gaelic for Scotland. Authentic Scottish accent"
+    },
+    {
+      "name": "Olga Skarsgard",
+      "reference": "kokoro:23",
+      "fidelity": "placeholder",
+      "notes": "MIGRATED from F5+sid23_bf_lily: ACCENT GAP: Piper sv_SE is Swedish-language-only. Using crisp British F (clipped military tone fits the Combat Veteran role) until we source Swedish-accented English.",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Alice Okono",
+      "reference": "sid31_hf_alpha",
+      "fidelity": "workable",
+      "notes": "Young African-descent — Hindi F gives non-Western warmth"
+    },
+    {
+      "name": "Brandon Wallace",
+      "reference": "kokoro:13",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid13_am_eric: American bearded forgemaster",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Oron",
+      "reference": "sid43_pm_alex",
+      "fidelity": "workable",
+      "notes": "'Machine Shepherd' + dreads — Portuguese M for Caribbean/pan-African flavor"
+    },
+    {
+      "name": "Sergeant Ogolin",
+      "reference": "kokoro:23",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid23_bf_lily: CORRECTED: portrait is female. British drill-sergeant clipped.",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Margot Cash",
+      "reference": "kokoro:21",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+kokoro_bf_emma_21: Posh British economist",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Etienne Briggs",
+      "reference": "sid30_ff_siwis",
+      "fidelity": "strong",
+      "notes": "Etienne = French name; ff_siwis authentic French"
+    },
+    {
+      "name": "Amalia Rodriguez",
+      "reference": "sid28_ef_dora",
+      "fidelity": "strong",
+      "notes": "Latina bounty hunter — Spanish F authentic"
+    },
+    {
+      "name": "Gabriel Ramos",
+      "reference": "sid29_em_alex",
+      "fidelity": "strong",
+      "notes": "Latino security liaison — Spanish M"
+    },
+    {
+      "name": "Edar Thopter",
+      "reference": "kokoro:22",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid22_bf_isabella: CORRECTED: portrait reads female. British trade director.",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Sergio Weisartz",
+      "reference": "kokoro:18",
+      "fidelity": "placeholder",
+      "notes": "MIGRATED from F5+sid18_am_puck: ACCENT GAP: Piper de_DE is German-language-only and catastrophically unintelligible in English. Using lively American M (captures the 'quirky doctor' energy, loses the German accent) until we source German-accented English.",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Brenda Diamond",
+      "reference": "kokoro:6",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid06_af_nicole: Mature American HR officer — need af_nicole probe",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Anton Havel",
+      "reference": "kokoro:17",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid17_am_onyx: Smooth sales pitch",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Cade Callahan",
+      "reference": "kokoro:16",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid16_am_michael: Canisec Commander — American police-chief",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Victor Hale",
+      "reference": "kokoro:17",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid17_am_onyx: Stellar exec villain — cold, calculating",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Mikhail Kolyatov",
+      "reference": "kokoro:17",
+      "fidelity": "placeholder",
+      "notes": "MIGRATED from F5+sid17_am_onyx: ACCENT GAP: Piper ru_RU is Russian-language-only. Using deep American M for cold-commissar feel until we source Russian-accented English.",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Triane Solis",
+      "reference": "sid31_hf_alpha",
+      "fidelity": "strong",
+      "notes": "Mystical Luminate admin — Hindi F fits spiritual/pan-Asian aesthetic perfectly"
+    },
+    {
+      "name": "Waldo Everson",
+      "reference": "kokoro:14",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid14_am_fenrir: American frontier miner",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Lynn Bree",
+      "reference": "kokoro:10",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+kokoro_af_sky_10: Young bright salvage opportunist",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Horace the Red",
+      "reference": "kokoro:24",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+sid24_bm_daniel: British pirate scout",
+      "engine": "kokoro"
+    },
+    {
+      "name": "Mirthe Coman",
+      "reference": "kokoro:21",
+      "fidelity": "strong",
+      "notes": "MIGRATED from F5+kokoro_bf_emma_21: Elder British analyst",
+      "engine": "kokoro"
+    }
   ]
 }
