@@ -16,16 +16,19 @@ cache/
 *.ogg
 *.mp3
 
-# Pre-rendering pipeline: large artifacts — track code, ship audio as release asset
+# Pre-render output (shipped as GitHub release asset, not in git)
 /prerender/
-/tools/prerender/variants/
-/tools/prerender/references/
-/tools/prerender/echo_tips.json
-**/__pycache__/
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Bundled TTS tools (large binaries; re-downloadable via make)
+# Bundled TTS tools — large binaries, re-downloadable via `make download-*`
 tools/
+# ...but DO track the Python pre-render pipeline under tools/
+!tools/prerender/
+# Within the pipeline dir, exclude only data/cache subdirs
+tools/prerender/variants/
+tools/prerender/references/
+tools/prerender/echo_tips.json
+**/__pycache__/
