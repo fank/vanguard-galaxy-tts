@@ -1,0 +1,355 @@
+{
+  "_schema": {
+    "version": 1,
+    "description": "NPC voice-preference profile combining in-game descriptions + visual portrait inspection. Used by future render phase to pick an appropriate F5-TTS reference voice per character. Inspections are impressions, not facts — users should override via config if they disagree.",
+    "fields": {
+      "name":        "Character.name as it appears in DialogueLine.character.name",
+      "portrait":    "Resources/Sprites/NPC/<portrait>.png asset key",
+      "description": "In-game description field verbatim",
+      "gender":      "Visual cue: M / F / N (neutral/AI/ambiguous)",
+      "age":         "Visual cue: young (18-29) / adult (30-45) / mature (46-60) / old (60+) / ageless",
+      "ethnicity_hint": "Visual impression — not canonical",
+      "accent_hint": "Suggested accent based on name etymology + visual cues",
+      "style":       "Delivery style hints: formal / casual / gruff / corporate / military / mystical / eccentric",
+      "role_tags":   "Tags from description + inferred role"
+    }
+  },
+  "npcs": [
+    {
+      "name": "ECHO", "portrait": "AI",
+      "description": "Your personal AI - Experimental Command & Helmsman Operator",
+      "gender": "F", "age": "ageless", "ethnicity_hint": "stylized cyberpunk",
+      "accent_hint": "British (current bf_emma works)",
+      "style": "AI, friendly, slightly quirky",
+      "role_tags": ["AI", "ship companion"]
+    },
+    {
+      "name": "Greg", "portrait": "Greg",
+      "description": "Outpost Chief",
+      "gender": "M", "age": "mature", "ethnicity_hint": "white, weathered",
+      "accent_hint": "American (rough, frontier)",
+      "style": "gruff, no-nonsense, outpost boss",
+      "role_tags": ["outpost", "frontier"]
+    },
+    {
+      "name": "Elena", "portrait": "Elena",
+      "description": "Mechanic",
+      "gender": "F", "age": "young", "ethnicity_hint": "white/Hispanic, brown hair",
+      "accent_hint": "American casual",
+      "style": "warm, friendly, enthusiastic",
+      "role_tags": ["mechanic", "starter"]
+    },
+    {
+      "name": "Creed", "portrait": "Creed",
+      "description": "Station Commander",
+      "gender": "M", "age": "adult", "ethnicity_hint": "African descent",
+      "accent_hint": "deep American or British-accented authoritative",
+      "style": "authoritative, stoic",
+      "role_tags": ["commander", "station"]
+    },
+    {
+      "name": "Virgil", "portrait": "Virgil",
+      "description": "Outpost Chief?",
+      "gender": "M", "age": "adult", "ethnicity_hint": "white",
+      "accent_hint": "American rogue / shady",
+      "style": "sly, evasive — '?' in description suggests shifty persona",
+      "role_tags": ["shady", "outpost"]
+    },
+    {
+      "name": "Unknown Contact", "portrait": "Umbral",
+      "description": "Your mysterious employer",
+      "gender": "M", "age": "adult", "ethnicity_hint": "obscured (silhouette, green tint)",
+      "accent_hint": "British RP (classic mystery villain)",
+      "style": "cold, calculated, whispery",
+      "role_tags": ["mystery", "Umbral"]
+    },
+    {
+      "name": "Umbral", "portrait": "Umbral",
+      "description": "Umbral Reach Contact",
+      "gender": "M", "age": "adult", "ethnicity_hint": "obscured silhouette",
+      "accent_hint": "British RP villain",
+      "style": "controlled, cold",
+      "role_tags": ["Umbral", "handler"]
+    },
+    {
+      "name": "Arle", "portrait": "M2Luminate",
+      "description": "Luminate Commander",
+      "gender": "F", "age": "adult", "ethnicity_hint": "African/South Asian",
+      "accent_hint": "polished, officer-like (could be British or American)",
+      "style": "commanding, disciplined",
+      "role_tags": ["Luminate", "commander"]
+    },
+    {
+      "name": "Prison Guard", "portrait": "AI",
+      "description": "Prison Guard",
+      "gender": "N", "age": "ageless", "ethnicity_hint": "AI portrait reuse",
+      "accent_hint": "neutral synthesized / robotic",
+      "style": "flat, procedural",
+      "role_tags": ["AI", "guard"]
+    },
+    {
+      "name": "John Raythor", "portrait": "M2Captain",
+      "description": "Industrial",
+      "gender": "M", "age": "old", "ethnicity_hint": "white, silver hair, weathered",
+      "accent_hint": "American grandfatherly / old-captain gravelly",
+      "style": "seasoned, steady, commanding",
+      "role_tags": ["veteran", "captain"]
+    },
+    {
+      "name": "Keril", "portrait": "M3Kolyatov",
+      "description": "Kolyatov Conscript",
+      "gender": "M", "age": "young", "ethnicity_hint": "white, Slavic cues",
+      "accent_hint": "Eastern European / Russian-tinged English",
+      "style": "formal, reluctant, tense",
+      "role_tags": ["Kolyatov", "conscript"]
+    },
+    {
+      "name": "Thundo Klipz", "portrait": "M3SteelVulture",
+      "description": "Steel Vulture Salvager",
+      "gender": "M", "age": "adult", "ethnicity_hint": "white, scruffy",
+      "accent_hint": "American gritty, drifter",
+      "style": "rough, opportunistic",
+      "role_tags": ["Steel Vultures", "salvage"]
+    },
+    {
+      "name": "Adeline Lorentz", "portrait": "M4Stellar",
+      "description": "Station Commander",
+      "gender": "F", "age": "mature", "ethnicity_hint": "white, silver hair",
+      "accent_hint": "British, formal",
+      "style": "refined, commanding, crisp",
+      "role_tags": ["Stellar", "commander"]
+    },
+    {
+      "name": "Mick Flank", "portrait": "M5SteelVulture",
+      "description": "Salvager",
+      "gender": "M", "age": "young", "ethnicity_hint": "East Asian",
+      "accent_hint": "American casual (possibly accented)",
+      "style": "tired, pragmatic",
+      "role_tags": ["Steel Vultures", "salvage"]
+    },
+    {
+      "name": "James Fleddon", "portrait": "M6Smuggler",
+      "description": "Smuggler",
+      "gender": "M", "age": "adult", "ethnicity_hint": "African descent",
+      "accent_hint": "American street-smart",
+      "style": "sly, pragmatic",
+      "role_tags": ["smuggler"]
+    },
+    {
+      "name": "Claude", "portrait": "M7Smuggler",
+      "description": "Smuggler",
+      "gender": "M", "age": "adult", "ethnicity_hint": "white European",
+      "accent_hint": "light French or pan-European",
+      "style": "suave, cunning",
+      "role_tags": ["smuggler"]
+    },
+    {
+      "name": "Stella Chion", "portrait": "MP1Stellar",
+      "description": "Stellar Manager",
+      "gender": "F", "age": "young", "ethnicity_hint": "East Asian (kimono)",
+      "accent_hint": "American-trained Japanese-inflected",
+      "style": "polished, graceful",
+      "role_tags": ["Stellar", "manager", "also-spymaster"]
+    },
+    {
+      "name": "Stella Chion", "portrait": "MP1StellarSpymaster",
+      "description": "Umbral Reach Spymaster",
+      "gender": "F", "age": "young", "ethnicity_hint": "East Asian, formal suit + shades",
+      "accent_hint": "same as Stellar persona but colder",
+      "style": "clipped, professional, spy-agent",
+      "role_tags": ["Umbral", "spy", "persona-switch"]
+    },
+    {
+      "name": "Midas", "portrait": "M8Smuggler",
+      "description": "Darkspace Smuggler",
+      "gender": "M", "age": "mature", "ethnicity_hint": "white, long hair, battle-scarred",
+      "accent_hint": "British-rogue / gravelly",
+      "style": "gruff, menacing",
+      "role_tags": ["Darkspace", "pirate"]
+    },
+    {
+      "name": "Melloy", "portrait": "M8Smuggler",
+      "description": "Funny Guy",
+      "gender": "M", "age": "mature", "ethnicity_hint": "same portrait as Midas",
+      "accent_hint": "American wisecracker (offset character from Midas)",
+      "style": "sarcastic, humorous",
+      "role_tags": ["comic-relief"]
+    },
+    {
+      "name": "Elias McIntire", "portrait": "SkilltreeMining",
+      "description": "Mining Specialist",
+      "gender": "M", "age": "adult", "ethnicity_hint": "white",
+      "accent_hint": "Scottish (McIntire) or rough American working-class",
+      "style": "practical, earnest",
+      "role_tags": ["mining", "instructor"]
+    },
+    {
+      "name": "Olga Skarsgard", "portrait": "SkilltreeCombat",
+      "description": "Combat Veteran",
+      "gender": "F", "age": "adult", "ethnicity_hint": "white, red hair (Nordic cues)",
+      "accent_hint": "Scandinavian-tinged English",
+      "style": "tough, clipped, veteran",
+      "role_tags": ["combat", "instructor", "Nordic"]
+    },
+    {
+      "name": "Alice Okono", "portrait": "SkilltreeSalvage",
+      "description": "Scrapper",
+      "gender": "F", "age": "young", "ethnicity_hint": "African descent",
+      "accent_hint": "American / pan-African warm",
+      "style": "bright, curious",
+      "role_tags": ["salvage", "instructor"]
+    },
+    {
+      "name": "Brandon Wallace", "portrait": "SkilltreeIndustrial",
+      "description": "Forgemaster",
+      "gender": "M", "age": "adult", "ethnicity_hint": "white, full beard",
+      "accent_hint": "American blue-collar / possibly Irish",
+      "style": "steady, craftsman",
+      "role_tags": ["industrial", "instructor"]
+    },
+    {
+      "name": "Oron", "portrait": "SkilltreeDrones",
+      "description": "Machine Shepherd",
+      "gender": "M", "age": "adult", "ethnicity_hint": "African descent, long dreadlocks",
+      "accent_hint": "Caribbean-tinged or African English",
+      "style": "mystical / laid-back tech-guru",
+      "role_tags": ["drones", "instructor", "spiritual-tech"]
+    },
+    {
+      "name": "Sergeant Ogolin", "portrait": "SkilltreeDefense",
+      "description": "Defense Specialist",
+      "gender": "F", "age": "young", "ethnicity_hint": "white, pixie cut",
+      "accent_hint": "crisp American or British military",
+      "style": "drill-sergeant discipline",
+      "role_tags": ["defense", "instructor", "military", "GENDER_CORRECTION_F"]
+    },
+    {
+      "name": "Margot Cash", "portrait": "SkilltreeEconomy",
+      "description": "Veteran Economist",
+      "gender": "F", "age": "adult", "ethnicity_hint": "white, long hair, polished",
+      "accent_hint": "British posh / trans-Atlantic business",
+      "style": "worldly, pragmatic",
+      "role_tags": ["economy", "instructor", "business"]
+    },
+    {
+      "name": "Etienne Briggs", "portrait": "PatrolGiver",
+      "description": "Canisec Secretary",
+      "gender": "M", "age": "adult", "ethnicity_hint": "African descent",
+      "accent_hint": "French-tinged English (Etienne) or standard professional",
+      "style": "formal, clipped",
+      "role_tags": ["Canisec", "patrol-giver"]
+    },
+    {
+      "name": "Amalia Rodriguez", "portrait": "BountyGiver",
+      "description": "Bounty Hunter",
+      "gender": "F", "age": "adult", "ethnicity_hint": "Latina, tanned, green-tinted hair",
+      "accent_hint": "Latin American English",
+      "style": "tough, direct",
+      "role_tags": ["bounty", "hunter"]
+    },
+    {
+      "name": "Gabriel Ramos", "portrait": "ConquestStart",
+      "description": "Security Liaison",
+      "gender": "M", "age": "adult", "ethnicity_hint": "Latino",
+      "accent_hint": "Latin American English, formal",
+      "style": "formal, official",
+      "role_tags": ["Canisec", "security"]
+    },
+    {
+      "name": "Edar Thopter", "portrait": "TradeMission",
+      "description": "Trade Director",
+      "gender": "F", "age": "adult", "ethnicity_hint": "androgynous corporate (portrait reads female)",
+      "accent_hint": "business-British or neutral corporate",
+      "style": "polished, transactional",
+      "role_tags": ["trade", "director", "GENDER_CORRECTION_F_from_M_in_prior_map"]
+    },
+    {
+      "name": "Sergio Weisartz", "portrait": "SkillsDoctor",
+      "description": "Doctor?",
+      "gender": "M", "age": "adult", "ethnicity_hint": "white, wild hair",
+      "accent_hint": "German-accented or eccentric Central-European",
+      "style": "mad-scientist, manic, questionable",
+      "role_tags": ["doctor", "eccentric"]
+    },
+    {
+      "name": "Brenda Diamond", "portrait": "MercWoman",
+      "description": "Satisfaction Officer",
+      "gender": "F", "age": "mature", "ethnicity_hint": "white, silver curly hair",
+      "accent_hint": "warm American middle-aged",
+      "style": "chipper, corporate HR",
+      "role_tags": ["mercenary", "corporate"]
+    },
+    {
+      "name": "Anton Havel", "portrait": "MercMan",
+      "description": "Omnitac Sales Agent",
+      "gender": "M", "age": "adult", "ethnicity_hint": "white, slick corporate",
+      "accent_hint": "smooth American salesman",
+      "style": "unctuous, polished sales pitch",
+      "role_tags": ["mercenary", "corporate", "sales"]
+    },
+    {
+      "name": "Cade Callahan", "portrait": "ConquestCanisec",
+      "description": "Canisec Commander",
+      "gender": "M", "age": "mature", "ethnicity_hint": "white, grizzled, blue police uniform",
+      "accent_hint": "American chief-of-police gruff",
+      "style": "hardened authority",
+      "role_tags": ["Canisec", "commander"]
+    },
+    {
+      "name": "Victor Hale", "portrait": "ConquestStellar",
+      "description": "Chief Conquest Officer",
+      "gender": "M", "age": "adult", "ethnicity_hint": "white, bald, suit",
+      "accent_hint": "clean trans-Atlantic corporate / cold",
+      "style": "smooth, calculating, executive villain",
+      "role_tags": ["Stellar", "conquest-commander"]
+    },
+    {
+      "name": "Mikhail Kolyatov", "portrait": "ConquestKolyatov",
+      "description": "High Commissar",
+      "gender": "M", "age": "adult", "ethnicity_hint": "white, Slavic, scarred",
+      "accent_hint": "strong Russian-accented English",
+      "style": "harsh, authoritarian, ideological",
+      "role_tags": ["Kolyatov", "conquest-commander"]
+    },
+    {
+      "name": "Triane Solis", "portrait": "ConquestLuminate",
+      "description": "Sector Admin",
+      "gender": "F", "age": "ageless", "ethnicity_hint": "dark-skinned, ornate headdress, ethereal",
+      "accent_hint": "calm mystical / Indian or pan-spiritual",
+      "style": "serene, cult-leader, mystical",
+      "role_tags": ["Luminate", "conquest-commander", "mystical"]
+    },
+    {
+      "name": "Waldo Everson", "portrait": "ToConquestMining",
+      "description": "Frontier Operations",
+      "gender": "M", "age": "adult", "ethnicity_hint": "white, bearded",
+      "accent_hint": "American frontier / Australian outback",
+      "style": "rugged, practical",
+      "role_tags": ["mining", "frontier"]
+    },
+    {
+      "name": "Lynn Bree", "portrait": "ToConquestSalvage",
+      "description": "Salvage Opportunist",
+      "gender": "F", "age": "young", "ethnicity_hint": "androgynous, green goggles",
+      "accent_hint": "American youthful casual",
+      "style": "chipper, bright, scheming",
+      "role_tags": ["salvage", "opportunist"]
+    },
+    {
+      "name": "Horace the Red", "portrait": "ToConquestMarauders",
+      "description": "Corsair Scout",
+      "gender": "M", "age": "mature", "ethnicity_hint": "white, red-tinged grey, battle-worn",
+      "accent_hint": "British pirate or rough sailor",
+      "style": "gravelly, swaggering",
+      "role_tags": ["pirate", "corsair"]
+    },
+    {
+      "name": "Mirthe Coman", "portrait": "ToConquestStranded",
+      "description": "Opportunity Analyst",
+      "gender": "F", "age": "old", "ethnicity_hint": "white, silver short hair, visor",
+      "accent_hint": "British / European elder analyst",
+      "style": "dry, sharp, calculating",
+      "role_tags": ["analyst", "stranded"]
+    }
+  ]
+}
