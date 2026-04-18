@@ -47844,5 +47844,575 @@
     "source": "f5-to-kokoro-migration",
     "voice": "kokoro:4",
     "voice_name": "kokoro_sid4"
+  },
+  "cc7cfcc3f404f72bed1e925130fca13095efd1ec0560d524ce7e6f21e730c470": {
+    "key": "cc7cfcc3f404f72bed1e925130fca13095efd1ec0560d524ce7e6f21e730c470",
+    "speaker": "captain_m1",
+    "text_normalized": "I, hello there. Claude of the Void Drifters send me.",
+    "text_raw": "I... hello there. Claude of the Void Drifters send me.",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "ogg": "captain_m1/cc7cfcc3f404f72bed1e925130fca13095efd1ec0560d524ce7e6f21e730c470.ogg",
+    "source": "concat-delta"
+  },
+  "c74540944fab0a669f0cca2dd49667dd6ed60b7610230326410cd84e14fdf23c": {
+    "key": "c74540944fab0a669f0cca2dd49667dd6ed60b7610230326410cd84e14fdf23c",
+    "speaker": "captain_m1",
+    "text_normalized": "You're not with the Void Drifters anymore?",
+    "text_raw": "You're not with the Void Drifters anymore?",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.75,
+    "ogg": "captain_m1/c74540944fab0a669f0cca2dd49667dd6ed60b7610230326410cd84e14fdf23c.ogg",
+    "source": "concat-delta"
+  },
+  "b8ba4add0aa0e366d800aed400a751119bcd9a499ae24662fbdeaa831b5152c9": {
+    "key": "b8ba4add0aa0e366d800aed400a751119bcd9a499ae24662fbdeaa831b5152c9",
+    "speaker": "captain_m2",
+    "text_normalized": "I, hello there. Claude of the Void Drifters send me.",
+    "text_raw": "I... hello there. Claude of the Void Drifters send me.",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m2/b8ba4add0aa0e366d800aed400a751119bcd9a499ae24662fbdeaa831b5152c9.ogg",
+    "source": "concat-delta"
+  },
+  "aeb2421cc8d31b26e03fdba3de8d51c0d5815733687ce81ec96c690b33cdb2f7": {
+    "key": "aeb2421cc8d31b26e03fdba3de8d51c0d5815733687ce81ec96c690b33cdb2f7",
+    "speaker": "captain_m2",
+    "text_normalized": "You're not with the Void Drifters anymore?",
+    "text_raw": "You're not with the Void Drifters anymore?",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.95,
+    "ogg": "captain_m2/aeb2421cc8d31b26e03fdba3de8d51c0d5815733687ce81ec96c690b33cdb2f7.ogg",
+    "source": "concat-delta"
+  },
+  "2bcf760e07ddc15ba6896843d8f46bc68ce78c11ad9ae2483b621bb367fa090f": {
+    "key": "2bcf760e07ddc15ba6896843d8f46bc68ce78c11ad9ae2483b621bb367fa090f",
+    "speaker": "captain_m3",
+    "text_normalized": "I, hello there. Claude of the Void Drifters send me.",
+    "text_raw": "I... hello there. Claude of the Void Drifters send me.",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8861111111111111,
+    "ogg": "captain_m3/2bcf760e07ddc15ba6896843d8f46bc68ce78c11ad9ae2483b621bb367fa090f.ogg",
+    "source": "concat-delta"
+  },
+  "849f7e3744f567cd78b07f49c46543ba406e2fc2dc279842aa42ba07a2cef8da": {
+    "key": "849f7e3744f567cd78b07f49c46543ba406e2fc2dc279842aa42ba07a2cef8da",
+    "speaker": "captain_m3",
+    "text_normalized": "You're not with the Void Drifters anymore?",
+    "text_raw": "You're not with the Void Drifters anymore?",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8861111111111111,
+    "ogg": "captain_m3/849f7e3744f567cd78b07f49c46543ba406e2fc2dc279842aa42ba07a2cef8da.ogg",
+    "source": "concat-delta"
+  },
+  "aee5a07258fcfa6da13afaebd92a911e3bb6c5465d4bb861ea2e39bd22cf9f40": {
+    "key": "aee5a07258fcfa6da13afaebd92a911e3bb6c5465d4bb861ea2e39bd22cf9f40",
+    "speaker": "captain_f1",
+    "text_normalized": "I, hello there. Claude of the Void Drifters send me.",
+    "text_raw": "I... hello there. Claude of the Void Drifters send me.",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.95,
+    "ogg": "captain_f1/aee5a07258fcfa6da13afaebd92a911e3bb6c5465d4bb861ea2e39bd22cf9f40.ogg",
+    "source": "concat-delta"
+  },
+  "160aecee4fc5a5c63d27db414e5a8f378e7855e85f3d85597e044f387ed782b7": {
+    "key": "160aecee4fc5a5c63d27db414e5a8f378e7855e85f3d85597e044f387ed782b7",
+    "speaker": "captain_f1",
+    "text_normalized": "You're not with the Void Drifters anymore?",
+    "text_raw": "You're not with the Void Drifters anymore?",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7416666666666666,
+    "ogg": "captain_f1/160aecee4fc5a5c63d27db414e5a8f378e7855e85f3d85597e044f387ed782b7.ogg",
+    "source": "concat-delta"
+  },
+  "6d10feeead7427e36b7a29fc1713888c173d12979fc6189a2c701de4f8f50183": {
+    "key": "6d10feeead7427e36b7a29fc1713888c173d12979fc6189a2c701de4f8f50183",
+    "speaker": "captain_f2",
+    "text_normalized": "I, hello there. Claude of the Void Drifters send me.",
+    "text_raw": "I... hello there. Claude of the Void Drifters send me.",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "ogg": "captain_f2/6d10feeead7427e36b7a29fc1713888c173d12979fc6189a2c701de4f8f50183.ogg",
+    "source": "concat-delta"
+  },
+  "a7777a0aaf7ddadc195a4ef87aa22aa0c497a28df19153d38627929ee5f277e5": {
+    "key": "a7777a0aaf7ddadc195a4ef87aa22aa0c497a28df19153d38627929ee5f277e5",
+    "speaker": "captain_f2",
+    "text_normalized": "You're not with the Void Drifters anymore?",
+    "text_raw": "You're not with the Void Drifters anymore?",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.7916666666666666,
+    "ogg": "captain_f2/a7777a0aaf7ddadc195a4ef87aa22aa0c497a28df19153d38627929ee5f277e5.ogg",
+    "source": "concat-delta"
+  },
+  "ac1fd7c7929759b410e769c4248b920105e9ae97450e40b052c762532fbdfa3a": {
+    "key": "ac1fd7c7929759b410e769c4248b920105e9ae97450e40b052c762532fbdfa3a",
+    "speaker": "captain_f3",
+    "text_normalized": "I, hello there. Claude of the Void Drifters send me.",
+    "text_raw": "I... hello there. Claude of the Void Drifters send me.",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.95,
+    "ogg": "captain_f3/ac1fd7c7929759b410e769c4248b920105e9ae97450e40b052c762532fbdfa3a.ogg",
+    "source": "concat-delta"
+  },
+  "88044ed7db07a44a52d262c603f409e4b6d5e6d5f9e91ab565e21948d909e7e5": {
+    "key": "88044ed7db07a44a52d262c603f409e4b6d5e6d5f9e91ab565e21948d909e7e5",
+    "speaker": "captain_f3",
+    "text_normalized": "You're not with the Void Drifters anymore?",
+    "text_raw": "You're not with the Void Drifters anymore?",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.7,
+    "ogg": "captain_f3/88044ed7db07a44a52d262c603f409e4b6d5e6d5f9e91ab565e21948d909e7e5.ogg",
+    "source": "concat-delta"
+  },
+  "0089407281ded8862425ce083a138aef3c8bef071dc6f9406e569d9f544b06a3": {
+    "key": "0089407281ded8862425ce083a138aef3c8bef071dc6f9406e569d9f544b06a3",
+    "speaker": "Triane Solis",
+    "reference": "sid31_hf_alpha",
+    "text_normalized": "For now, as a new initiate, can you gather 10 fleet strength for the Luminate Combine?",
+    "text_raw": "For now, as a new initiate, can you gather 10 fleet strength for the Luminate Combine?",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7916666666666666,
+    "ogg": "Triane_Solis/0089407281ded8862425ce083a138aef3c8bef071dc6f9406e569d9f544b06a3.ogg",
+    "source": "concat-delta"
+  },
+  "7b32c87034d2e68f341f2767f379c733abf44e30901abb19cd91bd3f54aaacdf": {
+    "key": "7b32c87034d2e68f341f2767f379c733abf44e30901abb19cd91bd3f54aaacdf",
+    "speaker": "Unknown Contact",
+    "reference": "kokoro:25",
+    "text_normalized": "One of your expedition members has been captured by the Luminate Combine.",
+    "text_raw": "One of your expedition members has been captured by the Luminate Combine.",
+    "engine": "kokoro",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8861111111111111,
+    "ogg": "Unknown_Contact/7b32c87034d2e68f341f2767f379c733abf44e30901abb19cd91bd3f54aaacdf.ogg",
+    "source": "concat-delta"
+  },
+  "d599ef302ff866342ac044bae3b28e861d33dbc6b93277662c58ba50f85efed2": {
+    "key": "d599ef302ff866342ac044bae3b28e861d33dbc6b93277662c58ba50f85efed2",
+    "speaker": "Unknown Contact",
+    "reference": "kokoro:25",
+    "text_normalized": "The location of the Command Cortex.",
+    "text_raw": "The location of the Command Cortex.",
+    "engine": "kokoro",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "Unknown_Contact/d599ef302ff866342ac044bae3b28e861d33dbc6b93277662c58ba50f85efed2.ogg",
+    "source": "concat-delta"
+  },
+  "15b99b521f3928a0f0ab376c18720027ccfb3ba2441915f29f5656c13b87c26b": {
+    "key": "15b99b521f3928a0f0ab376c18720027ccfb3ba2441915f29f5656c13b87c26b",
+    "speaker": "Arle",
+    "reference": "sid32_hf_beta",
+    "text_normalized": "I'm Arle of the Luminate Combine.",
+    "text_raw": "I'm Arle of the Luminate Combine.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "ogg": "Arle/15b99b521f3928a0f0ab376c18720027ccfb3ba2441915f29f5656c13b87c26b.ogg",
+    "source": "concat-delta"
+  },
+  "65f6976fae2f3c08ca486935a94aaac66ed469d79eac87f04baff95c95dd97b1": {
+    "key": "65f6976fae2f3c08ca486935a94aaac66ed469d79eac87f04baff95c95dd97b1",
+    "speaker": "ECHO",
+    "reference": "kokoro:1",
+    "text_normalized": ". Or we could improve relations with the Luminate Combine, they will release him as a favor.",
+    "text_raw": "... Or we could improve relations with the Luminate Combine, they will release him as a favor.",
+    "engine": "kokoro",
+    "params": {
+      "sid": 1,
+      "speed": 1.0
+    },
+    "score_total": 0.7916666666666666,
+    "ogg": "ECHO/65f6976fae2f3c08ca486935a94aaac66ed469d79eac87f04baff95c95dd97b1.ogg",
+    "source": "concat-delta"
+  },
+  "8cd99feb41df98bfd932abf360a298d283824677ba59cbdd1a190790bd8d9901": {
+    "key": "8cd99feb41df98bfd932abf360a298d283824677ba59cbdd1a190790bd8d9901",
+    "speaker": "John Raythor",
+    "reference": "kokoro:16",
+    "text_normalized": "We were making our way back to the rally point, but got intercepted by the Luminate Combine.",
+    "text_raw": "We were making our way back to the rally point, but got intercepted by the Luminate Combine.",
+    "engine": "kokoro",
+    "params": {
+      "sid": 16,
+      "speed": 1.0
+    },
+    "score_total": 0.8447714983429269,
+    "ogg": "John_Raythor/8cd99feb41df98bfd932abf360a298d283824677ba59cbdd1a190790bd8d9901.ogg",
+    "source": "concat-delta"
+  },
+  "dc2339996784b21e5e36431c49272ef97463bc55fcf6da14a6564c84e8a02ae8": {
+    "key": "dc2339996784b21e5e36431c49272ef97463bc55fcf6da14a6564c84e8a02ae8",
+    "speaker": "John Raythor",
+    "reference": "kokoro:16",
+    "text_normalized": "Keril's ship is carrying the Command Cortex, so we prioritized his escape.",
+    "text_raw": "Keril's ship is carrying the Command Cortex, so we prioritized his escape.",
+    "engine": "kokoro",
+    "params": {
+      "sid": 16,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "John_Raythor/dc2339996784b21e5e36431c49272ef97463bc55fcf6da14a6564c84e8a02ae8.ogg",
+    "source": "concat-delta"
+  },
+  "a2c4c6eaee27948c24b76eade4d43724a44685db48e0d8251ba0af981efc6d58": {
+    "key": "a2c4c6eaee27948c24b76eade4d43724a44685db48e0d8251ba0af981efc6d58",
+    "speaker": "John Raythor",
+    "reference": "kokoro:16",
+    "text_normalized": "Captain, be careful, these are Steel Vultures.",
+    "text_raw": "Captain, be careful... these are Steel Vultures.",
+    "engine": "kokoro",
+    "params": {
+      "sid": 16,
+      "speed": 1.0
+    },
+    "score_total": 0.8597222222222222,
+    "ogg": "John_Raythor/a2c4c6eaee27948c24b76eade4d43724a44685db48e0d8251ba0af981efc6d58.ogg",
+    "source": "concat-delta"
+  },
+  "6342fa646eb1b570e7d03ef9dad5e87b3361cf4acf926ee59a7e79e2d536c563": {
+    "key": "6342fa646eb1b570e7d03ef9dad5e87b3361cf4acf926ee59a7e79e2d536c563",
+    "speaker": "Thundo Klipz",
+    "reference": "kokoro:13",
+    "text_normalized": "I reckon he went to a Kolyatov Collective station.",
+    "text_raw": "I reckon he went to a Kolyatov Collective station.",
+    "engine": "kokoro",
+    "params": {
+      "sid": 13,
+      "speed": 1.0
+    },
+    "score_total": 0.9375,
+    "ogg": "Thundo_Klipz/6342fa646eb1b570e7d03ef9dad5e87b3361cf4acf926ee59a7e79e2d536c563.ogg",
+    "source": "concat-delta"
+  },
+  "51f41a05ea094e8eda2df7590cf265e7b9b2473078933b0ad12f2cc5b269bdb3": {
+    "key": "51f41a05ea094e8eda2df7590cf265e7b9b2473078933b0ad12f2cc5b269bdb3",
+    "speaker": "John Raythor",
+    "reference": "kokoro:16",
+    "text_normalized": "I see you are wearing Kolyatov Collective colors.",
+    "text_raw": "I see you are wearing Kolyatov Collective colors.",
+    "engine": "kokoro",
+    "params": {
+      "sid": 16,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "John_Raythor/51f41a05ea094e8eda2df7590cf265e7b9b2473078933b0ad12f2cc5b269bdb3.ogg",
+    "source": "concat-delta"
+  },
+  "a069093b82699592bc4c5af776de7b54f04350151e1a8b7413cc694461d73555": {
+    "key": "a069093b82699592bc4c5af776de7b54f04350151e1a8b7413cc694461d73555",
+    "speaker": "Keril",
+    "reference": "kokoro:16",
+    "text_normalized": "I felt obligated to join, seeing as they took me in after I almost got scrapped alive by the Steel Vultures",
+    "text_raw": "I felt obligated to join, seeing as they took me in after I almost got scrapped alive by the Steel Vultures",
+    "engine": "kokoro",
+    "params": {
+      "sid": 16,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "Keril/a069093b82699592bc4c5af776de7b54f04350151e1a8b7413cc694461d73555.ogg",
+    "source": "concat-delta"
+  },
+  "abbe126f87a1e3ef7c10727f3b12fd9c3bfd21a0419cf63974035ddac3f6605b": {
+    "key": "abbe126f87a1e3ef7c10727f3b12fd9c3bfd21a0419cf63974035ddac3f6605b",
+    "speaker": "Keril",
+    "reference": "kokoro:16",
+    "text_normalized": "You know of the Computer? I, could not retrieve it, I suspect the Steel Vultures have it.",
+    "text_raw": "You know of the Computer? I... could not retrieve it, I suspect the Steel Vultures have it.",
+    "engine": "kokoro",
+    "params": {
+      "sid": 16,
+      "speed": 1.0
+    },
+    "score_total": 0.8597222222222222,
+    "ogg": "Keril/abbe126f87a1e3ef7c10727f3b12fd9c3bfd21a0419cf63974035ddac3f6605b.ogg",
+    "source": "concat-delta"
+  },
+  "28f633d123964a8cde15f8b44f6b4c3ee0c41a48518d40cc14839a18f6e3fc89": {
+    "key": "28f633d123964a8cde15f8b44f6b4c3ee0c41a48518d40cc14839a18f6e3fc89",
+    "speaker": "John Raythor",
+    "reference": "kokoro:16",
+    "text_normalized": "Captain, we could try and go to the Steel Vultures and see if we can strike a deal without bloodshed?",
+    "text_raw": "Captain, we could try and go to the Steel Vultures and see if we can strike a deal without bloodshed?",
+    "engine": "kokoro",
+    "params": {
+      "sid": 16,
+      "speed": 1.0
+    },
+    "score_total": 0.7416666666666666,
+    "ogg": "John_Raythor/28f633d123964a8cde15f8b44f6b4c3ee0c41a48518d40cc14839a18f6e3fc89.ogg",
+    "source": "concat-delta"
+  },
+  "cdf843704732c4721242cb78f06ee3d46792e3b035f029a4343cc8770f26dd7c": {
+    "key": "cdf843704732c4721242cb78f06ee3d46792e3b035f029a4343cc8770f26dd7c",
+    "speaker": "Unknown Contact",
+    "reference": "kokoro:25",
+    "text_normalized": "There aren't many operational, so our best bet is to get the schematics from Stellar Industries.",
+    "text_raw": "There aren't many operational, so our best bet is to get the schematics from Stellar Industries.",
+    "engine": "kokoro",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "Unknown_Contact/cdf843704732c4721242cb78f06ee3d46792e3b035f029a4343cc8770f26dd7c.ogg",
+    "source": "concat-delta"
+  },
+  "0c95932f9618884f91c4a0468024a3def0f020154be8ed6bda7e961064c73c7e": {
+    "key": "0c95932f9618884f91c4a0468024a3def0f020154be8ed6bda7e961064c73c7e",
+    "speaker": "Unknown Contact",
+    "reference": "kokoro:25",
+    "text_normalized": "There is a secluded system owned by the Steel Vultures. I'm in the process of striking a deal with them. Gain access to their system and start salvaging.",
+    "text_raw": "There is a secluded system owned by the Steel Vultures. I'm in the process of striking a deal with them. Gain access to their system and start salvaging.",
+    "engine": "kokoro",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "Unknown_Contact/0c95932f9618884f91c4a0468024a3def0f020154be8ed6bda7e961064c73c7e.ogg",
+    "source": "concat-delta"
+  },
+  "b9f74035c2edd6022b30f63c2a5cc6819f0c4a9e71b2063f01c70ea523638809": {
+    "key": "b9f74035c2edd6022b30f63c2a5cc6819f0c4a9e71b2063f01c70ea523638809",
+    "speaker": "James Fleddon",
+    "reference": "kokoro:17",
+    "text_normalized": "I'm James Fleddon, you could call me a member of the Void Drifters.",
+    "text_raw": "I'm James Fleddon, you could call me a member of the Void Drifters.",
+    "engine": "kokoro",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.8805555555555555,
+    "ogg": "James_Fleddon/b9f74035c2edd6022b30f63c2a5cc6819f0c4a9e71b2063f01c70ea523638809.ogg",
+    "source": "concat-delta"
+  },
+  "7d260c3650a81774b556707ada941dc2394725aba973293244dc4ddc7950938d": {
+    "key": "7d260c3650a81774b556707ada941dc2394725aba973293244dc4ddc7950938d",
+    "speaker": "Claude",
+    "reference": "sid30_ff_siwis",
+    "text_normalized": "We have a Stellar Industries spy who needs help.",
+    "text_raw": "We have a Stellar Industries spy who needs help.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "ogg": "Claude/7d260c3650a81774b556707ada941dc2394725aba973293244dc4ddc7950938d.ogg",
+    "source": "concat-delta"
+  },
+  "e69db61bf6d7ded17d955991653db54b4076e069ac1694a52d949f2ce84102ae": {
+    "key": "e69db61bf6d7ded17d955991653db54b4076e069ac1694a52d949f2ce84102ae",
+    "speaker": "Stella Chion",
+    "reference": "sid40_jf_tebukuro",
+    "text_normalized": "Sure, you brought some construction materials for Stellar Industries I see, with some wares stuck in between.",
+    "text_raw": "Sure, you brought some construction materials for Stellar Industries I see, with some wares stuck in between...",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.748611111111111,
+    "ogg": "Stella_Chion/e69db61bf6d7ded17d955991653db54b4076e069ac1694a52d949f2ce84102ae.ogg",
+    "source": "concat-delta"
+  },
+  "bdf9e82af6e086ba6e1013c02cfc6f23ffbfc95705ea1faee08f7d590f6994ee": {
+    "key": "bdf9e82af6e086ba6e1013c02cfc6f23ffbfc95705ea1faee08f7d590f6994ee",
+    "speaker": "Stella Chion",
+    "reference": "sid40_jf_tebukuro",
+    "text_normalized": "Stellar Industries and the other major factions are constructing a new jumpgate into the Darkspace.",
+    "text_raw": "Stellar Industries and the other major factions are constructing a new jumpgate into the Darkspace.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8958333333333333,
+    "ogg": "Stella_Chion/bdf9e82af6e086ba6e1013c02cfc6f23ffbfc95705ea1faee08f7d590f6994ee.ogg",
+    "source": "concat-delta"
+  },
+  "bc1c1e6de2563b4b069033678524b1425b40059b2a40821d07025276c033492a": {
+    "key": "bc1c1e6de2563b4b069033678524b1425b40059b2a40821d07025276c033492a",
+    "speaker": "Stella Chion",
+    "reference": "sid40_jf_tebukuro",
+    "text_normalized": "It got destroyed by the Darkspace Compact. They don't need that gate, they discovered or created wormholes to enter these sectors.",
+    "text_raw": "It got destroyed by the Darkspace Compact. They don't need that gate, they discovered or created wormholes to enter these sectors.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "ogg": "Stella_Chion/bc1c1e6de2563b4b069033678524b1425b40059b2a40821d07025276c033492a.ogg",
+    "source": "concat-delta"
+  },
+  "7ed50fd8c1525022ef6d9f01fd3797239d729a14f97b7c730e687525ad4f6e60": {
+    "key": "7ed50fd8c1525022ef6d9f01fd3797239d729a14f97b7c730e687525ad4f6e60",
+    "speaker": "Claude",
+    "reference": "sid30_ff_siwis",
+    "text_normalized": "Stella Chion will have told you about the Darkspace Compact, correct?",
+    "text_raw": "Stella Chion will have told you about the Darkspace Compact, correct?",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "ogg": "Claude/7ed50fd8c1525022ef6d9f01fd3797239d729a14f97b7c730e687525ad4f6e60.ogg",
+    "source": "concat-delta"
+  },
+  "10d902194297f5ea65224276b43f550adea402e6d43117520d29acec87cb1915": {
+    "key": "10d902194297f5ea65224276b43f550adea402e6d43117520d29acec87cb1915",
+    "speaker": "Midas",
+    "reference": "kokoro:24",
+    "text_normalized": "Incoming ship, this is Midas of the Darkspace Compact.",
+    "text_raw": "Incoming ship, this is Midas of the Darkspace Compact.",
+    "engine": "kokoro",
+    "params": {
+      "sid": 24,
+      "speed": 1.0
+    },
+    "score_total": 0.8597222222222222,
+    "ogg": "Midas/10d902194297f5ea65224276b43f550adea402e6d43117520d29acec87cb1915.ogg",
+    "source": "concat-delta"
+  },
+  "38944550755ce205694fa90b98a955bd07c3b18fc267e015650c9aa2b2bd2dd8": {
+    "key": "38944550755ce205694fa90b98a955bd07c3b18fc267e015650c9aa2b2bd2dd8",
+    "speaker": "Umbral",
+    "reference": "kokoro:25",
+    "text_normalized": "So. Remember that Command Cortex you got back from the Steel Vultures?",
+    "text_raw": "So... Remember that Command Cortex you got back from the Steel Vultures?",
+    "engine": "kokoro",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "Umbral/38944550755ce205694fa90b98a955bd07c3b18fc267e015650c9aa2b2bd2dd8.ogg",
+    "source": "concat-delta"
+  },
+  "55b34cd8c67e3efffab9e9c9a8dd77326839db68351f82653b752ae80e1a51ad": {
+    "key": "55b34cd8c67e3efffab9e9c9a8dd77326839db68351f82653b752ae80e1a51ad",
+    "speaker": "Umbral",
+    "reference": "kokoro:25",
+    "text_normalized": "No hostilities should arise from this, Stellar Industries won't know it immediatly.",
+    "text_raw": "No hostilities should arise from this, Stellar Industries won't know it immediatly.",
+    "engine": "kokoro",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8555555555555555,
+    "ogg": "Umbral/55b34cd8c67e3efffab9e9c9a8dd77326839db68351f82653b752ae80e1a51ad.ogg",
+    "source": "concat-delta"
+  },
+  "39e3c28872ec4b87ae8c94d2840fca20328b7103a354f30b45daa628a9894d7c": {
+    "key": "39e3c28872ec4b87ae8c94d2840fca20328b7103a354f30b45daa628a9894d7c",
+    "speaker": "Stella Chion",
+    "reference": "sid40_jf_tebukuro",
+    "text_normalized": "They've already switched allegiances, seeing as Your Employer pays quite a bit more.",
+    "text_raw": "They've already switched allegiances, seeing as Your Employer pays quite a bit more.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "ogg": "Stella_Chion/39e3c28872ec4b87ae8c94d2840fca20328b7103a354f30b45daa628a9894d7c.ogg",
+    "source": "concat-delta"
+  },
+  "e69f5cac8a92b3fdfdb7b3ddb48422140ab903c43b32bf86b56c717a793f05ed": {
+    "key": "e69f5cac8a92b3fdfdb7b3ddb48422140ab903c43b32bf86b56c717a793f05ed",
+    "speaker": "ECHO",
+    "reference": "kokoro:1",
+    "text_normalized": "It would also be helpful if you learn Automated Negotiations in the Autopilot skilltree. It will let me negotiate better rewards whenever I carry out missions.",
+    "text_raw": "It would also be helpful if you learn Automated Negotiations in the Autopilot skilltree. It will let me negotiate better rewards whenever I carry out missions.",
+    "engine": "kokoro",
+    "params": {
+      "sid": 1,
+      "speed": 1.0
+    },
+    "score_total": 0.9375,
+    "ogg": "ECHO/e69f5cac8a92b3fdfdb7b3ddb48422140ab903c43b32bf86b56c717a793f05ed.ogg",
+    "source": "concat-delta"
   }
 }
