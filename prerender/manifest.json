@@ -48844,5 +48844,2255 @@
     "score_total": 0.95,
     "ogg": "captain_f3/054b17ac16919f3270a6ab28e773274e93b13f97959fc6dd4d8bd373b994628a.ogg",
     "source": "captain-preset-render"
+  },
+  "2e0a4ca95b15a7a52bbd30ac4568a4f5c6f157ad0912ab43cd10c792fa8ac416": {
+    "key": "2e0a4ca95b15a7a52bbd30ac4568a4f5c6f157ad0912ab43cd10c792fa8ac416",
+    "speaker": "captain_m1",
+    "text_normalized": "Thank you, ECHO. Good to meet you, ? How'd you end up here?",
+    "text_raw": "Thank you, ECHO. Good to meet you...? How'd you end up here?",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.8958333333333333,
+    "ogg": "captain_m1/2e0a4ca95b15a7a52bbd30ac4568a4f5c6f157ad0912ab43cd10c792fa8ac416.ogg",
+    "source": "concat-delta"
+  },
+  "abbcaf5b2e1401207e54502045497d38ee824c7616039d20bcdd49d2cc7a8237": {
+    "key": "abbcaf5b2e1401207e54502045497d38ee824c7616039d20bcdd49d2cc7a8237",
+    "speaker": "captain_m1",
+    "text_normalized": "Keril, did you manage to bring back the Computer?",
+    "text_raw": "Keril, did you manage to bring back the Computer?",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "ogg": "captain_m1/abbcaf5b2e1401207e54502045497d38ee824c7616039d20bcdd49d2cc7a8237.ogg",
+    "source": "concat-delta"
+  },
+  "6340d390f44c3617a24f4232bed748614d37befeab345ea12dc4f40c79abae07": {
+    "key": "6340d390f44c3617a24f4232bed748614d37befeab345ea12dc4f40c79abae07",
+    "speaker": "captain_m1",
+    "text_normalized": "Thanks, let's bring them to Unknown Contact and see what we need to do next.",
+    "text_raw": "Thanks, let's bring them to Unknown Contact and see what we need to do next.",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.9375,
+    "ogg": "captain_m1/6340d390f44c3617a24f4232bed748614d37befeab345ea12dc4f40c79abae07.ogg",
+    "source": "concat-delta"
+  },
+  "c6480809cdba4fda87769c14f4a7ef9193d78a96d02842a8e6178513112642d2": {
+    "key": "c6480809cdba4fda87769c14f4a7ef9193d78a96d02842a8e6178513112642d2",
+    "speaker": "captain_m1",
+    "text_normalized": "James Fleddon! Thought you couldn't travel around and was stuck at that station.",
+    "text_raw": "James Fleddon! Thought you couldn't travel around and was stuck at that station.",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.8958333333333333,
+    "ogg": "captain_m1/c6480809cdba4fda87769c14f4a7ef9193d78a96d02842a8e6178513112642d2.ogg",
+    "source": "concat-delta"
+  },
+  "a4509a97e57efe2516f2a49e45edd323e3a60b2e69ae9abf7530bb13d994b19c": {
+    "key": "a4509a97e57efe2516f2a49e45edd323e3a60b2e69ae9abf7530bb13d994b19c",
+    "speaker": "captain_m1",
+    "text_normalized": "Claude, are we in any danger going there?",
+    "text_raw": "Claude, are we in any danger going there?",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.7916666666666666,
+    "ogg": "captain_m1/a4509a97e57efe2516f2a49e45edd323e3a60b2e69ae9abf7530bb13d994b19c.ogg",
+    "source": "concat-delta"
+  },
+  "ac36017d23950a3ce48ce740b9f512a36008ffdb809f797daa9686f795a887de": {
+    "key": "ac36017d23950a3ce48ce740b9f512a36008ffdb809f797daa9686f795a887de",
+    "speaker": "captain_m1",
+    "text_normalized": "Thank you James Fleddon.",
+    "text_raw": "Thank you James Fleddon.",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "ogg": "captain_m1/ac36017d23950a3ce48ce740b9f512a36008ffdb809f797daa9686f795a887de.ogg",
+    "source": "concat-delta"
+  },
+  "6e1f5bb9cd79f49a8de3f752710f435e3e2976f55d36ff1dd5c029efebf6e481": {
+    "key": "6e1f5bb9cd79f49a8de3f752710f435e3e2976f55d36ff1dd5c029efebf6e481",
+    "speaker": "captain_m1",
+    "text_normalized": "Alright Umbral, I'm heading over there now.",
+    "text_raw": "Alright Umbral, I'm heading over there now.",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.9375,
+    "ogg": "captain_m1/6e1f5bb9cd79f49a8de3f752710f435e3e2976f55d36ff1dd5c029efebf6e481.ogg",
+    "source": "concat-delta"
+  },
+  "10bb7ec09a291f5c8a1b82ad7c19a707907788515b02e96a4ab85b4516193ca1": {
+    "key": "10bb7ec09a291f5c8a1b82ad7c19a707907788515b02e96a4ab85b4516193ca1",
+    "speaker": "captain_m1",
+    "text_normalized": "Put it through, ECHO.",
+    "text_raw": "Put it through, ECHO.",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "ogg": "captain_m1/10bb7ec09a291f5c8a1b82ad7c19a707907788515b02e96a4ab85b4516193ca1.ogg",
+    "source": "concat-delta"
+  },
+  "3ed313f5b7fc276fa7666e6f96c860ee45198a3e82ac27a0d0f26c2d0334d572": {
+    "key": "3ed313f5b7fc276fa7666e6f96c860ee45198a3e82ac27a0d0f26c2d0334d572",
+    "speaker": "captain_m1",
+    "text_normalized": "See you next time, Umbral.",
+    "text_raw": "See you next time, Umbral.",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "ogg": "captain_m1/3ed313f5b7fc276fa7666e6f96c860ee45198a3e82ac27a0d0f26c2d0334d572.ogg",
+    "source": "concat-delta"
+  },
+  "d8e29929bcd5efa10f0b659a601bf15208c6f650d5302742cefabf9db46b7692": {
+    "key": "d8e29929bcd5efa10f0b659a601bf15208c6f650d5302742cefabf9db46b7692",
+    "speaker": "captain_m1",
+    "text_normalized": "ECHO, but what about the loot?",
+    "text_raw": "ECHO, but what about the loot?",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.75,
+    "ogg": "captain_m1/d8e29929bcd5efa10f0b659a601bf15208c6f650d5302742cefabf9db46b7692.ogg",
+    "source": "concat-delta"
+  },
+  "26a6f29977322121d51d0bea09901b636d832d1e5e0fb290df085ec379823ccb": {
+    "key": "26a6f29977322121d51d0bea09901b636d832d1e5e0fb290df085ec379823ccb",
+    "speaker": "captain_m1",
+    "text_normalized": "Midas, I'll go there immediatly.",
+    "text_raw": "Midas, I'll go there immediatly.",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.9375,
+    "ogg": "captain_m1/26a6f29977322121d51d0bea09901b636d832d1e5e0fb290df085ec379823ccb.ogg",
+    "source": "concat-delta"
+  },
+  "6ee999b75619c699f800d54e62488f83704b23beccd1cd57853d96573dd4ad26": {
+    "key": "6ee999b75619c699f800d54e62488f83704b23beccd1cd57853d96573dd4ad26",
+    "speaker": "captain_m1",
+    "text_normalized": "I see Midas. And what do you need me for?",
+    "text_raw": "I see Midas. And what do you need me for?",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.7916666666666666,
+    "ogg": "captain_m1/6ee999b75619c699f800d54e62488f83704b23beccd1cd57853d96573dd4ad26.ogg",
+    "source": "concat-delta"
+  },
+  "e1ff08eaaf39e5f161637ba5709e70346ee403864bf69c1f5272283506e2b0e7": {
+    "key": "e1ff08eaaf39e5f161637ba5709e70346ee403864bf69c1f5272283506e2b0e7",
+    "speaker": "captain_m1",
+    "text_normalized": "I see, Midas, interesting, interesting.",
+    "text_raw": "I see, Midas... interesting... interesting...",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.9375,
+    "ogg": "captain_m1/e1ff08eaaf39e5f161637ba5709e70346ee403864bf69c1f5272283506e2b0e7.ogg",
+    "source": "concat-delta"
+  },
+  "facf16b880f348bc57ac998b91c2ab779941f1a016d0fb9b1b8054744c34f62a": {
+    "key": "facf16b880f348bc57ac998b91c2ab779941f1a016d0fb9b1b8054744c34f62a",
+    "speaker": "captain_m1",
+    "text_normalized": "You can count on me, Midas",
+    "text_raw": "You can count on me, Midas",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.7916666666666666,
+    "ogg": "captain_m1/facf16b880f348bc57ac998b91c2ab779941f1a016d0fb9b1b8054744c34f62a.ogg",
+    "source": "concat-delta"
+  },
+  "e2fd9ac8bee8b203b90e54903a5d27dabe3b05fff10eee2c76fc742b0fd1154d": {
+    "key": "e2fd9ac8bee8b203b90e54903a5d27dabe3b05fff10eee2c76fc742b0fd1154d",
+    "speaker": "captain_m1",
+    "text_normalized": "Till we meet again, Midas.",
+    "text_raw": "Till we meet again, Midas.",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.9375,
+    "ogg": "captain_m1/e2fd9ac8bee8b203b90e54903a5d27dabe3b05fff10eee2c76fc742b0fd1154d.ogg",
+    "source": "concat-delta"
+  },
+  "716643ba1296a7d255aaabff662779fecf8f3c3ffced4dea1136a08052b155f6": {
+    "key": "716643ba1296a7d255aaabff662779fecf8f3c3ffced4dea1136a08052b155f6",
+    "speaker": "captain_m1",
+    "text_normalized": "What in the. ECHO, run a full ship diagnostic.",
+    "text_raw": "What in the... ECHO, run a full ship diagnostic.",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.9375,
+    "ogg": "captain_m1/716643ba1296a7d255aaabff662779fecf8f3c3ffced4dea1136a08052b155f6.ogg",
+    "source": "concat-delta"
+  },
+  "9ea8599a80eddfec93d33ec7c3325eaa82b83917136f092e36698207c29a445f": {
+    "key": "9ea8599a80eddfec93d33ec7c3325eaa82b83917136f092e36698207c29a445f",
+    "speaker": "captain_m1",
+    "text_normalized": "Thanks. Any chance we could take a look at ECHO's core now?",
+    "text_raw": "Thanks. Any chance we could take a look at ECHO's core now?",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.7916666666666666,
+    "ogg": "captain_m1/9ea8599a80eddfec93d33ec7c3325eaa82b83917136f092e36698207c29a445f.ogg",
+    "source": "concat-delta"
+  },
+  "25311d8fe62852e8f3df25ed2d9d8327a59cdc2da49c5717d25b271f2ca9dce0": {
+    "key": "25311d8fe62852e8f3df25ed2d9d8327a59cdc2da49c5717d25b271f2ca9dce0",
+    "speaker": "captain_m1",
+    "text_normalized": "ECHO?",
+    "text_raw": "ECHO?",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.8958333333333333,
+    "ogg": "captain_m1/25311d8fe62852e8f3df25ed2d9d8327a59cdc2da49c5717d25b271f2ca9dce0.ogg",
+    "source": "concat-delta"
+  },
+  "cbc8c6b3d9e912bcda3de22844fa518da4b950b4939855930ad52db64760ffd2": {
+    "key": "cbc8c6b3d9e912bcda3de22844fa518da4b950b4939855930ad52db64760ffd2",
+    "speaker": "captain_m1",
+    "text_normalized": "Creed, the problem's taken care of.",
+    "text_raw": "Creed, the problem's taken care of.",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.9375,
+    "ogg": "captain_m1/cbc8c6b3d9e912bcda3de22844fa518da4b950b4939855930ad52db64760ffd2.ogg",
+    "source": "concat-delta"
+  },
+  "fdb8763ba2db9d4ce0badc906a4388355ac2ca99a5945c53d63aedca9233876a": {
+    "key": "fdb8763ba2db9d4ce0badc906a4388355ac2ca99a5945c53d63aedca9233876a",
+    "speaker": "captain_m1",
+    "text_normalized": "Creed, that were a lot of pirates.",
+    "text_raw": "Creed, that were a lot of pirates.",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "ogg": "captain_m1/fdb8763ba2db9d4ce0badc906a4388355ac2ca99a5945c53d63aedca9233876a.ogg",
+    "source": "concat-delta"
+  },
+  "328f33079e96df0f4288b54550294c4f96eb74674668ac221fd8b368c0b66c39": {
+    "key": "328f33079e96df0f4288b54550294c4f96eb74674668ac221fd8b368c0b66c39",
+    "speaker": "captain_m1",
+    "text_normalized": "Thanks, and good luck to you too, Creed.",
+    "text_raw": "Thanks, and good luck to you too, Creed.",
+    "engine": "kokoro",
+    "voice": "kokoro:14",
+    "params": {
+      "sid": 14,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "ogg": "captain_m1/328f33079e96df0f4288b54550294c4f96eb74674668ac221fd8b368c0b66c39.ogg",
+    "source": "concat-delta"
+  },
+  "86dca8a35a26010cc14fa862ac1cf3dc501fe24260a4bfcd1e34cfeb1bb3433c": {
+    "key": "86dca8a35a26010cc14fa862ac1cf3dc501fe24260a4bfcd1e34cfeb1bb3433c",
+    "speaker": "captain_m2",
+    "text_normalized": "Thank you, ECHO. Good to meet you, ? How'd you end up here?",
+    "text_raw": "Thank you, ECHO. Good to meet you...? How'd you end up here?",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m2/86dca8a35a26010cc14fa862ac1cf3dc501fe24260a4bfcd1e34cfeb1bb3433c.ogg",
+    "source": "concat-delta"
+  },
+  "18387293999c783089ac4cee930b273688a93d122f0d030c0d1a551f12b3a2f5": {
+    "key": "18387293999c783089ac4cee930b273688a93d122f0d030c0d1a551f12b3a2f5",
+    "speaker": "captain_m2",
+    "text_normalized": "Keril, did you manage to bring back the Computer?",
+    "text_raw": "Keril, did you manage to bring back the Computer?",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m2/18387293999c783089ac4cee930b273688a93d122f0d030c0d1a551f12b3a2f5.ogg",
+    "source": "concat-delta"
+  },
+  "b410dd16c91ff50d7c096860eea2b2e0e024156abcac3e4bce77b2a58ba52571": {
+    "key": "b410dd16c91ff50d7c096860eea2b2e0e024156abcac3e4bce77b2a58ba52571",
+    "speaker": "captain_m2",
+    "text_normalized": "Thanks, let's bring them to Unknown Contact and see what we need to do next.",
+    "text_raw": "Thanks, let's bring them to Unknown Contact and see what we need to do next.",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.873611111111111,
+    "ogg": "captain_m2/b410dd16c91ff50d7c096860eea2b2e0e024156abcac3e4bce77b2a58ba52571.ogg",
+    "source": "concat-delta"
+  },
+  "2677944198961a6e4f4f906744cfc5beb789c9106bf2c69399b2e8cdf9f0ce31": {
+    "key": "2677944198961a6e4f4f906744cfc5beb789c9106bf2c69399b2e8cdf9f0ce31",
+    "speaker": "captain_m2",
+    "text_normalized": "James Fleddon! Thought you couldn't travel around and was stuck at that station.",
+    "text_raw": "James Fleddon! Thought you couldn't travel around and was stuck at that station.",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.8597222222222222,
+    "ogg": "captain_m2/2677944198961a6e4f4f906744cfc5beb789c9106bf2c69399b2e8cdf9f0ce31.ogg",
+    "source": "concat-delta"
+  },
+  "4a7ac2d9bf22f22f6c75bcacff0a0551a91803437277429a69e51ed06199e2cf": {
+    "key": "4a7ac2d9bf22f22f6c75bcacff0a0551a91803437277429a69e51ed06199e2cf",
+    "speaker": "captain_m2",
+    "text_normalized": "Claude, are we in any danger going there?",
+    "text_raw": "Claude, are we in any danger going there?",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.95,
+    "ogg": "captain_m2/4a7ac2d9bf22f22f6c75bcacff0a0551a91803437277429a69e51ed06199e2cf.ogg",
+    "source": "concat-delta"
+  },
+  "a3c60ab25cd29787d8c15b29fc9acc6906396ae94f91adede93704ccfa0d451f": {
+    "key": "a3c60ab25cd29787d8c15b29fc9acc6906396ae94f91adede93704ccfa0d451f",
+    "speaker": "captain_m2",
+    "text_normalized": "Thank you James Fleddon.",
+    "text_raw": "Thank you James Fleddon.",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.8041666666666667,
+    "ogg": "captain_m2/a3c60ab25cd29787d8c15b29fc9acc6906396ae94f91adede93704ccfa0d451f.ogg",
+    "source": "concat-delta"
+  },
+  "24d85b227e1c8d9623535154c7b6bd0b3aeccdf0fe44995a3b941963ce355bad": {
+    "key": "24d85b227e1c8d9623535154c7b6bd0b3aeccdf0fe44995a3b941963ce355bad",
+    "speaker": "captain_m2",
+    "text_normalized": "Alright Umbral, I'm heading over there now.",
+    "text_raw": "Alright Umbral, I'm heading over there now.",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m2/24d85b227e1c8d9623535154c7b6bd0b3aeccdf0fe44995a3b941963ce355bad.ogg",
+    "source": "concat-delta"
+  },
+  "700e81acdd95b069c8dba2a1b3110c6b64fe400cf5f53611f9165660538723e8": {
+    "key": "700e81acdd95b069c8dba2a1b3110c6b64fe400cf5f53611f9165660538723e8",
+    "speaker": "captain_m2",
+    "text_normalized": "Put it through, ECHO.",
+    "text_raw": "Put it through, ECHO.",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.7416666666666666,
+    "ogg": "captain_m2/700e81acdd95b069c8dba2a1b3110c6b64fe400cf5f53611f9165660538723e8.ogg",
+    "source": "concat-delta"
+  },
+  "63849c0959239bf3c0b5fbabb19e264a318382d839333689dc70033c78aaf228": {
+    "key": "63849c0959239bf3c0b5fbabb19e264a318382d839333689dc70033c78aaf228",
+    "speaker": "captain_m2",
+    "text_normalized": "See you next time, Umbral.",
+    "text_raw": "See you next time, Umbral.",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.7416666666666666,
+    "ogg": "captain_m2/63849c0959239bf3c0b5fbabb19e264a318382d839333689dc70033c78aaf228.ogg",
+    "source": "concat-delta"
+  },
+  "db38e95c731f53c88b035f70514ec778f7551a5a514c8e237e83b59874b4b854": {
+    "key": "db38e95c731f53c88b035f70514ec778f7551a5a514c8e237e83b59874b4b854",
+    "speaker": "captain_m2",
+    "text_normalized": "ECHO, but what about the loot?",
+    "text_raw": "ECHO, but what about the loot?",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.8569444444444444,
+    "ogg": "captain_m2/db38e95c731f53c88b035f70514ec778f7551a5a514c8e237e83b59874b4b854.ogg",
+    "source": "concat-delta"
+  },
+  "bd7d6508763041e67f18fc1b2308753dac7942d538675b3962331419104441a6": {
+    "key": "bd7d6508763041e67f18fc1b2308753dac7942d538675b3962331419104441a6",
+    "speaker": "captain_m2",
+    "text_normalized": "Midas, I'll go there immediatly.",
+    "text_raw": "Midas, I'll go there immediatly.",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m2/bd7d6508763041e67f18fc1b2308753dac7942d538675b3962331419104441a6.ogg",
+    "source": "concat-delta"
+  },
+  "ce633675f703ddddce416f1ae78748ff716ff1e906449ebff28a96114bf60de4": {
+    "key": "ce633675f703ddddce416f1ae78748ff716ff1e906449ebff28a96114bf60de4",
+    "speaker": "captain_m2",
+    "text_normalized": "I see Midas. And what do you need me for?",
+    "text_raw": "I see Midas. And what do you need me for?",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.95,
+    "ogg": "captain_m2/ce633675f703ddddce416f1ae78748ff716ff1e906449ebff28a96114bf60de4.ogg",
+    "source": "concat-delta"
+  },
+  "69d33a5a1dacc57fe8335ee26ea82de2ec26f0af6abe10177a215a77056bcf8d": {
+    "key": "69d33a5a1dacc57fe8335ee26ea82de2ec26f0af6abe10177a215a77056bcf8d",
+    "speaker": "captain_m2",
+    "text_normalized": "I see, Midas, interesting, interesting.",
+    "text_raw": "I see, Midas... interesting... interesting...",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.8597222222222222,
+    "ogg": "captain_m2/69d33a5a1dacc57fe8335ee26ea82de2ec26f0af6abe10177a215a77056bcf8d.ogg",
+    "source": "concat-delta"
+  },
+  "f0f5986eb2d0af6033a4d285d1a243c6a1252ebbd3b1552c7f9ae0ef3822d64c": {
+    "key": "f0f5986eb2d0af6033a4d285d1a243c6a1252ebbd3b1552c7f9ae0ef3822d64c",
+    "speaker": "captain_m2",
+    "text_normalized": "You can count on me, Midas",
+    "text_raw": "You can count on me, Midas",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.7964359765841187,
+    "ogg": "captain_m2/f0f5986eb2d0af6033a4d285d1a243c6a1252ebbd3b1552c7f9ae0ef3822d64c.ogg",
+    "source": "concat-delta"
+  },
+  "7f59475abc79267c0ada1d0f70bc519cca1852a615c57b1fd5d6d9ed73456a1d": {
+    "key": "7f59475abc79267c0ada1d0f70bc519cca1852a615c57b1fd5d6d9ed73456a1d",
+    "speaker": "captain_m2",
+    "text_normalized": "Till we meet again, Midas.",
+    "text_raw": "Till we meet again, Midas.",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.9347222222222222,
+    "ogg": "captain_m2/7f59475abc79267c0ada1d0f70bc519cca1852a615c57b1fd5d6d9ed73456a1d.ogg",
+    "source": "concat-delta"
+  },
+  "f02d08c195f0cc6b90abf54db0d53369285b1fd9e838fbd937a31e3104fd7896": {
+    "key": "f02d08c195f0cc6b90abf54db0d53369285b1fd9e838fbd937a31e3104fd7896",
+    "speaker": "captain_m2",
+    "text_normalized": "What in the. ECHO, run a full ship diagnostic.",
+    "text_raw": "What in the... ECHO, run a full ship diagnostic.",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.7416666666666666,
+    "ogg": "captain_m2/f02d08c195f0cc6b90abf54db0d53369285b1fd9e838fbd937a31e3104fd7896.ogg",
+    "source": "concat-delta"
+  },
+  "6677fa698917b1d641076c0f54d03659830a3d5e7adb94a64462b84ce1fb00ef": {
+    "key": "6677fa698917b1d641076c0f54d03659830a3d5e7adb94a64462b84ce1fb00ef",
+    "speaker": "captain_m2",
+    "text_normalized": "Thanks. Any chance we could take a look at ECHO's core now?",
+    "text_raw": "Thanks. Any chance we could take a look at ECHO's core now?",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.8026210011842627,
+    "ogg": "captain_m2/6677fa698917b1d641076c0f54d03659830a3d5e7adb94a64462b84ce1fb00ef.ogg",
+    "source": "concat-delta"
+  },
+  "0c6bcf4f009d174367ba21040822d8a3d936f68f5a2c2828f2db0a83aca5b6f4": {
+    "key": "0c6bcf4f009d174367ba21040822d8a3d936f68f5a2c2828f2db0a83aca5b6f4",
+    "speaker": "captain_m2",
+    "text_normalized": "ECHO?",
+    "text_raw": "ECHO?",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.7347222222222222,
+    "ogg": "captain_m2/0c6bcf4f009d174367ba21040822d8a3d936f68f5a2c2828f2db0a83aca5b6f4.ogg",
+    "source": "concat-delta"
+  },
+  "a2f3b4be84b3f6925ac2db8ed20aa16205898f07c632feace184c4fae41ceb71": {
+    "key": "a2f3b4be84b3f6925ac2db8ed20aa16205898f07c632feace184c4fae41ceb71",
+    "speaker": "captain_m2",
+    "text_normalized": "Creed, the problem's taken care of.",
+    "text_raw": "Creed, the problem's taken care of.",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.8180555555555555,
+    "ogg": "captain_m2/a2f3b4be84b3f6925ac2db8ed20aa16205898f07c632feace184c4fae41ceb71.ogg",
+    "source": "concat-delta"
+  },
+  "a1d84b3fc33d53208f03bd1abacc4fe6c14c34091e54d4c7a73379772c485cc0": {
+    "key": "a1d84b3fc33d53208f03bd1abacc4fe6c14c34091e54d4c7a73379772c485cc0",
+    "speaker": "captain_m2",
+    "text_normalized": "Creed, that were a lot of pirates.",
+    "text_raw": "Creed, that were a lot of pirates.",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.9236111111111112,
+    "ogg": "captain_m2/a1d84b3fc33d53208f03bd1abacc4fe6c14c34091e54d4c7a73379772c485cc0.ogg",
+    "source": "concat-delta"
+  },
+  "b308edce62d0d996134a4140ec290de7ab49f36cd724eb1ff7baccd9d67aa468": {
+    "key": "b308edce62d0d996134a4140ec290de7ab49f36cd724eb1ff7baccd9d67aa468",
+    "speaker": "captain_m2",
+    "text_normalized": "Thanks, and good luck to you too, Creed.",
+    "text_raw": "Thanks, and good luck to you too, Creed.",
+    "engine": "kokoro",
+    "voice": "kokoro:17",
+    "params": {
+      "sid": 17,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m2/b308edce62d0d996134a4140ec290de7ab49f36cd724eb1ff7baccd9d67aa468.ogg",
+    "source": "concat-delta"
+  },
+  "e988e1240cc415c341dc7edea003c530c382daa056e83e2fefebc00c856c063a": {
+    "key": "e988e1240cc415c341dc7edea003c530c382daa056e83e2fefebc00c856c063a",
+    "speaker": "captain_m3",
+    "text_normalized": "Thank you, ECHO. Good to meet you, ? How'd you end up here?",
+    "text_raw": "Thank you, ECHO. Good to meet you...? How'd you end up here?",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m3/e988e1240cc415c341dc7edea003c530c382daa056e83e2fefebc00c856c063a.ogg",
+    "source": "concat-delta"
+  },
+  "f6743fe0d219212fcce8428e2c6287c86c39164946cf0cddaa8a70c297a6610a": {
+    "key": "f6743fe0d219212fcce8428e2c6287c86c39164946cf0cddaa8a70c297a6610a",
+    "speaker": "captain_m3",
+    "text_normalized": "Keril, did you manage to bring back the Computer?",
+    "text_raw": "Keril, did you manage to bring back the Computer?",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m3/f6743fe0d219212fcce8428e2c6287c86c39164946cf0cddaa8a70c297a6610a.ogg",
+    "source": "concat-delta"
+  },
+  "5dcd39e0ceec84ab70bc34ec41ccc26bd23cae595d583a94173560973f2058f8": {
+    "key": "5dcd39e0ceec84ab70bc34ec41ccc26bd23cae595d583a94173560973f2058f8",
+    "speaker": "captain_m3",
+    "text_normalized": "Thanks, let's bring them to Unknown Contact and see what we need to do next.",
+    "text_raw": "Thanks, let's bring them to Unknown Contact and see what we need to do next.",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m3/5dcd39e0ceec84ab70bc34ec41ccc26bd23cae595d583a94173560973f2058f8.ogg",
+    "source": "concat-delta"
+  },
+  "c7533a386f7367e292d7675417f0700a20027d727a7e284837d90b956eb5960a": {
+    "key": "c7533a386f7367e292d7675417f0700a20027d727a7e284837d90b956eb5960a",
+    "speaker": "captain_m3",
+    "text_normalized": "James Fleddon! Thought you couldn't travel around and was stuck at that station.",
+    "text_raw": "James Fleddon! Thought you couldn't travel around and was stuck at that station.",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8861111111111111,
+    "ogg": "captain_m3/c7533a386f7367e292d7675417f0700a20027d727a7e284837d90b956eb5960a.ogg",
+    "source": "concat-delta"
+  },
+  "a2fc8121884c8f0190c8d7a27bfaf7d89c7b8a9c9d3a8ac89f938a2a089729ee": {
+    "key": "a2fc8121884c8f0190c8d7a27bfaf7d89c7b8a9c9d3a8ac89f938a2a089729ee",
+    "speaker": "captain_m3",
+    "text_normalized": "Claude, are we in any danger going there?",
+    "text_raw": "Claude, are we in any danger going there?",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8861111111111111,
+    "ogg": "captain_m3/a2fc8121884c8f0190c8d7a27bfaf7d89c7b8a9c9d3a8ac89f938a2a089729ee.ogg",
+    "source": "concat-delta"
+  },
+  "585a1a8438872a6e5952400343e59fb2dee5fd2e645e56c9fe51e1458306eb62": {
+    "key": "585a1a8438872a6e5952400343e59fb2dee5fd2e645e56c9fe51e1458306eb62",
+    "speaker": "captain_m3",
+    "text_normalized": "Thank you James Fleddon.",
+    "text_raw": "Thank you James Fleddon.",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m3/585a1a8438872a6e5952400343e59fb2dee5fd2e645e56c9fe51e1458306eb62.ogg",
+    "source": "concat-delta"
+  },
+  "75abe8ca740bef08e2d8a5aaf177769c8e0f26f1ae2f8d52881e1db4c7ecb185": {
+    "key": "75abe8ca740bef08e2d8a5aaf177769c8e0f26f1ae2f8d52881e1db4c7ecb185",
+    "speaker": "captain_m3",
+    "text_normalized": "Alright Umbral, I'm heading over there now.",
+    "text_raw": "Alright Umbral, I'm heading over there now.",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m3/75abe8ca740bef08e2d8a5aaf177769c8e0f26f1ae2f8d52881e1db4c7ecb185.ogg",
+    "source": "concat-delta"
+  },
+  "cdc2b27c7de2fd9da5f17b5a02376aa9f27aa91f8276d324bbe7df8b045b3a05": {
+    "key": "cdc2b27c7de2fd9da5f17b5a02376aa9f27aa91f8276d324bbe7df8b045b3a05",
+    "speaker": "captain_m3",
+    "text_normalized": "Put it through, ECHO.",
+    "text_raw": "Put it through, ECHO.",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m3/cdc2b27c7de2fd9da5f17b5a02376aa9f27aa91f8276d324bbe7df8b045b3a05.ogg",
+    "source": "concat-delta"
+  },
+  "196c96e629519c34c2615da3b6c0072d2886a73ac42f7d697a044ced2186bfc7": {
+    "key": "196c96e629519c34c2615da3b6c0072d2886a73ac42f7d697a044ced2186bfc7",
+    "speaker": "captain_m3",
+    "text_normalized": "See you next time, Umbral.",
+    "text_raw": "See you next time, Umbral.",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m3/196c96e629519c34c2615da3b6c0072d2886a73ac42f7d697a044ced2186bfc7.ogg",
+    "source": "concat-delta"
+  },
+  "23cf522e2a13f1e936d020bbec1458bdecf182bd9b9cfe79bf811abba09c8a09": {
+    "key": "23cf522e2a13f1e936d020bbec1458bdecf182bd9b9cfe79bf811abba09c8a09",
+    "speaker": "captain_m3",
+    "text_normalized": "ECHO, but what about the loot?",
+    "text_raw": "ECHO, but what about the loot?",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8861111111111111,
+    "ogg": "captain_m3/23cf522e2a13f1e936d020bbec1458bdecf182bd9b9cfe79bf811abba09c8a09.ogg",
+    "source": "concat-delta"
+  },
+  "59afacb48d83781db5239d9968df5f72339e8dcd31dcce732edad02decdf0b57": {
+    "key": "59afacb48d83781db5239d9968df5f72339e8dcd31dcce732edad02decdf0b57",
+    "speaker": "captain_m3",
+    "text_normalized": "Midas, I'll go there immediatly.",
+    "text_raw": "Midas, I'll go there immediatly.",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8861111111111111,
+    "ogg": "captain_m3/59afacb48d83781db5239d9968df5f72339e8dcd31dcce732edad02decdf0b57.ogg",
+    "source": "concat-delta"
+  },
+  "b5b787bc43a67c5045cb00a8e6ab1852c54216c38e820b4566d5eeec06c6eb97": {
+    "key": "b5b787bc43a67c5045cb00a8e6ab1852c54216c38e820b4566d5eeec06c6eb97",
+    "speaker": "captain_m3",
+    "text_normalized": "I see Midas. And what do you need me for?",
+    "text_raw": "I see Midas. And what do you need me for?",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m3/b5b787bc43a67c5045cb00a8e6ab1852c54216c38e820b4566d5eeec06c6eb97.ogg",
+    "source": "concat-delta"
+  },
+  "bc3efa36e784eb925d7fc47f722930f60480e82c5bbd47fdbac674421d796e8f": {
+    "key": "bc3efa36e784eb925d7fc47f722930f60480e82c5bbd47fdbac674421d796e8f",
+    "speaker": "captain_m3",
+    "text_normalized": "I see, Midas, interesting, interesting.",
+    "text_raw": "I see, Midas... interesting... interesting...",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8861111111111111,
+    "ogg": "captain_m3/bc3efa36e784eb925d7fc47f722930f60480e82c5bbd47fdbac674421d796e8f.ogg",
+    "source": "concat-delta"
+  },
+  "34b5f545dbffad2edc144c53309e4ec1c21c9377647016c6eb25c6363b46e793": {
+    "key": "34b5f545dbffad2edc144c53309e4ec1c21c9377647016c6eb25c6363b46e793",
+    "speaker": "captain_m3",
+    "text_normalized": "You can count on me, Midas",
+    "text_raw": "You can count on me, Midas",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m3/34b5f545dbffad2edc144c53309e4ec1c21c9377647016c6eb25c6363b46e793.ogg",
+    "source": "concat-delta"
+  },
+  "f8b62c6bafc596795c44c0d634a586ec8d04e760a84926d22cd5f52a9934ed3c": {
+    "key": "f8b62c6bafc596795c44c0d634a586ec8d04e760a84926d22cd5f52a9934ed3c",
+    "speaker": "captain_m3",
+    "text_normalized": "Till we meet again, Midas.",
+    "text_raw": "Till we meet again, Midas.",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m3/f8b62c6bafc596795c44c0d634a586ec8d04e760a84926d22cd5f52a9934ed3c.ogg",
+    "source": "concat-delta"
+  },
+  "304a9542705ecabb77942569baa5a24dda417ee4ffc6515ec71296af2f1df254": {
+    "key": "304a9542705ecabb77942569baa5a24dda417ee4ffc6515ec71296af2f1df254",
+    "speaker": "captain_m3",
+    "text_normalized": "What in the. ECHO, run a full ship diagnostic.",
+    "text_raw": "What in the... ECHO, run a full ship diagnostic.",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m3/304a9542705ecabb77942569baa5a24dda417ee4ffc6515ec71296af2f1df254.ogg",
+    "source": "concat-delta"
+  },
+  "164577f3a301329a9783ec154d5972d192cc530a3763ac69c7f0edc3a8728e16": {
+    "key": "164577f3a301329a9783ec154d5972d192cc530a3763ac69c7f0edc3a8728e16",
+    "speaker": "captain_m3",
+    "text_normalized": "Thanks. Any chance we could take a look at ECHO's core now?",
+    "text_raw": "Thanks. Any chance we could take a look at ECHO's core now?",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m3/164577f3a301329a9783ec154d5972d192cc530a3763ac69c7f0edc3a8728e16.ogg",
+    "source": "concat-delta"
+  },
+  "800b55b950b0365e89f1878afb7de9744c9db6c24976115aab4995f5380aeb79": {
+    "key": "800b55b950b0365e89f1878afb7de9744c9db6c24976115aab4995f5380aeb79",
+    "speaker": "captain_m3",
+    "text_normalized": "ECHO?",
+    "text_raw": "ECHO?",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.7625,
+    "ogg": "captain_m3/800b55b950b0365e89f1878afb7de9744c9db6c24976115aab4995f5380aeb79.ogg",
+    "source": "concat-delta"
+  },
+  "5f715c329e40438b24fd3e210555603a1d723b15f037d43183adac1d2d96a8ea": {
+    "key": "5f715c329e40438b24fd3e210555603a1d723b15f037d43183adac1d2d96a8ea",
+    "speaker": "captain_m3",
+    "text_normalized": "Creed, the problem's taken care of.",
+    "text_raw": "Creed, the problem's taken care of.",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m3/5f715c329e40438b24fd3e210555603a1d723b15f037d43183adac1d2d96a8ea.ogg",
+    "source": "concat-delta"
+  },
+  "0fb0f0f731e2f272d1b38ae72847818b998212da2567346b91fdd436fa87bdd7": {
+    "key": "0fb0f0f731e2f272d1b38ae72847818b998212da2567346b91fdd436fa87bdd7",
+    "speaker": "captain_m3",
+    "text_normalized": "Creed, that were a lot of pirates.",
+    "text_raw": "Creed, that were a lot of pirates.",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m3/0fb0f0f731e2f272d1b38ae72847818b998212da2567346b91fdd436fa87bdd7.ogg",
+    "source": "concat-delta"
+  },
+  "2d091f3bcc98b67e6f7e5a7e7f8582b6b9b4703ae819e1da1ad43c7f61784ece": {
+    "key": "2d091f3bcc98b67e6f7e5a7e7f8582b6b9b4703ae819e1da1ad43c7f61784ece",
+    "speaker": "captain_m3",
+    "text_normalized": "Thanks, and good luck to you too, Creed.",
+    "text_raw": "Thanks, and good luck to you too, Creed.",
+    "engine": "kokoro",
+    "voice": "kokoro:25",
+    "params": {
+      "sid": 25,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_m3/2d091f3bcc98b67e6f7e5a7e7f8582b6b9b4703ae819e1da1ad43c7f61784ece.ogg",
+    "source": "concat-delta"
+  },
+  "9f80372d645d38f3e45e134214ad0d9a9eee6d8d8b3585364fcbbb3b9e7404e2": {
+    "key": "9f80372d645d38f3e45e134214ad0d9a9eee6d8d8b3585364fcbbb3b9e7404e2",
+    "speaker": "captain_f1",
+    "text_normalized": "Thank you, ECHO. Good to meet you, ? How'd you end up here?",
+    "text_raw": "Thank you, ECHO. Good to meet you...? How'd you end up here?",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9361111111111111,
+    "ogg": "captain_f1/9f80372d645d38f3e45e134214ad0d9a9eee6d8d8b3585364fcbbb3b9e7404e2.ogg",
+    "source": "concat-delta"
+  },
+  "f3b3c5505852e2cabe94eebea46a88ed266bd06de39f6e0dd62ef068359e6147": {
+    "key": "f3b3c5505852e2cabe94eebea46a88ed266bd06de39f6e0dd62ef068359e6147",
+    "speaker": "captain_f1",
+    "text_normalized": "Keril, did you manage to bring back the Computer?",
+    "text_raw": "Keril, did you manage to bring back the Computer?",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f1/f3b3c5505852e2cabe94eebea46a88ed266bd06de39f6e0dd62ef068359e6147.ogg",
+    "source": "concat-delta"
+  },
+  "e0fd342b203e68f7c9af65387f76fd27b719ab9dd8147f4a9ab4d40bdf08c471": {
+    "key": "e0fd342b203e68f7c9af65387f76fd27b719ab9dd8147f4a9ab4d40bdf08c471",
+    "speaker": "captain_f1",
+    "text_normalized": "Thanks, let's bring them to Unknown Contact and see what we need to do next.",
+    "text_raw": "Thanks, let's bring them to Unknown Contact and see what we need to do next.",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8861111111111111,
+    "ogg": "captain_f1/e0fd342b203e68f7c9af65387f76fd27b719ab9dd8147f4a9ab4d40bdf08c471.ogg",
+    "source": "concat-delta"
+  },
+  "55eac9572e47d433b5f184dce142035d5fcca0c0d09c26a934ede7a49b4617c0": {
+    "key": "55eac9572e47d433b5f184dce142035d5fcca0c0d09c26a934ede7a49b4617c0",
+    "speaker": "captain_f1",
+    "text_normalized": "James Fleddon! Thought you couldn't travel around and was stuck at that station.",
+    "text_raw": "James Fleddon! Thought you couldn't travel around and was stuck at that station.",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f1/55eac9572e47d433b5f184dce142035d5fcca0c0d09c26a934ede7a49b4617c0.ogg",
+    "source": "concat-delta"
+  },
+  "6ccc362a83e2137d66b60d848fcd1f7728a7b506f07a61030d56c351da981275": {
+    "key": "6ccc362a83e2137d66b60d848fcd1f7728a7b506f07a61030d56c351da981275",
+    "speaker": "captain_f1",
+    "text_normalized": "Claude, are we in any danger going there?",
+    "text_raw": "Claude, are we in any danger going there?",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f1/6ccc362a83e2137d66b60d848fcd1f7728a7b506f07a61030d56c351da981275.ogg",
+    "source": "concat-delta"
+  },
+  "f888f8154f4bc31542568ce8214717840d5bc3cef1d1a5a4b4c998a48ed1d8fe": {
+    "key": "f888f8154f4bc31542568ce8214717840d5bc3cef1d1a5a4b4c998a48ed1d8fe",
+    "speaker": "captain_f1",
+    "text_normalized": "Thank you James Fleddon.",
+    "text_raw": "Thank you James Fleddon.",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "ogg": "captain_f1/f888f8154f4bc31542568ce8214717840d5bc3cef1d1a5a4b4c998a48ed1d8fe.ogg",
+    "source": "concat-delta"
+  },
+  "eea265cc50e995f45df99223457ea03b9ba78bb0bbdd5a737c2764e65248343a": {
+    "key": "eea265cc50e995f45df99223457ea03b9ba78bb0bbdd5a737c2764e65248343a",
+    "speaker": "captain_f1",
+    "text_normalized": "Alright Umbral, I'm heading over there now.",
+    "text_raw": "Alright Umbral, I'm heading over there now.",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.95,
+    "ogg": "captain_f1/eea265cc50e995f45df99223457ea03b9ba78bb0bbdd5a737c2764e65248343a.ogg",
+    "source": "concat-delta"
+  },
+  "97172598f02e1b9297a05826e3ee0545a35985f8b2cf4a896654302f3a2270fc": {
+    "key": "97172598f02e1b9297a05826e3ee0545a35985f8b2cf4a896654302f3a2270fc",
+    "speaker": "captain_f1",
+    "text_normalized": "Put it through, ECHO.",
+    "text_raw": "Put it through, ECHO.",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9496594092182327,
+    "ogg": "captain_f1/97172598f02e1b9297a05826e3ee0545a35985f8b2cf4a896654302f3a2270fc.ogg",
+    "source": "concat-delta"
+  },
+  "207fe59884a63f6be42fa657e97801b2aacfd5dd9cc74685aec889e4844e36b1": {
+    "key": "207fe59884a63f6be42fa657e97801b2aacfd5dd9cc74685aec889e4844e36b1",
+    "speaker": "captain_f1",
+    "text_normalized": "See you next time, Umbral.",
+    "text_raw": "See you next time, Umbral.",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.95,
+    "ogg": "captain_f1/207fe59884a63f6be42fa657e97801b2aacfd5dd9cc74685aec889e4844e36b1.ogg",
+    "source": "concat-delta"
+  },
+  "cc6c3e0f11831cf913f63eb91aeda4898a6f9c6761d5b43d4c6e0c3cbcf4f5a9": {
+    "key": "cc6c3e0f11831cf913f63eb91aeda4898a6f9c6761d5b43d4c6e0c3cbcf4f5a9",
+    "speaker": "captain_f1",
+    "text_normalized": "ECHO, but what about the loot?",
+    "text_raw": "ECHO, but what about the loot?",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9375,
+    "ogg": "captain_f1/cc6c3e0f11831cf913f63eb91aeda4898a6f9c6761d5b43d4c6e0c3cbcf4f5a9.ogg",
+    "source": "concat-delta"
+  },
+  "afdcc1ffee43631445f555c078684e01e90ddf8b25bd26764c62b305ffc08302": {
+    "key": "afdcc1ffee43631445f555c078684e01e90ddf8b25bd26764c62b305ffc08302",
+    "speaker": "captain_f1",
+    "text_normalized": "Midas, I'll go there immediatly.",
+    "text_raw": "Midas, I'll go there immediatly.",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9375,
+    "ogg": "captain_f1/afdcc1ffee43631445f555c078684e01e90ddf8b25bd26764c62b305ffc08302.ogg",
+    "source": "concat-delta"
+  },
+  "36b0969f0907f5f3b6838879c74e0bf5f75cd2a0a0cc5288925dbc459ec2ddab": {
+    "key": "36b0969f0907f5f3b6838879c74e0bf5f75cd2a0a0cc5288925dbc459ec2ddab",
+    "speaker": "captain_f1",
+    "text_normalized": "I see Midas. And what do you need me for?",
+    "text_raw": "I see Midas. And what do you need me for?",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7916666666666666,
+    "ogg": "captain_f1/36b0969f0907f5f3b6838879c74e0bf5f75cd2a0a0cc5288925dbc459ec2ddab.ogg",
+    "source": "concat-delta"
+  },
+  "aac83dd373f737c4ba5ffa0a070aa9fb32537feb707439de4ac33bd528490e00": {
+    "key": "aac83dd373f737c4ba5ffa0a070aa9fb32537feb707439de4ac33bd528490e00",
+    "speaker": "captain_f1",
+    "text_normalized": "I see, Midas, interesting, interesting.",
+    "text_raw": "I see, Midas... interesting... interesting...",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f1/aac83dd373f737c4ba5ffa0a070aa9fb32537feb707439de4ac33bd528490e00.ogg",
+    "source": "concat-delta"
+  },
+  "f3e1fefafba984fe59e3860168ad40476b10c3defedb73e2339ae2ca6dbe9e77": {
+    "key": "f3e1fefafba984fe59e3860168ad40476b10c3defedb73e2339ae2ca6dbe9e77",
+    "speaker": "captain_f1",
+    "text_normalized": "You can count on me, Midas",
+    "text_raw": "You can count on me, Midas",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f1/f3e1fefafba984fe59e3860168ad40476b10c3defedb73e2339ae2ca6dbe9e77.ogg",
+    "source": "concat-delta"
+  },
+  "e8df48ae1c857a7a2e11809f6df038efb263b32977037017faec655d8d4688ff": {
+    "key": "e8df48ae1c857a7a2e11809f6df038efb263b32977037017faec655d8d4688ff",
+    "speaker": "captain_f1",
+    "text_normalized": "Till we meet again, Midas.",
+    "text_raw": "Till we meet again, Midas.",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f1/e8df48ae1c857a7a2e11809f6df038efb263b32977037017faec655d8d4688ff.ogg",
+    "source": "concat-delta"
+  },
+  "8469c0adbbef4c0148e54afe24ac37f3229b57e3ffee4b963b88d7462e82e7b2": {
+    "key": "8469c0adbbef4c0148e54afe24ac37f3229b57e3ffee4b963b88d7462e82e7b2",
+    "speaker": "captain_f1",
+    "text_normalized": "What in the. ECHO, run a full ship diagnostic.",
+    "text_raw": "What in the... ECHO, run a full ship diagnostic.",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9347222222222222,
+    "ogg": "captain_f1/8469c0adbbef4c0148e54afe24ac37f3229b57e3ffee4b963b88d7462e82e7b2.ogg",
+    "source": "concat-delta"
+  },
+  "c10a362c7c742f4457e427ff30f24ac5d051df78cc23d14c3ca1e5a8976c2822": {
+    "key": "c10a362c7c742f4457e427ff30f24ac5d051df78cc23d14c3ca1e5a8976c2822",
+    "speaker": "captain_f1",
+    "text_normalized": "Thanks. Any chance we could take a look at ECHO's core now?",
+    "text_raw": "Thanks. Any chance we could take a look at ECHO's core now?",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7416666666666666,
+    "ogg": "captain_f1/c10a362c7c742f4457e427ff30f24ac5d051df78cc23d14c3ca1e5a8976c2822.ogg",
+    "source": "concat-delta"
+  },
+  "878f41fed42bf476fb9cb5bde55725bcb85d23265868f71bc03feafa85eccafd": {
+    "key": "878f41fed42bf476fb9cb5bde55725bcb85d23265868f71bc03feafa85eccafd",
+    "speaker": "captain_f1",
+    "text_normalized": "ECHO?",
+    "text_raw": "ECHO?",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8680555555555556,
+    "ogg": "captain_f1/878f41fed42bf476fb9cb5bde55725bcb85d23265868f71bc03feafa85eccafd.ogg",
+    "source": "concat-delta"
+  },
+  "afd15654cf6b168ed97424f2cf0d8ae14fecb33a5f3d77f01c5c78ab60e58b7b": {
+    "key": "afd15654cf6b168ed97424f2cf0d8ae14fecb33a5f3d77f01c5c78ab60e58b7b",
+    "speaker": "captain_f1",
+    "text_normalized": "Creed, the problem's taken care of.",
+    "text_raw": "Creed, the problem's taken care of.",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f1/afd15654cf6b168ed97424f2cf0d8ae14fecb33a5f3d77f01c5c78ab60e58b7b.ogg",
+    "source": "concat-delta"
+  },
+  "0837040a67adc983e8c0170bf610bd031a45094b1ab9ccc46d26ce3e6235a1db": {
+    "key": "0837040a67adc983e8c0170bf610bd031a45094b1ab9ccc46d26ce3e6235a1db",
+    "speaker": "captain_f1",
+    "text_normalized": "Creed, that were a lot of pirates.",
+    "text_raw": "Creed, that were a lot of pirates.",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f1/0837040a67adc983e8c0170bf610bd031a45094b1ab9ccc46d26ce3e6235a1db.ogg",
+    "source": "concat-delta"
+  },
+  "17ef1f6c83b239675b85a98c894929be9b6860b9ae908fbf4e154759aa93ddcd": {
+    "key": "17ef1f6c83b239675b85a98c894929be9b6860b9ae908fbf4e154759aa93ddcd",
+    "speaker": "captain_f1",
+    "text_normalized": "Thanks, and good luck to you too, Creed.",
+    "text_raw": "Thanks, and good luck to you too, Creed.",
+    "engine": "kokoro",
+    "voice": "kokoro:0",
+    "params": {
+      "sid": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.95,
+    "ogg": "captain_f1/17ef1f6c83b239675b85a98c894929be9b6860b9ae908fbf4e154759aa93ddcd.ogg",
+    "source": "concat-delta"
+  },
+  "b8f2e908ddd98364459ddc592f7e62b747840d01fb01e6a195deb49175498d7d": {
+    "key": "b8f2e908ddd98364459ddc592f7e62b747840d01fb01e6a195deb49175498d7d",
+    "speaker": "captain_f2",
+    "text_normalized": "Thank you, ECHO. Good to meet you, ? How'd you end up here?",
+    "text_raw": "Thank you, ECHO. Good to meet you...? How'd you end up here?",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.7916666666666666,
+    "ogg": "captain_f2/b8f2e908ddd98364459ddc592f7e62b747840d01fb01e6a195deb49175498d7d.ogg",
+    "source": "concat-delta"
+  },
+  "def5838f7f7de44a617f06ae931abc0844665c60af22272184806382d598880e": {
+    "key": "def5838f7f7de44a617f06ae931abc0844665c60af22272184806382d598880e",
+    "speaker": "captain_f2",
+    "text_normalized": "Keril, did you manage to bring back the Computer?",
+    "text_raw": "Keril, did you manage to bring back the Computer?",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.7416666666666666,
+    "ogg": "captain_f2/def5838f7f7de44a617f06ae931abc0844665c60af22272184806382d598880e.ogg",
+    "source": "concat-delta"
+  },
+  "0d7084e1559fbbf130ddeb0b3d4d7b8d6e2b6c3180ef1b6b988c9cc48bb306a6": {
+    "key": "0d7084e1559fbbf130ddeb0b3d4d7b8d6e2b6c3180ef1b6b988c9cc48bb306a6",
+    "speaker": "captain_f2",
+    "text_normalized": "Thanks, let's bring them to Unknown Contact and see what we need to do next.",
+    "text_raw": "Thanks, let's bring them to Unknown Contact and see what we need to do next.",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f2/0d7084e1559fbbf130ddeb0b3d4d7b8d6e2b6c3180ef1b6b988c9cc48bb306a6.ogg",
+    "source": "concat-delta"
+  },
+  "ba0a6389731f0eb518bed4434491c35fa6ba0cface011163df64a8ea055ac43c": {
+    "key": "ba0a6389731f0eb518bed4434491c35fa6ba0cface011163df64a8ea055ac43c",
+    "speaker": "captain_f2",
+    "text_normalized": "James Fleddon! Thought you couldn't travel around and was stuck at that station.",
+    "text_raw": "James Fleddon! Thought you couldn't travel around and was stuck at that station.",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.95,
+    "ogg": "captain_f2/ba0a6389731f0eb518bed4434491c35fa6ba0cface011163df64a8ea055ac43c.ogg",
+    "source": "concat-delta"
+  },
+  "b8a161a409ee03d2c0dc994255167d00d449080d15376fb4ecd1480105992d62": {
+    "key": "b8a161a409ee03d2c0dc994255167d00d449080d15376fb4ecd1480105992d62",
+    "speaker": "captain_f2",
+    "text_normalized": "Claude, are we in any danger going there?",
+    "text_raw": "Claude, are we in any danger going there?",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.7416666666666666,
+    "ogg": "captain_f2/b8a161a409ee03d2c0dc994255167d00d449080d15376fb4ecd1480105992d62.ogg",
+    "source": "concat-delta"
+  },
+  "40553bff09b35ff6d4172f8d12f45c26f301fac309155924413c257380e8875a": {
+    "key": "40553bff09b35ff6d4172f8d12f45c26f301fac309155924413c257380e8875a",
+    "speaker": "captain_f2",
+    "text_normalized": "Thank you James Fleddon.",
+    "text_raw": "Thank you James Fleddon.",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.9972222222222221,
+    "ogg": "captain_f2/40553bff09b35ff6d4172f8d12f45c26f301fac309155924413c257380e8875a.ogg",
+    "source": "concat-delta"
+  },
+  "a89d5e1a60a2d95c1de2ba972909e0b25ccf156c972f30b28b2333b02123138d": {
+    "key": "a89d5e1a60a2d95c1de2ba972909e0b25ccf156c972f30b28b2333b02123138d",
+    "speaker": "captain_f2",
+    "text_normalized": "Alright Umbral, I'm heading over there now.",
+    "text_raw": "Alright Umbral, I'm heading over there now.",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.95,
+    "ogg": "captain_f2/a89d5e1a60a2d95c1de2ba972909e0b25ccf156c972f30b28b2333b02123138d.ogg",
+    "source": "concat-delta"
+  },
+  "ac0e12dd29006f769670e186555f86008a12d25497de6ee1c171af6a84dad2ed": {
+    "key": "ac0e12dd29006f769670e186555f86008a12d25497de6ee1c171af6a84dad2ed",
+    "speaker": "captain_f2",
+    "text_normalized": "Put it through, ECHO.",
+    "text_raw": "Put it through, ECHO.",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.7416666666666666,
+    "ogg": "captain_f2/ac0e12dd29006f769670e186555f86008a12d25497de6ee1c171af6a84dad2ed.ogg",
+    "source": "concat-delta"
+  },
+  "7ab0d45d47ca44f64ffcf49cb04dc192250637a0a22566f456516c2c8b8c74af": {
+    "key": "7ab0d45d47ca44f64ffcf49cb04dc192250637a0a22566f456516c2c8b8c74af",
+    "speaker": "captain_f2",
+    "text_normalized": "See you next time, Umbral.",
+    "text_raw": "See you next time, Umbral.",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.95,
+    "ogg": "captain_f2/7ab0d45d47ca44f64ffcf49cb04dc192250637a0a22566f456516c2c8b8c74af.ogg",
+    "source": "concat-delta"
+  },
+  "2fbd5c9e9e6ce8680de43674d800c0652af8a759886a80e78864d2d99d5e5cc3": {
+    "key": "2fbd5c9e9e6ce8680de43674d800c0652af8a759886a80e78864d2d99d5e5cc3",
+    "speaker": "captain_f2",
+    "text_normalized": "ECHO, but what about the loot?",
+    "text_raw": "ECHO, but what about the loot?",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f2/2fbd5c9e9e6ce8680de43674d800c0652af8a759886a80e78864d2d99d5e5cc3.ogg",
+    "source": "concat-delta"
+  },
+  "cc4cc49288c92cf7e5b3b00ad17c3d78cfc893a06edf10494760f44aecce5029": {
+    "key": "cc4cc49288c92cf7e5b3b00ad17c3d78cfc893a06edf10494760f44aecce5029",
+    "speaker": "captain_f2",
+    "text_normalized": "Midas, I'll go there immediatly.",
+    "text_raw": "Midas, I'll go there immediatly.",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "ogg": "captain_f2/cc4cc49288c92cf7e5b3b00ad17c3d78cfc893a06edf10494760f44aecce5029.ogg",
+    "source": "concat-delta"
+  },
+  "470f85a3fc3c4798ea4f76d2ea8ff17b9ae49519af17bfaea5496328ba27d579": {
+    "key": "470f85a3fc3c4798ea4f76d2ea8ff17b9ae49519af17bfaea5496328ba27d579",
+    "speaker": "captain_f2",
+    "text_normalized": "I see Midas. And what do you need me for?",
+    "text_raw": "I see Midas. And what do you need me for?",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.7416666666666666,
+    "ogg": "captain_f2/470f85a3fc3c4798ea4f76d2ea8ff17b9ae49519af17bfaea5496328ba27d579.ogg",
+    "source": "concat-delta"
+  },
+  "e5f27d37a70316bb63bae45c6a785464820f104dee4f826ab1b34fd9d6fb416d": {
+    "key": "e5f27d37a70316bb63bae45c6a785464820f104dee4f826ab1b34fd9d6fb416d",
+    "speaker": "captain_f2",
+    "text_normalized": "I see, Midas, interesting, interesting.",
+    "text_raw": "I see, Midas... interesting... interesting...",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f2/e5f27d37a70316bb63bae45c6a785464820f104dee4f826ab1b34fd9d6fb416d.ogg",
+    "source": "concat-delta"
+  },
+  "411809fb6c7c2388ed20d7a6fec1ffb7ea708d4e276e212768f216c4b5a99a0e": {
+    "key": "411809fb6c7c2388ed20d7a6fec1ffb7ea708d4e276e212768f216c4b5a99a0e",
+    "speaker": "captain_f2",
+    "text_normalized": "You can count on me, Midas",
+    "text_raw": "You can count on me, Midas",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "ogg": "captain_f2/411809fb6c7c2388ed20d7a6fec1ffb7ea708d4e276e212768f216c4b5a99a0e.ogg",
+    "source": "concat-delta"
+  },
+  "4cb1f0abe5de6f220c76353e711b2e4b8133cd834320ae8a874c3d1fe211f662": {
+    "key": "4cb1f0abe5de6f220c76353e711b2e4b8133cd834320ae8a874c3d1fe211f662",
+    "speaker": "captain_f2",
+    "text_normalized": "Till we meet again, Midas.",
+    "text_raw": "Till we meet again, Midas.",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.9375,
+    "ogg": "captain_f2/4cb1f0abe5de6f220c76353e711b2e4b8133cd834320ae8a874c3d1fe211f662.ogg",
+    "source": "concat-delta"
+  },
+  "2e27df4fe23e4fcc666ac75fbd191b2a5462d5d9ca79abe25a413f529d74dfc0": {
+    "key": "2e27df4fe23e4fcc666ac75fbd191b2a5462d5d9ca79abe25a413f529d74dfc0",
+    "speaker": "captain_f2",
+    "text_normalized": "What in the. ECHO, run a full ship diagnostic.",
+    "text_raw": "What in the... ECHO, run a full ship diagnostic.",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.9375,
+    "ogg": "captain_f2/2e27df4fe23e4fcc666ac75fbd191b2a5462d5d9ca79abe25a413f529d74dfc0.ogg",
+    "source": "concat-delta"
+  },
+  "8cf6cfa443715be6964f17803b934c9409da316f473f651d7edbf9fe66353afd": {
+    "key": "8cf6cfa443715be6964f17803b934c9409da316f473f651d7edbf9fe66353afd",
+    "speaker": "captain_f2",
+    "text_normalized": "Thanks. Any chance we could take a look at ECHO's core now?",
+    "text_raw": "Thanks. Any chance we could take a look at ECHO's core now?",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.736111111111111,
+    "ogg": "captain_f2/8cf6cfa443715be6964f17803b934c9409da316f473f651d7edbf9fe66353afd.ogg",
+    "source": "concat-delta"
+  },
+  "bab976b108cf5764e704f6b2272fa1567cc0f3d6995ab8c9f6ce7e5c481b2912": {
+    "key": "bab976b108cf5764e704f6b2272fa1567cc0f3d6995ab8c9f6ce7e5c481b2912",
+    "speaker": "captain_f2",
+    "text_normalized": "ECHO?",
+    "text_raw": "ECHO?",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.8958333333333333,
+    "ogg": "captain_f2/bab976b108cf5764e704f6b2272fa1567cc0f3d6995ab8c9f6ce7e5c481b2912.ogg",
+    "source": "concat-delta"
+  },
+  "6b34ce894811f55efe93c7efe51e219f442e447b0058db5645d36613fd9865c7": {
+    "key": "6b34ce894811f55efe93c7efe51e219f442e447b0058db5645d36613fd9865c7",
+    "speaker": "captain_f2",
+    "text_normalized": "Creed, the problem's taken care of.",
+    "text_raw": "Creed, the problem's taken care of.",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.95,
+    "ogg": "captain_f2/6b34ce894811f55efe93c7efe51e219f442e447b0058db5645d36613fd9865c7.ogg",
+    "source": "concat-delta"
+  },
+  "f8ac7074d53073e69d971fe792e6bd295a2d61484bad280a4bc5dda161e8cbd3": {
+    "key": "f8ac7074d53073e69d971fe792e6bd295a2d61484bad280a4bc5dda161e8cbd3",
+    "speaker": "captain_f2",
+    "text_normalized": "Creed, that were a lot of pirates.",
+    "text_raw": "Creed, that were a lot of pirates.",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f2/f8ac7074d53073e69d971fe792e6bd295a2d61484bad280a4bc5dda161e8cbd3.ogg",
+    "source": "concat-delta"
+  },
+  "cf5fcf35da10ee55c8da007d9d4fb2b753b6d566cbead21c15cd0fd396c6ada7": {
+    "key": "cf5fcf35da10ee55c8da007d9d4fb2b753b6d566cbead21c15cd0fd396c6ada7",
+    "speaker": "captain_f2",
+    "text_normalized": "Thanks, and good luck to you too, Creed.",
+    "text_raw": "Thanks, and good luck to you too, Creed.",
+    "engine": "kokoro",
+    "voice": "kokoro:20",
+    "params": {
+      "sid": 20,
+      "speed": 1.0
+    },
+    "score_total": 0.9486111111111111,
+    "ogg": "captain_f2/cf5fcf35da10ee55c8da007d9d4fb2b753b6d566cbead21c15cd0fd396c6ada7.ogg",
+    "source": "concat-delta"
+  },
+  "5144d2af8bcc6007d0a5a8dcba22f48fda75a5f2cabbbac73003ca562564c412": {
+    "key": "5144d2af8bcc6007d0a5a8dcba22f48fda75a5f2cabbbac73003ca562564c412",
+    "speaker": "captain_f3",
+    "text_normalized": "Thank you, ECHO. Good to meet you, ? How'd you end up here?",
+    "text_raw": "Thank you, ECHO. Good to meet you...? How'd you end up here?",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.6986111111111112,
+    "ogg": "captain_f3/5144d2af8bcc6007d0a5a8dcba22f48fda75a5f2cabbbac73003ca562564c412.ogg",
+    "source": "concat-delta"
+  },
+  "02bd22d6c5c5746a47ebbc8a9165323898d418ae3302d4cb4a9542847d7736bf": {
+    "key": "02bd22d6c5c5746a47ebbc8a9165323898d418ae3302d4cb4a9542847d7736bf",
+    "speaker": "captain_f3",
+    "text_normalized": "Keril, did you manage to bring back the Computer?",
+    "text_raw": "Keril, did you manage to bring back the Computer?",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f3/02bd22d6c5c5746a47ebbc8a9165323898d418ae3302d4cb4a9542847d7736bf.ogg",
+    "source": "concat-delta"
+  },
+  "d464cca68a65e8bee08e3a3cea966f837027617f15018d72ccb8086efbaebdf7": {
+    "key": "d464cca68a65e8bee08e3a3cea966f837027617f15018d72ccb8086efbaebdf7",
+    "speaker": "captain_f3",
+    "text_normalized": "Thanks, let's bring them to Unknown Contact and see what we need to do next.",
+    "text_raw": "Thanks, let's bring them to Unknown Contact and see what we need to do next.",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f3/d464cca68a65e8bee08e3a3cea966f837027617f15018d72ccb8086efbaebdf7.ogg",
+    "source": "concat-delta"
+  },
+  "d7e389b07fe0ed45b86f0a0be50e9505a8185adc711c3f3579ab9a9483038d48": {
+    "key": "d7e389b07fe0ed45b86f0a0be50e9505a8185adc711c3f3579ab9a9483038d48",
+    "speaker": "captain_f3",
+    "text_normalized": "James Fleddon! Thought you couldn't travel around and was stuck at that station.",
+    "text_raw": "James Fleddon! Thought you couldn't travel around and was stuck at that station.",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.8458333333333333,
+    "ogg": "captain_f3/d7e389b07fe0ed45b86f0a0be50e9505a8185adc711c3f3579ab9a9483038d48.ogg",
+    "source": "concat-delta"
+  },
+  "a48a1d7af2f5df648e3d7e80760f5316fd29737c5dac248457b8f30e3ed4ef8c": {
+    "key": "a48a1d7af2f5df648e3d7e80760f5316fd29737c5dac248457b8f30e3ed4ef8c",
+    "speaker": "captain_f3",
+    "text_normalized": "Claude, are we in any danger going there?",
+    "text_raw": "Claude, are we in any danger going there?",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f3/a48a1d7af2f5df648e3d7e80760f5316fd29737c5dac248457b8f30e3ed4ef8c.ogg",
+    "source": "concat-delta"
+  },
+  "fdf78429665adfce4e29803ea21a65521478de6824c7c69a274b1ff43ceeaddb": {
+    "key": "fdf78429665adfce4e29803ea21a65521478de6824c7c69a274b1ff43ceeaddb",
+    "speaker": "captain_f3",
+    "text_normalized": "Thank you James Fleddon.",
+    "text_raw": "Thank you James Fleddon.",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.9068888032871084,
+    "ogg": "captain_f3/fdf78429665adfce4e29803ea21a65521478de6824c7c69a274b1ff43ceeaddb.ogg",
+    "source": "concat-delta"
+  },
+  "333eeca6d3ee41e6133f73004a76b2e568d357f117fe1c9875ca227885236b26": {
+    "key": "333eeca6d3ee41e6133f73004a76b2e568d357f117fe1c9875ca227885236b26",
+    "speaker": "captain_f3",
+    "text_normalized": "Alright Umbral, I'm heading over there now.",
+    "text_raw": "Alright Umbral, I'm heading over there now.",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.8458333333333333,
+    "ogg": "captain_f3/333eeca6d3ee41e6133f73004a76b2e568d357f117fe1c9875ca227885236b26.ogg",
+    "source": "concat-delta"
+  },
+  "50beff1d595e5ed50f181bf3262b91d445233509ee0406bb5b50098a6dd18b1e": {
+    "key": "50beff1d595e5ed50f181bf3262b91d445233509ee0406bb5b50098a6dd18b1e",
+    "speaker": "captain_f3",
+    "text_normalized": "Put it through, ECHO.",
+    "text_raw": "Put it through, ECHO.",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.8341608760978775,
+    "ogg": "captain_f3/50beff1d595e5ed50f181bf3262b91d445233509ee0406bb5b50098a6dd18b1e.ogg",
+    "source": "concat-delta"
+  },
+  "de57fe1bfcd216ff8a27fdec4ef29d3f1522fee6c43e02204407c297836bec4d": {
+    "key": "de57fe1bfcd216ff8a27fdec4ef29d3f1522fee6c43e02204407c297836bec4d",
+    "speaker": "captain_f3",
+    "text_normalized": "See you next time, Umbral.",
+    "text_raw": "See you next time, Umbral.",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.95,
+    "ogg": "captain_f3/de57fe1bfcd216ff8a27fdec4ef29d3f1522fee6c43e02204407c297836bec4d.ogg",
+    "source": "concat-delta"
+  },
+  "560b23dda848ad2eb1fe83a6caf9611de4d4e2f82164886e81b38df099d63ea2": {
+    "key": "560b23dda848ad2eb1fe83a6caf9611de4d4e2f82164886e81b38df099d63ea2",
+    "speaker": "captain_f3",
+    "text_normalized": "ECHO, but what about the loot?",
+    "text_raw": "ECHO, but what about the loot?",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.7416666666666666,
+    "ogg": "captain_f3/560b23dda848ad2eb1fe83a6caf9611de4d4e2f82164886e81b38df099d63ea2.ogg",
+    "source": "concat-delta"
+  },
+  "fabae4503c8e7e6255f798e725cf9e0def18206c3c858131fe159b55a3ea6d62": {
+    "key": "fabae4503c8e7e6255f798e725cf9e0def18206c3c858131fe159b55a3ea6d62",
+    "speaker": "captain_f3",
+    "text_normalized": "Midas, I'll go there immediatly.",
+    "text_raw": "Midas, I'll go there immediatly.",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f3/fabae4503c8e7e6255f798e725cf9e0def18206c3c858131fe159b55a3ea6d62.ogg",
+    "source": "concat-delta"
+  },
+  "d4c2f18fbfb6958ae7f65f28863f5da62742c5d9b22e4739fe99e2d606803da9": {
+    "key": "d4c2f18fbfb6958ae7f65f28863f5da62742c5d9b22e4739fe99e2d606803da9",
+    "speaker": "captain_f3",
+    "text_normalized": "I see Midas. And what do you need me for?",
+    "text_raw": "I see Midas. And what do you need me for?",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f3/d4c2f18fbfb6958ae7f65f28863f5da62742c5d9b22e4739fe99e2d606803da9.ogg",
+    "source": "concat-delta"
+  },
+  "107c6bc5ab4a7468311ce5b60ce1f1703deb9b64d966848e04418d22c746d710": {
+    "key": "107c6bc5ab4a7468311ce5b60ce1f1703deb9b64d966848e04418d22c746d710",
+    "speaker": "captain_f3",
+    "text_normalized": "I see, Midas, interesting, interesting.",
+    "text_raw": "I see, Midas... interesting... interesting...",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f3/107c6bc5ab4a7468311ce5b60ce1f1703deb9b64d966848e04418d22c746d710.ogg",
+    "source": "concat-delta"
+  },
+  "28d997e2ba92d5caf017f0f239c9536b88ba6251c7cbe212c42c5a9d605c2273": {
+    "key": "28d997e2ba92d5caf017f0f239c9536b88ba6251c7cbe212c42c5a9d605c2273",
+    "speaker": "captain_f3",
+    "text_normalized": "You can count on me, Midas",
+    "text_raw": "You can count on me, Midas",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.95,
+    "ogg": "captain_f3/28d997e2ba92d5caf017f0f239c9536b88ba6251c7cbe212c42c5a9d605c2273.ogg",
+    "source": "concat-delta"
+  },
+  "97be886152e42511621e7f899a6f6793e27ac5252b2c2453f653df748f0a5e0a": {
+    "key": "97be886152e42511621e7f899a6f6793e27ac5252b2c2453f653df748f0a5e0a",
+    "speaker": "captain_f3",
+    "text_normalized": "Till we meet again, Midas.",
+    "text_raw": "Till we meet again, Midas.",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f3/97be886152e42511621e7f899a6f6793e27ac5252b2c2453f653df748f0a5e0a.ogg",
+    "source": "concat-delta"
+  },
+  "b6f60c6e4adefe1f1b1f7b8c48440dae9959761cab39e852fbc5d34a4373c5e5": {
+    "key": "b6f60c6e4adefe1f1b1f7b8c48440dae9959761cab39e852fbc5d34a4373c5e5",
+    "speaker": "captain_f3",
+    "text_normalized": "What in the. ECHO, run a full ship diagnostic.",
+    "text_raw": "What in the... ECHO, run a full ship diagnostic.",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f3/b6f60c6e4adefe1f1b1f7b8c48440dae9959761cab39e852fbc5d34a4373c5e5.ogg",
+    "source": "concat-delta"
+  },
+  "66569aed3c648eff306bd714a1cea5e6b5d557108b894b3a572eaf0a9f82e01a": {
+    "key": "66569aed3c648eff306bd714a1cea5e6b5d557108b894b3a572eaf0a9f82e01a",
+    "speaker": "captain_f3",
+    "text_normalized": "Thanks. Any chance we could take a look at ECHO's core now?",
+    "text_raw": "Thanks. Any chance we could take a look at ECHO's core now?",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.7402777777777778,
+    "ogg": "captain_f3/66569aed3c648eff306bd714a1cea5e6b5d557108b894b3a572eaf0a9f82e01a.ogg",
+    "source": "concat-delta"
+  },
+  "eddb791aceafec31203c437132ef4d1b9c39a9434fbe22301dd1a9c9cfc8c24e": {
+    "key": "eddb791aceafec31203c437132ef4d1b9c39a9434fbe22301dd1a9c9cfc8c24e",
+    "speaker": "captain_f3",
+    "text_normalized": "ECHO?",
+    "text_raw": "ECHO?",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.8680555555555556,
+    "ogg": "captain_f3/eddb791aceafec31203c437132ef4d1b9c39a9434fbe22301dd1a9c9cfc8c24e.ogg",
+    "source": "concat-delta"
+  },
+  "d462e8b2b4835ed7b47498d229adf17e6bb7e968687a76ca6cac0357fa455311": {
+    "key": "d462e8b2b4835ed7b47498d229adf17e6bb7e968687a76ca6cac0357fa455311",
+    "speaker": "captain_f3",
+    "text_normalized": "Creed, the problem's taken care of.",
+    "text_raw": "Creed, the problem's taken care of.",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.7416666666666666,
+    "ogg": "captain_f3/d462e8b2b4835ed7b47498d229adf17e6bb7e968687a76ca6cac0357fa455311.ogg",
+    "source": "concat-delta"
+  },
+  "b069fddf57c1c8525e9394c326a6bc6cc046c635afd569f5168fafd1bc42527f": {
+    "key": "b069fddf57c1c8525e9394c326a6bc6cc046c635afd569f5168fafd1bc42527f",
+    "speaker": "captain_f3",
+    "text_normalized": "Creed, that were a lot of pirates.",
+    "text_raw": "Creed, that were a lot of pirates.",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "captain_f3/b069fddf57c1c8525e9394c326a6bc6cc046c635afd569f5168fafd1bc42527f.ogg",
+    "source": "concat-delta"
+  },
+  "c89bc6cac596fdbed7d05961bd563ce4fc6785ddba01e172721af5dfa765dc07": {
+    "key": "c89bc6cac596fdbed7d05961bd563ce4fc6785ddba01e172721af5dfa765dc07",
+    "speaker": "captain_f3",
+    "text_normalized": "Thanks, and good luck to you too, Creed.",
+    "text_raw": "Thanks, and good luck to you too, Creed.",
+    "engine": "kokoro",
+    "voice": "kokoro:3",
+    "params": {
+      "sid": 3,
+      "speed": 1.0
+    },
+    "score_total": 0.8458333333333333,
+    "ogg": "captain_f3/c89bc6cac596fdbed7d05961bd563ce4fc6785ddba01e172721af5dfa765dc07.ogg",
+    "source": "concat-delta"
+  },
+  "df28c8e0fb9d58d5b97de8a2c3b86102781e6bf95a1766f1b10af57b2bd61c34": {
+    "key": "df28c8e0fb9d58d5b97de8a2c3b86102781e6bf95a1766f1b10af57b2bd61c34",
+    "speaker": "John Raythor",
+    "reference": "sid16_am_michael",
+    "text_normalized": "John Raythor. My ship got a jump malfunction, ended up some systems away. I found another member, Keril.",
+    "text_raw": "John Raythor. My ship got a jump malfunction, ended up some systems away. I found another member, Keril.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "ogg": "John_Raythor/df28c8e0fb9d58d5b97de8a2c3b86102781e6bf95a1766f1b10af57b2bd61c34.ogg",
+    "source": "concat-delta"
+  },
+  "0d6b932839c9f96b94f36676303202d89ff2527ea323069f4f426744b21dd060": {
+    "key": "0d6b932839c9f96b94f36676303202d89ff2527ea323069f4f426744b21dd060",
+    "speaker": "John Raythor",
+    "reference": "sid16_am_michael",
+    "text_normalized": "Anyway, we should really go after Keril. We could track down his warp trail.",
+    "text_raw": "Anyway, we should really go after Keril. We could track down his warp trail..",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "ogg": "John_Raythor/0d6b932839c9f96b94f36676303202d89ff2527ea323069f4f426744b21dd060.ogg",
+    "source": "concat-delta"
+  },
+  "8e47369c2c1fe4385d543e8dea1c8e1f62901d2cc6c28fb5f34ba77ffa42b72a": {
+    "key": "8e47369c2c1fe4385d543e8dea1c8e1f62901d2cc6c28fb5f34ba77ffa42b72a",
+    "speaker": "John Raythor",
+    "reference": "sid16_am_michael",
+    "text_normalized": "Wait a second, that's Keril's ship!",
+    "text_raw": "Wait a second, that's Keril's ship!",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "ogg": "John_Raythor/8e47369c2c1fe4385d543e8dea1c8e1f62901d2cc6c28fb5f34ba77ffa42b72a.ogg",
+    "source": "concat-delta"
+  },
+  "451120b3fedae3d49e90bddc5d293e083d024708d02bcbfd3ddb4f39d81b8f86": {
+    "key": "451120b3fedae3d49e90bddc5d293e083d024708d02bcbfd3ddb4f39d81b8f86",
+    "speaker": "John Raythor",
+    "reference": "sid16_am_michael",
+    "text_normalized": "Ahem, salvage captain, this ship belongs to Captain Keril.",
+    "text_raw": "Ahem, salvage captain, this ship belongs to Captain Keril.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9143507584786138,
+    "ogg": "John_Raythor/451120b3fedae3d49e90bddc5d293e083d024708d02bcbfd3ddb4f39d81b8f86.ogg",
+    "source": "concat-delta"
+  },
+  "c6ac12ef951c9bb9520d90299960474cac88de11d97cb7df3599acc2509b6b92": {
+    "key": "c6ac12ef951c9bb9520d90299960474cac88de11d97cb7df3599acc2509b6b92",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_normalized": "John Raythor! You made it",
+    "text_raw": "John Raythor! You made it",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7821141277023629,
+    "ogg": "Keril/c6ac12ef951c9bb9520d90299960474cac88de11d97cb7df3599acc2509b6b92.ogg",
+    "source": "concat-delta"
+  },
+  "21e4d103fa6a8b22373966216e14378e6150317ca18a4e6852108465245317e5": {
+    "key": "21e4d103fa6a8b22373966216e14378e6150317ca18a4e6852108465245317e5",
+    "speaker": "Mick Flank",
+    "reference": "sid41_jm_kumo",
+    "text_normalized": "Mick Flank be the name.",
+    "text_raw": "Mick Flank be the name.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8656268822487603,
+    "ogg": "Mick_Flank/21e4d103fa6a8b22373966216e14378e6150317ca18a4e6852108465245317e5.ogg",
+    "source": "concat-delta"
+  },
+  "e809e42a74692c1533984c928968bbf026cacdf1bb48164385ad1eea559176d9": {
+    "key": "e809e42a74692c1533984c928968bbf026cacdf1bb48164385ad1eea559176d9",
+    "speaker": "James Fleddon",
+    "reference": "sid17_am_onyx",
+    "text_normalized": "Claude, we opened the boxes but there was no metafi.",
+    "text_raw": "Claude, we opened the boxes but there was no metafi...",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "ogg": "James_Fleddon/e809e42a74692c1533984c928968bbf026cacdf1bb48164385ad1eea559176d9.ogg",
+    "source": "concat-delta"
+  },
+  "0d5c943e8a3d6e65c20c31d700c52464758d258a9cf3e98bbed6c1e495f7ab63": {
+    "key": "0d5c943e8a3d6e65c20c31d700c52464758d258a9cf3e98bbed6c1e495f7ab63",
+    "speaker": "Umbral",
+    "reference": "sid25_bm_fable",
+    "text_normalized": "From now on, you can refer to me as just Umbral.",
+    "text_raw": "From now on, you can refer to me as just Umbral.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "ogg": "Umbral/0d5c943e8a3d6e65c20c31d700c52464758d258a9cf3e98bbed6c1e495f7ab63.ogg",
+    "source": "concat-delta"
+  },
+  "a70038867ab2cfed3bc1ee6d088c27fd80fa4dff5720702bef4e93fc8144760d": {
+    "key": "a70038867ab2cfed3bc1ee6d088c27fd80fa4dff5720702bef4e93fc8144760d",
+    "speaker": "Umbral",
+    "reference": "sid25_bm_fable",
+    "text_normalized": "Bring it to Stella Chion, she already set the plan in motion to use it.",
+    "text_raw": "Bring it to Stella Chion, she already set the plan in motion to use it.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7916666666666666,
+    "ogg": "Umbral/a70038867ab2cfed3bc1ee6d088c27fd80fa4dff5720702bef4e93fc8144760d.ogg",
+    "source": "concat-delta"
+  },
+  "9c95eb4b795eeeb95085def1a80db585985754fc48b59ceb2810086acea9d4ce": {
+    "key": "9c95eb4b795eeeb95085def1a80db585985754fc48b59ceb2810086acea9d4ce",
+    "speaker": "Stella Chion",
+    "reference": "sid40_jf_tebukuro",
+    "text_normalized": "I'm setting up a beacon here so you can contact Umbral in this station.",
+    "text_raw": "I'm setting up a beacon here so you can contact Umbral in this station.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "ogg": "Stella_Chion/9c95eb4b795eeeb95085def1a80db585985754fc48b59ceb2810086acea9d4ce.ogg",
+    "source": "concat-delta"
+  },
+  "53a468e97a38d4a6cdc1a4500767ca7f701f8e6139f92697843f3b64f807ca17": {
+    "key": "53a468e97a38d4a6cdc1a4500767ca7f701f8e6139f92697843f3b64f807ca17",
+    "speaker": "ECHO",
+    "reference": "kokoro:1",
+    "text_normalized": "Captain, Umbral is hailing us.",
+    "text_raw": "Captain, Umbral is hailing us.",
+    "engine": "kokoro",
+    "params": {
+      "sid": 1,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "ogg": "ECHO/53a468e97a38d4a6cdc1a4500767ca7f701f8e6139f92697843f3b64f807ca17.ogg",
+    "source": "concat-delta"
+  },
+  "b85adf7a12896a9d9da730ead52dd566bee0980d42e0394bf296cf22e9c5c174": {
+    "key": "b85adf7a12896a9d9da730ead52dd566bee0980d42e0394bf296cf22e9c5c174",
+    "speaker": "ECHO",
+    "reference": "kokoro:1",
+    "text_normalized": "Now, get out of here! Back to Midas.",
+    "text_raw": "Now, get out of here! Back to Midas.",
+    "engine": "kokoro",
+    "params": {
+      "sid": 1,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "ogg": "ECHO/b85adf7a12896a9d9da730ead52dd566bee0980d42e0394bf296cf22e9c5c174.ogg",
+    "source": "concat-delta"
+  },
+  "2707005e03ee23c0bd4c215b3374c159cf5a5b924b009dd161ea48bf6ec424aa": {
+    "key": "2707005e03ee23c0bd4c215b3374c159cf5a5b924b009dd161ea48bf6ec424aa",
+    "speaker": "Greg",
+    "reference": "sid16_am_michael",
+    "text_normalized": "Another one, huh, I'm Greg. What do you want?",
+    "text_raw": "Another one, huh... I'm Greg. What do you want?",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7533123364965484,
+    "ogg": "Greg/2707005e03ee23c0bd4c215b3374c159cf5a5b924b009dd161ea48bf6ec424aa.ogg",
+    "source": "concat-delta"
+  },
+  "9b15ecf58f60bfebb05c1a78755b19d553fec95f7dd297a3b9f867878e3e096e": {
+    "key": "9b15ecf58f60bfebb05c1a78755b19d553fec95f7dd297a3b9f867878e3e096e",
+    "speaker": "Creed",
+    "reference": "sid33_hm_omega",
+    "text_normalized": "Alright, now. Elena, it's your turn.",
+    "text_raw": "Alright, now... Elena, it's your turn.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "ogg": "Creed/9b15ecf58f60bfebb05c1a78755b19d553fec95f7dd297a3b9f867878e3e096e.ogg",
+    "source": "concat-delta"
+  },
+  "7d23c7ef30f3e134da7483cd27c1183d6e8f0ee0619df46dfba4f2dcc2a30615": {
+    "key": "7d23c7ef30f3e134da7483cd27c1183d6e8f0ee0619df46dfba4f2dcc2a30615",
+    "speaker": "Creed",
+    "reference": "sid33_hm_omega",
+    "text_normalized": "Captain, could you let Elena access your ECHO to replace the core.",
+    "text_raw": "Captain, could you let Elena access your ECHO to replace the core.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8831647419994585,
+    "ogg": "Creed/7d23c7ef30f3e134da7483cd27c1183d6e8f0ee0619df46dfba4f2dcc2a30615.ogg",
+    "source": "concat-delta"
+  },
+  "502bc53a8000b1bff3a1f9b0c43bdd2401612504ba096ba65612c7ba282d21c5": {
+    "key": "502bc53a8000b1bff3a1f9b0c43bdd2401612504ba096ba65612c7ba282d21c5",
+    "speaker": "ECHO",
+    "reference": "kokoro:1",
+    "text_normalized": "Go ahead, Elena. I've given temporary access.",
+    "text_raw": "Go ahead, Elena. I've given temporary access.",
+    "engine": "kokoro",
+    "params": {
+      "sid": 1,
+      "speed": 1.0
+    },
+    "score_total": 0.9375,
+    "ogg": "ECHO/502bc53a8000b1bff3a1f9b0c43bdd2401612504ba096ba65612c7ba282d21c5.ogg",
+    "source": "concat-delta"
+  },
+  "48e321875272caa3f602d82d154a75bb01ee8a5f066af1fd6a052eeed4e2f4a4": {
+    "key": "48e321875272caa3f602d82d154a75bb01ee8a5f066af1fd6a052eeed4e2f4a4",
+    "speaker": "Creed",
+    "reference": "sid33_hm_omega",
+    "text_normalized": "You gave me quite a scare there. Well, good job, Elena.",
+    "text_raw": "You gave me quite a scare there... Well, good job, Elena.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9359422756326924,
+    "ogg": "Creed/48e321875272caa3f602d82d154a75bb01ee8a5f066af1fd6a052eeed4e2f4a4.ogg",
+    "source": "concat-delta"
+  },
+  "152c9f76da2bffc38f97668937f51a5b306b80817a02cb2caab598fd2d6a06dd": {
+    "key": "152c9f76da2bffc38f97668937f51a5b306b80817a02cb2caab598fd2d6a06dd",
+    "speaker": "Creed",
+    "reference": "sid33_hm_omega",
+    "text_normalized": "Yes, Elena, let us hope. There's just one problem, getting to Hermetis.",
+    "text_raw": "Yes, Elena, let us hope. There's just one problem... getting to Hermetis.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "ogg": "Creed/152c9f76da2bffc38f97668937f51a5b306b80817a02cb2caab598fd2d6a06dd.ogg",
+    "source": "concat-delta"
+  },
+  "ab9146f8b9d613f4a609739c4ef7edeb59b2fee377bdc16179d1e9c673cd7346": {
+    "key": "ab9146f8b9d613f4a609739c4ef7edeb59b2fee377bdc16179d1e9c673cd7346",
+    "speaker": "Elena",
+    "reference": "kokoro_af_jessica_4",
+    "text_normalized": "Well, we still need the materials, Creed.",
+    "text_raw": "Well, we still need the materials, Creed.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9354245385230027,
+    "ogg": "Elena/ab9146f8b9d613f4a609739c4ef7edeb59b2fee377bdc16179d1e9c673cd7346.ogg",
+    "source": "concat-delta"
+  },
+  "ee6de23f96e9128f2d0d37214e2559e8654028985775810cebabd60f32b473ac": {
+    "key": "ee6de23f96e9128f2d0d37214e2559e8654028985775810cebabd60f32b473ac",
+    "speaker": "Elena",
+    "reference": "kokoro_af_jessica_4",
+    "text_normalized": "It was very close, Creed",
+    "text_raw": "It was very close, Creed",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "ogg": "Elena/ee6de23f96e9128f2d0d37214e2559e8654028985775810cebabd60f32b473ac.ogg",
+    "source": "concat-delta"
+  },
+  "05662fedc02f3dbb2ef97113a56e598d7b65b5672c471558c233c00ed20fac16": {
+    "key": "05662fedc02f3dbb2ef97113a56e598d7b65b5672c471558c233c00ed20fac16",
+    "speaker": "Creed",
+    "reference": "sid33_hm_omega",
+    "text_normalized": "Or. Elena can give me the news.",
+    "text_raw": "Or... Elena can give me the news.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9722222222222222,
+    "ogg": "Creed/05662fedc02f3dbb2ef97113a56e598d7b65b5672c471558c233c00ed20fac16.ogg",
+    "source": "concat-delta"
+  },
+  "8378970aaeb411ce58c1d4f6eb37ca6043a83f079daac61a1536f03b1fc3ca4c": {
+    "key": "8378970aaeb411ce58c1d4f6eb37ca6043a83f079daac61a1536f03b1fc3ca4c",
+    "speaker": "Elena",
+    "reference": "kokoro_af_jessica_4",
+    "text_normalized": "I'd like to stay with the Captain permanently, if that's okay with you, Creed.",
+    "text_raw": "I'd like to stay with the Captain permanently, if that's okay with you, Creed.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "ogg": "Elena/8378970aaeb411ce58c1d4f6eb37ca6043a83f079daac61a1536f03b1fc3ca4c.ogg",
+    "source": "concat-delta"
+  },
+  "2741f6c6ff691bcb28636e2408c4332807067d11493833fed9b1c614a0d016f4": {
+    "key": "2741f6c6ff691bcb28636e2408c4332807067d11493833fed9b1c614a0d016f4",
+    "speaker": "Creed",
+    "reference": "sid33_hm_omega",
+    "text_normalized": "Of course. You make a good team. Goodbye, Elena.",
+    "text_raw": "Of course. You make a good team. Goodbye, Elena.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "ogg": "Creed/2741f6c6ff691bcb28636e2408c4332807067d11493833fed9b1c614a0d016f4.ogg",
+    "source": "concat-delta"
+  },
+  "85bfdf209895717b999394abaa207a5318e8b9e6be8644121ebe5a3d416b1b75": {
+    "key": "85bfdf209895717b999394abaa207a5318e8b9e6be8644121ebe5a3d416b1b75",
+    "speaker": "Elena",
+    "reference": "kokoro_af_jessica_4",
+    "text_normalized": "Maybe we'll meet again. Goodbye, Creed.",
+    "text_raw": "Maybe we'll meet again. Goodbye, Creed.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "ogg": "Elena/85bfdf209895717b999394abaa207a5318e8b9e6be8644121ebe5a3d416b1b75.ogg",
+    "source": "concat-delta"
   }
 }
