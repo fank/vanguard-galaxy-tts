@@ -16,11 +16,11 @@ cache/
 *.mp3
 
 # Pre-render artifacts
-# Track: prerender/echo/*.ogg and manifest.json (small pack, shipped in repo)
-# Skip: shootout/review intermediates
+# Track: prerender/<speaker>/*.ogg and manifest.json (small pack, shipped in repo)
+# Skip: shootout/review intermediates and debug WAV variants
 prerender/shootout/
-prerender/echo/review_report.*
-prerender/echo/variants/
+prerender/review_report.*
+prerender/variants/
 
 # OS
 .DS_Store

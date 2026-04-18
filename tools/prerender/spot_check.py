@@ -8,9 +8,9 @@ import json, random, subprocess, tempfile, wave
 from pathlib import Path
 from collections import defaultdict
 import numpy as np
-
-ROOT = Path("/home/fank/repo/vanguard-galaxy")
-PACK = ROOT / "prerender" / "echo"
+import sys
+sys.path.insert(0, str(Path(__file__).parent))
+from paths import PACK, MANIFEST  # noqa: E402
 
 
 def decode_ogg(path: Path) -> tuple[np.ndarray, int]:
@@ -46,7 +46,7 @@ def describe(entry: dict) -> dict:
 
 
 def main():
-    manifest_path = PACK / "manifest.json"
+    manifest_path = MANIFEST
     manifest = json.loads(manifest_path.read_text())
     entries = list(manifest.values())
     # Normalize score field (old ECHO entries use score.total, new use score_total)

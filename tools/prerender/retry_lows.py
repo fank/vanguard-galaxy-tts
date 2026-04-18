@@ -14,10 +14,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 sys.path.insert(0, str(Path(__file__).parent / "engines"))
 import f5_engine as f5
 from score import score_wav
-
-ROOT = Path("/home/fank/repo/vanguard-galaxy")
-PACK = ROOT / "prerender" / "echo"
-VARDIR = PACK / "variants"
+from paths import MANIFEST, ogg_path as _ogg_path, wav_path as _wav_path
 
 
 def write_wav(path, x, sr):
@@ -45,7 +42,7 @@ def main():
     ap.add_argument("--extra-seeds", type=int, default=5)
     args = ap.parse_args()
 
-    manifest = json.loads((PACK / "manifest.json").read_text())
+    manifest = json.loads(MANIFEST.read_text())
     # Pick low-scorers
     low = []
     for key, e in manifest.items():
@@ -76,8 +73,9 @@ def main():
                 best = (s.total, x, sr, seed, s)
         if best[1] is not None and best[0] > old_score:
             # Save new best
-            wav_path = VARDIR / f"{key}.wav"
-            ogg_path = PACK / f"{key}.ogg"
+            speaker = entry.get("speaker", "_unknown")
+            wav_path = _wav_path(speaker, key)
+            ogg_path = _ogg_path(speaker, key)
             write_wav(wav_path, best[1], best[2])
             encode_ogg(wav_path, ogg_path)
             entry["score_total"] = best[0]
@@ -86,7 +84,7 @@ def main():
             improved += 1
             print(f"  {entry.get('speaker','?'):<25s} {old_score:.2f} -> {best[0]:.2f}  seed={best[3]}")
 
-    (PACK / "manifest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
+    MANIFEST.write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
     print(f"\nImproved {improved} / {len(low)} low-scoring lines")
 
 

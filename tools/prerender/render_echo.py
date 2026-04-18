@@ -1,18 +1,11 @@
 #!/usr/bin/env python3
-"""End-to-end ECHO tip renderer.
-
-For each of 66 ECHO tips:
-  1. Normalize text (ellipsis → pauses, etc.)
-  2. Generate N variants (different speeds / speakers / seeds)
-  3. Score each variant acoustically
-  4. Select best; encode OGG
-  5. Append to manifest
+"""Legacy v1.0.0 ECHO tip renderer. Superseded by render_full.py (full corpus)
+and render_echo_kokoro.py (Kokoro-direct re-render). Kept here for reference.
 
 Writes:
-  prerender/echo/<key>.ogg      — one file per tip
-  prerender/echo/manifest.json  — key → metadata (text, speaker, score, engine, ...)
-  prerender/echo/variants/      — all attempts (for debug / review)
-  prerender/echo/review.tsv     — lines needing manual review (low scores)
+  prerender/ECHO/<key>.ogg              — one file per tip
+  prerender/manifest.json               — key → metadata
+  prerender/variants/ECHO/              — debug WAVs per seed
 """
 from __future__ import annotations
 import argparse, json, wave, sys
@@ -22,10 +15,8 @@ import numpy as np
 sys.path.insert(0, str(Path(__file__).parent))
 from normalize import for_tts, prerender_key  # noqa: E402
 from score import score_wav                   # noqa: E402
+from paths import PACK, MANIFEST, ROOT, ogg_path as _ogg_path, wav_path as _wav_path, manifest_ogg_rel  # noqa: E402
 
-ROOT = Path("/home/fank/repo/vanguard-galaxy")
-OUTDIR = ROOT / "prerender" / "echo"
-VARDIR = OUTDIR / "variants"
 TIPS_PATH = ROOT / "tools" / "prerender" / "echo_tips.json"
 SPEAKER = "ECHO"
 
@@ -92,12 +83,11 @@ def main():
         for seed in range(args.variants):
             variant_params.append({"seed": seed, "speed": 1.0})
 
-    OUTDIR.mkdir(parents=True, exist_ok=True)
-    VARDIR.mkdir(parents=True, exist_ok=True)
+    PACK.mkdir(parents=True, exist_ok=True)
 
     manifest = {}
-    if (OUTDIR / "manifest.json").exists():
-        manifest = json.loads((OUTDIR / "manifest.json").read_text())
+    if MANIFEST.exists():
+        manifest = json.loads(MANIFEST.read_text())
 
     review = []
 
@@ -117,14 +107,14 @@ def main():
         print(f"    best: {best_score.summary()}  params={best_params}")
 
         # Save best as WAV then encode to OGG
-        wav_path = VARDIR / f"{tip_id}_best.wav"
-        ogg_path = OUTDIR / f"{key}.ogg"
+        wav_path = _wav_path(SPEAKER, key).parent / f"{tip_id}_best.wav"
+        ogg_path = _ogg_path(SPEAKER, key)
         write_wav(wav_path, best_x, best_sr)
         encode_ogg(wav_path, ogg_path)
 
         # Also keep all variants for possible manual review
         for j, (params, x, sr, s) in enumerate(attempts):
-            write_wav(VARDIR / f"{tip_id}_v{j}_total{s.total:.2f}.wav", x, sr)
+            write_wav(wav_path.parent / f"{tip_id}_v{j}_total{s.total:.2f}.wav", x, sr)
 
         manifest[key] = {
             "tip_id": tip_id,
@@ -139,19 +129,19 @@ def main():
                 "total": best_score.total,
                 "components": best_score.__dict__,
             },
-            "ogg": f"{key}.ogg",
+            "ogg": manifest_ogg_rel(SPEAKER, key),
         }
 
         if best_score.total < 0.55:
             review.append((tip_id, f"low_score_{best_score.total:.2f}", raw_text))
 
-    (OUTDIR / "manifest.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
+    MANIFEST.write_text(json.dumps(manifest, indent=2, ensure_ascii=False))
     if review:
-        (OUTDIR / "review.tsv").write_text(
+        (PACK / "review.tsv").write_text(
             "tip_id\treason\ttext\n" + "\n".join("\t".join(r) for r in review)
         )
-        print(f"\n{len(review)} lines flagged for review — see prerender/echo/review.tsv")
-    print(f"\nDone. {len(manifest)} lines in manifest at prerender/echo/manifest.json")
+        print(f"\n{len(review)} lines flagged for review — see {PACK/'review.tsv'}")
+    print(f"\nDone. {len(manifest)} lines in manifest at {MANIFEST}")
 
 
 if __name__ == "__main__":

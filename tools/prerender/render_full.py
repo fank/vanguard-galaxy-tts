@@ -4,8 +4,8 @@ NPC-specific F5-TTS reference. One variant per line (retry losers later).
 
 Output layout identical to the ECHO pack so plugin's PrerenderLookup
 transparently finds both:
-  prerender/echo/<sha256>.ogg     — manifest-keyed OGG files
-  prerender/echo/manifest.json    — unified manifest, updated in-place
+  prerender/<speaker>/<sha256>.ogg  — manifest-keyed OGG files
+  prerender/manifest.json           — unified manifest, updated in-place
 
 Safe to interrupt + restart: skips entries already present in the manifest.
 """
@@ -18,11 +18,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 sys.path.insert(0, str(Path(__file__).parent / "engines"))
 import f5_engine as f5
 from score import score_wav
-
-ROOT   = Path("/home/fank/repo/vanguard-galaxy")
-OUTDIR = ROOT / "prerender" / "echo"
-VARDIR = OUTDIR / "variants"
-PLAN   = ROOT / "tools" / "prerender" / "render_plan.json"
+from paths import PACK, MANIFEST, ROOT, ogg_path as _ogg_path, wav_path as _wav_path, manifest_ogg_rel
 
 
 def write_wav(path: Path, samples: np.ndarray, sr: int):
@@ -52,15 +48,14 @@ def main():
     ap.add_argument("--limit", type=int, default=None, help="Only first N (testing)")
     args = ap.parse_args()
 
-    OUTDIR.mkdir(parents=True, exist_ok=True)
-    VARDIR.mkdir(parents=True, exist_ok=True)
+    PACK.mkdir(parents=True, exist_ok=True)
 
     manifest = {}
-    manifest_path = OUTDIR / "manifest.json"
+    manifest_path = MANIFEST
     if manifest_path.exists():
         manifest = json.loads(manifest_path.read_text())
 
-    plan = json.loads(PLAN.read_text())
+    plan = json.loads((ROOT / "tools" / "prerender" / "render_plan.json").read_text())
     if args.limit:
         plan = plan[:args.limit]
 
@@ -86,8 +81,8 @@ def main():
 
         s = score_wav(x, sr, norm_text)
 
-        wav_path = VARDIR / f"{key}.wav"
-        ogg_path = OUTDIR / f"{key}.ogg"
+        wav_path = _wav_path(speaker, key)
+        ogg_path = _ogg_path(speaker, key)
         write_wav(wav_path, x, sr)
         encode_ogg(wav_path, ogg_path)
 
@@ -97,7 +92,7 @@ def main():
             "params": {"seed": args.seed, "speed": 1.0},
             "score_total": s.total,
             "score_components": {k: v for k, v in s.__dict__.items() if k != "total"},
-            "ogg": f"{key}.ogg",
+            "ogg": manifest_ogg_rel(speaker, key),
         }
 
         elapsed = time.time() - start

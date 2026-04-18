@@ -9,8 +9,8 @@ Runs automated checks that approximate 'listening':
 - For lines with specific hard patterns, targeted checks
 
 Output:
-  prerender/echo/review_report.md
-  prerender/echo/review_report.json
+  prerender/review_report.md
+  prerender/review_report.json
 """
 from __future__ import annotations
 import json, re, subprocess, sys
@@ -19,9 +19,7 @@ import numpy as np, wave
 
 sys.path.insert(0, str(Path(__file__).parent))
 from score import score_wav, _f0_trace  # noqa: E402
-
-ROOT = Path("/home/fank/repo/vanguard-galaxy")
-PACK = ROOT / "prerender" / "echo"
+from paths import PACK, MANIFEST  # noqa: E402
 
 
 def load_ogg_as_pcm(path: Path) -> tuple[np.ndarray, int]:
@@ -44,7 +42,8 @@ def load_ogg_as_pcm(path: Path) -> tuple[np.ndarray, int]:
 
 
 def analyze_entry(key: str, entry: dict) -> dict:
-    ogg = PACK / (entry.get("ogg") or f"{key}.ogg")
+    # The manifest's `ogg` field is a relative path like "<speaker>/<sha>.ogg".
+    ogg = PACK / entry.get("ogg", f"{key}.ogg")
     text = entry.get("text_normalized") or entry.get("text_raw", "")
     raw_text = entry.get("text_raw", text)
     if not ogg.exists():
@@ -99,7 +98,7 @@ def analyze_entry(key: str, entry: dict) -> dict:
 
 
 def main():
-    manifest = json.loads((PACK / "manifest.json").read_text())
+    manifest = json.loads(MANIFEST.read_text())
     print(f"Reviewing {len(manifest)} entries...")
     rows = []
     for i, (key, entry) in enumerate(manifest.items()):

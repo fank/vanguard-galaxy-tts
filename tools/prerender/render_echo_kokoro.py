@@ -15,11 +15,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 sys.path.insert(0, str(Path(__file__).parent / "engines"))
 import kokoro_engine as kokoro
 from score import score_wav
-
-ROOT = Path("/home/fank/repo/vanguard-galaxy")
-PACK = ROOT / "prerender" / "echo"
-VARDIR = PACK / "variants"
-MANIFEST = PACK / "manifest.json"
+from paths import MANIFEST, ogg_path as _ogg_path, wav_path as _wav_path, manifest_ogg_rel
 
 ECHO_VOICE_SID = 1       # af_aoede
 ECHO_VOICE_NAME = "kokoro:1"  # how the plugin/mapping will reference it
@@ -58,12 +54,13 @@ def main():
         x, sr = kokoro.synth(text, str(ECHO_VOICE_SID))
         s = score_wav(x, sr, text)
 
-        wav_path = VARDIR / f"{key}.wav"
-        ogg_path = PACK / f"{key}.ogg"
+        speaker = entry.get("speaker", "ECHO")
+        wav_path = _wav_path(speaker, key)
+        ogg_path = _ogg_path(speaker, key)
         write_wav(wav_path, x, sr)
         encode_ogg(wav_path, ogg_path)
 
-        # Update manifest entry — keep key/text/speaker/ogg, swap engine+voice+score
+        # Update manifest entry — keep key/text/speaker, swap engine+voice+score+ogg path
         entry.update({
             "engine": "kokoro",
             "voice": ECHO_VOICE_NAME,
@@ -71,6 +68,7 @@ def main():
             "reference": None,   # Kokoro-direct has no F5 reference
             "params": {"sid": ECHO_VOICE_SID, "speed": 1.0},
             "score_total": s.total,
+            "ogg": manifest_ogg_rel(speaker, key),
             "source": "kokoro-direct-rerender",
         })
         # Drop obsolete F5-era fields

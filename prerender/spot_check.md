@@ -4,20 +4,19 @@
 
 ## Score distribution
 
-- Perfect (1.00):        296
-- Excellent (≥0.95):     567
-- Good (≥0.85):          839
-- Mid (0.70-0.85):       383
-- Low (<0.70):           16
-- avg 0.895, min 0.40, max 1.00
+- Perfect (1.00):        220
+- Excellent (≥0.95):     456
+- Good (≥0.85):          797
+- Mid (0.70-0.85):       420
+- Low (<0.70):           21
+- avg 0.885, min 0.40, max 1.00
 
 ## Worst-scoring 12 lines
 
-- **ECHO** (s=0.40): `...`
 - **Midas** (s=0.40): `...`
 - **Umbral** (s=0.40): `...`
-- **Keril** (s=0.45): `...`
 - **captain** (s=0.45): `I... `
+- **Keril** (s=0.45): `...`
 - **captain** (s=0.69): `Is everyone ready?`
 - **captain** (s=0.69): `You're talking to me?`
 - **captain** (s=0.69): `And did you find a sort of compu...?`
@@ -25,6 +24,7 @@
 - **captain** (s=0.69): `What do you trade with them?`
 - **captain** (s=0.69): `And what do you get in return?`
 - **captain** (s=0.69): `What about the station crew?`
+- **captain** (s=0.69): `Then why hasn't that happened?`
 
 ## Representative sample — one line per major speaker
 
@@ -35,12 +35,12 @@
 - Reference: `sid14_am_fenrir`
 - Audio: 1.16s, peak 0.77, RMS -21.2 dB
 
-### ECHO  (173 lines, avg score 0.95)
+### ECHO  (173 lines, avg score 0.89)
 
-- Sample: `Tired of this old bucket? Yes, so am I, we can sell it in the Personal Hangar, as long as we have a replacement.`
-- Score: 1.00
-- Reference: `?`
-- Audio: 6.49s, peak 0.81, RMS -22.0 dB
+- Sample: `Navigation's still down. I'm working on it. Finish calibrating the tractor in the meantime.`
+- Score: 0.94
+- Reference: `None`
+- Audio: 4.98s, peak 0.59, RMS -20.9 dB
 
 ### Midas  (101 lines, avg score 0.92)
 
@@ -84,19 +84,19 @@
 - Reference: `sid17_am_onyx`
 - Audio: 3.75s, peak 0.82, RMS -18.4 dB
 
-### Sergio Weisartz  (25 lines, avg score 0.93)
+### Sergio Weisartz  (25 lines, avg score 0.82)
 
-- Sample: `What? I was not doing anything.`
-- Score: 0.96
-- Reference: `de_DE_thorsten_emotional`
-- Audio: 1.66s, peak 0.82, RMS -17.2 dB
-
-### Mikhail Kolyatov  (23 lines, avg score 0.86)
-
-- Sample: `Anyway. We have situation. Sector is... how you say... contested.`
+- Sample: `Yes, yes! I will do this now.`
 - Score: 0.88
-- Reference: `ru_RU_dmitri`
-- Audio: 2.27s, peak 0.8, RMS -21.4 dB
+- Reference: `sid18_am_puck`
+- Audio: 1.06s, peak 0.81, RMS -17.6 dB
+
+### Mikhail Kolyatov  (23 lines, avg score 0.84)
+
+- Sample: `Ah, yes that was his name.`
+- Score: 0.83
+- Reference: `sid17_am_onyx`
+- Audio: 1.14s, peak 0.81, RMS -20.4 dB
 
 ### Arle  (22 lines, avg score 0.93)
 
@@ -112,19 +112,19 @@
 - Reference: `kokoro_bf_emma_21`
 - Audio: 1.01s, peak 0.83, RMS -23.2 dB
 
-### Keril  (21 lines, avg score 0.86)
-
-- Sample: `I felt obligated to join, seeing as they took me in after I almost got scrapped alive by the `
-- Score: 0.94
-- Reference: `ru_RU_denis`
-- Audio: 4.45s, peak 0.8, RMS -20.2 dB
-
 ### Greg  (21 lines, avg score 0.89)
 
 - Sample: `So just jettison the pass at the gate to Orbitan, and it should unlock for you.`
 - Score: 0.93
 - Reference: `sid16_am_michael`
 - Audio: 3.92s, peak 0.78, RMS -20.0 dB
+
+### Keril  (21 lines, avg score 0.86)
+
+- Sample: `Let me return to my script. Ahem... Join us, and you'll be rewarded... with comradeship, solidarity...`
+- Score: 0.89
+- Reference: `sid16_am_michael`
+- Audio: 4.82s, peak 0.79, RMS -20.0 dB
 
 ### Cade Callahan  (19 lines, avg score 0.90)
 
@@ -182,13 +182,6 @@
 - Reference: `sid43_pm_alex`
 - Audio: 4.14s, peak 0.8, RMS -19.5 dB
 
-### Olga Skarsgard  (12 lines, avg score 0.92)
-
-- Sample: `Unbelievable. Even a pathetic creature like you can follow orders.`
-- Score: 1.00
-- Reference: `sv_SE_alma`
-- Audio: 3.92s, peak 0.8, RMS -18.6 dB
-
 ### Alice Okono  (12 lines, avg score 0.91)
 
 - Sample: `No, but I'm just the middleman. Some scientist-looking folks go crazy for the stuff.`
@@ -209,6 +202,13 @@
 - Score: 0.90
 - Reference: `kokoro_bf_emma_21`
 - Audio: 6.33s, peak 0.8, RMS -22.5 dB
+
+### Olga Skarsgard  (12 lines, avg score 0.91)
+
+- Sample: `Yeah, you better be. You just set foot onto a bastion of Orsanon Security, but you look like you sauntered into a superm`
+- Score: 0.95
+- Reference: `sid23_bf_lily`
+- Audio: 8.8s, peak 0.78, RMS -22.9 dB
 
 ### Elias McIntire  (11 lines, avg score 0.88)
 
@@ -241,22 +241,22 @@
 
 ## Random sample (deterministic)
 
-- **Anton Havel** (s=0.96): `But you... you seem in need of a mercenary!`
-  ref=sid17_am_onyx  dur=1.94s  peak=0.8
-- **ECHO** (s=1.00): `So rumour is, there's some great peril in the east. Isn't there always.. sigh.`
-  ref=?  dur=4.38s  peak=0.75
-- **Unknown Contact** (s=0.92): `The location of the `
-  ref=sid25_bm_fable  dur=1.1s  peak=0.8
-- **Sergeant Ogolin** (s=1.00): `A big pirate raid disrupted most of the system, and we're still dealing with the fallout. We'd be gr`
-  ref=sid23_bf_lily  dur=7.77s  peak=0.78
-- **captain** (s=0.96): `As if modern manufacturing techniques even involve hammers.`
-  ref=sid14_am_fenrir  dur=2.43s  peak=0.8
-- **Mirthe Coman** (s=0.90): `Say, someone was to start doing some missions for the Embassy. Perhaps those missions were to genera`
-  ref=kokoro_bf_emma_21  dur=13.75s  peak=0.8
-- **Triane Solis** (s=1.00): `Direct assaults on enemy stations are also... suggested. Though your reputation with them will deter`
-  ref=sid31_hf_alpha  dur=6.85s  peak=0.81
-- **Greg** (s=0.75): `The Great Gate? That's what they're calling it now?`
-  ref=sid16_am_michael  dur=2.37s  peak=0.79
+- **Lynn Bree** (s=1.00): `Hey hey. Did ya hear? The fleet is assembled and ready to go!`
+  ref=kokoro_af_sky_10  dur=3.62s  peak=0.81
+- **ECHO** (s=0.87): `So rumour is, there's some great peril in the east. Isn't there always.. sigh.`
+  ref=None  dur=3.92s  peak=0.79
+- **Adeline Lorentz** (s=1.00): `I'll go and look for the schematics, come find me in a little bit.`
+  ref=kokoro_bf_emma_21  dur=3.36s  peak=0.8
+- **Arle** (s=1.00): `... I might be willing to release him, if your reputation with us were higher...`
+  ref=sid32_hf_beta  dur=3.85s  peak=0.8
+- **Margot Cash** (s=0.81): `Back already? I'm not seeing your name atop the leaderboard just yet. How's your trading career comi`
+  ref=kokoro_bf_emma_21  dur=6.06s  peak=0.79
+- **captain** (s=0.96): `Very impressive, how does it work?`
+  ref=sid14_am_fenrir  dur=1.37s  peak=0.83
+- **captain** (s=0.81): `Happy ending?`
+  ref=sid14_am_fenrir  dur=0.43s  peak=0.75
+- **Creed** (s=1.00): `Your ECHO is the only one who can communicate with the constructor unit in the Hermetis system.`
+  ref=sid33_hm_omega  dur=5.77s  peak=0.8
 
 ## Failures: 0
 

@@ -25,10 +25,8 @@ sys.path.insert(0, str(Path(__file__).parent / "engines"))
 import f5_engine as f5
 import kokoro_engine as kokoro
 from score import score_wav
+from paths import PACK, MANIFEST, ROOT, ogg_path as _ogg_path, wav_path as _wav_path, manifest_ogg_rel
 
-ROOT   = Path("/home/fank/repo/vanguard-galaxy")
-PACK   = ROOT / "prerender" / "echo"
-VARDIR = PACK / "variants"
 MAPPING = ROOT / "tools" / "prerender" / "npc_voice_mapping.json"
 
 
@@ -68,7 +66,7 @@ def main():
                 for a in mapping_data["assignments"]}
     default_voice = voicemap.get("captain", ("kokoro_af_sky_10", "f5"))
 
-    manifest_path = PACK / "manifest.json"
+    manifest_path = MANIFEST
     manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
 
     rows = []
@@ -111,8 +109,8 @@ def main():
                 print(f"[{i+1}/{len(rows)}] {speaker}: ALL VARIANTS FAILED")
                 continue
 
-        wav_path = VARDIR / f"{key}.wav"
-        ogg_path = PACK / f"{key}.ogg"
+        wav_path = _wav_path(speaker, key)
+        ogg_path = _ogg_path(speaker, key)
         write_wav(wav_path, best[1], best[2])
         encode_ogg(wav_path, ogg_path)
         params = {"sid": int(ref.split(":", 1)[1]), "speed": 1.0} if engine == "kokoro" \
@@ -122,7 +120,7 @@ def main():
             "text_normalized": text, "text_raw": text,
             "engine": engine, "params": params,
             "score_total": best[0],
-            "ogg": f"{key}.ogg",
+            "ogg": manifest_ogg_rel(speaker, key),
             "source": "delta-render",
         }
         print(f"[{i+1}/{len(rows)}] {speaker:<25s} engine={engine} s={best[0]:.2f}")

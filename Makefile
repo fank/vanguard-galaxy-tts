@@ -63,16 +63,22 @@ deploy: build check-bepinex
 	@$(MAKE) deploy-bundle
 	@$(MAKE) deploy-prerender
 
-# Deploy the pre-rendered ECHO (and future) pack. OGG files + manifest go into
-# plugins/VGTTS/prerender/ which the C# PrerenderLookup reads on startup.
+# Deploy the pre-rendered dialogue pack. Preserves the per-speaker folder
+# layout (prerender/<speaker>/<sha>.ogg) — the C# PrerenderLookup reads the
+# manifest's `ogg` field as a relative path, so the tree must stay intact.
+# The variants/ folder is debug-only and excluded from the deploy.
 deploy-prerender:
-	@if [ -f prerender/echo/manifest.json ]; then \
+	@if [ -f prerender/manifest.json ]; then \
 		mkdir -p "$(PLUGIN_DIR)/VGTTS/prerender" ; \
-		cp prerender/echo/*.ogg prerender/echo/manifest.json "$(PLUGIN_DIR)/VGTTS/prerender/" ; \
-		count=$$(ls "$(PLUGIN_DIR)/VGTTS/prerender/"*.ogg 2>/dev/null | wc -l) ; \
+		cp prerender/manifest.json "$(PLUGIN_DIR)/VGTTS/prerender/" ; \
+		for d in prerender/*/ ; do \
+			case "$$d" in prerender/variants/) continue ;; esac ; \
+			cp -r "$$d" "$(PLUGIN_DIR)/VGTTS/prerender/" ; \
+		done ; \
+		count=$$(find "$(PLUGIN_DIR)/VGTTS/prerender/" -name "*.ogg" | wc -l) ; \
 		echo "Deployed $$count prerendered OGGs to $(PLUGIN_DIR)/VGTTS/prerender/" ; \
 	else \
-		echo "No prerender/echo/manifest.json — skipping prerender deploy" ; \
+		echo "No prerender/manifest.json — skipping prerender deploy" ; \
 	fi
 
 # Deploy the Piper bundle (piper.exe + voice models) if present.
