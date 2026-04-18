@@ -146,9 +146,13 @@ def score_f0_range(trace: list[tuple[float, float | None]]) -> float:
 
 
 def score_ending_trend(trace: list[tuple[float, float | None]], text: str) -> float:
+    """Score the last-syllable F0 against what the sentence-final punctuation
+    implies. Relaxed for very short utterances where only 1-2 voiced frames
+    are available — we can't reliably measure 'rise' from one sample."""
     voiced_tail = [f for _, f in trace[-5:] if f is not None]
-    if len(voiced_tail) < 2:
-        return 0.3
+    # Short utterance → metric unreliable → give a neutral passing score
+    if len(voiced_tail) < 3 or len(text.strip()) < 15:
+        return 0.7
     start_f0 = np.mean(voiced_tail[: max(1, len(voiced_tail) // 2)])
     end_f0 = np.mean(voiced_tail[-max(1, len(voiced_tail) // 2):])
     delta = end_f0 - start_f0

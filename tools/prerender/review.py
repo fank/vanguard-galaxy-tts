@@ -45,14 +45,17 @@ def load_ogg_as_pcm(path: Path) -> tuple[np.ndarray, int]:
 
 def analyze_entry(key: str, entry: dict) -> dict:
     ogg = PACK / (entry.get("ogg") or f"{key}.ogg")
-    text = entry["text_normalized"]
-    raw_text = entry["text_raw"]
+    text = entry.get("text_normalized") or entry.get("text_raw", "")
+    raw_text = entry.get("text_raw", text)
+    if not ogg.exists():
+        return {"key": key, "tip_id": entry.get("tip_id") or entry.get("speaker","?"),
+                "text": raw_text, "normalized": text, "flags": ["MISSING_OGG"],
+                "score_total": 0.0, "score_components": {}}
     x, sr = load_ogg_as_pcm(ogg)
     s = score_wav(x, sr, text)
     trace = _f0_trace(x, sr)
     voiced = [f for _, f in trace if f is not None]
     tail = [f for _, f in trace[-5:] if f is not None]
-    # Flags
     flags = []
     last_p = next((c for c in reversed(text.strip()) if c in "?!."), ".")
     if last_p == "?" and len(tail) >= 2:
@@ -79,7 +82,8 @@ def analyze_entry(key: str, entry: dict) -> dict:
         flags.append(f"CPS_ODD({cps:.1f})")
     return {
         "key": key,
-        "tip_id": entry["tip_id"],
+        "tip_id": entry.get("tip_id") or entry.get("speaker", "?"),
+        "speaker": entry.get("speaker", "?"),
         "text": raw_text,
         "normalized": text,
         "duration": dur,
