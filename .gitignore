@@ -10,23 +10,26 @@ VGTTS/lib/*.dll
 VGTTS/lib/*.pdb
 !VGTTS/lib/.gitkeep
 
-# Cache / generated TTS
+# Cache / generated TTS (legacy cache dir; plugin uses BepInEx/cache/VGTTS)
 cache/
 *.wav
-*.ogg
 *.mp3
 
 # Pre-render output (shipped as GitHub release asset, not in git)
 /prerender/
+*.ogg
 
 # OS
 .DS_Store
 Thumbs.db
 
 # Bundled TTS tools — large binaries, re-downloadable via `make download-*`
-tools/
-# ...but DO track the Python pre-render pipeline under tools/
-!tools/prerender/
+# List specific subdirs (can't un-ignore under a wholly-excluded parent in git)
+tools/piper/
+tools/sherpa/
+tools/kokoro/
+tools/voices/
+
 # Within the pipeline dir, exclude only data/cache subdirs
 tools/prerender/variants/
 tools/prerender/references/
