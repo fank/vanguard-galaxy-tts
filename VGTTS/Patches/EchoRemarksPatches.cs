@@ -27,6 +27,9 @@ internal static class EchoRemarksPatches
         if (!Plugin.Instance.CfgEnabled.Value || !Plugin.Instance.CfgEcho.Value)
             return;
 
+        if (!EchoTipFilter.ShouldSpeak(text))
+            return;
+
         TtsController.Instance?.Speak("ECHO", text);
     }
 

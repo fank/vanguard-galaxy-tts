@@ -31,6 +31,10 @@ public class Plugin : BaseUnityPlugin
     internal ConfigEntry<string> CfgPiperDefaultVoice = null!;
     internal ConfigEntry<int> CfgKokoroDefaultSpeaker = null!;
     internal ConfigEntry<string> CfgCaptainPreset = null!;
+    internal ConfigEntry<bool> CfgEchoTipsInSandbox = null!;
+    internal ConfigEntry<bool> CfgEchoTipsInConquest = null!;
+    internal ConfigEntry<float> CfgEchoTipsMinTravelSeconds = null!;
+    internal ConfigEntry<bool> CfgEchoTipsUnseenOnly = null!;
 
     private Harmony _harmony = null!;
 
@@ -59,6 +63,19 @@ public class Plugin : BaseUnityPlugin
             "commander gender. Options: auto, m1 (am_fenrir rugged American), " +
             "m2 (am_onyx deep), m3 (bm_fable British rogue), f1 (af_alloy calm), " +
             "f2 (bf_alice British), f3 (af_heart warm flagship).");
+        CfgEchoTipsInSandbox = Config.Bind("EchoTips", "InSandbox", true,
+            "Speak ECHO travel hints while in Sandbox mode. Set false if the hints " +
+            "are fatiguing in long free-play sessions. Disabling does NOT affect " +
+            "ECHO speaking in dialogue cutscenes (those are gated by DialogueTTS).");
+        CfgEchoTipsInConquest = Config.Bind("EchoTips", "InConquest", true,
+            "Speak ECHO travel hints while in Conquest mode.");
+        CfgEchoTipsMinTravelSeconds = Config.Bind("EchoTips", "MinTravelSeconds", 0f,
+            "Skip hints during the first N seconds of a travel leg. Short in-system " +
+            "hops don't warrant chatter. 0 = never skip (default).");
+        CfgEchoTipsUnseenOnly = Config.Bind("EchoTips", "UnseenOnly", false,
+            "If true, each hint plays voice at most once per cycle. Repeats appear " +
+            "on-screen but stay silent until the pool (~66 tips) refreshes. Fights " +
+            "the '200th repeat' fatigue problem.");
 
         ITtsProvider primary = CreateProvider();
         ITtsProvider? kokoro = TryCreateKokoroProvider();
@@ -75,6 +92,7 @@ public class Plugin : BaseUnityPlugin
         _harmony = new Harmony(PluginGuid);
         _harmony.PatchAll(typeof(Patches.DialogueManagerPatches));
         _harmony.PatchAll(typeof(Patches.EchoRemarksPatches));
+        _harmony.PatchAll(typeof(Patches.HudManagerPatches));
         Log.LogInfo($"{PluginName} v{PluginVersion} loaded ({_harmony.GetPatchedMethods().Count()} patches)");
     }
 
