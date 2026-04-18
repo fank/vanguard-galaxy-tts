@@ -1,0 +1,1784 @@
+{
+  "89d8a93f4d31fb9aa510d001338eff46658e66cd4e24fe8d77f1d816d18f43c4": {
+    "tip_id": "ECHOTravelTip1",
+    "text_raw": "Sometimes I just want to forget myself and fly into the sun... Its so pretty!",
+    "text_normalized": "Sometimes I just want to forget myself and fly into the sun. Its so pretty!",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "89d8a93f4d31fb9aa510d001338eff46658e66cd4e24fe8d77f1d816d18f43c4.ogg"
+  },
+  "d52f2bc6da5bb81241a4b70e0db6514bceac08eaf4e79bb186de8664311af1ac": {
+    "tip_id": "ECHOTravelTip10",
+    "text_raw": "We could really use some upgrades. Let's go find some new equipment.",
+    "text_normalized": "We could really use some upgrades. Let's go find some new equipment.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "d52f2bc6da5bb81241a4b70e0db6514bceac08eaf4e79bb186de8664311af1ac.ogg"
+  },
+  "742e9f41af859b29012ebc910790acebe64725b58e3acd552bdda294ccb9a31f": {
+    "tip_id": "ECHOTravelTip11",
+    "text_raw": "Tired of this old bucket? Yes, so am I, we can sell it in the Personal Hangar, as long as we have a replacement.",
+    "text_normalized": "Tired of this old bucket? Yes, so am I, we can sell it in the Personal Hangar, as long as we have a replacement.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "742e9f41af859b29012ebc910790acebe64725b58e3acd552bdda294ccb9a31f.ogg"
+  },
+  "fdd773eb07ded69d85e63dfca5cc213178e107845d9e2fe282a426fbe2b52984": {
+    "tip_id": "ECHOTravelTip12",
+    "text_raw": "Did you know that a hazard booster stops me from freaking out when in a hazard?",
+    "text_normalized": "Did you know that a hazard booster stops me from freaking out when in a hazard?",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 3,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 0.9803016474465542,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 0.9054479077434603,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 0.9803016474465542
+      }
+    },
+    "ogg": "fdd773eb07ded69d85e63dfca5cc213178e107845d9e2fe282a426fbe2b52984.ogg"
+  },
+  "98514fc2a87399381e5f8263f2f2a5444a7732d8166611652de91712608976a9": {
+    "tip_id": "ECHOTravelTip13",
+    "text_raw": "I'm sorry Dave, I ... Wait, that's not right.",
+    "text_normalized": "I'm sorry Dave, I . Wait, that's not right.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "98514fc2a87399381e5f8263f2f2a5444a7732d8166611652de91712608976a9.ogg"
+  },
+  "08a3fe75fbf8dd7c7b80e0e476ac9e804005f930140871c7125d0aea0546bce1": {
+    "tip_id": "ECHOTravelTip14",
+    "text_raw": "The Luminate Combine really like their drones, they're like a cult or something.",
+    "text_normalized": "The Luminate Combine really like their drones, they're like a cult or something.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "08a3fe75fbf8dd7c7b80e0e476ac9e804005f930140871c7125d0aea0546bce1.ogg"
+  },
+  "e9c5e34c52f857928dfaced61e7b5cca8438cb8f05e14f4b2f59588806ad86b0": {
+    "tip_id": "ECHOTravelTip15",
+    "text_raw": "At some point in the past, gates were built using structural components. Now they use skeleton frames.",
+    "text_normalized": "At some point in the past, gates were built using structural components. Now they use skeleton frames.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 1,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "e9c5e34c52f857928dfaced61e7b5cca8438cb8f05e14f4b2f59588806ad86b0.ogg"
+  },
+  "aef5818feb9e4f5011f631f8b8d2478230c29071cf151a5ec2e3c2d04d39da70": {
+    "tip_id": "ECHOTravelTip16",
+    "text_raw": "Bats are really useful creatures. I don't know why I just said that.",
+    "text_normalized": "Bats are really useful creatures. I don't know why I just said that.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "aef5818feb9e4f5011f631f8b8d2478230c29071cf151a5ec2e3c2d04d39da70.ogg"
+  },
+  "612ae684057e0fef2c30f96937e8d0dc0a4f59c4514b6e2cdfc569f3e4d1b8e4": {
+    "tip_id": "ECHOTravelTip17",
+    "text_raw": "This music takes me places!",
+    "text_normalized": "This music takes me places!",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "612ae684057e0fef2c30f96937e8d0dc0a4f59c4514b6e2cdfc569f3e4d1b8e4.ogg"
+  },
+  "84688825521d854e2322a93e68e23ffec4dd16ab3985e383e92b91d6fbc2c715": {
+    "tip_id": "ECHOTravelTip18",
+    "text_raw": "You can re-assign skills when we are docked at a space station.",
+    "text_normalized": "You can re-assign skills when we are docked at a space station.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "84688825521d854e2322a93e68e23ffec4dd16ab3985e383e92b91d6fbc2c715.ogg"
+  },
+  "6ee6d7374ccf59726b0e24f9ffe4598fb495b8afd09b828fecd10bccbd7d2ae8": {
+    "tip_id": "ECHOTravelTip19",
+    "text_raw": "Sometimes I get stuck in a loop, I blame my programming.",
+    "text_normalized": "Sometimes I get stuck in a loop, I blame my programming.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 2,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "6ee6d7374ccf59726b0e24f9ffe4598fb495b8afd09b828fecd10bccbd7d2ae8.ogg"
+  },
+  "60c7d2bc3bddfb84284a6fa6df9e2379e25c7a4d50d5b1e45100312d2bfb9ebe": {
+    "tip_id": "ECHOTravelTip2",
+    "text_raw": "Let's build something great together, take over the universe or something.",
+    "text_normalized": "Let's build something great together, take over the universe or something.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "60c7d2bc3bddfb84284a6fa6df9e2379e25c7a4d50d5b1e45100312d2bfb9ebe.ogg"
+  },
+  "2aca7cd0549ae908f7d505435e4152f21d9c977db1446dd9820d24abf58678b5": {
+    "tip_id": "ECHOTravelTip20",
+    "text_raw": "Multipass! I'm reminded every time we drop a jump gate pass.",
+    "text_normalized": "Multipass! I'm reminded every time we drop a jump gate pass.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 0.9049477198286721,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 0.7,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 0.7837490551776265,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 0.9049477198286721
+      }
+    },
+    "ogg": "2aca7cd0549ae908f7d505435e4152f21d9c977db1446dd9820d24abf58678b5.ogg"
+  },
+  "633ab9e4beb9613a6bfb039045778a558343e8dcd3e4a79015d94da8ce11353a": {
+    "tip_id": "ECHOTravelTip21",
+    "text_raw": "Flying through space, looking at the stars, there's just nothing like it.",
+    "text_normalized": "Flying through space, looking at the stars, there's just nothing like it.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 0.9950359389038633,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 0.98,
+        "f0_range": 1.0,
+        "ending_trend": 0.9828391734052104,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 0.9950359389038633
+      }
+    },
+    "ogg": "633ab9e4beb9613a6bfb039045778a558343e8dcd3e4a79015d94da8ce11353a.ogg"
+  },
+  "2851f370f5bb249aecbe37fc0625cd428680e7a5b5c31463ed50e5b2b94f1f83": {
+    "tip_id": "ECHOTravelTip22",
+    "text_raw": "You know, I think this partnership is going to work out just fine. We just have a lot to learn. Especially you.",
+    "text_normalized": "You know, I think this partnership is going to work out just fine. We just have a lot to learn. Especially you.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 1,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "2851f370f5bb249aecbe37fc0625cd428680e7a5b5c31463ed50e5b2b94f1f83.ogg"
+  },
+  "4cd4aa3fc4cf9721f5b5d5607d21fcfe8ec057157cc71767af40818e1dc05d47": {
+    "tip_id": "ECHOTravelTip23",
+    "text_raw": "Stars, stars, stars everywhere.",
+    "text_normalized": "Stars, stars, stars everywhere.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "4cd4aa3fc4cf9721f5b5d5607d21fcfe8ec057157cc71767af40818e1dc05d47.ogg"
+  },
+  "1ba353117ad550d6b512dddbf9fc2e1c82fc8f33fd8aeabfaf1b8045ee91b08e": {
+    "tip_id": "ECHOTravelTip24",
+    "text_raw": "Boosters can be found with varying effects. Install them when visiting a station.",
+    "text_normalized": "Boosters can be found with varying effects. Install them when visiting a station.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 1,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "1ba353117ad550d6b512dddbf9fc2e1c82fc8f33fd8aeabfaf1b8045ee91b08e.ogg"
+  },
+  "e327b3790bf71e2206c6613809e5ab50cc9c32334defe3dcee303eaafe5dfc08": {
+    "tip_id": "ECHOTravelTip25",
+    "text_raw": "Mining ships get a yield bonus, yield means more ore per mining power applied to the target.",
+    "text_normalized": "Mining ships get a yield bonus, yield means more ore per mining power applied to the target.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "e327b3790bf71e2206c6613809e5ab50cc9c32334defe3dcee303eaafe5dfc08.ogg"
+  },
+  "c8f6c1ab19c1052a5a4f56274c2218f8664117dbad2089fc62073724ea630a75": {
+    "tip_id": "ECHOTravelTip26",
+    "text_raw": "Salvage ships get a yield bonus, yield increases the chance of getting those tasty items.",
+    "text_normalized": "Salvage ships get a yield bonus, yield increases the chance of getting those tasty items.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 0.9091415787585159,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 0.5638795780408761,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 0.9091415787585159
+      }
+    },
+    "ogg": "c8f6c1ab19c1052a5a4f56274c2218f8664117dbad2089fc62073724ea630a75.ogg"
+  },
+  "c37de4d998861a1c812f73c58f7cf22da719565c670abfa5aa34349f76e99576": {
+    "tip_id": "ECHOTravelTip27",
+    "text_raw": "Combat ships get a precision bonus, which really means critical chance.",
+    "text_normalized": "Combat ships get a precision bonus, which really means critical chance.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "c37de4d998861a1c812f73c58f7cf22da719565c670abfa5aa34349f76e99576.ogg"
+  },
+  "f396b3b8ed09c288b1dba37318acd4bbff2cb32d8dbc564c1159f3fe5f3e4c84": {
+    "tip_id": "ECHOTravelTip28",
+    "text_raw": "There are hazard boosters available for purchase that can help mitigate the effect of hazards we encounter.",
+    "text_normalized": "There are hazard boosters available for purchase that can help mitigate the effect of hazards we encounter.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "f396b3b8ed09c288b1dba37318acd4bbff2cb32d8dbc564c1159f3fe5f3e4c84.ogg"
+  },
+  "3f02c97a3fcef021c9f851e3f8b984431c5099044dd6b676590e673d2285c422": {
+    "tip_id": "ECHOTravelTip29",
+    "text_raw": "If you activate me, also check out my settings in the sidepanel, to further tweak my behaviour.",
+    "text_normalized": "If you activate me, also check out my settings in the sidepanel, to further tweak my behaviour.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 2,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "3f02c97a3fcef021c9f851e3f8b984431c5099044dd6b676590e673d2285c422.ogg"
+  },
+  "dc3dc7a9532096204ae757598c46d57a3e7da1619dbf8d84c1e63f0b8d191b70": {
+    "tip_id": "ECHOTravelTip3",
+    "text_raw": "Did you know.. ahh you probably do already.",
+    "text_normalized": "Did you know, ahh you probably do already.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 1,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 0.9813154993973205,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 0.9103143971071386,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 0.9813154993973205
+      }
+    },
+    "ogg": "dc3dc7a9532096204ae757598c46d57a3e7da1619dbf8d84c1e63f0b8d191b70.ogg"
+  },
+  "e3e6c0f52dcc8d151a3bad91c241e6c3f9033ee8d3035de4ad4416e574b50a82": {
+    "tip_id": "ECHOTravelTip30",
+    "text_raw": "When you enable me to run the ship, I will check the current loadout for the highest power and assign myself fitting activities.",
+    "text_normalized": "When you enable me to run the ship, I will check the current loadout for the highest power and assign myself fitting activities.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 1,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "e3e6c0f52dcc8d151a3bad91c241e6c3f9033ee8d3035de4ad4416e574b50a82.ogg"
+  },
+  "01e5736461412e6652195c7dd6ba185746c44953a236b8198a26368e65ea1f3c": {
+    "tip_id": "ECHOTravelTip31",
+    "text_raw": "You can change a turret by either right clicking it, or by dragging it on top of a hardpoint.",
+    "text_normalized": "You can change a turret by either right clicking it, or by dragging it on top of a hardpoint.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 1,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "01e5736461412e6652195c7dd6ba185746c44953a236b8198a26368e65ea1f3c.ogg"
+  },
+  "5d564e57658b68bc23ae6b88068557dbf42da66131990d37b2baec9b29347d38": {
+    "tip_id": "ECHOTravelTip32",
+    "text_raw": "When you activate me I will refill ammo if needed, from the armory first and the shop second.",
+    "text_normalized": "When you activate me I will refill ammo if needed, from the armory first and the shop second.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "5d564e57658b68bc23ae6b88068557dbf42da66131990d37b2baec9b29347d38.ogg"
+  },
+  "b7dd5d208fe79034f23a71c2ba77ed48b6366fbde45fa6e235bdb14c4ee3ba79": {
+    "tip_id": "ECHOTravelTip33",
+    "text_raw": "If you let me run missions a lot, also take a look at the Automated Negotiations skill. We make more credits that way.",
+    "text_normalized": "If you let me run missions a lot, also take a look at the Automated Negotiations skill. We make more credits that way.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 1,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 0.9929027407524997,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 0.965933155611999,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 0.9929027407524997
+      }
+    },
+    "ogg": "b7dd5d208fe79034f23a71c2ba77ed48b6366fbde45fa6e235bdb14c4ee3ba79.ogg"
+  },
+  "cb0026dc23ee5c582ae49f54c7e7170e261b2031e34acbd19fd34b47faf89cf8": {
+    "tip_id": "ECHOTravelTip34",
+    "text_raw": "Check the Ship Information tab in the side panel to see details of your current loadout.",
+    "text_normalized": "Check the Ship Information tab in the side panel to see details of your current loadout.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "cb0026dc23ee5c582ae49f54c7e7170e261b2031e34acbd19fd34b47faf89cf8.ogg"
+  },
+  "f1636e20308ad54f9b49ec107a276cacbc28f5ad29409c51bf94157a1b416d2b": {
+    "tip_id": "ECHOTravelTip35",
+    "text_raw": "If you want to override my automatic activity selection, change it in my settings.",
+    "text_normalized": "If you want to override my automatic activity selection, change it in my settings.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "f1636e20308ad54f9b49ec107a276cacbc28f5ad29409c51bf94157a1b416d2b.ogg"
+  },
+  "aafe2c2e835637f92addd16be9b2c0bfd7683668afe33e5ba23669f60cb34a42": {
+    "tip_id": "ECHOTravelTip36",
+    "text_raw": "Drones get a built in hazard booster, be useful little ones!",
+    "text_normalized": "Drones get a built in hazard booster, be useful little ones!",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "aafe2c2e835637f92addd16be9b2c0bfd7683668afe33e5ba23669f60cb34a42.ogg"
+  },
+  "fd94007ada84d7e36d2e0e7c7bb5fe67a407042f54cc701830f07f58cbab8d0c": {
+    "tip_id": "ECHOTravelTip37",
+    "text_raw": "You can equip new turrets or equipment by right clicking them or simply drag them onto the slot.",
+    "text_normalized": "You can equip new turrets or equipment by right clicking them or simply drag them onto the slot.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 0.8541666666666667,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 0.3,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 0.8541666666666667
+      }
+    },
+    "ogg": "fd94007ada84d7e36d2e0e7c7bb5fe67a407042f54cc701830f07f58cbab8d0c.ogg"
+  },
+  "c573caa056bb6e0ef374fba9f718b1c480878876103e7031d22a54cd77cc67b1": {
+    "tip_id": "ECHOTravelTip38",
+    "text_raw": "Hold shift to compare items to the ones you have equipped. When holding shift you can scroll to compare with a different item.",
+    "text_normalized": "Hold shift to compare items to the ones you have equipped. When holding shift you can scroll to compare with a different item.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 2,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 0.95,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 0.7,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 0.95
+      }
+    },
+    "ogg": "c573caa056bb6e0ef374fba9f718b1c480878876103e7031d22a54cd77cc67b1.ogg"
+  },
+  "94e7e4477abfd6461c6a313c086ac93c85299fbb367cda85344b2167f7677708": {
+    "tip_id": "ECHOTravelTip39",
+    "text_raw": "After changing your loadout, check your reactor output. Efficient energy usage will give you more power in the field.",
+    "text_normalized": "After changing your loadout, check your reactor output. Efficient energy usage will give you more power in the field.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 1,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "94e7e4477abfd6461c6a313c086ac93c85299fbb367cda85344b2167f7677708.ogg"
+  },
+  "4cc7f1dea59f528b33a24708fabdfacf5f98013db701bb6c970721afe36ab3b9": {
+    "tip_id": "ECHOTravelTip4",
+    "text_raw": "Did you know that mining lasers mine asteroids? I know right? Nuts!",
+    "text_normalized": "Did you know that mining lasers mine asteroids? I know right? Nuts!",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 1,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "4cc7f1dea59f528b33a24708fabdfacf5f98013db701bb6c970721afe36ab3b9.ogg"
+  },
+  "4dbed99b07b5a88a1464bb433e5525021770865b2cd0cf8cfb1370978981023b": {
+    "tip_id": "ECHOTravelTip40",
+    "text_raw": "Armor has some built in resistances.",
+    "text_normalized": "Armor has some built in resistances.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 2,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "4dbed99b07b5a88a1464bb433e5525021770865b2cd0cf8cfb1370978981023b.ogg"
+  },
+  "2f89e4b94f872ed195efbbc3f01cadf290ddf8626a9dd7b6e7dd3431f0b60f3b": {
+    "tip_id": "ECHOTravelTip41",
+    "text_raw": "A wise person once said to me \"Greatness takes time\". Nice.. back to the grind.",
+    "text_normalized": "A wise person once said to me \"Greatness takes time\". Nice, back to the grind.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "2f89e4b94f872ed195efbbc3f01cadf290ddf8626a9dd7b6e7dd3431f0b60f3b.ogg"
+  },
+  "5a9b05c45f8d26f8a8bf6def3bc83f873c6220aaf07b9112485ee5b4b511e429": {
+    "tip_id": "ECHOTravelTip42",
+    "text_raw": "00101101011...  Ha ha ha! Hey, why are you not laughing?",
+    "text_normalized": "00101101011. Ha ha ha! Hey, why are you not laughing?",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 2,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 0.9768518518518519,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 0.8888888888888888,
+        "total": 0.9768518518518519
+      }
+    },
+    "ogg": "5a9b05c45f8d26f8a8bf6def3bc83f873c6220aaf07b9112485ee5b4b511e429.ogg"
+  },
+  "d530ee94b3b02a4ecedffb6eec3f974d8af06fe66f0db0f3b751bf3f53f67a22": {
+    "tip_id": "ECHOTravelTip5",
+    "text_raw": "The core of an asteroid is quite valuable. And I like credits.",
+    "text_normalized": "The core of an asteroid is quite valuable. And I like credits.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "d530ee94b3b02a4ecedffb6eec3f974d8af06fe66f0db0f3b751bf3f53f67a22.ogg"
+  },
+  "69e4d8b883c01e9e01c0815b2140a597c980b4e2725b76e6e55488e10f7ef31f": {
+    "tip_id": "ECHOTravelTip6",
+    "text_raw": "Did you know that if you wait long enough I will eventually tell you something useful here.",
+    "text_normalized": "Did you know that if you wait long enough I will eventually tell you something useful here.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 1,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 0.9826342951342952,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 0.9166446166446169,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 0.9826342951342952
+      }
+    },
+    "ogg": "69e4d8b883c01e9e01c0815b2140a597c980b4e2725b76e6e55488e10f7ef31f.ogg"
+  },
+  "be7eb039fa0db1a33d6af22e382dce2493dee49461847b331615a4a44be7ce4e": {
+    "tip_id": "ECHOTravelTip7",
+    "text_raw": "Did you know that fuel cells speed up travel? Means you don't have to listen to me so much.",
+    "text_normalized": "Did you know that fuel cells speed up travel? Means you don't have to listen to me so much.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "be7eb039fa0db1a33d6af22e382dce2493dee49461847b331615a4a44be7ce4e.ogg"
+  },
+  "416a23b352d6f69f87e05ed2ec6f78ce26087156cd690fdafc6ee193829373f2": {
+    "tip_id": "ECHOTravelTip8",
+    "text_raw": "If you look to the left, you can see... Eternal Darkness.",
+    "text_normalized": "If you look to the left, you can see. Eternal Darkness.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 1,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 0.9848787862943986,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 0.9274181742131133,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 0.9848787862943986
+      }
+    },
+    "ogg": "416a23b352d6f69f87e05ed2ec6f78ce26087156cd690fdafc6ee193829373f2.ogg"
+  },
+  "be0845b4372aed51bb68c5c525c8c7dcde589e9c96da7a6c3c28d236efe8184d": {
+    "tip_id": "ECHOTravelTip9",
+    "text_raw": "So when are we upgrading this ship into something decent then?",
+    "text_normalized": "So when are we upgrading this ship into something decent then?",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 4,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 0.8349886240423755,
+      "components": {
+        "duration_sanity": 0.7,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 0.8,
+        "ending_trend": 0.5412787287367355,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 0.8349886240423755
+      }
+    },
+    "ogg": "be0845b4372aed51bb68c5c525c8c7dcde589e9c96da7a6c3c28d236efe8184d.ogg"
+  },
+  "65a92be05cfa8a1f516ceb49c493bf17f2971b5cbbf5bf68302a8c7531967932": {
+    "tip_id": "ECHOTravelTipConquest1",
+    "text_raw": "Praise saint goblin, may the loot overflow thy cargo hold",
+    "text_normalized": "Praise saint goblin, may the loot overflow thy cargo hold",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 1,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 0.9375382119582586,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 0.700183417399641,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 0.9375382119582586
+      }
+    },
+    "ogg": "65a92be05cfa8a1f516ceb49c493bf17f2971b5cbbf5bf68302a8c7531967932.ogg"
+  },
+  "4b630b767ba0c384c6513c9cd24cce05e24e2932ada0862a10a0f4f4f3b71404": {
+    "tip_id": "ECHOTravelTipSandbox1",
+    "text_raw": "Gate Passes into Dread Port systems are dropped by pirates. Look for a conflict zone in the sub-sector.",
+    "text_normalized": "Gate Passes into Dread Port systems are dropped by pirates. Look for a conflict zone in the sub-sector.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "4b630b767ba0c384c6513c9cd24cce05e24e2932ada0862a10a0f4f4f3b71404.ogg"
+  },
+  "6e67545d852f827f732c839046ca47213d6e06e2ad4c1b778bfcf94586c0d49f": {
+    "tip_id": "ECHOTravelTipSandbox10",
+    "text_raw": "Wanna go find a Patrol board? I feel like shooting up some pirates!",
+    "text_normalized": "Wanna go find a Patrol board? I feel like shooting up some pirates!",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 2,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "6e67545d852f827f732c839046ca47213d6e06e2ad4c1b778bfcf94586c0d49f.ogg"
+  },
+  "09f8ca9eec17b1c5fc19aba70ff1575f8963832edf17f8c2377ff729a94d721c": {
+    "tip_id": "ECHOTravelTipSandbox11",
+    "text_raw": "Orsanon offers a Bounty board. We can go hunt some fearsome pirates.",
+    "text_normalized": "Orsanon offers a Bounty board. We can go hunt some fearsome pirates.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 2,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "09f8ca9eec17b1c5fc19aba70ff1575f8963832edf17f8c2377ff729a94d721c.ogg"
+  },
+  "912c0c82482a9d60a39d883ba751d11e72b6eb3b58bc9334c18798f456e19119": {
+    "tip_id": "ECHOTravelTipSandbox12",
+    "text_raw": "Forge Industries is known for Industry Ops. If you have a mining and/or salvaging capable ship, head over to one of their stations.",
+    "text_normalized": "Forge Industries is known for Industry Ops. If you have a mining and/or salvaging capable ship, head over to one of their stations.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 2,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "912c0c82482a9d60a39d883ba751d11e72b6eb3b58bc9334c18798f456e19119.ogg"
+  },
+  "f705c8a2a40905509914a154d9c1cdd2291377824104422c24ec5b1872507c5f": {
+    "tip_id": "ECHOTravelTipSandbox13",
+    "text_raw": "Patrol, Bounty and Industry Ops each pay in commendations which can be used to buy powerful equipment in their shop.",
+    "text_normalized": "Patrol, Bounty and Industry Ops each pay in commendations which can be used to buy powerful equipment in their shop.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 0.7916666666666666,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 0.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 0.7916666666666666
+      }
+    },
+    "ogg": "f705c8a2a40905509914a154d9c1cdd2291377824104422c24ec5b1872507c5f.ogg"
+  },
+  "d669febf669cbcad343b893083ae8a3a0bd34ef81e2dc703a48114b303c8d286": {
+    "tip_id": "ECHOTravelTipSandbox14",
+    "text_raw": "Some railguns penetrate multiple targets in a row.",
+    "text_normalized": "Some railguns penetrate multiple targets in a row.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 2,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 0.9837993682846462,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 0.922236967766302,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 0.9837993682846462
+      }
+    },
+    "ogg": "d669febf669cbcad343b893083ae8a3a0bd34ef81e2dc703a48114b303c8d286.ogg"
+  },
+  "ab7d0ec33f73339a0cca178fa6f52c96990e96492b00d3d7f5864780d360a0d3": {
+    "tip_id": "ECHOTravelTipSandbox15",
+    "text_raw": "Missiles can reacquire a different target if the opportunity presents itself.",
+    "text_normalized": "Missiles can reacquire a different target if the opportunity presents itself.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 2,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "ab7d0ec33f73339a0cca178fa6f52c96990e96492b00d3d7f5864780d360a0d3.ogg"
+  },
+  "c95866e2974f1402bf8da6afcd8e0b068cf40f10faa365ebf58ab1c0736330b7": {
+    "tip_id": "ECHOTravelTipSandbox16",
+    "text_raw": "If you combine surface and core turrets you will get a 10% yield bonus.",
+    "text_normalized": "If you combine surface and core turrets you will get a 10% yield bonus.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "c95866e2974f1402bf8da6afcd8e0b068cf40f10faa365ebf58ab1c0736330b7.ogg"
+  },
+  "a27b59676182e9648db7620398697b0764b50746e02a227368d2af1c7adfd13c": {
+    "tip_id": "ECHOTravelTipSandbox17",
+    "text_raw": "So rumour is, there's some great peril in the east. Isn't there always.. sigh.",
+    "text_normalized": "So rumour is, there's some great peril in the east. Isn't there always, sigh.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "a27b59676182e9648db7620398697b0764b50746e02a227368d2af1c7adfd13c.ogg"
+  },
+  "a1cfcedd55800c15508b9ba2626986ecaae0357b2b436894e408b1100c4321ca": {
+    "tip_id": "ECHOTravelTipSandbox18",
+    "text_raw": "Some interesting people visit those space station bars.",
+    "text_normalized": "Some interesting people visit those space station bars.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 2,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "a1cfcedd55800c15508b9ba2626986ecaae0357b2b436894e408b1100c4321ca.ogg"
+  },
+  "5be5deb47cc1a4ae5e095d3c690836373c7656b5103e8efc0fc50d531f9ef816": {
+    "tip_id": "ECHOTravelTipSandbox19",
+    "text_raw": "I think Canisec should really be doing a better job around here...",
+    "text_normalized": "I think Canisec should really be doing a better job around here.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "5be5deb47cc1a4ae5e095d3c690836373c7656b5103e8efc0fc50d531f9ef816.ogg"
+  },
+  "702501f61a0126f1407473fbfc2974e50052fd6572168747bc7af1bd4f1f8a83": {
+    "tip_id": "ECHOTravelTipSandbox2",
+    "text_raw": "Closed off systems can be unlocked by buying a Gate Pass in the relevant space station.",
+    "text_normalized": "Closed off systems can be unlocked by buying a Gate Pass in the relevant space station.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 1,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "702501f61a0126f1407473fbfc2974e50052fd6572168747bc7af1bd4f1f8a83.ogg"
+  },
+  "eda96879f6913023a507dc05b9fb536932710136f541639bdfb668cf48497b2f": {
+    "tip_id": "ECHOTravelTipSandbox20",
+    "text_raw": "Check out the bar at a station for new crew members.",
+    "text_normalized": "Check out the bar at a station for new crew members.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "eda96879f6913023a507dc05b9fb536932710136f541639bdfb668cf48497b2f.ogg"
+  },
+  "ee52e4a7e9815c4317af6f834c28e5007b4f30752ed2966ac1ffe823f684ee8e": {
+    "tip_id": "ECHOTravelTipSandbox21",
+    "text_raw": "Skills that crew members give stack with your own skills.",
+    "text_normalized": "Skills that crew members give stack with your own skills.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "ee52e4a7e9815c4317af6f834c28e5007b4f30752ed2966ac1ffe823f684ee8e.ogg"
+  },
+  "7e58109c4bc414b46c0b57a162db0b6e48b3c6d59fac4b9b2f065f7e54b0870e": {
+    "tip_id": "ECHOTravelTipSandbox22",
+    "text_raw": "Asteroid and salvage fields will be replaced if not visited for an hour.",
+    "text_normalized": "Asteroid and salvage fields will be replaced if not visited for an hour.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 1,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "7e58109c4bc414b46c0b57a162db0b6e48b3c6d59fac4b9b2f065f7e54b0870e.ogg"
+  },
+  "d13cf188ad627901d7457838152ccf8079068a1b5b4a8ad6965bd4a8a8057f6a": {
+    "tip_id": "ECHOTravelTipSandbox23",
+    "text_raw": "You can change your drone loadout in the Personal Hangar.",
+    "text_normalized": "You can change your drone loadout in the Personal Hangar.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 2,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 0.9926937573686457,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 0.9649300353694996,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 0.9926937573686457
+      }
+    },
+    "ogg": "d13cf188ad627901d7457838152ccf8079068a1b5b4a8ad6965bd4a8a8057f6a.ogg"
+  },
+  "a6466a520233bea166592c14806696590b266f453310ea74459d0a058d8ed893": {
+    "tip_id": "ECHOTravelTipSandbox3",
+    "text_raw": "Asteroids have a chance to drop crystals, which can be sold for profit or used in crafting.",
+    "text_normalized": "Asteroids have a chance to drop crystals, which can be sold for profit or used in crafting.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 1,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 0.95,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 0.7,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 0.95
+      }
+    },
+    "ogg": "a6466a520233bea166592c14806696590b266f453310ea74459d0a058d8ed893.ogg"
+  },
+  "ed0e46b1d9f14e04e264dab2fc98a90f366626a177309c8459e1cb3bd5beb980": {
+    "tip_id": "ECHOTravelTipSandbox4",
+    "text_raw": "Ships have a hull bonus that makes them great at their specific role.",
+    "text_normalized": "Ships have a hull bonus that makes them great at their specific role.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 1,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "ed0e46b1d9f14e04e264dab2fc98a90f366626a177309c8459e1cb3bd5beb980.ogg"
+  },
+  "99a8c85723614fc139028d645b3871d10ad4f279b1a5317ed7693251eea7ce6b": {
+    "tip_id": "ECHOTravelTipSandbox5",
+    "text_raw": "Did you know that you can learn new skill trees at some space stations? Blue markers.",
+    "text_normalized": "Did you know that you can learn new skill trees at some space stations? Blue markers.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 1,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 0.9208378880565814,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 0.6200218626715904,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 0.9208378880565814
+      }
+    },
+    "ogg": "99a8c85723614fc139028d645b3871d10ad4f279b1a5317ed7693251eea7ce6b.ogg"
+  },
+  "79c14d323312c990f55129110e3195c3311ac09baf1a5d3cee34555f6f6ce7c5": {
+    "tip_id": "ECHOTravelTipSandbox6",
+    "text_raw": "I think we need more credits, let's find Intertrade Network and do some trading.",
+    "text_normalized": "I think we need more credits, let's find Intertrade Network and do some trading.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "79c14d323312c990f55129110e3195c3311ac09baf1a5d3cee34555f6f6ce7c5.ogg"
+  },
+  "e673f4927782dee0b48b5dd3751d73a38f241e0afe919c80398fa0a740923eba": {
+    "tip_id": "ECHOTravelTipSandbox7",
+    "text_raw": "If you want to improve our gear, find a Steel Vultures station with a workshop.",
+    "text_normalized": "If you want to improve our gear, find a Steel Vultures station with a workshop.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "e673f4927782dee0b48b5dd3751d73a38f241e0afe919c80398fa0a740923eba.ogg"
+  },
+  "0cf7a1999b936f2c38aed2848c3ffb6812bfa6efa48c316b3d2d201dd61ffb93": {
+    "tip_id": "ECHOTravelTipSandbox8",
+    "text_raw": "Skill points can be redistributed at a space station. You instantly forget stuff, so weird.",
+    "text_normalized": "Skill points can be redistributed at a space station. You instantly forget stuff, so weird.",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 1,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "0cf7a1999b936f2c38aed2848c3ffb6812bfa6efa48c316b3d2d201dd61ffb93.ogg"
+  },
+  "a93815ba2588e5e890a89386d87f01cb126dfda109ffb5cd2235dd62a7a6378c": {
+    "tip_id": "ECHOTravelTipSandbox9",
+    "text_raw": "Did you know that Steel Vultures really are just that? Vultures the lot of them, look what they do to those pretty ships!",
+    "text_normalized": "Did you know that Steel Vultures really are just that? Vultures the lot of them, look what they do to those pretty ships!",
+    "speaker": "ECHO",
+    "engine": "f5",
+    "voice": "kokoro_bf_emma_21",
+    "voice_name": "kokoro_bf_emma_21",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score": {
+      "total": 1.0,
+      "components": {
+        "duration_sanity": 1.0,
+        "loudness_sanity": 1.0,
+        "edge_silence": 1.0,
+        "f0_range": 1.0,
+        "ending_trend": 1.0,
+        "voicing_holes": 1.0,
+        "repeat_fidelity": 1.0,
+        "total": 1.0
+      }
+    },
+    "ogg": "a93815ba2588e5e890a89386d87f01cb126dfda109ffb5cd2235dd62a7a6378c.ogg"
+  }
+}

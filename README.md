@@ -2,7 +2,12 @@
 
 BepInEx plugin that speaks dialogue lines in Vanguard Galaxy using text-to-speech.
 
-Strategy: offline neural TTS (Kokoro v1.0 primary, Piper as optional fallback) with on-disk caching and per-character voice profiles.
+Strategy: **pre-rendered pack primary, offline TTS fallback.** The 66 known ECHO travel tips are synthesized once (GPU, F5-TTS with Kokoro-cloned British female) at build time, encoded as OGG Vorbis, and shipped with the plugin. At runtime, dialogue lines hit the pack first; anything not in the pack (new lines from future game patches) falls through to live Kokoro TTS.
+
+Benefits of the tiered design:
+- Every shipped ECHO line has the voice, prosody, and emotional contour we picked offline with unlimited compute budget
+- Forward-compatible with game patches (new text works, just sounds different)
+- Fast: OGG load is ~100 ms vs. ~3-5 s for live Kokoro synth on cold start
 
 ## Status
 

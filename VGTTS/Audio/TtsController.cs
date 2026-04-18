@@ -5,6 +5,7 @@ using Behaviour.Util;
 using Source.AudioSystem;
 using UnityEngine;
 using VGTTS.Cache;
+using VGTTS.Prerender;
 using VGTTS.Text;
 using VGTTS.TTS;
 using VGTTS.Voice;
@@ -22,15 +23,17 @@ internal sealed class TtsController
     private readonly ITtsProvider _provider;
     private readonly DiskCache _cache;
     private readonly VoiceMapper _voices;
+    private readonly PrerenderLookup _prerender;
     private CancellationTokenSource? _currentCts;
     private SoundEmitter? _currentEmitter;
     private GameObject? _fallbackGo;
 
-    public TtsController(ITtsProvider provider, DiskCache cache, VoiceMapper voices)
+    public TtsController(ITtsProvider provider, DiskCache cache, VoiceMapper voices, PrerenderLookup prerender)
     {
         _provider = provider;
         _cache = cache;
         _voices = voices;
+        _prerender = prerender;
     }
 
     public void Speak(string speaker, string text)
@@ -57,8 +60,23 @@ internal sealed class TtsController
 
     private IEnumerator SpeakCoroutine(string speaker, string text, CancellationToken ct)
     {
-        var resolution = _voices.Resolve(speaker);
         var synthText = TextNormalizer.ForTts(text);
+
+        // 1. Prerender path — premium baked audio, voice already chosen at build time.
+        var prerenderedPath = _prerender.Resolve(synthText, speaker);
+        if (prerenderedPath != null)
+        {
+            AudioClip? prerenderedClip = null;
+            yield return AudioClipLoader.LoadOgg(prerenderedPath, c => prerenderedClip = c);
+            if (prerenderedClip != null && !ct.IsCancellationRequested)
+            {
+                PlayClip(prerenderedClip, pitch: 1.0f);
+                yield break;
+            }
+        }
+
+        // 2. Live fallback — Kokoro (or configured provider) with per-character voice mapping.
+        var resolution = _voices.Resolve(speaker);
         var path = _cache.PathFor(synthText, resolution.Voice);
 
         if (!_cache.Exists(path))

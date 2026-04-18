@@ -15,7 +15,8 @@ DOTNET   ?= $(shell command -v dotnet 2>/dev/null || echo /tmp/dnsdk/dotnet/dotn
 BEPINEX_VERSION := 5.4.23.2
 BEPINEX_URL     := https://github.com/BepInEx/BepInEx/releases/download/v$(BEPINEX_VERSION)/BepInEx_win_x64_$(BEPINEX_VERSION).zip
 
-.PHONY: all build link-asm clean deploy deploy-bundle install-bepinex check-bepinex \
+.PHONY: all build link-asm clean deploy deploy-bundle deploy-prerender \
+        install-bepinex check-bepinex \
         download-tools download-piper download-kokoro
 
 all: build
@@ -46,6 +47,10 @@ link-asm:
 		ln -sf "$(GAME_DIR)/VanguardGalaxy_Data/Managed/Assembly-CSharp.dll" VGTTS/lib/Assembly-CSharp.dll ; \
 		echo "Linked Assembly-CSharp.dll" ; \
 	fi
+	@if [ ! -e "VGTTS/lib/Newtonsoft.Json.dll" ]; then \
+		ln -sf "$(GAME_DIR)/VanguardGalaxy_Data/Managed/Newtonsoft.Json.dll" VGTTS/lib/Newtonsoft.Json.dll ; \
+		echo "Linked Newtonsoft.Json.dll" ; \
+	fi
 
 build: link-asm
 	DOTNET_ROOT=$(dir $(DOTNET)) $(DOTNET) build VGTTS/VGTTS.csproj -c $(CONFIG)
@@ -56,6 +61,19 @@ deploy: build check-bepinex
 	@if [ -f "$(BUILDDIR)/VGTTS.pdb" ]; then cp "$(BUILDDIR)/VGTTS.pdb" "$(PLUGIN_DIR)/"; fi
 	@echo "Deployed $(DLL) to $(PLUGIN_DIR)"
 	@$(MAKE) deploy-bundle
+	@$(MAKE) deploy-prerender
+
+# Deploy the pre-rendered ECHO (and future) pack. OGG files + manifest go into
+# plugins/VGTTS/prerender/ which the C# PrerenderLookup reads on startup.
+deploy-prerender:
+	@if [ -f prerender/echo/manifest.json ]; then \
+		mkdir -p "$(PLUGIN_DIR)/VGTTS/prerender" ; \
+		cp prerender/echo/*.ogg prerender/echo/manifest.json "$(PLUGIN_DIR)/VGTTS/prerender/" ; \
+		count=$$(ls "$(PLUGIN_DIR)/VGTTS/prerender/"*.ogg 2>/dev/null | wc -l) ; \
+		echo "Deployed $$count prerendered OGGs to $(PLUGIN_DIR)/VGTTS/prerender/" ; \
+	else \
+		echo "No prerender/echo/manifest.json — skipping prerender deploy" ; \
+	fi
 
 # Deploy the Piper bundle (piper.exe + voice models) if present.
 deploy-bundle:
