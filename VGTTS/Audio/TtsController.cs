@@ -24,16 +24,19 @@ internal sealed class TtsController
     private readonly DiskCache _cache;
     private readonly VoiceMapper _voices;
     private readonly PrerenderLookup _prerender;
+    private readonly UnprerenderedLog _unprerendered;
     private CancellationTokenSource? _currentCts;
     private SoundEmitter? _currentEmitter;
     private GameObject? _fallbackGo;
 
-    public TtsController(ITtsProvider provider, DiskCache cache, VoiceMapper voices, PrerenderLookup prerender)
+    public TtsController(ITtsProvider provider, DiskCache cache, VoiceMapper voices,
+                         PrerenderLookup prerender, UnprerenderedLog unprerendered)
     {
         _provider = provider;
         _cache = cache;
         _voices = voices;
         _prerender = prerender;
+        _unprerendered = unprerendered;
     }
 
     public void Speak(string speaker, string text)
@@ -72,6 +75,18 @@ internal sealed class TtsController
             {
                 PlayClip(prerenderedClip, pitch: 1.0f);
                 yield break;
+            }
+        }
+        else
+        {
+            // Miss — log once per (speaker, text) so users can see at a glance which lines
+            // fell through to live TTS and harvest them for the next render pass.
+            var key = PrerenderLookup.ComputeKey(synthText, speaker);
+            if (_unprerendered.Record(speaker, synthText, key))
+            {
+                Plugin.Log.LogWarning(
+                    $"[prerender-miss] {speaker}: \"{synthText}\" — falling back to live TTS. " +
+                    $"Harvest BepInEx/cache/VGTTS/unprerendered.tsv for the next render pass.");
             }
         }
 

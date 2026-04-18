@@ -60,9 +60,11 @@ public class Plugin : BaseUnityPlugin
 
         var voiceMapper = new VoiceMapper(Config, CfgPiperDefaultVoice.Value, DefaultVoiceMap.Seeds);
         var prerender = new PrerenderLookup();
-        TtsController.Instance = new TtsController(router, new DiskCache(), voiceMapper, prerender);
+        var unprerendered = new UnprerenderedLog();
+        TtsController.Instance = new TtsController(router, new DiskCache(), voiceMapper, prerender, unprerendered);
         Log.LogInfo($"TTS provider: {router.Name}, NPC profiles seeded: {DefaultVoiceMap.Seeds.Count}, " +
-                    $"prerender entries: {prerender.EntryCount}");
+                    $"prerender entries: {prerender.EntryCount}, " +
+                    $"prior prerender-misses: {unprerendered.SeenCount}");
 
         _harmony = new Harmony(PluginGuid);
         _harmony.PatchAll(typeof(Patches.DialogueManagerPatches));
