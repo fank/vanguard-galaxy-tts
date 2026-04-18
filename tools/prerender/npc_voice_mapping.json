@@ -8,12 +8,15 @@
       "placeholder": "No direct match — using closest English baseline; flagged for external reference sourcing"
     },
     "gaps_filled": {
-      "Russian": "Piper ru_RU-dmitri-medium (Kolyatov), ru_RU-denis-medium (Keril)",
-      "Scottish": "Piper en_GB-alba-medium (Elias McIntire)",
-      "Nordic/Swedish": "Piper sv_SE-alma-medium (Olga Skarsgard)",
-      "German": "Piper de_DE-thorsten_emotional-medium (Sergio Weisartz)"
+      "Scottish": "Piper en_GB-alba-medium (Elias McIntire) — works because Alba is English-language, Scottish-accented"
     },
-    "two_tts_pipeline": "Non-English Piper voices render the probe phrase in English (phoneme shapes of the native language carry over), then F5-TTS clones that English output as its reference voice. Result: authentic accented English on any line we synth."
+    "gaps_open": {
+      "Russian": "Keril + Mikhail Kolyatov — need Russian-accented ENGLISH (not Russian-language). Candidates: Mozilla Common Voice `accent='Russian'` samples, L2-ARCTIC is missing Russian but has adjacent Slavic options, or ElevenLabs paid voices tagged Russian.",
+      "German":  "Sergio Weisartz — need German-accented ENGLISH. Same sources.",
+      "Nordic":  "Olga Skarsgard — need Swedish/Norwegian-accented ENGLISH.",
+      "_note": "Piper voices tagged ru_RU / de_DE / sv_SE were wrongly assumed to speak English with accent; in reality they're single-language trained and produce unintelligible output when fed English text. Reverted these to English-native placeholders on 2026-04-18."
+    },
+    "lessons_learned": "Automated scoring (F0 rise, loudness, duration) cannot detect phonetic unintelligibility — a Piper voice happily produces correct F0 contours while saying nonsense words. Always audibly verify new reference voices before locking them into the mapping."
   },
   "assignments": [
     {"name": "captain",             "reference": "sid14_am_fenrir",       "fidelity": "strong", "notes": "Player character — no portrait (it's the PC). Rugged American explorer voice fits the space-captain archetype. Users override via config to match their own captain's imagined voice."},
@@ -34,7 +37,7 @@
     {"name": "Arle",                "reference": "sid32_hf_beta",         "fidelity": "workable", "notes": "Female commander — Hindi F gives commanding non-Western flavor fitting Luminate Commander role"},
     {"name": "Prison Guard",        "reference": "kokoro_af_sky_10",      "fidelity": "strong", "notes": "AI-portrait reuse — clean neutral female"},
     {"name": "John Raythor",        "reference": "sid16_am_michael",      "fidelity": "strong", "notes": "American older captain, grandfatherly"},
-    {"name": "Keril",               "reference": "ru_RU_denis",           "fidelity": "strong", "notes": "Kolyatov Conscript — Piper ru_RU-denis-medium (young Russian male), English clone via F5"},
+    {"name": "Keril",               "reference": "sid16_am_michael",      "fidelity": "placeholder", "notes": "Kolyatov Conscript — ACCENT GAP: Piper ru_RU is Russian-language-only and produces unintelligible English. Using generic American M until we source Russian-accented English audio (Common Voice / L2-ARCTIC / ElevenLabs)."},
     {"name": "Thundo Klipz",        "reference": "sid13_am_eric",         "fidelity": "strong", "notes": "American gritty salvager — need to add am_eric probe"},
 
     {"name": "Adeline Lorentz",     "reference": "kokoro_bf_emma_21",     "fidelity": "strong", "notes": "British station commander (same voice fam as ECHO; different pitch should distinguish)"},
@@ -47,7 +50,7 @@
     {"name": "Melloy",              "reference": "sid18_am_puck",         "fidelity": "strong", "notes": "American wisecracker — puck is lively"},
 
     {"name": "Elias McIntire",      "reference": "en_GB_alba_scottish",   "fidelity": "strong", "notes": "Piper en_GB-alba-medium — 'Alba' = Scottish Gaelic for Scotland. Authentic Scottish accent"},
-    {"name": "Olga Skarsgard",      "reference": "sv_SE_alma",            "fidelity": "strong", "notes": "Piper sv_SE-alma-medium — authentic Swedish F matches Nordic surname"},
+    {"name": "Olga Skarsgard",      "reference": "sid23_bf_lily",         "fidelity": "placeholder", "notes": "ACCENT GAP: Piper sv_SE is Swedish-language-only. Using crisp British F (clipped military tone fits the Combat Veteran role) until we source Swedish-accented English."},
     {"name": "Alice Okono",         "reference": "sid31_hf_alpha",        "fidelity": "workable", "notes": "Young African-descent — Hindi F gives non-Western warmth"},
     {"name": "Brandon Wallace",     "reference": "sid13_am_eric",         "fidelity": "strong", "notes": "American bearded forgemaster"},
     {"name": "Oron",                "reference": "sid43_pm_alex",         "fidelity": "workable", "notes": "'Machine Shepherd' + dreads — Portuguese M for Caribbean/pan-African flavor"},
@@ -58,13 +61,13 @@
     {"name": "Amalia Rodriguez",    "reference": "sid28_ef_dora",         "fidelity": "strong", "notes": "Latina bounty hunter — Spanish F authentic"},
     {"name": "Gabriel Ramos",       "reference": "sid29_em_alex",         "fidelity": "strong", "notes": "Latino security liaison — Spanish M"},
     {"name": "Edar Thopter",        "reference": "sid22_bf_isabella",     "fidelity": "strong", "notes": "CORRECTED: portrait reads female. British trade director."},
-    {"name": "Sergio Weisartz",     "reference": "de_DE_thorsten_emotional", "fidelity": "strong", "notes": "Piper de_DE-thorsten_emotional — German M with emotion support, fits 'Doctor?' eccentric persona"},
+    {"name": "Sergio Weisartz",     "reference": "sid18_am_puck",         "fidelity": "placeholder", "notes": "ACCENT GAP: Piper de_DE is German-language-only and catastrophically unintelligible in English. Using lively American M (captures the 'quirky doctor' energy, loses the German accent) until we source German-accented English."},
     {"name": "Brenda Diamond",      "reference": "sid06_af_nicole",       "fidelity": "strong", "notes": "Mature American HR officer — need af_nicole probe"},
     {"name": "Anton Havel",         "reference": "sid17_am_onyx",         "fidelity": "strong", "notes": "Smooth sales pitch"},
 
     {"name": "Cade Callahan",       "reference": "sid16_am_michael",      "fidelity": "strong", "notes": "Canisec Commander — American police-chief"},
     {"name": "Victor Hale",         "reference": "sid17_am_onyx",         "fidelity": "strong", "notes": "Stellar exec villain — cold, calculating"},
-    {"name": "Mikhail Kolyatov",    "reference": "ru_RU_dmitri",          "fidelity": "strong", "notes": "Piper ru_RU-dmitri-medium — stern Russian M, ideal for High Commissar authoritarian voice"},
+    {"name": "Mikhail Kolyatov",    "reference": "sid17_am_onyx",         "fidelity": "placeholder", "notes": "ACCENT GAP: Piper ru_RU is Russian-language-only. Using deep American M for cold-commissar feel until we source Russian-accented English."},
     {"name": "Triane Solis",        "reference": "sid31_hf_alpha",        "fidelity": "strong", "notes": "Mystical Luminate admin — Hindi F fits spiritual/pan-Asian aesthetic perfectly"},
 
     {"name": "Waldo Everson",       "reference": "sid14_am_fenrir",       "fidelity": "strong", "notes": "American frontier miner"},

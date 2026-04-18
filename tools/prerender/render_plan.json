@@ -541,35 +541,35 @@
   {
     "key": "6dffd2c8dcf59195ac30bb6611ee701c1efb67872727cdb8f0f3a5fcaa810a55",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "Captain, this will not stand, improve your standing with us before we can work together.",
     "text_normalized": "Captain, this will not stand, improve your standing with us before we can work together."
   },
   {
     "key": "055f28f43af5483e615a61d61532162f50e309cabe3dbf5b33cb6c4e58429447",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "Captain, we currently have not presence in the Conquest sector. Return to us when we do.",
     "text_normalized": "Captain, we currently have not presence in the Conquest sector. Return to us when we do."
   },
   {
     "key": "a42a26317c2ad0a5f18c73abffca1ecb055c0fd8d1081cb0c9091ab6faf22d8e",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "Ah, I saw you docking. Thought I'd take a moment to speak with you, Captain.",
     "text_normalized": "Ah, I saw you docking. Thought I'd take a moment to speak with you, Captain."
   },
   {
     "key": "bcc3a0488d49fb9573de67d83376bebbf8445ce568a99631f213939f87b11ff4",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "We are, and we need abled bodied captains like yourself.",
     "text_normalized": "We are, and we need abled bodied captains like yourself."
   },
   {
     "key": "8ae71d4185276e61c350ab20418b8a3c0ae0620ac9d40a25aee4408ef1f8cf23",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "You could really make a difference, not for profit, but for the people, the collective.",
     "text_normalized": "You could really make a difference, not for profit, but for the people, the collective."
   },
@@ -583,21 +583,21 @@
   {
     "key": "bdf396a8dfeacd9bfb6b124ec8ae3704befafef40201fe5ba5d234b7797ee212",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "...",
     "text_normalized": "."
   },
   {
     "key": "0e7ade32af37c1aa9476af328143e65d26f3703913390a2ca9d9bb4cabc28799",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "There will be some loot involved.",
     "text_normalized": "There will be some loot involved."
   },
   {
     "key": "0642443b624b307448c0ef6f2d5e2285d4ec622b36a60e3fed0dd5df1c24bbf1",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "Let me return to my script. Ahem... Join us, and you'll be rewarded... with comradeship, solidarity...",
     "text_normalized": "Let me return to my script. Ahem. Join us, and you'll be rewarded, with comradeship, solidarity."
   },
@@ -611,42 +611,42 @@
   {
     "key": "7bd79b66be48dab1621048b3f9d1acd1ddbeaef5c7e1d7e65ee16091e5fcb174",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "... and access to vessels, such as our destroyers...",
     "text_normalized": ", and access to vessels, such as our destroyers."
   },
   {
     "key": "6ca75dccb268df5d9c31a9076c49c304a7ef425370ee3ee11e7ad801b4721100",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "Your actions can tip the balance here, Captain. Help the collective, and you'll have our full support.",
     "text_normalized": "Your actions can tip the balance here, Captain. Help the collective, and you'll have our full support."
   },
   {
     "key": "98f4ec3d538663060b9e2702ddc1c251733c3047cc4b8db985d11204cf25871b",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "There's a jumpgate linking this system to our headquarters in the Conquest sector.",
     "text_normalized": "There's a jumpgate linking this system to our headquarters in the Conquest sector."
   },
   {
     "key": "40369a6045bea6605deb1a7fef27d40e068825e8f4135706c0d58a205d25a1f8",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "If you would accept, meet up with the ",
     "text_normalized": "If you would accept, meet up with the"
   },
   {
     "key": "359ed841ac1b58df26add4a13ee4ff0e40eed8259d4ecf264edc1eff099b1184",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "Ah! Captain! Welcome, welcome!",
     "text_normalized": "Ah! Captain! Welcome, welcome!"
   },
   {
     "key": "539ab832aa4fa0723a393f03fa11054aef7d2902de4a110411ff48980c2f1fbe",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "Mikhail Kolyatov. Yes... that Kolyatov. My great-great-great-etc-grandfather started the Collective.",
     "text_normalized": "Mikhail Kolyatov. Yes, that Kolyatov. My great-great-great-etc-grandfather started the Collective."
   },
@@ -660,14 +660,14 @@
   {
     "key": "0dadcc66fc65d791d86535311f2636e41cb2cb8b567e3449b55dd47cf2ec2110",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "Ah, yes that was his name.",
     "text_normalized": "Ah, yes that was his name."
   },
   {
     "key": "6f20ff0b1bbac752d22f499e5048529a6649abd5d33d329f3fe69e04994152e0",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "Anyway. We have situation. Sector is... how you say... contested.",
     "text_normalized": "Anyway. We have situation. Sector is, how you say, contested."
   },
@@ -681,28 +681,28 @@
   {
     "key": "9f02490506b67140d7a75aff451625bbac2790cf682089401f70b0f2479ca107",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "Exactly! But ownership is outdated concept. Sector should belong to people.",
     "text_normalized": "Exactly! But ownership is outdated concept. Sector should belong to people."
   },
   {
     "key": "55487cf120c78c67baecdeee8f629cbe983b3960977b2874f0ec53558ab4e5a8",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "Our fleets push at frontline systems, but we need more strength. Always more strength.",
     "text_normalized": "Our fleets push at frontline systems, but we need more strength. Always more strength."
   },
   {
     "key": "c2f28b0c2711736d0d9310392f67239eb6da7116b1710cbd9e4d9ee5ffc2e17f",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "You help by taking missions in Conquest sector. Build Fleet Strength for us.",
     "text_normalized": "You help by taking missions in Conquest sector. Build Fleet Strength for us."
   },
   {
     "key": "43d1f9520950437dc6d823c300b2c08b8ded3a6d09c7b57bd2e9085dfea91334",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "You can also attack enemy stations. They will not like you, but... they do not like us anyway.",
     "text_normalized": "You can also attack enemy stations. They will not like you, but, they do not like us anyway."
   },
@@ -716,14 +716,14 @@
   {
     "key": "448cb31c4f9f8d336f719407d9ed211b702b4ed632659f9eb5b1ad98cc1cecf3",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "For now, we require 10 Fleet Strength. Small number. Very achievable number.",
     "text_normalized": "For now, we require 10 Fleet Strength. Small number. Very achievable number."
   },
   {
     "key": "c03de4fe08c0a380264fd8f555b6fb40fd345f5f33b5f67a0bd8812d1be8fb6b",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "You help, yes?",
     "text_normalized": "You help, yes?"
   },
@@ -737,21 +737,21 @@
   {
     "key": "190ab8a25b27ef2bda301322621fbc414c65f787b517dabc0dda99cf212c0e63",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "Ha, ",
     "text_normalized": "Ha,"
   },
   {
     "key": "708404830d4c641b651ad7ea4bd389ff26ab4601179d46cdfdbcba2e4f1fa424",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "Your actions strengthen the morale greatly.",
     "text_normalized": "Your actions strengthen the morale greatly."
   },
   {
     "key": "c69f4e965a9a5e9aee4012420a476cdeefb4007104751c4625ee47e09e9b730b",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "When collective grow stronger, we all grow stronger. Even you, Captain.",
     "text_normalized": "When collective grow stronger, we all grow stronger. Even you, Captain."
   },
@@ -765,14 +765,14 @@
   {
     "key": "38916e5d5e4a5ab71426053c0d201006a2e960fb33cfd1f16075be243bdea44d",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "Is family tradition.",
     "text_normalized": "Is family tradition."
   },
   {
     "key": "49f014448d647f29d625314d62a4d3c82b4d616c4bd037bb9cb3e195efdd0de0",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "Continue working with us and you rise in rank.",
     "text_normalized": "Continue working with us and you rise in rank."
   },
@@ -786,21 +786,21 @@
   {
     "key": "f10a37c7d5fd6ff8a57eded5c48668ca04de3220495defd39e2230fdbba6a983",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "But, now we also need to liberate systems. 30% we need!",
     "text_normalized": "But, now we also need to liberate systems. 30% we need!"
   },
   {
     "key": "baa3545116b1568c3cdddd222212bb1c6b59ee4c765883ef712469b86bba9e70",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "You can do this, yes?",
     "text_normalized": "You can do this, yes?"
   },
   {
     "key": "bf1bb462bb73a623de44122e6a09fa50494a74528fe78f52a53214556a66d429",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "Captain! We control over 30% of sector now! This is good day.",
     "text_normalized": "Captain! We control over 30% of sector now! This is good day."
   },
@@ -814,14 +814,14 @@
   {
     "key": "322a9cec6e2829ffca9d4b3f237f7a2f1c902e7bbddd7f240a4ae14bcb4b61c9",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "No! Not suprised. I always think greatly of you.",
     "text_normalized": "No! Not suprised. I always think greatly of you."
   },
   {
     "key": "9d273f0dbb4343f1093f85b88b0117f5b23f9b03ab893995bc281c7e41c30995",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "But 30% is not enough. Sector must be... mine.",
     "text_normalized": "But 30% is not enough. Sector must be, mine."
   },
@@ -835,21 +835,21 @@
   {
     "key": "26fca79cb19393f65a70f7fced8615eccf8a79dcd966c659808661b21e93460f",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "Yes, I am also people. You understand spirit of it.",
     "text_normalized": "Yes, I am also people. You understand spirit of it."
   },
   {
     "key": "8c46c51271b868ccd4084263b97a5103f462078c9f12c1c7d34e60d1b9bbe02d",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "Become better friends with us. More rewards will come. Better ships. Greater trust.",
     "text_normalized": "Become better friends with us. More rewards will come. Better ships. Greater trust."
   },
   {
     "key": "17f9b4fd791e160e89b08cb013ebcb108b265554891089e64703a5847f119cec",
     "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
+    "reference": "sid17_am_onyx",
     "text_raw": "Together we make sector strong.",
     "text_normalized": "Together we make sector strong."
   },
@@ -1878,14 +1878,14 @@
   {
     "key": "200dfc44f042dfd61e13c5dc27790be3494a628a6015ed089f4ffa37c94bc4c6",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "You are back! I have prepared everything!",
     "text_normalized": "You are back! I have prepared everything!"
   },
   {
     "key": "c58cfd62957b58a159f66ed5e68fa6710c8e43d59a9482dc4d4a9edf60af5dbc",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "Did they look at you funny? Walking away with these items?",
     "text_normalized": "Did they look at you funny? Walking away with these items?"
   },
@@ -1899,7 +1899,7 @@
   {
     "key": "4ad3fbd1b8a294fad372c9506c3f491327f3e3b741663054fd62502a2c1f6b3d",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "Yes, but what would your crew think of you hah!",
     "text_normalized": "Yes, but what would your crew think of you hah!"
   },
@@ -1913,7 +1913,7 @@
   {
     "key": "306f28aa93e89f85cd8ab08a880783bf2fcc232f3644bc1b6c4548b7d3c34541",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "Yes, well sure... fine... payment time, the agreed upon amount.",
     "text_normalized": "Yes, well sure, fine, payment time, the agreed upon amount."
   },
@@ -1927,7 +1927,7 @@
   {
     "key": "aaf6a0a7ff89e30303fde7b657041078daa6fd373f9189ce0e8c2d43114f58ed",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "Yes, yes! I will do this now.",
     "text_normalized": "Yes, yes! I will do this now."
   },
@@ -1941,14 +1941,14 @@
   {
     "key": "8a7ab196a1e1a2dd91d4685f59f81837f63d18fdc036c0f42ff971b881693e59",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "No... hmmm...",
     "text_normalized": "No, hmmm."
   },
   {
     "key": "85f398987d1882ffa3e78c53836233c39480e7280b3ec51c7c70720318e98c6f",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "Done! Humans are just so easy to work with.",
     "text_normalized": "Done! Humans are just so easy to work with."
   },
@@ -1962,7 +1962,7 @@
   {
     "key": "7d95a706acbc91d44517e98dd7989d85d43e1b5811972c62120fc0392f0f8f59",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "Probably, very easy... Now, please... Go! I will work on my project, yes!",
     "text_normalized": "Probably, very easy. Now, please. Go! I will work on my project, yes!"
   },
@@ -1990,7 +1990,7 @@
   {
     "key": "c506c0a35e42868097b1c2457f72c75be0d181e8f595e16821e89056de8e2612",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "What? I was not doing anything.",
     "text_normalized": "What? I was not doing anything."
   },
@@ -2004,21 +2004,21 @@
   {
     "key": "7abc1b7663d8f13747e472609a41cd83006046a85819b4098474474197b19306",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "In-ter-trade! When you land, find one of their Trade Terminals and procure the items.",
     "text_normalized": "In-ter-trade! When you land, find one of their Trade Terminals and procure the items."
   },
   {
     "key": "e5270a73ff84c78b2ec7a8343690bf377576ed3f30eb52a3e59bba3a2ab63e67",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "Yes! Oh look at you. Hey there...",
     "text_normalized": "Yes! Oh look at you. Hey there."
   },
   {
     "key": "1b2059191fcbe82b5f144b9f1a4a111a19c75290e1fd36f91b4c5f3fa3a65b97",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "Poor Captain, hello? Hello! How are you?",
     "text_normalized": "Poor Captain, hello? Hello! How are you?"
   },
@@ -2032,7 +2032,7 @@
   {
     "key": "97a2b8cb2abd2f129aedc8ca1d4f2ebedc942665ca563cd8a680dc8036e3144c",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "It... You... Oh, you I can fix!",
     "text_normalized": "It. You. Oh, you I can fix!"
   },
@@ -2046,14 +2046,14 @@
   {
     "key": "6c82a0cc3f1d5ec66f8f0d9229b327e8a1a35f162ccacabfca4ed4775e2a9901",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "You poor... Yes! Upgrading you need!",
     "text_normalized": "You poor. Yes! Upgrading you need!"
   },
   {
     "key": "13c20ac0b8b0875129384ad45492fa53f76b59e42e9d389fc0fc1201bfdfeb5d",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "I will enhance your learning capabilities.",
     "text_normalized": "I will enhance your learning capabilities."
   },
@@ -2067,42 +2067,42 @@
   {
     "key": "339d6734bb7aeaa3d0f9b01f5ed62858f308ef3f868e0085a1bf71073304c9e7",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "Oh you stupi... yes! No! No not for free. But not that costly either.",
     "text_normalized": "Oh you stupi, yes! No! No not for free. But not that costly either."
   },
   {
     "key": "e9550866c7f42d234519ae750d201f40359e53e5342828942250b6e5acc1d615",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "You see, I am working on a little side project.",
     "text_normalized": "You see, I am working on a little side project."
   },
   {
     "key": "14641fbdc0210ecd6bab577a2eebd76f1bc6a4ea92161decaced929487ad1c4e",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "Just some android tinkering, nothing illegal, no!",
     "text_normalized": "Just some android tinkering, nothing illegal, no!"
   },
   {
     "key": "d6a8471bb1eb40b545b1649e01147a7587e80ba0250354023e381ce3a5aece0f",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "It's just that I have run out of supplies.",
     "text_normalized": "It's just that I have run out of supplies."
   },
   {
     "key": "4cbb9cc4621934a6f9e5f94fbeb78ac2a1b3ac2b7b88a4aa92035150157b38a5",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "I need several more Artificial Organs, some packs of Synthblood and another Blank Android Shell.",
     "text_normalized": "I need several more Artificial Organs, some packs of Synthblood and another Blank Android Shell."
   },
   {
     "key": "a320b08e5caeb30548e7efa8d2fb1c4ef8376d8283ce37054af0a3b87f9449f4",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "But... I am banned from Intertrade. You understand, right?",
     "text_normalized": "But, I am banned from Intertrade. You understand, right?"
   },
@@ -2116,7 +2116,7 @@
   {
     "key": "9bcc1a81bca12b2a0b9009f6563dde6e20dc76a7ee45a710da2a2fd3852f59ba",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "See! Great, you can bring me these items.",
     "text_normalized": "See! Great, you can bring me these items."
   },
@@ -2144,14 +2144,14 @@
   {
     "key": "0a2db377bb5d60fa900c3a4af375175918025d35fc52c38ba7b0dc8ae7001837",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "Ah! So exciting! Yes, I go prepare.",
     "text_normalized": "Ah! So exciting! Yes, I go prepare."
   },
   {
     "key": "fea28537d083b034da3bdb1e275446744eb589fd3beb43ff24c8b506c0d3f262",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "No, you go away.",
     "text_normalized": "No, you go away."
   },
@@ -2165,7 +2165,7 @@
   {
     "key": "1820e5e82a58ff49cd857a9f11985c894d5b151c858f3142acde3ab53cc696ff",
     "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
+    "reference": "sid18_am_puck",
     "text_raw": "You need a bit more experience for me to take interest in you.",
     "text_normalized": "You need a bit more experience for me to take interest in you."
   },
@@ -2410,7 +2410,7 @@
   {
     "key": "210893d9a145fec662578e44fade1a35f1d49d438c220783b43d6557f2a827da",
     "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
+    "reference": "sid23_bf_lily",
     "text_raw": "Unbelievable. Even a pathetic creature like you can follow orders.",
     "text_normalized": "Unbelievable. Even a pathetic creature like you can follow orders."
   },
@@ -2424,7 +2424,7 @@
   {
     "key": "bfcc50151ab3c574c50e91868bb91af26464ee923d9cbfe543cceadd5b478068",
     "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
+    "reference": "sid23_bf_lily",
     "text_raw": "But insulting the new recruits is the only entertainment I get these days! Anyway, here's your contractor license.",
     "text_normalized": "But insulting the new recruits is the only entertainment I get these days! Anyway, here's your contractor license."
   },
@@ -2438,7 +2438,7 @@
   {
     "key": "7f6befc7a4233094c98af57cc3c71cfd4fd83bfb25e3e2676d264f1ab699ec0e",
     "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
+    "reference": "sid23_bf_lily",
     "text_raw": "Now that you're one of us, how about some friendly competition? There are plenty of pirates all throughout the sector, let's see if you can top the leaderboards!",
     "text_normalized": "Now that you're one of us, how about some friendly competition? There are plenty of pirates all throughout the sector, let's see if you can top the leaderboards!"
   },
@@ -2452,14 +2452,14 @@
   {
     "key": "705ce0563e7a1ceddf12b40a3f91d66ff495a3f0c5661b94d6feb3f5c13bb59d",
     "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
+    "reference": "sid23_bf_lily",
     "text_raw": "Have you completed your assignment, worm?",
     "text_normalized": "Have you completed your assignment, worm?"
   },
   {
     "key": "da43c9579896ac288a756c4b204139145aeeae3c21fe657706796998588faeeb",
     "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
+    "reference": "sid23_bf_lily",
     "text_raw": "Unbelievable. Is this the quality of new recruits these days?",
     "text_normalized": "Unbelievable. Is this the quality of new recruits these days?"
   },
@@ -2473,7 +2473,7 @@
   {
     "key": "5ab9725f0aa9cd06ebb62a791e9ce93b46c0560034f1dfd8c4a614121262da07",
     "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
+    "reference": "sid23_bf_lily",
     "text_raw": "Yeah, you better be. You just set foot onto a bastion of Orsanon Security, but you look like you sauntered into a supermarket. Shape up, recruit!",
     "text_normalized": "Yeah, you better be. You just set foot onto a bastion of Orsanon Security, but you look like you sauntered into a supermarket. Shape up, recruit!"
   },
@@ -2487,7 +2487,7 @@
   {
     "key": "59bd38f474d16fa2c8e5c4f1c65b67d65d675c0bba8f12ea44f54c1100e24467",
     "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
+    "reference": "sid23_bf_lily",
     "text_raw": "You want combat training? Prove to me that you're not some lowly worm-creature first. There's some autonomous drones flying around in this system. Destroy them, then return to me, along with your application fee.",
     "text_normalized": "You want combat training? Prove to me that you're not some lowly worm-creature first. There's some autonomous drones flying around in this system. Destroy them, then return to me, along with your application fee."
   },
@@ -2501,7 +2501,7 @@
   {
     "key": "f57b9280f263094f249809cd37da3421a2c45af8051130e08ebe7052c70a8834",
     "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
+    "reference": "sid23_bf_lily",
     "text_raw": "I can't believe it. Looks like we've got a new chief pirate hunter!",
     "text_normalized": "I can't believe it. Looks like we've got a new chief pirate hunter!"
   },
@@ -2515,21 +2515,21 @@
   {
     "key": "f3e91a28b2de23324c489cec8df0beedbcdd8089befcbc7e18f06b8e2288607e",
     "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
+    "reference": "sid23_bf_lily",
     "text_raw": "Good job, recruit. You've earned this skill point fair and square.",
     "text_normalized": "Good job, recruit. You've earned this skill point fair and square."
   },
   {
     "key": "3786ee97efd44a3f745a03db57876aca85cd4fa46821d3a9319f80414aa7c857",
     "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
+    "reference": "sid23_bf_lily",
     "text_raw": "How's the pirate hunt going?",
     "text_normalized": "How's the pirate hunt going?"
   },
   {
     "key": "bc4b0ed8752270e2bcd776ce0bed0fd05e31e0c34bb43f610b78d4faa71e210e",
     "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
+    "reference": "sid23_bf_lily",
     "text_raw": "You look like you've fired a few guns in your time. How about some friendly competition?",
     "text_normalized": "You look like you've fired a few guns in your time. How about some friendly competition?"
   },
@@ -2543,7 +2543,7 @@
   {
     "key": "e5a792ae1739378da5e1cbbda93efe01d26f9d2d66b732575d43375ec2650f12",
     "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
+    "reference": "sid23_bf_lily",
     "text_raw": "Orsanon Security is keeping leaderboards for pirate eliminations. Sign up, and you may even win a prize!",
     "text_normalized": "Orsanon Security is keeping leaderboards for pirate eliminations. Sign up, and you may even win a prize!"
   },
@@ -3803,14 +3803,14 @@
   {
     "key": "39b232f803f2240ae1417890dddf2a9a207bb282068a7937c30d2cdb14ce1b46",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "Hello there...",
     "text_normalized": "Hello there."
   },
   {
     "key": "c25d95b80f3455aef268ebde57863281afc57869439a3723bbe91b4f07d22ef5",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "I wanted to come back but my new boss wouldn't allow it.",
     "text_normalized": "I wanted to come back but my new boss wouldn't allow it."
   },
@@ -3824,28 +3824,28 @@
   {
     "key": "498ca9c2ed7d5b32869713529a14a2a92d4ab2703d58d9a579284b1939c4e613",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "I felt obligated to join, seeing as they took me in after I almost got scrapped alive by the ",
     "text_normalized": "I felt obligated to join, seeing as they took me in after I almost got scrapped alive by the"
   },
   {
     "key": "29911091812a4339c5fff23944a0318890bfa2949f3955433bbf5c4b9eef9f0f",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "You know of the Computer? I... could not retrieve it, I suspect the ",
     "text_normalized": "You know of the Computer? I, could not retrieve it, I suspect the"
   },
   {
     "key": "f49950ee906e2b7b55a061b0e556f568c9f39bdb129e9c7e25430f63f1582b4d",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "We are actually about to attack one of their outposts.",
     "text_normalized": "We are actually about to attack one of their outposts."
   },
   {
     "key": "268dc8c4e94feaa9e2e889137bbe24c3f72d80ae821dfd06c5eb735befcccd16",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "Let me know if you want to join in, I'll be here when you are ready.",
     "text_normalized": "Let me know if you want to join in, I'll be here when you are ready."
   },
@@ -3859,21 +3859,21 @@
   {
     "key": "4dbcd15125e0fd579a3540943e2a4b2d2d5199d91ccfe113cc208427d350afb2",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "Captain ",
     "text_normalized": "Captain"
   },
   {
     "key": "698777472f41ed8f305a870439f4efb357e694f1a1202c93a86eef9fb755c946",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "Don't worry about your standing, there won't be any evidence of your involvement.",
     "text_normalized": "Don't worry about your standing, there won't be any evidence of your involvement."
   },
   {
     "key": "ef867989b9421db2d7aa8574e746026a3845df083b2adbb70424f50ff243fc57",
     "speaker": "Keril",
-    "reference": "ru_RU_denis",
+    "reference": "sid16_am_michael",
     "text_raw": "They'll all be dead.",
     "text_normalized": "They'll all be dead."
   },

@@ -3552,121 +3552,6 @@
     },
     "ogg": "b8531814bac95cbfd957ee2ca46b23ef8e06d00340e301167235d0dff5630078.ogg"
   },
-  "6dffd2c8dcf59195ac30bb6611ee701c1efb67872727cdb8f0f3a5fcaa810a55": {
-    "key": "6dffd2c8dcf59195ac30bb6611ee701c1efb67872727cdb8f0f3a5fcaa810a55",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "Captain, this will not stand, improve your standing with us before we can work together.",
-    "text_normalized": "Captain, this will not stand, improve your standing with us before we can work together.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9583333333333334,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "6dffd2c8dcf59195ac30bb6611ee701c1efb67872727cdb8f0f3a5fcaa810a55.ogg"
-  },
-  "055f28f43af5483e615a61d61532162f50e309cabe3dbf5b33cb6c4e58429447": {
-    "key": "055f28f43af5483e615a61d61532162f50e309cabe3dbf5b33cb6c4e58429447",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "Captain, we currently have not presence in the Conquest sector. Return to us when we do.",
-    "text_normalized": "Captain, we currently have not presence in the Conquest sector. Return to us when we do.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9583333333333334,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "055f28f43af5483e615a61d61532162f50e309cabe3dbf5b33cb6c4e58429447.ogg"
-  },
-  "a42a26317c2ad0a5f18c73abffca1ecb055c0fd8d1081cb0c9091ab6faf22d8e": {
-    "key": "a42a26317c2ad0a5f18c73abffca1ecb055c0fd8d1081cb0c9091ab6faf22d8e",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "Ah, I saw you docking. Thought I'd take a moment to speak with you, Captain.",
-    "text_normalized": "Ah, I saw you docking. Thought I'd take a moment to speak with you, Captain.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.7625,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 0.7,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.3,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "a42a26317c2ad0a5f18c73abffca1ecb055c0fd8d1081cb0c9091ab6faf22d8e.ogg"
-  },
-  "bcc3a0488d49fb9573de67d83376bebbf8445ce568a99631f213939f87b11ff4": {
-    "key": "bcc3a0488d49fb9573de67d83376bebbf8445ce568a99631f213939f87b11ff4",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "We are, and we need abled bodied captains like yourself.",
-    "text_normalized": "We are, and we need abled bodied captains like yourself.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.75,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "bcc3a0488d49fb9573de67d83376bebbf8445ce568a99631f213939f87b11ff4.ogg"
-  },
-  "8ae71d4185276e61c350ab20418b8a3c0ae0620ac9d40a25aee4408ef1f8cf23": {
-    "key": "8ae71d4185276e61c350ab20418b8a3c0ae0620ac9d40a25aee4408ef1f8cf23",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "You could really make a difference, not for profit, but for the people, the collective.",
-    "text_normalized": "You could really make a difference, not for profit, but for the people, the collective.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.75,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "8ae71d4185276e61c350ab20418b8a3c0ae0620ac9d40a25aee4408ef1f8cf23.ogg"
-  },
   "14d9dfb7d0d589333bdb840a6342164fe8c366eafdb686780b046b5fc768c2cd": {
     "key": "14d9dfb7d0d589333bdb840a6342164fe8c366eafdb686780b046b5fc768c2cd",
     "speaker": "ECHO",
@@ -3689,75 +3574,6 @@
       "repeat_fidelity": 1.0
     },
     "ogg": "14d9dfb7d0d589333bdb840a6342164fe8c366eafdb686780b046b5fc768c2cd.ogg"
-  },
-  "bdf396a8dfeacd9bfb6b124ec8ae3704befafef40201fe5ba5d234b7797ee212": {
-    "key": "bdf396a8dfeacd9bfb6b124ec8ae3704befafef40201fe5ba5d234b7797ee212",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "...",
-    "text_normalized": ".",
-    "engine": "f5",
-    "params": {
-      "seed": 1,
-      "speed": 1.0
-    },
-    "score_total": 0.4513888888888889,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 0.0,
-      "edge_silence": 0.0,
-      "f0_range": 0.0,
-      "ending_trend": 0.7,
-      "voicing_holes": 0.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "bdf396a8dfeacd9bfb6b124ec8ae3704befafef40201fe5ba5d234b7797ee212.ogg"
-  },
-  "0e7ade32af37c1aa9476af328143e65d26f3703913390a2ca9d9bb4cabc28799": {
-    "key": "0e7ade32af37c1aa9476af328143e65d26f3703913390a2ca9d9bb4cabc28799",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "There will be some loot involved.",
-    "text_normalized": "There will be some loot involved.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9583333333333334,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "0e7ade32af37c1aa9476af328143e65d26f3703913390a2ca9d9bb4cabc28799.ogg"
-  },
-  "0642443b624b307448c0ef6f2d5e2285d4ec622b36a60e3fed0dd5df1c24bbf1": {
-    "key": "0642443b624b307448c0ef6f2d5e2285d4ec622b36a60e3fed0dd5df1c24bbf1",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "Let me return to my script. Ahem... Join us, and you'll be rewarded... with comradeship, solidarity...",
-    "text_normalized": "Let me return to my script. Ahem. Join us, and you'll be rewarded, with comradeship, solidarity.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9583333333333334,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "0642443b624b307448c0ef6f2d5e2285d4ec622b36a60e3fed0dd5df1c24bbf1.ogg"
   },
   "8e103cd4580d495e834a451c1544829cc72fae7040e73a7f7cd2e48e8ca72ec5": {
     "key": "8e103cd4580d495e834a451c1544829cc72fae7040e73a7f7cd2e48e8ca72ec5",
@@ -3782,144 +3598,6 @@
     },
     "ogg": "8e103cd4580d495e834a451c1544829cc72fae7040e73a7f7cd2e48e8ca72ec5.ogg"
   },
-  "7bd79b66be48dab1621048b3f9d1acd1ddbeaef5c7e1d7e65ee16091e5fcb174": {
-    "key": "7bd79b66be48dab1621048b3f9d1acd1ddbeaef5c7e1d7e65ee16091e5fcb174",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "... and access to vessels, such as our destroyers...",
-    "text_normalized": ", and access to vessels, such as our destroyers.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9583333333333334,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "7bd79b66be48dab1621048b3f9d1acd1ddbeaef5c7e1d7e65ee16091e5fcb174.ogg"
-  },
-  "6ca75dccb268df5d9c31a9076c49c304a7ef425370ee3ee11e7ad801b4721100": {
-    "key": "6ca75dccb268df5d9c31a9076c49c304a7ef425370ee3ee11e7ad801b4721100",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "Your actions can tip the balance here, Captain. Help the collective, and you'll have our full support.",
-    "text_normalized": "Your actions can tip the balance here, Captain. Help the collective, and you'll have our full support.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9583333333333334,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "6ca75dccb268df5d9c31a9076c49c304a7ef425370ee3ee11e7ad801b4721100.ogg"
-  },
-  "98f4ec3d538663060b9e2702ddc1c251733c3047cc4b8db985d11204cf25871b": {
-    "key": "98f4ec3d538663060b9e2702ddc1c251733c3047cc4b8db985d11204cf25871b",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "There's a jumpgate linking this system to our headquarters in the Conquest sector.",
-    "text_normalized": "There's a jumpgate linking this system to our headquarters in the Conquest sector.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9583333333333334,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "98f4ec3d538663060b9e2702ddc1c251733c3047cc4b8db985d11204cf25871b.ogg"
-  },
-  "40369a6045bea6605deb1a7fef27d40e068825e8f4135706c0d58a205d25a1f8": {
-    "key": "40369a6045bea6605deb1a7fef27d40e068825e8f4135706c0d58a205d25a1f8",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "If you would accept, meet up with the ",
-    "text_normalized": "If you would accept, meet up with the",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9583333333333334,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "40369a6045bea6605deb1a7fef27d40e068825e8f4135706c0d58a205d25a1f8.ogg"
-  },
-  "359ed841ac1b58df26add4a13ee4ff0e40eed8259d4ecf264edc1eff099b1184": {
-    "key": "359ed841ac1b58df26add4a13ee4ff0e40eed8259d4ecf264edc1eff099b1184",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "Ah! Captain! Welcome, welcome!",
-    "text_normalized": "Ah! Captain! Welcome, welcome!",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9027777777777778,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "359ed841ac1b58df26add4a13ee4ff0e40eed8259d4ecf264edc1eff099b1184.ogg"
-  },
-  "539ab832aa4fa0723a393f03fa11054aef7d2902de4a110411ff48980c2f1fbe": {
-    "key": "539ab832aa4fa0723a393f03fa11054aef7d2902de4a110411ff48980c2f1fbe",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "Mikhail Kolyatov. Yes... that Kolyatov. My great-great-great-etc-grandfather started the Collective.",
-    "text_normalized": "Mikhail Kolyatov. Yes, that Kolyatov. My great-great-great-etc-grandfather started the Collective.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.7899549591096353,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 0.7,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.6984504703929162,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "539ab832aa4fa0723a393f03fa11054aef7d2902de4a110411ff48980c2f1fbe.ogg"
-  },
   "feb84dbe7fa19abaa0c6d29799f5c19bbf79d45e8ec20b568ece9b16016f1e91": {
     "key": "feb84dbe7fa19abaa0c6d29799f5c19bbf79d45e8ec20b568ece9b16016f1e91",
     "speaker": "ECHO",
@@ -3942,52 +3620,6 @@
       "repeat_fidelity": 1.0
     },
     "ogg": "feb84dbe7fa19abaa0c6d29799f5c19bbf79d45e8ec20b568ece9b16016f1e91.ogg"
-  },
-  "0dadcc66fc65d791d86535311f2636e41cb2cb8b567e3449b55dd47cf2ec2110": {
-    "key": "0dadcc66fc65d791d86535311f2636e41cb2cb8b567e3449b55dd47cf2ec2110",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "Ah, yes that was his name.",
-    "text_normalized": "Ah, yes that was his name.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.875,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 0.8,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "0dadcc66fc65d791d86535311f2636e41cb2cb8b567e3449b55dd47cf2ec2110.ogg"
-  },
-  "6f20ff0b1bbac752d22f499e5048529a6649abd5d33d329f3fe69e04994152e0": {
-    "key": "6f20ff0b1bbac752d22f499e5048529a6649abd5d33d329f3fe69e04994152e0",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "Anyway. We have situation. Sector is... how you say... contested.",
-    "text_normalized": "Anyway. We have situation. Sector is, how you say, contested.",
-    "engine": "f5",
-    "params": {
-      "seed": 4,
-      "speed": 1.0
-    },
-    "score_total": 0.875,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 0.8,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "6f20ff0b1bbac752d22f499e5048529a6649abd5d33d329f3fe69e04994152e0.ogg"
   },
   "c5e3c3f521c7c636ece8eb6fab764db0652460d70103ca3beed7b14823c81b63": {
     "key": "c5e3c3f521c7c636ece8eb6fab764db0652460d70103ca3beed7b14823c81b63",
@@ -4012,98 +3644,6 @@
     },
     "ogg": "c5e3c3f521c7c636ece8eb6fab764db0652460d70103ca3beed7b14823c81b63.ogg"
   },
-  "9f02490506b67140d7a75aff451625bbac2790cf682089401f70b0f2479ca107": {
-    "key": "9f02490506b67140d7a75aff451625bbac2790cf682089401f70b0f2479ca107",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "Exactly! But ownership is outdated concept. Sector should belong to people.",
-    "text_normalized": "Exactly! But ownership is outdated concept. Sector should belong to people.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.8527777777777777,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 0.7,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "9f02490506b67140d7a75aff451625bbac2790cf682089401f70b0f2479ca107.ogg"
-  },
-  "55487cf120c78c67baecdeee8f629cbe983b3960977b2874f0ec53558ab4e5a8": {
-    "key": "55487cf120c78c67baecdeee8f629cbe983b3960977b2874f0ec53558ab4e5a8",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "Our fleets push at frontline systems, but we need more strength. Always more strength.",
-    "text_normalized": "Our fleets push at frontline systems, but we need more strength. Always more strength.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9027777777777778,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "55487cf120c78c67baecdeee8f629cbe983b3960977b2874f0ec53558ab4e5a8.ogg"
-  },
-  "c2f28b0c2711736d0d9310392f67239eb6da7116b1710cbd9e4d9ee5ffc2e17f": {
-    "key": "c2f28b0c2711736d0d9310392f67239eb6da7116b1710cbd9e4d9ee5ffc2e17f",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "You help by taking missions in Conquest sector. Build Fleet Strength for us.",
-    "text_normalized": "You help by taking missions in Conquest sector. Build Fleet Strength for us.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9027777777777778,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "c2f28b0c2711736d0d9310392f67239eb6da7116b1710cbd9e4d9ee5ffc2e17f.ogg"
-  },
-  "43d1f9520950437dc6d823c300b2c08b8ded3a6d09c7b57bd2e9085dfea91334": {
-    "key": "43d1f9520950437dc6d823c300b2c08b8ded3a6d09c7b57bd2e9085dfea91334",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "You can also attack enemy stations. They will not like you, but... they do not like us anyway.",
-    "text_normalized": "You can also attack enemy stations. They will not like you, but, they do not like us anyway.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9027777777777778,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "43d1f9520950437dc6d823c300b2c08b8ded3a6d09c7b57bd2e9085dfea91334.ogg"
-  },
   "d495d3202a314788e8e2e7284acbd8871c9236fb35a6dca0c77729e06fe834ed": {
     "key": "d495d3202a314788e8e2e7284acbd8871c9236fb35a6dca0c77729e06fe834ed",
     "speaker": "captain",
@@ -4126,52 +3666,6 @@
       "repeat_fidelity": 1.0
     },
     "ogg": "d495d3202a314788e8e2e7284acbd8871c9236fb35a6dca0c77729e06fe834ed.ogg"
-  },
-  "448cb31c4f9f8d336f719407d9ed211b702b4ed632659f9eb5b1ad98cc1cecf3": {
-    "key": "448cb31c4f9f8d336f719407d9ed211b702b4ed632659f9eb5b1ad98cc1cecf3",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "For now, we require 10 Fleet Strength. Small number. Very achievable number.",
-    "text_normalized": "For now, we require 10 Fleet Strength. Small number. Very achievable number.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.8722222222222222,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 0.96,
-      "f0_range": 0.8,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "448cb31c4f9f8d336f719407d9ed211b702b4ed632659f9eb5b1ad98cc1cecf3.ogg"
-  },
-  "c03de4fe08c0a380264fd8f555b6fb40fd345f5f33b5f67a0bd8812d1be8fb6b": {
-    "key": "c03de4fe08c0a380264fd8f555b6fb40fd345f5f33b5f67a0bd8812d1be8fb6b",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "You help, yes?",
-    "text_normalized": "You help, yes?",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.7630857601787834,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 0.0,
-      "ending_trend": 0.9961449821914936,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "c03de4fe08c0a380264fd8f555b6fb40fd345f5f33b5f67a0bd8812d1be8fb6b.ogg"
   },
   "5b175c9658886c2235ed0b4c0153d78d5f924df983c95e901e10f44c853ece55": {
     "key": "5b175c9658886c2235ed0b4c0153d78d5f924df983c95e901e10f44c853ece55",
@@ -4196,75 +3690,6 @@
     },
     "ogg": "5b175c9658886c2235ed0b4c0153d78d5f924df983c95e901e10f44c853ece55.ogg"
   },
-  "190ab8a25b27ef2bda301322621fbc414c65f787b517dabc0dda99cf212c0e63": {
-    "key": "190ab8a25b27ef2bda301322621fbc414c65f787b517dabc0dda99cf212c0e63",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "Ha, ",
-    "text_normalized": "Ha,",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.7152777777777778,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 0.0,
-      "ending_trend": 0.3,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "190ab8a25b27ef2bda301322621fbc414c65f787b517dabc0dda99cf212c0e63.ogg"
-  },
-  "708404830d4c641b651ad7ea4bd389ff26ab4601179d46cdfdbcba2e4f1fa424": {
-    "key": "708404830d4c641b651ad7ea4bd389ff26ab4601179d46cdfdbcba2e4f1fa424",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "Your actions strengthen the morale greatly.",
-    "text_normalized": "Your actions strengthen the morale greatly.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.875,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 0.8,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "708404830d4c641b651ad7ea4bd389ff26ab4601179d46cdfdbcba2e4f1fa424.ogg"
-  },
-  "c69f4e965a9a5e9aee4012420a476cdeefb4007104751c4625ee47e09e9b730b": {
-    "key": "c69f4e965a9a5e9aee4012420a476cdeefb4007104751c4625ee47e09e9b730b",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "When collective grow stronger, we all grow stronger. Even you, Captain.",
-    "text_normalized": "When collective grow stronger, we all grow stronger. Even you, Captain.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9027777777777778,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "c69f4e965a9a5e9aee4012420a476cdeefb4007104751c4625ee47e09e9b730b.ogg"
-  },
   "2acf3c7fb7cce861284f5a8915161dc04f6a88823781440b9ff9277d7c94b114": {
     "key": "2acf3c7fb7cce861284f5a8915161dc04f6a88823781440b9ff9277d7c94b114",
     "speaker": "captain",
@@ -4287,52 +3712,6 @@
       "repeat_fidelity": 1.0
     },
     "ogg": "2acf3c7fb7cce861284f5a8915161dc04f6a88823781440b9ff9277d7c94b114.ogg"
-  },
-  "38916e5d5e4a5ab71426053c0d201006a2e960fb33cfd1f16075be243bdea44d": {
-    "key": "38916e5d5e4a5ab71426053c0d201006a2e960fb33cfd1f16075be243bdea44d",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "Is family tradition.",
-    "text_normalized": "Is family tradition.",
-    "engine": "f5",
-    "params": {
-      "seed": 1,
-      "speed": 1.0
-    },
-    "score_total": 0.8333333333333333,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 0.5,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "38916e5d5e4a5ab71426053c0d201006a2e960fb33cfd1f16075be243bdea44d.ogg"
-  },
-  "49f014448d647f29d625314d62a4d3c82b4d616c4bd037bb9cb3e195efdd0de0": {
-    "key": "49f014448d647f29d625314d62a4d3c82b4d616c4bd037bb9cb3e195efdd0de0",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "Continue working with us and you rise in rank.",
-    "text_normalized": "Continue working with us and you rise in rank.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.8725422079219582,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.8548692646920661,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "49f014448d647f29d625314d62a4d3c82b4d616c4bd037bb9cb3e195efdd0de0.ogg"
   },
   "f558489e290b3abee2561270b45f11b88933cc0aed2e0e907498714f414b414f": {
     "key": "f558489e290b3abee2561270b45f11b88933cc0aed2e0e907498714f414b414f",
@@ -4357,75 +3736,6 @@
     },
     "ogg": "f558489e290b3abee2561270b45f11b88933cc0aed2e0e907498714f414b414f.ogg"
   },
-  "f10a37c7d5fd6ff8a57eded5c48668ca04de3220495defd39e2230fdbba6a983": {
-    "key": "f10a37c7d5fd6ff8a57eded5c48668ca04de3220495defd39e2230fdbba6a983",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "But, now we also need to liberate systems. 30% we need!",
-    "text_normalized": "But, now we also need to liberate systems. 30% we need!",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.8487146435558481,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.7404969557347378,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "f10a37c7d5fd6ff8a57eded5c48668ca04de3220495defd39e2230fdbba6a983.ogg"
-  },
-  "baa3545116b1568c3cdddd222212bb1c6b59ee4c765883ef712469b86bba9e70": {
-    "key": "baa3545116b1568c3cdddd222212bb1c6b59ee4c765883ef712469b86bba9e70",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "You can do this, yes?",
-    "text_normalized": "You can do this, yes?",
-    "engine": "f5",
-    "params": {
-      "seed": 2,
-      "speed": 1.0
-    },
-    "score_total": 0.9027777777777778,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "baa3545116b1568c3cdddd222212bb1c6b59ee4c765883ef712469b86bba9e70.ogg"
-  },
-  "bf1bb462bb73a623de44122e6a09fa50494a74528fe78f52a53214556a66d429": {
-    "key": "bf1bb462bb73a623de44122e6a09fa50494a74528fe78f52a53214556a66d429",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "Captain! We control over 30% of sector now! This is good day.",
-    "text_normalized": "Captain! We control over 30% of sector now! This is good day.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9027777777777778,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "bf1bb462bb73a623de44122e6a09fa50494a74528fe78f52a53214556a66d429.ogg"
-  },
   "63d8479e15619960442bf1084e1e22e2a27c4719c57bc190442d662986f35dcf": {
     "key": "63d8479e15619960442bf1084e1e22e2a27c4719c57bc190442d662986f35dcf",
     "speaker": "captain",
@@ -4449,52 +3759,6 @@
     },
     "ogg": "63d8479e15619960442bf1084e1e22e2a27c4719c57bc190442d662986f35dcf.ogg"
   },
-  "322a9cec6e2829ffca9d4b3f237f7a2f1c902e7bbddd7f240a4ae14bcb4b61c9": {
-    "key": "322a9cec6e2829ffca9d4b3f237f7a2f1c902e7bbddd7f240a4ae14bcb4b61c9",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "No! Not suprised. I always think greatly of you.",
-    "text_normalized": "No! Not suprised. I always think greatly of you.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9027777777777778,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "322a9cec6e2829ffca9d4b3f237f7a2f1c902e7bbddd7f240a4ae14bcb4b61c9.ogg"
-  },
-  "9d273f0dbb4343f1093f85b88b0117f5b23f9b03ab893995bc281c7e41c30995": {
-    "key": "9d273f0dbb4343f1093f85b88b0117f5b23f9b03ab893995bc281c7e41c30995",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "But 30% is not enough. Sector must be... mine.",
-    "text_normalized": "But 30% is not enough. Sector must be, mine.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.875,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 0.8,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "9d273f0dbb4343f1093f85b88b0117f5b23f9b03ab893995bc281c7e41c30995.ogg"
-  },
   "d2dc22421a386cb95e749cf1536367d824ae24b03a705cc8d20ec34eb1dff18c": {
     "key": "d2dc22421a386cb95e749cf1536367d824ae24b03a705cc8d20ec34eb1dff18c",
     "speaker": "ECHO",
@@ -4517,75 +3781,6 @@
       "repeat_fidelity": 1.0
     },
     "ogg": "d2dc22421a386cb95e749cf1536367d824ae24b03a705cc8d20ec34eb1dff18c.ogg"
-  },
-  "26fca79cb19393f65a70f7fced8615eccf8a79dcd966c659808661b21e93460f": {
-    "key": "26fca79cb19393f65a70f7fced8615eccf8a79dcd966c659808661b21e93460f",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "Yes, I am also people. You understand spirit of it.",
-    "text_normalized": "Yes, I am also people. You understand spirit of it.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9027777777777778,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "26fca79cb19393f65a70f7fced8615eccf8a79dcd966c659808661b21e93460f.ogg"
-  },
-  "8c46c51271b868ccd4084263b97a5103f462078c9f12c1c7d34e60d1b9bbe02d": {
-    "key": "8c46c51271b868ccd4084263b97a5103f462078c9f12c1c7d34e60d1b9bbe02d",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "Become better friends with us. More rewards will come. Better ships. Greater trust.",
-    "text_normalized": "Become better friends with us. More rewards will come. Better ships. Greater trust.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.7365981505218823,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.20233778917170184,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "8c46c51271b868ccd4084263b97a5103f462078c9f12c1c7d34e60d1b9bbe02d.ogg"
-  },
-  "17f9b4fd791e160e89b08cb013ebcb108b265554891089e64703a5847f119cec": {
-    "key": "17f9b4fd791e160e89b08cb013ebcb108b265554891089e64703a5847f119cec",
-    "speaker": "Mikhail Kolyatov",
-    "reference": "ru_RU_dmitri",
-    "text_raw": "Together we make sector strong.",
-    "text_normalized": "Together we make sector strong.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.7606175390266301,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 0.2,
-      "ending_trend": 0.8509641873278242,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "17f9b4fd791e160e89b08cb013ebcb108b265554891089e64703a5847f119cec.ogg"
   },
   "216f9c05a3ffd2db501a3ff3d074ebe8ea253f1593ad5290478c2186eff9348c": {
     "key": "216f9c05a3ffd2db501a3ff3d074ebe8ea253f1593ad5290478c2186eff9348c",
@@ -7945,52 +7140,6 @@
     },
     "ogg": "2a16ee5ac720214a703ee050dea01c4e61868c4c913a2477ef44d50f5b983d93.ogg"
   },
-  "200dfc44f042dfd61e13c5dc27790be3494a628a6015ed089f4ffa37c94bc4c6": {
-    "key": "200dfc44f042dfd61e13c5dc27790be3494a628a6015ed089f4ffa37c94bc4c6",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "You are back! I have prepared everything!",
-    "text_normalized": "You are back! I have prepared everything!",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 1.0,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "200dfc44f042dfd61e13c5dc27790be3494a628a6015ed089f4ffa37c94bc4c6.ogg"
-  },
-  "c58cfd62957b58a159f66ed5e68fa6710c8e43d59a9482dc4d4a9edf60af5dbc": {
-    "key": "c58cfd62957b58a159f66ed5e68fa6710c8e43d59a9482dc4d4a9edf60af5dbc",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "Did they look at you funny? Walking away with these items?",
-    "text_normalized": "Did they look at you funny? Walking away with these items?",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.8029602618065697,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.05420925667153445,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "c58cfd62957b58a159f66ed5e68fa6710c8e43d59a9482dc4d4a9edf60af5dbc.ogg"
-  },
   "ffc3c21c890416f877d940468bc80745c2db84eaac83f977d14f16274709d417": {
     "key": "ffc3c21c890416f877d940468bc80745c2db84eaac83f977d14f16274709d417",
     "speaker": "captain",
@@ -8013,29 +7162,6 @@
       "repeat_fidelity": 1.0
     },
     "ogg": "ffc3c21c890416f877d940468bc80745c2db84eaac83f977d14f16274709d417.ogg"
-  },
-  "4ad3fbd1b8a294fad372c9506c3f491327f3e3b741663054fd62502a2c1f6b3d": {
-    "key": "4ad3fbd1b8a294fad372c9506c3f491327f3e3b741663054fd62502a2c1f6b3d",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "Yes, but what would your crew think of you hah!",
-    "text_normalized": "Yes, but what would your crew think of you hah!",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 1.0,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "4ad3fbd1b8a294fad372c9506c3f491327f3e3b741663054fd62502a2c1f6b3d.ogg"
   },
   "6c0e42056949c6890e6436fea263349988b4ba78f9c2ef020ea5bc547ca9bb12": {
     "key": "6c0e42056949c6890e6436fea263349988b4ba78f9c2ef020ea5bc547ca9bb12",
@@ -8060,29 +7186,6 @@
     },
     "ogg": "6c0e42056949c6890e6436fea263349988b4ba78f9c2ef020ea5bc547ca9bb12.ogg"
   },
-  "306f28aa93e89f85cd8ab08a880783bf2fcc232f3644bc1b6c4548b7d3c34541": {
-    "key": "306f28aa93e89f85cd8ab08a880783bf2fcc232f3644bc1b6c4548b7d3c34541",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "Yes, well sure... fine... payment time, the agreed upon amount.",
-    "text_normalized": "Yes, well sure, fine, payment time, the agreed upon amount.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 1.0,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "306f28aa93e89f85cd8ab08a880783bf2fcc232f3644bc1b6c4548b7d3c34541.ogg"
-  },
   "9b9ebf3cd1794a22c2e759bb10578be37e625e350db0ba4198906e79a876597e": {
     "key": "9b9ebf3cd1794a22c2e759bb10578be37e625e350db0ba4198906e79a876597e",
     "speaker": "captain",
@@ -8105,29 +7208,6 @@
       "repeat_fidelity": 1.0
     },
     "ogg": "9b9ebf3cd1794a22c2e759bb10578be37e625e350db0ba4198906e79a876597e.ogg"
-  },
-  "aaf6a0a7ff89e30303fde7b657041078daa6fd373f9189ce0e8c2d43114f58ed": {
-    "key": "aaf6a0a7ff89e30303fde7b657041078daa6fd373f9189ce0e8c2d43114f58ed",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "Yes, yes! I will do this now.",
-    "text_normalized": "Yes, yes! I will do this now.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 1.0,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "aaf6a0a7ff89e30303fde7b657041078daa6fd373f9189ce0e8c2d43114f58ed.ogg"
   },
   "fd4586b3478da623fc47e9d4c582fbf7157510fc0ed5f807dab497e7f078c660": {
     "key": "fd4586b3478da623fc47e9d4c582fbf7157510fc0ed5f807dab497e7f078c660",
@@ -8152,52 +7232,6 @@
     },
     "ogg": "fd4586b3478da623fc47e9d4c582fbf7157510fc0ed5f807dab497e7f078c660.ogg"
   },
-  "8a7ab196a1e1a2dd91d4685f59f81837f63d18fdc036c0f42ff971b881693e59": {
-    "key": "8a7ab196a1e1a2dd91d4685f59f81837f63d18fdc036c0f42ff971b881693e59",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "No... hmmm...",
-    "text_normalized": "No, hmmm.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9583333333333334,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "8a7ab196a1e1a2dd91d4685f59f81837f63d18fdc036c0f42ff971b881693e59.ogg"
-  },
-  "85f398987d1882ffa3e78c53836233c39480e7280b3ec51c7c70720318e98c6f": {
-    "key": "85f398987d1882ffa3e78c53836233c39480e7280b3ec51c7c70720318e98c6f",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "Done! Humans are just so easy to work with.",
-    "text_normalized": "Done! Humans are just so easy to work with.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.7916666666666666,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "85f398987d1882ffa3e78c53836233c39480e7280b3ec51c7c70720318e98c6f.ogg"
-  },
   "54a5fb3c6832e9e8bedb0b9b8c81b1664d194411a15210870ac0ac5256d27960": {
     "key": "54a5fb3c6832e9e8bedb0b9b8c81b1664d194411a15210870ac0ac5256d27960",
     "speaker": "captain",
@@ -8220,29 +7254,6 @@
       "repeat_fidelity": 1.0
     },
     "ogg": "54a5fb3c6832e9e8bedb0b9b8c81b1664d194411a15210870ac0ac5256d27960.ogg"
-  },
-  "7d95a706acbc91d44517e98dd7989d85d43e1b5811972c62120fc0392f0f8f59": {
-    "key": "7d95a706acbc91d44517e98dd7989d85d43e1b5811972c62120fc0392f0f8f59",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "Probably, very easy... Now, please... Go! I will work on my project, yes!",
-    "text_normalized": "Probably, very easy. Now, please. Go! I will work on my project, yes!",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9986111111111111,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 0.98,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "7d95a706acbc91d44517e98dd7989d85d43e1b5811972c62120fc0392f0f8f59.ogg"
   },
   "61b0ecdaa9ad88a1c43e5eeee8c8837b8625209f1f38dbb5b53f8e0daea05e19": {
     "key": "61b0ecdaa9ad88a1c43e5eeee8c8837b8625209f1f38dbb5b53f8e0daea05e19",
@@ -8313,29 +7324,6 @@
     },
     "ogg": "60a4634048131d1e837e5fcc845fe7058065f15fe25c6f02ae634f272d643662.ogg"
   },
-  "c506c0a35e42868097b1c2457f72c75be0d181e8f595e16821e89056de8e2612": {
-    "key": "c506c0a35e42868097b1c2457f72c75be0d181e8f595e16821e89056de8e2612",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "What? I was not doing anything.",
-    "text_normalized": "What? I was not doing anything.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9594130596803322,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 0.8,
-      "ending_trend": 0.938516019798928,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "c506c0a35e42868097b1c2457f72c75be0d181e8f595e16821e89056de8e2612.ogg"
-  },
   "53b43bc5d3b17e8b677facff4a7f0757113c9303ba5080eda9fab6bf7c37c1fc": {
     "key": "53b43bc5d3b17e8b677facff4a7f0757113c9303ba5080eda9fab6bf7c37c1fc",
     "speaker": "captain",
@@ -8358,75 +7346,6 @@
       "repeat_fidelity": 1.0
     },
     "ogg": "53b43bc5d3b17e8b677facff4a7f0757113c9303ba5080eda9fab6bf7c37c1fc.ogg"
-  },
-  "7abc1b7663d8f13747e472609a41cd83006046a85819b4098474474197b19306": {
-    "key": "7abc1b7663d8f13747e472609a41cd83006046a85819b4098474474197b19306",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "In-ter-trade! When you land, find one of their Trade Terminals and procure the items.",
-    "text_normalized": "In-ter-trade! When you land, find one of their Trade Terminals and procure the items.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9496753698972485,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.7584417755067931,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "7abc1b7663d8f13747e472609a41cd83006046a85819b4098474474197b19306.ogg"
-  },
-  "e5270a73ff84c78b2ec7a8343690bf377576ed3f30eb52a3e59bba3a2ab63e67": {
-    "key": "e5270a73ff84c78b2ec7a8343690bf377576ed3f30eb52a3e59bba3a2ab63e67",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "Yes! Oh look at you. Hey there...",
-    "text_normalized": "Yes! Oh look at you. Hey there.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.8640948556448269,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.347655307095169,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "e5270a73ff84c78b2ec7a8343690bf377576ed3f30eb52a3e59bba3a2ab63e67.ogg"
-  },
-  "1b2059191fcbe82b5f144b9f1a4a111a19c75290e1fd36f91b4c5f3fa3a65b97": {
-    "key": "1b2059191fcbe82b5f144b9f1a4a111a19c75290e1fd36f91b4c5f3fa3a65b97",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "Poor Captain, hello? Hello! How are you?",
-    "text_normalized": "Poor Captain, hello? Hello! How are you?",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.7916666666666666,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "1b2059191fcbe82b5f144b9f1a4a111a19c75290e1fd36f91b4c5f3fa3a65b97.ogg"
   },
   "d0385cbe3f2c9f23bd333e3258ffc8d42870ec9b632c219d3bd3f20f49c63fc1": {
     "key": "d0385cbe3f2c9f23bd333e3258ffc8d42870ec9b632c219d3bd3f20f49c63fc1",
@@ -8451,29 +7370,6 @@
     },
     "ogg": "d0385cbe3f2c9f23bd333e3258ffc8d42870ec9b632c219d3bd3f20f49c63fc1.ogg"
   },
-  "97a2b8cb2abd2f129aedc8ca1d4f2ebedc942665ca563cd8a680dc8036e3144c": {
-    "key": "97a2b8cb2abd2f129aedc8ca1d4f2ebedc942665ca563cd8a680dc8036e3144c",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "It... You... Oh, you I can fix!",
-    "text_normalized": "It. You. Oh, you I can fix!",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 1.0,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "97a2b8cb2abd2f129aedc8ca1d4f2ebedc942665ca563cd8a680dc8036e3144c.ogg"
-  },
   "9df14aaa8ebe6243237f8524a3f7c6c006a91c39fae9deb61f722ffdf2c8fa76": {
     "key": "9df14aaa8ebe6243237f8524a3f7c6c006a91c39fae9deb61f722ffdf2c8fa76",
     "speaker": "captain",
@@ -8496,52 +7392,6 @@
       "repeat_fidelity": 1.0
     },
     "ogg": "9df14aaa8ebe6243237f8524a3f7c6c006a91c39fae9deb61f722ffdf2c8fa76.ogg"
-  },
-  "6c82a0cc3f1d5ec66f8f0d9229b327e8a1a35f162ccacabfca4ed4775e2a9901": {
-    "key": "6c82a0cc3f1d5ec66f8f0d9229b327e8a1a35f162ccacabfca4ed4775e2a9901",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "You poor... Yes! Upgrading you need!",
-    "text_normalized": "You poor. Yes! Upgrading you need!",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 1.0,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "6c82a0cc3f1d5ec66f8f0d9229b327e8a1a35f162ccacabfca4ed4775e2a9901.ogg"
-  },
-  "13c20ac0b8b0875129384ad45492fa53f76b59e42e9d389fc0fc1201bfdfeb5d": {
-    "key": "13c20ac0b8b0875129384ad45492fa53f76b59e42e9d389fc0fc1201bfdfeb5d",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "I will enhance your learning capabilities.",
-    "text_normalized": "I will enhance your learning capabilities.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 1.0,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "13c20ac0b8b0875129384ad45492fa53f76b59e42e9d389fc0fc1201bfdfeb5d.ogg"
   },
   "23a09835b89b24de3d72ef9fa201ef384033ad0f754f172a65826c2881bacd9a": {
     "key": "23a09835b89b24de3d72ef9fa201ef384033ad0f754f172a65826c2881bacd9a",
@@ -8566,144 +7416,6 @@
     },
     "ogg": "23a09835b89b24de3d72ef9fa201ef384033ad0f754f172a65826c2881bacd9a.ogg"
   },
-  "339d6734bb7aeaa3d0f9b01f5ed62858f308ef3f868e0085a1bf71073304c9e7": {
-    "key": "339d6734bb7aeaa3d0f9b01f5ed62858f308ef3f868e0085a1bf71073304c9e7",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "Oh you stupi... yes! No! No not for free. But not that costly either.",
-    "text_normalized": "Oh you stupi, yes! No! No not for free. But not that costly either.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 1.0,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "339d6734bb7aeaa3d0f9b01f5ed62858f308ef3f868e0085a1bf71073304c9e7.ogg"
-  },
-  "e9550866c7f42d234519ae750d201f40359e53e5342828942250b6e5acc1d615": {
-    "key": "e9550866c7f42d234519ae750d201f40359e53e5342828942250b6e5acc1d615",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "You see, I am working on a little side project.",
-    "text_normalized": "You see, I am working on a little side project.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 1.0,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "e9550866c7f42d234519ae750d201f40359e53e5342828942250b6e5acc1d615.ogg"
-  },
-  "14641fbdc0210ecd6bab577a2eebd76f1bc6a4ea92161decaced929487ad1c4e": {
-    "key": "14641fbdc0210ecd6bab577a2eebd76f1bc6a4ea92161decaced929487ad1c4e",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "Just some android tinkering, nothing illegal, no!",
-    "text_normalized": "Just some android tinkering, nothing illegal, no!",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 1.0,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "14641fbdc0210ecd6bab577a2eebd76f1bc6a4ea92161decaced929487ad1c4e.ogg"
-  },
-  "d6a8471bb1eb40b545b1649e01147a7587e80ba0250354023e381ce3a5aece0f": {
-    "key": "d6a8471bb1eb40b545b1649e01147a7587e80ba0250354023e381ce3a5aece0f",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "It's just that I have run out of supplies.",
-    "text_normalized": "It's just that I have run out of supplies.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.8120419773820748,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.09780149143395911,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "d6a8471bb1eb40b545b1649e01147a7587e80ba0250354023e381ce3a5aece0f.ogg"
-  },
-  "4cbb9cc4621934a6f9e5f94fbeb78ac2a1b3ac2b7b88a4aa92035150157b38a5": {
-    "key": "4cbb9cc4621934a6f9e5f94fbeb78ac2a1b3ac2b7b88a4aa92035150157b38a5",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "I need several more Artificial Organs, some packs of Synthblood and another Blank Android Shell.",
-    "text_normalized": "I need several more Artificial Organs, some packs of Synthblood and another Blank Android Shell.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9443219655802694,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.7327454347852931,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "4cbb9cc4621934a6f9e5f94fbeb78ac2a1b3ac2b7b88a4aa92035150157b38a5.ogg"
-  },
-  "a320b08e5caeb30548e7efa8d2fb1c4ef8376d8283ce37054af0a3b87f9449f4": {
-    "key": "a320b08e5caeb30548e7efa8d2fb1c4ef8376d8283ce37054af0a3b87f9449f4",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "But... I am banned from Intertrade. You understand, right?",
-    "text_normalized": "But, I am banned from Intertrade. You understand, right?",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 1.0,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "a320b08e5caeb30548e7efa8d2fb1c4ef8376d8283ce37054af0a3b87f9449f4.ogg"
-  },
   "3c2b0d21568491b488e053af72d0aa0361194df241c7460ba119883489a5f742": {
     "key": "3c2b0d21568491b488e053af72d0aa0361194df241c7460ba119883489a5f742",
     "speaker": "captain",
@@ -8726,29 +7438,6 @@
       "repeat_fidelity": 1.0
     },
     "ogg": "3c2b0d21568491b488e053af72d0aa0361194df241c7460ba119883489a5f742.ogg"
-  },
-  "9bcc1a81bca12b2a0b9009f6563dde6e20dc76a7ee45a710da2a2fd3852f59ba": {
-    "key": "9bcc1a81bca12b2a0b9009f6563dde6e20dc76a7ee45a710da2a2fd3852f59ba",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "See! Great, you can bring me these items.",
-    "text_normalized": "See! Great, you can bring me these items.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.7916666666666666,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "9bcc1a81bca12b2a0b9009f6563dde6e20dc76a7ee45a710da2a2fd3852f59ba.ogg"
   },
   "30477fa6f2534a0b358e05d25d23a8d16a63aba807f88d5a95870a5df2bfb1e6": {
     "key": "30477fa6f2534a0b358e05d25d23a8d16a63aba807f88d5a95870a5df2bfb1e6",
@@ -8819,52 +7508,6 @@
     },
     "ogg": "f79ed68044619c6e7e9076255b724ddc16a87f4a5c9b886d51d8af49d1034c31.ogg"
   },
-  "0a2db377bb5d60fa900c3a4af375175918025d35fc52c38ba7b0dc8ae7001837": {
-    "key": "0a2db377bb5d60fa900c3a4af375175918025d35fc52c38ba7b0dc8ae7001837",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "Ah! So exciting! Yes, I go prepare.",
-    "text_normalized": "Ah! So exciting! Yes, I go prepare.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.7916666666666666,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "0a2db377bb5d60fa900c3a4af375175918025d35fc52c38ba7b0dc8ae7001837.ogg"
-  },
-  "fea28537d083b034da3bdb1e275446744eb589fd3beb43ff24c8b506c0d3f262": {
-    "key": "fea28537d083b034da3bdb1e275446744eb589fd3beb43ff24c8b506c0d3f262",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "No, you go away.",
-    "text_normalized": "No, you go away.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9583333333333334,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "fea28537d083b034da3bdb1e275446744eb589fd3beb43ff24c8b506c0d3f262.ogg"
-  },
   "2013a26679f1718de22ef2a4474ba9910c23fcfae2cd504626bf1a8489fde338": {
     "key": "2013a26679f1718de22ef2a4474ba9910c23fcfae2cd504626bf1a8489fde338",
     "speaker": "captain",
@@ -8887,29 +7530,6 @@
       "repeat_fidelity": 1.0
     },
     "ogg": "2013a26679f1718de22ef2a4474ba9910c23fcfae2cd504626bf1a8489fde338.ogg"
-  },
-  "1820e5e82a58ff49cd857a9f11985c894d5b151c858f3142acde3ab53cc696ff": {
-    "key": "1820e5e82a58ff49cd857a9f11985c894d5b151c858f3142acde3ab53cc696ff",
-    "speaker": "Sergio Weisartz",
-    "reference": "de_DE_thorsten_emotional",
-    "text_raw": "You need a bit more experience for me to take interest in you.",
-    "text_normalized": "You need a bit more experience for me to take interest in you.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.7974600713609907,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.027808342532755603,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "1820e5e82a58ff49cd857a9f11985c894d5b151c858f3142acde3ab53cc696ff.ogg"
   },
   "dfd1cce91dc22df3dea30d6d330583052c0884b66ea37bcc29df22e30f9135d5": {
     "key": "dfd1cce91dc22df3dea30d6d330583052c0884b66ea37bcc29df22e30f9135d5",
@@ -9693,29 +8313,6 @@
     },
     "ogg": "2ee32d0f45a01c23ee4e2cf7fb364a54c3887048d50e5e605797bbb7dedb09d7.ogg"
   },
-  "210893d9a145fec662578e44fade1a35f1d49d438c220783b43d6557f2a827da": {
-    "key": "210893d9a145fec662578e44fade1a35f1d49d438c220783b43d6557f2a827da",
-    "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
-    "text_raw": "Unbelievable. Even a pathetic creature like you can follow orders.",
-    "text_normalized": "Unbelievable. Even a pathetic creature like you can follow orders.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 1.0,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "210893d9a145fec662578e44fade1a35f1d49d438c220783b43d6557f2a827da.ogg"
-  },
   "866fc1dc16f59c876566f1b18ec3046c2c6462b1d5485dd18b8da847ac40dca9": {
     "key": "866fc1dc16f59c876566f1b18ec3046c2c6462b1d5485dd18b8da847ac40dca9",
     "speaker": "captain",
@@ -9738,29 +8335,6 @@
       "repeat_fidelity": 1.0
     },
     "ogg": "866fc1dc16f59c876566f1b18ec3046c2c6462b1d5485dd18b8da847ac40dca9.ogg"
-  },
-  "bfcc50151ab3c574c50e91868bb91af26464ee923d9cbfe543cceadd5b478068": {
-    "key": "bfcc50151ab3c574c50e91868bb91af26464ee923d9cbfe543cceadd5b478068",
-    "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
-    "text_raw": "But insulting the new recruits is the only entertainment I get these days! Anyway, here's your contractor license.",
-    "text_normalized": "But insulting the new recruits is the only entertainment I get these days! Anyway, here's your contractor license.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9922433398310592,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.9627680311890836,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "bfcc50151ab3c574c50e91868bb91af26464ee923d9cbfe543cceadd5b478068.ogg"
   },
   "eda1e17af583c82d5ad09e6ac424321a2e1198d61e747e14aac498481b792789": {
     "key": "eda1e17af583c82d5ad09e6ac424321a2e1198d61e747e14aac498481b792789",
@@ -9785,29 +8359,6 @@
     },
     "ogg": "eda1e17af583c82d5ad09e6ac424321a2e1198d61e747e14aac498481b792789.ogg"
   },
-  "7f6befc7a4233094c98af57cc3c71cfd4fd83bfb25e3e2676d264f1ab699ec0e": {
-    "key": "7f6befc7a4233094c98af57cc3c71cfd4fd83bfb25e3e2676d264f1ab699ec0e",
-    "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
-    "text_raw": "Now that you're one of us, how about some friendly competition? There are plenty of pirates all throughout the sector, let's see if you can top the leaderboards!",
-    "text_normalized": "Now that you're one of us, how about some friendly competition? There are plenty of pirates all throughout the sector, let's see if you can top the leaderboards!",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.8293271946672692,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.18077053440289248,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "7f6befc7a4233094c98af57cc3c71cfd4fd83bfb25e3e2676d264f1ab699ec0e.ogg"
-  },
   "184a64ceee3a93d87f1203af801edf4180da55c842d02dae520b229039567e48": {
     "key": "184a64ceee3a93d87f1203af801edf4180da55c842d02dae520b229039567e48",
     "speaker": "captain",
@@ -9830,52 +8381,6 @@
       "repeat_fidelity": 1.0
     },
     "ogg": "184a64ceee3a93d87f1203af801edf4180da55c842d02dae520b229039567e48.ogg"
-  },
-  "705ce0563e7a1ceddf12b40a3f91d66ff495a3f0c5661b94d6feb3f5c13bb59d": {
-    "key": "705ce0563e7a1ceddf12b40a3f91d66ff495a3f0c5661b94d6feb3f5c13bb59d",
-    "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
-    "text_raw": "Have you completed your assignment, worm?",
-    "text_normalized": "Have you completed your assignment, worm?",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.7916666666666666,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "705ce0563e7a1ceddf12b40a3f91d66ff495a3f0c5661b94d6feb3f5c13bb59d.ogg"
-  },
-  "da43c9579896ac288a756c4b204139145aeeae3c21fe657706796998588faeeb": {
-    "key": "da43c9579896ac288a756c4b204139145aeeae3c21fe657706796998588faeeb",
-    "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
-    "text_raw": "Unbelievable. Is this the quality of new recruits these days?",
-    "text_normalized": "Unbelievable. Is this the quality of new recruits these days?",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.7916666666666666,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "da43c9579896ac288a756c4b204139145aeeae3c21fe657706796998588faeeb.ogg"
   },
   "b1c64311e73c023514a54240528e1352134f79ac4174f90169e03b49ae484a2b": {
     "key": "b1c64311e73c023514a54240528e1352134f79ac4174f90169e03b49ae484a2b",
@@ -9900,29 +8405,6 @@
     },
     "ogg": "b1c64311e73c023514a54240528e1352134f79ac4174f90169e03b49ae484a2b.ogg"
   },
-  "5ab9725f0aa9cd06ebb62a791e9ce93b46c0560034f1dfd8c4a614121262da07": {
-    "key": "5ab9725f0aa9cd06ebb62a791e9ce93b46c0560034f1dfd8c4a614121262da07",
-    "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
-    "text_raw": "Yeah, you better be. You just set foot onto a bastion of Orsanon Security, but you look like you sauntered into a supermarket. Shape up, recruit!",
-    "text_normalized": "Yeah, you better be. You just set foot onto a bastion of Orsanon Security, but you look like you sauntered into a supermarket. Shape up, recruit!",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 1.0,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "5ab9725f0aa9cd06ebb62a791e9ce93b46c0560034f1dfd8c4a614121262da07.ogg"
-  },
   "8539fa332f905fb067e331284082290e991c90488ca7fa49ee79f05af5934429": {
     "key": "8539fa332f905fb067e331284082290e991c90488ca7fa49ee79f05af5934429",
     "speaker": "captain",
@@ -9945,29 +8427,6 @@
       "repeat_fidelity": 1.0
     },
     "ogg": "8539fa332f905fb067e331284082290e991c90488ca7fa49ee79f05af5934429.ogg"
-  },
-  "59bd38f474d16fa2c8e5c4f1c65b67d65d675c0bba8f12ea44f54c1100e24467": {
-    "key": "59bd38f474d16fa2c8e5c4f1c65b67d65d675c0bba8f12ea44f54c1100e24467",
-    "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
-    "text_raw": "You want combat training? Prove to me that you're not some lowly worm-creature first. There's some autonomous drones flying around in this system. Destroy them, then return to me, along with your application fee.",
-    "text_normalized": "You want combat training? Prove to me that you're not some lowly worm-creature first. There's some autonomous drones flying around in this system. Destroy them, then return to me, along with your application fee.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 1.0,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "59bd38f474d16fa2c8e5c4f1c65b67d65d675c0bba8f12ea44f54c1100e24467.ogg"
   },
   "2fd52d4426c2103b5f54b4a9b697640bea8ed3ba825f43c19c4bdd6323543f2b": {
     "key": "2fd52d4426c2103b5f54b4a9b697640bea8ed3ba825f43c19c4bdd6323543f2b",
@@ -9992,29 +8451,6 @@
     },
     "ogg": "2fd52d4426c2103b5f54b4a9b697640bea8ed3ba825f43c19c4bdd6323543f2b.ogg"
   },
-  "f57b9280f263094f249809cd37da3421a2c45af8051130e08ebe7052c70a8834": {
-    "key": "f57b9280f263094f249809cd37da3421a2c45af8051130e08ebe7052c70a8834",
-    "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
-    "text_raw": "I can't believe it. Looks like we've got a new chief pirate hunter!",
-    "text_normalized": "I can't believe it. Looks like we've got a new chief pirate hunter!",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 1.0,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "f57b9280f263094f249809cd37da3421a2c45af8051130e08ebe7052c70a8834.ogg"
-  },
   "a2d147d3c20e0f37997595a1cb3c649aa3cb14dfe94fea93b6fcfbba0099e563": {
     "key": "a2d147d3c20e0f37997595a1cb3c649aa3cb14dfe94fea93b6fcfbba0099e563",
     "speaker": "captain",
@@ -10038,75 +8474,6 @@
     },
     "ogg": "a2d147d3c20e0f37997595a1cb3c649aa3cb14dfe94fea93b6fcfbba0099e563.ogg"
   },
-  "f3e91a28b2de23324c489cec8df0beedbcdd8089befcbc7e18f06b8e2288607e": {
-    "key": "f3e91a28b2de23324c489cec8df0beedbcdd8089befcbc7e18f06b8e2288607e",
-    "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
-    "text_raw": "Good job, recruit. You've earned this skill point fair and square.",
-    "text_normalized": "Good job, recruit. You've earned this skill point fair and square.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 1.0,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "f3e91a28b2de23324c489cec8df0beedbcdd8089befcbc7e18f06b8e2288607e.ogg"
-  },
-  "3786ee97efd44a3f745a03db57876aca85cd4fa46821d3a9319f80414aa7c857": {
-    "key": "3786ee97efd44a3f745a03db57876aca85cd4fa46821d3a9319f80414aa7c857",
-    "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
-    "text_raw": "How's the pirate hunt going?",
-    "text_normalized": "How's the pirate hunt going?",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.7916666666666666,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "3786ee97efd44a3f745a03db57876aca85cd4fa46821d3a9319f80414aa7c857.ogg"
-  },
-  "bc4b0ed8752270e2bcd776ce0bed0fd05e31e0c34bb43f610b78d4faa71e210e": {
-    "key": "bc4b0ed8752270e2bcd776ce0bed0fd05e31e0c34bb43f610b78d4faa71e210e",
-    "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
-    "text_raw": "You look like you've fired a few guns in your time. How about some friendly competition?",
-    "text_normalized": "You look like you've fired a few guns in your time. How about some friendly competition?",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.7916666666666666,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "bc4b0ed8752270e2bcd776ce0bed0fd05e31e0c34bb43f610b78d4faa71e210e.ogg"
-  },
   "55b2afd64b4934e8767716ee2340fc1098bf2504849d9bb9f1a90a0dac178673": {
     "key": "55b2afd64b4934e8767716ee2340fc1098bf2504849d9bb9f1a90a0dac178673",
     "speaker": "captain",
@@ -10129,29 +8496,6 @@
       "repeat_fidelity": 1.0
     },
     "ogg": "55b2afd64b4934e8767716ee2340fc1098bf2504849d9bb9f1a90a0dac178673.ogg"
-  },
-  "e5a792ae1739378da5e1cbbda93efe01d26f9d2d66b732575d43375ec2650f12": {
-    "key": "e5a792ae1739378da5e1cbbda93efe01d26f9d2d66b732575d43375ec2650f12",
-    "speaker": "Olga Skarsgard",
-    "reference": "sv_SE_alma",
-    "text_raw": "Orsanon Security is keeping leaderboards for pirate eliminations. Sign up, and you may even win a prize!",
-    "text_normalized": "Orsanon Security is keeping leaderboards for pirate eliminations. Sign up, and you may even win a prize!",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 1.0,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "e5a792ae1739378da5e1cbbda93efe01d26f9d2d66b732575d43375ec2650f12.ogg"
   },
   "24b3519fe99843e6c9fa453345cce742e5771a06290d942e0f7fde960f347d23": {
     "key": "24b3519fe99843e6c9fa453345cce742e5771a06290d942e0f7fde960f347d23",
@@ -14270,52 +12614,6 @@
     },
     "ogg": "c1ac142079e93af55a4609c5ad65c11733e9b3e728898de7ae7737493e92a235.ogg"
   },
-  "39b232f803f2240ae1417890dddf2a9a207bb282068a7937c30d2cdb14ce1b46": {
-    "key": "39b232f803f2240ae1417890dddf2a9a207bb282068a7937c30d2cdb14ce1b46",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "Hello there...",
-    "text_normalized": "Hello there.",
-    "engine": "f5",
-    "params": {
-      "seed": 2,
-      "speed": 1.0
-    },
-    "score_total": 0.8124999999999999,
-    "score_components": {
-      "duration_sanity": 0.3,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 0.8,
-      "ending_trend": 0.7,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "39b232f803f2240ae1417890dddf2a9a207bb282068a7937c30d2cdb14ce1b46.ogg"
-  },
-  "c25d95b80f3455aef268ebde57863281afc57869439a3723bbe91b4f07d22ef5": {
-    "key": "c25d95b80f3455aef268ebde57863281afc57869439a3723bbe91b4f07d22ef5",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "I wanted to come back but my new boss wouldn't allow it.",
-    "text_normalized": "I wanted to come back but my new boss wouldn't allow it.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9583333333333334,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "c25d95b80f3455aef268ebde57863281afc57869439a3723bbe91b4f07d22ef5.ogg"
-  },
   "d48a4ea11a0127c2389d6d86b31c8c2f66e2a5cf30a14c0b179d8ed472edb09b": {
     "key": "d48a4ea11a0127c2389d6d86b31c8c2f66e2a5cf30a14c0b179d8ed472edb09b",
     "speaker": "John Raythor",
@@ -14339,98 +12637,6 @@
     },
     "ogg": "d48a4ea11a0127c2389d6d86b31c8c2f66e2a5cf30a14c0b179d8ed472edb09b.ogg"
   },
-  "498ca9c2ed7d5b32869713529a14a2a92d4ab2703d58d9a579284b1939c4e613": {
-    "key": "498ca9c2ed7d5b32869713529a14a2a92d4ab2703d58d9a579284b1939c4e613",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "I felt obligated to join, seeing as they took me in after I almost got scrapped alive by the ",
-    "text_normalized": "I felt obligated to join, seeing as they took me in after I almost got scrapped alive by the",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9353671960379277,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.8897625409820535,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "498ca9c2ed7d5b32869713529a14a2a92d4ab2703d58d9a579284b1939c4e613.ogg"
-  },
-  "29911091812a4339c5fff23944a0318890bfa2949f3955433bbf5c4b9eef9f0f": {
-    "key": "29911091812a4339c5fff23944a0318890bfa2949f3955433bbf5c4b9eef9f0f",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "You know of the Computer? I... could not retrieve it, I suspect the ",
-    "text_normalized": "You know of the Computer? I, could not retrieve it, I suspect the",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.75,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "29911091812a4339c5fff23944a0318890bfa2949f3955433bbf5c4b9eef9f0f.ogg"
-  },
-  "f49950ee906e2b7b55a061b0e556f568c9f39bdb129e9c7e25430f63f1582b4d": {
-    "key": "f49950ee906e2b7b55a061b0e556f568c9f39bdb129e9c7e25430f63f1582b4d",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "We are actually about to attack one of their outposts.",
-    "text_normalized": "We are actually about to attack one of their outposts.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.7847222222222222,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 0.8,
-      "ending_trend": 0.3,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "f49950ee906e2b7b55a061b0e556f568c9f39bdb129e9c7e25430f63f1582b4d.ogg"
-  },
-  "268dc8c4e94feaa9e2e889137bbe24c3f72d80ae821dfd06c5eb735befcccd16": {
-    "key": "268dc8c4e94feaa9e2e889137bbe24c3f72d80ae821dfd06c5eb735befcccd16",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "Let me know if you want to join in, I'll be here when you are ready.",
-    "text_normalized": "Let me know if you want to join in, I'll be here when you are ready.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.8335488981405033,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.40103471107441585,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "268dc8c4e94feaa9e2e889137bbe24c3f72d80ae821dfd06c5eb735befcccd16.ogg"
-  },
   "6f646eaaedb45e052e16ea964592926fba46dee2c9d9cc58f5f95d86aeb01bc7": {
     "key": "6f646eaaedb45e052e16ea964592926fba46dee2c9d9cc58f5f95d86aeb01bc7",
     "speaker": "John Raythor",
@@ -14453,75 +12659,6 @@
       "repeat_fidelity": 1.0
     },
     "ogg": "6f646eaaedb45e052e16ea964592926fba46dee2c9d9cc58f5f95d86aeb01bc7.ogg"
-  },
-  "4dbcd15125e0fd579a3540943e2a4b2d2d5199d91ccfe113cc208427d350afb2": {
-    "key": "4dbcd15125e0fd579a3540943e2a4b2d2d5199d91ccfe113cc208427d350afb2",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "Captain ",
-    "text_normalized": "Captain",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.7679329078652396,
-    "score_components": {
-      "duration_sanity": 1.0,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 0.2,
-      "ending_trend": 0.41941129108648356,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "4dbcd15125e0fd579a3540943e2a4b2d2d5199d91ccfe113cc208427d350afb2.ogg"
-  },
-  "698777472f41ed8f305a870439f4efb357e694f1a1202c93a86eef9fb755c946": {
-    "key": "698777472f41ed8f305a870439f4efb357e694f1a1202c93a86eef9fb755c946",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "Don't worry about your standing, there won't be any evidence of your involvement.",
-    "text_normalized": "Don't worry about your standing, there won't be any evidence of your involvement.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.931532237785466,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 0.8713547413702367,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "698777472f41ed8f305a870439f4efb357e694f1a1202c93a86eef9fb755c946.ogg"
-  },
-  "ef867989b9421db2d7aa8574e746026a3845df083b2adbb70424f50ff243fc57": {
-    "key": "ef867989b9421db2d7aa8574e746026a3845df083b2adbb70424f50ff243fc57",
-    "speaker": "Keril",
-    "reference": "ru_RU_denis",
-    "text_raw": "They'll all be dead.",
-    "text_normalized": "They'll all be dead.",
-    "engine": "f5",
-    "params": {
-      "seed": 0,
-      "speed": 1.0
-    },
-    "score_total": 0.9583333333333334,
-    "score_components": {
-      "duration_sanity": 0.7,
-      "loudness_sanity": 1.0,
-      "edge_silence": 1.0,
-      "f0_range": 1.0,
-      "ending_trend": 1.0,
-      "voicing_holes": 1.0,
-      "repeat_fidelity": 1.0
-    },
-    "ogg": "ef867989b9421db2d7aa8574e746026a3845df083b2adbb70424f50ff243fc57.ogg"
   },
   "632b87fe017c5f1f50e7d848c4d440324969d30153bfa85ea5e3bc8ff92b3951": {
     "key": "632b87fe017c5f1f50e7d848c4d440324969d30153bfa85ea5e3bc8ff92b3951",
@@ -28736,5 +26873,1868 @@
       "repeat_fidelity": 1.0
     },
     "ogg": "54835a82cfdcd0ee3bd08d2c470be56692c7ef1eea37b3dc6134fa63566e06e2.ogg"
+  },
+  "6dffd2c8dcf59195ac30bb6611ee701c1efb67872727cdb8f0f3a5fcaa810a55": {
+    "key": "6dffd2c8dcf59195ac30bb6611ee701c1efb67872727cdb8f0f3a5fcaa810a55",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "Captain, this will not stand, improve your standing with us before we can work together.",
+    "text_normalized": "Captain, this will not stand, improve your standing with us before we can work together.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9349160206718345,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.6875968992248062,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "6dffd2c8dcf59195ac30bb6611ee701c1efb67872727cdb8f0f3a5fcaa810a55.ogg"
+  },
+  "055f28f43af5483e615a61d61532162f50e309cabe3dbf5b33cb6c4e58429447": {
+    "key": "055f28f43af5483e615a61d61532162f50e309cabe3dbf5b33cb6c4e58429447",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "Captain, we currently have not presence in the Conquest sector. Return to us when we do.",
+    "text_normalized": "Captain, we currently have not presence in the Conquest sector. Return to us when we do.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.84475428412365,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.25482056379351975,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "055f28f43af5483e615a61d61532162f50e309cabe3dbf5b33cb6c4e58429447.ogg"
+  },
+  "a42a26317c2ad0a5f18c73abffca1ecb055c0fd8d1081cb0c9091ab6faf22d8e": {
+    "key": "a42a26317c2ad0a5f18c73abffca1ecb055c0fd8d1081cb0c9091ab6faf22d8e",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "Ah, I saw you docking. Thought I'd take a moment to speak with you, Captain.",
+    "text_normalized": "Ah, I saw you docking. Thought I'd take a moment to speak with you, Captain.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8680555555555556,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 0.8,
+      "ending_trend": 0.7,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "a42a26317c2ad0a5f18c73abffca1ecb055c0fd8d1081cb0c9091ab6faf22d8e.ogg"
+  },
+  "bcc3a0488d49fb9573de67d83376bebbf8445ce568a99631f213939f87b11ff4": {
+    "key": "bcc3a0488d49fb9573de67d83376bebbf8445ce568a99631f213939f87b11ff4",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "We are, and we need abled bodied captains like yourself.",
+    "text_normalized": "We are, and we need abled bodied captains like yourself.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "bcc3a0488d49fb9573de67d83376bebbf8445ce568a99631f213939f87b11ff4.ogg"
+  },
+  "8ae71d4185276e61c350ab20418b8a3c0ae0620ac9d40a25aee4408ef1f8cf23": {
+    "key": "8ae71d4185276e61c350ab20418b8a3c0ae0620ac9d40a25aee4408ef1f8cf23",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "You could really make a difference, not for profit, but for the people, the collective.",
+    "text_normalized": "You could really make a difference, not for profit, but for the people, the collective.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "8ae71d4185276e61c350ab20418b8a3c0ae0620ac9d40a25aee4408ef1f8cf23.ogg"
+  },
+  "bdf396a8dfeacd9bfb6b124ec8ae3704befafef40201fe5ba5d234b7797ee212": {
+    "key": "bdf396a8dfeacd9bfb6b124ec8ae3704befafef40201fe5ba5d234b7797ee212",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "...",
+    "text_normalized": ".",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.4513888888888889,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 0.0,
+      "edge_silence": 0.0,
+      "f0_range": 0.0,
+      "ending_trend": 0.7,
+      "voicing_holes": 0.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "bdf396a8dfeacd9bfb6b124ec8ae3704befafef40201fe5ba5d234b7797ee212.ogg"
+  },
+  "0e7ade32af37c1aa9476af328143e65d26f3703913390a2ca9d9bb4cabc28799": {
+    "key": "0e7ade32af37c1aa9476af328143e65d26f3703913390a2ca9d9bb4cabc28799",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "There will be some loot involved.",
+    "text_normalized": "There will be some loot involved.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9378176001100083,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.9015244805280398,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "0e7ade32af37c1aa9476af328143e65d26f3703913390a2ca9d9bb4cabc28799.ogg"
+  },
+  "0642443b624b307448c0ef6f2d5e2285d4ec622b36a60e3fed0dd5df1c24bbf1": {
+    "key": "0642443b624b307448c0ef6f2d5e2285d4ec622b36a60e3fed0dd5df1c24bbf1",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "Let me return to my script. Ahem... Join us, and you'll be rewarded... with comradeship, solidarity...",
+    "text_normalized": "Let me return to my script. Ahem. Join us, and you'll be rewarded, with comradeship, solidarity.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8871857432081822,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.45849156739927444,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "0642443b624b307448c0ef6f2d5e2285d4ec622b36a60e3fed0dd5df1c24bbf1.ogg"
+  },
+  "7bd79b66be48dab1621048b3f9d1acd1ddbeaef5c7e1d7e65ee16091e5fcb174": {
+    "key": "7bd79b66be48dab1621048b3f9d1acd1ddbeaef5c7e1d7e65ee16091e5fcb174",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "... and access to vessels, such as our destroyers...",
+    "text_normalized": ", and access to vessels, such as our destroyers.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "7bd79b66be48dab1621048b3f9d1acd1ddbeaef5c7e1d7e65ee16091e5fcb174.ogg"
+  },
+  "6ca75dccb268df5d9c31a9076c49c304a7ef425370ee3ee11e7ad801b4721100": {
+    "key": "6ca75dccb268df5d9c31a9076c49c304a7ef425370ee3ee11e7ad801b4721100",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "Your actions can tip the balance here, Captain. Help the collective, and you'll have our full support.",
+    "text_normalized": "Your actions can tip the balance here, Captain. Help the collective, and you'll have our full support.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7916666666666666,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "6ca75dccb268df5d9c31a9076c49c304a7ef425370ee3ee11e7ad801b4721100.ogg"
+  },
+  "98f4ec3d538663060b9e2702ddc1c251733c3047cc4b8db985d11204cf25871b": {
+    "key": "98f4ec3d538663060b9e2702ddc1c251733c3047cc4b8db985d11204cf25871b",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "There's a jumpgate linking this system to our headquarters in the Conquest sector.",
+    "text_normalized": "There's a jumpgate linking this system to our headquarters in the Conquest sector.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8958333333333333,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.7,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "98f4ec3d538663060b9e2702ddc1c251733c3047cc4b8db985d11204cf25871b.ogg"
+  },
+  "40369a6045bea6605deb1a7fef27d40e068825e8f4135706c0d58a205d25a1f8": {
+    "key": "40369a6045bea6605deb1a7fef27d40e068825e8f4135706c0d58a205d25a1f8",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "If you would accept, meet up with the ",
+    "text_normalized": "If you would accept, meet up with the",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8788180513749773,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.6183266465998911,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "40369a6045bea6605deb1a7fef27d40e068825e8f4135706c0d58a205d25a1f8.ogg"
+  },
+  "359ed841ac1b58df26add4a13ee4ff0e40eed8259d4ecf264edc1eff099b1184": {
+    "key": "359ed841ac1b58df26add4a13ee4ff0e40eed8259d4ecf264edc1eff099b1184",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "Ah! Captain! Welcome, welcome!",
+    "text_normalized": "Ah! Captain! Welcome, welcome!",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "359ed841ac1b58df26add4a13ee4ff0e40eed8259d4ecf264edc1eff099b1184.ogg"
+  },
+  "539ab832aa4fa0723a393f03fa11054aef7d2902de4a110411ff48980c2f1fbe": {
+    "key": "539ab832aa4fa0723a393f03fa11054aef7d2902de4a110411ff48980c2f1fbe",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "Mikhail Kolyatov. Yes... that Kolyatov. My great-great-great-etc-grandfather started the Collective.",
+    "text_normalized": "Mikhail Kolyatov. Yes, that Kolyatov. My great-great-great-etc-grandfather started the Collective.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 0.7,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.7,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "539ab832aa4fa0723a393f03fa11054aef7d2902de4a110411ff48980c2f1fbe.ogg"
+  },
+  "0dadcc66fc65d791d86535311f2636e41cb2cb8b567e3449b55dd47cf2ec2110": {
+    "key": "0dadcc66fc65d791d86535311f2636e41cb2cb8b567e3449b55dd47cf2ec2110",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "Ah, yes that was his name.",
+    "text_normalized": "Ah, yes that was his name.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8337362294005296,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.4019339011225421,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "0dadcc66fc65d791d86535311f2636e41cb2cb8b567e3449b55dd47cf2ec2110.ogg"
+  },
+  "6f20ff0b1bbac752d22f499e5048529a6649abd5d33d329f3fe69e04994152e0": {
+    "key": "6f20ff0b1bbac752d22f499e5048529a6649abd5d33d329f3fe69e04994152e0",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "Anyway. We have situation. Sector is... how you say... contested.",
+    "text_normalized": "Anyway. We have situation. Sector is, how you say, contested.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8333166799893419,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.39992006394884116,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "6f20ff0b1bbac752d22f499e5048529a6649abd5d33d329f3fe69e04994152e0.ogg"
+  },
+  "9f02490506b67140d7a75aff451625bbac2790cf682089401f70b0f2479ca107": {
+    "key": "9f02490506b67140d7a75aff451625bbac2790cf682089401f70b0f2479ca107",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "Exactly! But ownership is outdated concept. Sector should belong to people.",
+    "text_normalized": "Exactly! But ownership is outdated concept. Sector should belong to people.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 0.7,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.7,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "9f02490506b67140d7a75aff451625bbac2790cf682089401f70b0f2479ca107.ogg"
+  },
+  "55487cf120c78c67baecdeee8f629cbe983b3960977b2874f0ec53558ab4e5a8": {
+    "key": "55487cf120c78c67baecdeee8f629cbe983b3960977b2874f0ec53558ab4e5a8",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "Our fleets push at frontline systems, but we need more strength. Always more strength.",
+    "text_normalized": "Our fleets push at frontline systems, but we need more strength. Always more strength.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8385674332575657,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.22512367963631494,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "55487cf120c78c67baecdeee8f629cbe983b3960977b2874f0ec53558ab4e5a8.ogg"
+  },
+  "c2f28b0c2711736d0d9310392f67239eb6da7116b1710cbd9e4d9ee5ffc2e17f": {
+    "key": "c2f28b0c2711736d0d9310392f67239eb6da7116b1710cbd9e4d9ee5ffc2e17f",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "You help by taking missions in Conquest sector. Build Fleet Strength for us.",
+    "text_normalized": "You help by taking missions in Conquest sector. Build Fleet Strength for us.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7416666666666666,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 0.7,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "c2f28b0c2711736d0d9310392f67239eb6da7116b1710cbd9e4d9ee5ffc2e17f.ogg"
+  },
+  "43d1f9520950437dc6d823c300b2c08b8ded3a6d09c7b57bd2e9085dfea91334": {
+    "key": "43d1f9520950437dc6d823c300b2c08b8ded3a6d09c7b57bd2e9085dfea91334",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "You can also attack enemy stations. They will not like you, but... they do not like us anyway.",
+    "text_normalized": "You can also attack enemy stations. They will not like you, but, they do not like us anyway.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8875,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 0.7,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.7,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "43d1f9520950437dc6d823c300b2c08b8ded3a6d09c7b57bd2e9085dfea91334.ogg"
+  },
+  "448cb31c4f9f8d336f719407d9ed211b702b4ed632659f9eb5b1ad98cc1cecf3": {
+    "key": "448cb31c4f9f8d336f719407d9ed211b702b4ed632659f9eb5b1ad98cc1cecf3",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "For now, we require 10 Fleet Strength. Small number. Very achievable number.",
+    "text_normalized": "For now, we require 10 Fleet Strength. Small number. Very achievable number.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7916666666666666,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "448cb31c4f9f8d336f719407d9ed211b702b4ed632659f9eb5b1ad98cc1cecf3.ogg"
+  },
+  "c03de4fe08c0a380264fd8f555b6fb40fd345f5f33b5f67a0bd8812d1be8fb6b": {
+    "key": "c03de4fe08c0a380264fd8f555b6fb40fd345f5f33b5f67a0bd8812d1be8fb6b",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "You help, yes?",
+    "text_normalized": "You help, yes?",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8124999999999999,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 0.8,
+      "ending_trend": 0.7,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "c03de4fe08c0a380264fd8f555b6fb40fd345f5f33b5f67a0bd8812d1be8fb6b.ogg"
+  },
+  "190ab8a25b27ef2bda301322621fbc414c65f787b517dabc0dda99cf212c0e63": {
+    "key": "190ab8a25b27ef2bda301322621fbc414c65f787b517dabc0dda99cf212c0e63",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "Ha, ",
+    "text_normalized": "Ha,",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.798611111111111,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 0.0,
+      "ending_trend": 0.7,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "190ab8a25b27ef2bda301322621fbc414c65f787b517dabc0dda99cf212c0e63.ogg"
+  },
+  "708404830d4c641b651ad7ea4bd389ff26ab4601179d46cdfdbcba2e4f1fa424": {
+    "key": "708404830d4c641b651ad7ea4bd389ff26ab4601179d46cdfdbcba2e4f1fa424",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "Your actions strengthen the morale greatly.",
+    "text_normalized": "Your actions strengthen the morale greatly.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.75,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "708404830d4c641b651ad7ea4bd389ff26ab4601179d46cdfdbcba2e4f1fa424.ogg"
+  },
+  "c69f4e965a9a5e9aee4012420a476cdeefb4007104751c4625ee47e09e9b730b": {
+    "key": "c69f4e965a9a5e9aee4012420a476cdeefb4007104751c4625ee47e09e9b730b",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "When collective grow stronger, we all grow stronger. Even you, Captain.",
+    "text_normalized": "When collective grow stronger, we all grow stronger. Even you, Captain.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8783308070822898,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.41598787399499126,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "c69f4e965a9a5e9aee4012420a476cdeefb4007104751c4625ee47e09e9b730b.ogg"
+  },
+  "38916e5d5e4a5ab71426053c0d201006a2e960fb33cfd1f16075be243bdea44d": {
+    "key": "38916e5d5e4a5ab71426053c0d201006a2e960fb33cfd1f16075be243bdea44d",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "Is family tradition.",
+    "text_normalized": "Is family tradition.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7924976662656141,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 0.5,
+      "ending_trend": 0.5373221314082817,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "38916e5d5e4a5ab71426053c0d201006a2e960fb33cfd1f16075be243bdea44d.ogg"
+  },
+  "49f014448d647f29d625314d62a4d3c82b4d616c4bd037bb9cb3e195efdd0de0": {
+    "key": "49f014448d647f29d625314d62a4d3c82b4d616c4bd037bb9cb3e195efdd0de0",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "Continue working with us and you rise in rank.",
+    "text_normalized": "Continue working with us and you rise in rank.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8165672910811583,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 0.8,
+      "ending_trend": 0.45285633052289287,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "49f014448d647f29d625314d62a4d3c82b4d616c4bd037bb9cb3e195efdd0de0.ogg"
+  },
+  "f10a37c7d5fd6ff8a57eded5c48668ca04de3220495defd39e2230fdbba6a983": {
+    "key": "f10a37c7d5fd6ff8a57eded5c48668ca04de3220495defd39e2230fdbba6a983",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "But, now we also need to liberate systems. 30% we need!",
+    "text_normalized": "But, now we also need to liberate systems. 30% we need!",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "f10a37c7d5fd6ff8a57eded5c48668ca04de3220495defd39e2230fdbba6a983.ogg"
+  },
+  "baa3545116b1568c3cdddd222212bb1c6b59ee4c765883ef712469b86bba9e70": {
+    "key": "baa3545116b1568c3cdddd222212bb1c6b59ee4c765883ef712469b86bba9e70",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "You can do this, yes?",
+    "text_normalized": "You can do this, yes?",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "baa3545116b1568c3cdddd222212bb1c6b59ee4c765883ef712469b86bba9e70.ogg"
+  },
+  "bf1bb462bb73a623de44122e6a09fa50494a74528fe78f52a53214556a66d429": {
+    "key": "bf1bb462bb73a623de44122e6a09fa50494a74528fe78f52a53214556a66d429",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "Captain! We control over 30% of sector now! This is good day.",
+    "text_normalized": "Captain! We control over 30% of sector now! This is good day.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.880199623657016,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.6249581935536772,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "bf1bb462bb73a623de44122e6a09fa50494a74528fe78f52a53214556a66d429.ogg"
+  },
+  "322a9cec6e2829ffca9d4b3f237f7a2f1c902e7bbddd7f240a4ae14bcb4b61c9": {
+    "key": "322a9cec6e2829ffca9d4b3f237f7a2f1c902e7bbddd7f240a4ae14bcb4b61c9",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "No! Not suprised. I always think greatly of you.",
+    "text_normalized": "No! Not suprised. I always think greatly of you.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.75,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "322a9cec6e2829ffca9d4b3f237f7a2f1c902e7bbddd7f240a4ae14bcb4b61c9.ogg"
+  },
+  "9d273f0dbb4343f1093f85b88b0117f5b23f9b03ab893995bc281c7e41c30995": {
+    "key": "9d273f0dbb4343f1093f85b88b0117f5b23f9b03ab893995bc281c7e41c30995",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "But 30% is not enough. Sector must be... mine.",
+    "text_normalized": "But 30% is not enough. Sector must be, mine.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7524965309962253,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 0.8,
+      "ending_trend": 0.14531668211521473,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "9d273f0dbb4343f1093f85b88b0117f5b23f9b03ab893995bc281c7e41c30995.ogg"
+  },
+  "26fca79cb19393f65a70f7fced8615eccf8a79dcd966c659808661b21e93460f": {
+    "key": "26fca79cb19393f65a70f7fced8615eccf8a79dcd966c659808661b21e93460f",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "Yes, I am also people. You understand spirit of it.",
+    "text_normalized": "Yes, I am also people. You understand spirit of it.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7916666666666666,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "26fca79cb19393f65a70f7fced8615eccf8a79dcd966c659808661b21e93460f.ogg"
+  },
+  "8c46c51271b868ccd4084263b97a5103f462078c9f12c1c7d34e60d1b9bbe02d": {
+    "key": "8c46c51271b868ccd4084263b97a5103f462078c9f12c1c7d34e60d1b9bbe02d",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "Become better friends with us. More rewards will come. Better ships. Greater trust.",
+    "text_normalized": "Become better friends with us. More rewards will come. Better ships. Greater trust.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8889579598385683,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.4669982072251282,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "8c46c51271b868ccd4084263b97a5103f462078c9f12c1c7d34e60d1b9bbe02d.ogg"
+  },
+  "17f9b4fd791e160e89b08cb013ebcb108b265554891089e64703a5847f119cec": {
+    "key": "17f9b4fd791e160e89b08cb013ebcb108b265554891089e64703a5847f119cec",
+    "speaker": "Mikhail Kolyatov",
+    "reference": "sid17_am_onyx",
+    "text_raw": "Together we make sector strong.",
+    "text_normalized": "Together we make sector strong.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8958333333333333,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.7,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "17f9b4fd791e160e89b08cb013ebcb108b265554891089e64703a5847f119cec.ogg"
+  },
+  "200dfc44f042dfd61e13c5dc27790be3494a628a6015ed089f4ffa37c94bc4c6": {
+    "key": "200dfc44f042dfd61e13c5dc27790be3494a628a6015ed089f4ffa37c94bc4c6",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "You are back! I have prepared everything!",
+    "text_normalized": "You are back! I have prepared everything!",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9027777777777778,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "200dfc44f042dfd61e13c5dc27790be3494a628a6015ed089f4ffa37c94bc4c6.ogg"
+  },
+  "c58cfd62957b58a159f66ed5e68fa6710c8e43d59a9482dc4d4a9edf60af5dbc": {
+    "key": "c58cfd62957b58a159f66ed5e68fa6710c8e43d59a9482dc4d4a9edf60af5dbc",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "Did they look at you funny? Walking away with these items?",
+    "text_normalized": "Did they look at you funny? Walking away with these items?",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.6944444444444444,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "c58cfd62957b58a159f66ed5e68fa6710c8e43d59a9482dc4d4a9edf60af5dbc.ogg"
+  },
+  "4ad3fbd1b8a294fad372c9506c3f491327f3e3b741663054fd62502a2c1f6b3d": {
+    "key": "4ad3fbd1b8a294fad372c9506c3f491327f3e3b741663054fd62502a2c1f6b3d",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "Yes, but what would your crew think of you hah!",
+    "text_normalized": "Yes, but what would your crew think of you hah!",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8449863954681297,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.7226013649136895,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "4ad3fbd1b8a294fad372c9506c3f491327f3e3b741663054fd62502a2c1f6b3d.ogg"
+  },
+  "306f28aa93e89f85cd8ab08a880783bf2fcc232f3644bc1b6c4548b7d3c34541": {
+    "key": "306f28aa93e89f85cd8ab08a880783bf2fcc232f3644bc1b6c4548b7d3c34541",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "Yes, well sure... fine... payment time, the agreed upon amount.",
+    "text_normalized": "Yes, well sure, fine, payment time, the agreed upon amount.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9027777777777778,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "306f28aa93e89f85cd8ab08a880783bf2fcc232f3644bc1b6c4548b7d3c34541.ogg"
+  },
+  "aaf6a0a7ff89e30303fde7b657041078daa6fd373f9189ce0e8c2d43114f58ed": {
+    "key": "aaf6a0a7ff89e30303fde7b657041078daa6fd373f9189ce0e8c2d43114f58ed",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "Yes, yes! I will do this now.",
+    "text_normalized": "Yes, yes! I will do this now.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.875,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 0.8,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "aaf6a0a7ff89e30303fde7b657041078daa6fd373f9189ce0e8c2d43114f58ed.ogg"
+  },
+  "8a7ab196a1e1a2dd91d4685f59f81837f63d18fdc036c0f42ff971b881693e59": {
+    "key": "8a7ab196a1e1a2dd91d4685f59f81837f63d18fdc036c0f42ff971b881693e59",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "No... hmmm...",
+    "text_normalized": "No, hmmm.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8680555555555556,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 0.8,
+      "ending_trend": 0.7,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "8a7ab196a1e1a2dd91d4685f59f81837f63d18fdc036c0f42ff971b881693e59.ogg"
+  },
+  "85f398987d1882ffa3e78c53836233c39480e7280b3ec51c7c70720318e98c6f": {
+    "key": "85f398987d1882ffa3e78c53836233c39480e7280b3ec51c7c70720318e98c6f",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "Done! Humans are just so easy to work with.",
+    "text_normalized": "Done! Humans are just so easy to work with.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8915907058512693,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.9463020547527592,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "85f398987d1882ffa3e78c53836233c39480e7280b3ec51c7c70720318e98c6f.ogg"
+  },
+  "7d95a706acbc91d44517e98dd7989d85d43e1b5811972c62120fc0392f0f8f59": {
+    "key": "7d95a706acbc91d44517e98dd7989d85d43e1b5811972c62120fc0392f0f8f59",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "Probably, very easy... Now, please... Go! I will work on my project, yes!",
+    "text_normalized": "Probably, very easy. Now, please. Go! I will work on my project, yes!",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "7d95a706acbc91d44517e98dd7989d85d43e1b5811972c62120fc0392f0f8f59.ogg"
+  },
+  "c506c0a35e42868097b1c2457f72c75be0d181e8f595e16821e89056de8e2612": {
+    "key": "c506c0a35e42868097b1c2457f72c75be0d181e8f595e16821e89056de8e2612",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "What? I was not doing anything.",
+    "text_normalized": "What? I was not doing anything.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.875,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 0.8,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "c506c0a35e42868097b1c2457f72c75be0d181e8f595e16821e89056de8e2612.ogg"
+  },
+  "7abc1b7663d8f13747e472609a41cd83006046a85819b4098474474197b19306": {
+    "key": "7abc1b7663d8f13747e472609a41cd83006046a85819b4098474474197b19306",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "In-ter-trade! When you land, find one of their Trade Terminals and procure the items.",
+    "text_normalized": "In-ter-trade! When you land, find one of their Trade Terminals and procure the items.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8958333333333333,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.7,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "7abc1b7663d8f13747e472609a41cd83006046a85819b4098474474197b19306.ogg"
+  },
+  "e5270a73ff84c78b2ec7a8343690bf377576ed3f30eb52a3e59bba3a2ab63e67": {
+    "key": "e5270a73ff84c78b2ec7a8343690bf377576ed3f30eb52a3e59bba3a2ab63e67",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "Yes! Oh look at you. Hey there...",
+    "text_normalized": "Yes! Oh look at you. Hey there.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.6944444444444444,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "e5270a73ff84c78b2ec7a8343690bf377576ed3f30eb52a3e59bba3a2ab63e67.ogg"
+  },
+  "1b2059191fcbe82b5f144b9f1a4a111a19c75290e1fd36f91b4c5f3fa3a65b97": {
+    "key": "1b2059191fcbe82b5f144b9f1a4a111a19c75290e1fd36f91b4c5f3fa3a65b97",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "Poor Captain, hello? Hello! How are you?",
+    "text_normalized": "Poor Captain, hello? Hello! How are you?",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8647319592874836,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 0.96,
+      "f0_range": 1.0,
+      "ending_trend": 0.8307134045799216,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "1b2059191fcbe82b5f144b9f1a4a111a19c75290e1fd36f91b4c5f3fa3a65b97.ogg"
+  },
+  "97a2b8cb2abd2f129aedc8ca1d4f2ebedc942665ca563cd8a680dc8036e3144c": {
+    "key": "97a2b8cb2abd2f129aedc8ca1d4f2ebedc942665ca563cd8a680dc8036e3144c",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "It... You... Oh, you I can fix!",
+    "text_normalized": "It. You. Oh, you I can fix!",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9027777777777778,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "97a2b8cb2abd2f129aedc8ca1d4f2ebedc942665ca563cd8a680dc8036e3144c.ogg"
+  },
+  "6c82a0cc3f1d5ec66f8f0d9229b327e8a1a35f162ccacabfca4ed4775e2a9901": {
+    "key": "6c82a0cc3f1d5ec66f8f0d9229b327e8a1a35f162ccacabfca4ed4775e2a9901",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "You poor... Yes! Upgrading you need!",
+    "text_normalized": "You poor. Yes! Upgrading you need!",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9027777777777778,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "6c82a0cc3f1d5ec66f8f0d9229b327e8a1a35f162ccacabfca4ed4775e2a9901.ogg"
+  },
+  "13c20ac0b8b0875129384ad45492fa53f76b59e42e9d389fc0fc1201bfdfeb5d": {
+    "key": "13c20ac0b8b0875129384ad45492fa53f76b59e42e9d389fc0fc1201bfdfeb5d",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "I will enhance your learning capabilities.",
+    "text_normalized": "I will enhance your learning capabilities.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.6944444444444444,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "13c20ac0b8b0875129384ad45492fa53f76b59e42e9d389fc0fc1201bfdfeb5d.ogg"
+  },
+  "339d6734bb7aeaa3d0f9b01f5ed62858f308ef3f868e0085a1bf71073304c9e7": {
+    "key": "339d6734bb7aeaa3d0f9b01f5ed62858f308ef3f868e0085a1bf71073304c9e7",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "Oh you stupi... yes! No! No not for free. But not that costly either.",
+    "text_normalized": "Oh you stupi, yes! No! No not for free. But not that costly either.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9027777777777778,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "339d6734bb7aeaa3d0f9b01f5ed62858f308ef3f868e0085a1bf71073304c9e7.ogg"
+  },
+  "e9550866c7f42d234519ae750d201f40359e53e5342828942250b6e5acc1d615": {
+    "key": "e9550866c7f42d234519ae750d201f40359e53e5342828942250b6e5acc1d615",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "You see, I am working on a little side project.",
+    "text_normalized": "You see, I am working on a little side project.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9027777777777778,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "e9550866c7f42d234519ae750d201f40359e53e5342828942250b6e5acc1d615.ogg"
+  },
+  "14641fbdc0210ecd6bab577a2eebd76f1bc6a4ea92161decaced929487ad1c4e": {
+    "key": "14641fbdc0210ecd6bab577a2eebd76f1bc6a4ea92161decaced929487ad1c4e",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "Just some android tinkering, nothing illegal, no!",
+    "text_normalized": "Just some android tinkering, nothing illegal, no!",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9027777777777778,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "14641fbdc0210ecd6bab577a2eebd76f1bc6a4ea92161decaced929487ad1c4e.ogg"
+  },
+  "d6a8471bb1eb40b545b1649e01147a7587e80ba0250354023e381ce3a5aece0f": {
+    "key": "d6a8471bb1eb40b545b1649e01147a7587e80ba0250354023e381ce3a5aece0f",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "It's just that I have run out of supplies.",
+    "text_normalized": "It's just that I have run out of supplies.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.6944444444444444,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "d6a8471bb1eb40b545b1649e01147a7587e80ba0250354023e381ce3a5aece0f.ogg"
+  },
+  "4cbb9cc4621934a6f9e5f94fbeb78ac2a1b3ac2b7b88a4aa92035150157b38a5": {
+    "key": "4cbb9cc4621934a6f9e5f94fbeb78ac2a1b3ac2b7b88a4aa92035150157b38a5",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "I need several more Artificial Organs, some packs of Synthblood and another Blank Android Shell.",
+    "text_normalized": "I need several more Artificial Organs, some packs of Synthblood and another Blank Android Shell.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.75,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "4cbb9cc4621934a6f9e5f94fbeb78ac2a1b3ac2b7b88a4aa92035150157b38a5.ogg"
+  },
+  "a320b08e5caeb30548e7efa8d2fb1c4ef8376d8283ce37054af0a3b87f9449f4": {
+    "key": "a320b08e5caeb30548e7efa8d2fb1c4ef8376d8283ce37054af0a3b87f9449f4",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "But... I am banned from Intertrade. You understand, right?",
+    "text_normalized": "But, I am banned from Intertrade. You understand, right?",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7016108272757209,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.03439863759012715,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "a320b08e5caeb30548e7efa8d2fb1c4ef8376d8283ce37054af0a3b87f9449f4.ogg"
+  },
+  "9bcc1a81bca12b2a0b9009f6563dde6e20dc76a7ee45a710da2a2fd3852f59ba": {
+    "key": "9bcc1a81bca12b2a0b9009f6563dde6e20dc76a7ee45a710da2a2fd3852f59ba",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "See! Great, you can bring me these items.",
+    "text_normalized": "See! Great, you can bring me these items.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.6989212470582884,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.021488652546451215,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "9bcc1a81bca12b2a0b9009f6563dde6e20dc76a7ee45a710da2a2fd3852f59ba.ogg"
+  },
+  "0a2db377bb5d60fa900c3a4af375175918025d35fc52c38ba7b0dc8ae7001837": {
+    "key": "0a2db377bb5d60fa900c3a4af375175918025d35fc52c38ba7b0dc8ae7001837",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "Ah! So exciting! Yes, I go prepare.",
+    "text_normalized": "Ah! So exciting! Yes, I go prepare.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.6944444444444444,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "0a2db377bb5d60fa900c3a4af375175918025d35fc52c38ba7b0dc8ae7001837.ogg"
+  },
+  "fea28537d083b034da3bdb1e275446744eb589fd3beb43ff24c8b506c0d3f262": {
+    "key": "fea28537d083b034da3bdb1e275446744eb589fd3beb43ff24c8b506c0d3f262",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "No, you go away.",
+    "text_normalized": "No, you go away.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7013888888888888,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 0.0,
+      "ending_trend": 0.7,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "fea28537d083b034da3bdb1e275446744eb589fd3beb43ff24c8b506c0d3f262.ogg"
+  },
+  "1820e5e82a58ff49cd857a9f11985c894d5b151c858f3142acde3ab53cc696ff": {
+    "key": "1820e5e82a58ff49cd857a9f11985c894d5b151c858f3142acde3ab53cc696ff",
+    "speaker": "Sergio Weisartz",
+    "reference": "sid18_am_puck",
+    "text_raw": "You need a bit more experience for me to take interest in you.",
+    "text_normalized": "You need a bit more experience for me to take interest in you.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9027777777777778,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "1820e5e82a58ff49cd857a9f11985c894d5b151c858f3142acde3ab53cc696ff.ogg"
+  },
+  "210893d9a145fec662578e44fade1a35f1d49d438c220783b43d6557f2a827da": {
+    "key": "210893d9a145fec662578e44fade1a35f1d49d438c220783b43d6557f2a827da",
+    "speaker": "Olga Skarsgard",
+    "reference": "sid23_bf_lily",
+    "text_raw": "Unbelievable. Even a pathetic creature like you can follow orders.",
+    "text_normalized": "Unbelievable. Even a pathetic creature like you can follow orders.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9676297225169002,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.8446226680811209,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "210893d9a145fec662578e44fade1a35f1d49d438c220783b43d6557f2a827da.ogg"
+  },
+  "bfcc50151ab3c574c50e91868bb91af26464ee923d9cbfe543cceadd5b478068": {
+    "key": "bfcc50151ab3c574c50e91868bb91af26464ee923d9cbfe543cceadd5b478068",
+    "speaker": "Olga Skarsgard",
+    "reference": "sid23_bf_lily",
+    "text_raw": "But insulting the new recruits is the only entertainment I get these days! Anyway, here's your contractor license.",
+    "text_normalized": "But insulting the new recruits is the only entertainment I get these days! Anyway, here's your contractor license.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9375,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.7,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "bfcc50151ab3c574c50e91868bb91af26464ee923d9cbfe543cceadd5b478068.ogg"
+  },
+  "7f6befc7a4233094c98af57cc3c71cfd4fd83bfb25e3e2676d264f1ab699ec0e": {
+    "key": "7f6befc7a4233094c98af57cc3c71cfd4fd83bfb25e3e2676d264f1ab699ec0e",
+    "speaker": "Olga Skarsgard",
+    "reference": "sid23_bf_lily",
+    "text_raw": "Now that you're one of us, how about some friendly competition? There are plenty of pirates all throughout the sector, let's see if you can top the leaderboards!",
+    "text_normalized": "Now that you're one of us, how about some friendly competition? There are plenty of pirates all throughout the sector, let's see if you can top the leaderboards!",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9375,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.7,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "7f6befc7a4233094c98af57cc3c71cfd4fd83bfb25e3e2676d264f1ab699ec0e.ogg"
+  },
+  "705ce0563e7a1ceddf12b40a3f91d66ff495a3f0c5661b94d6feb3f5c13bb59d": {
+    "key": "705ce0563e7a1ceddf12b40a3f91d66ff495a3f0c5661b94d6feb3f5c13bb59d",
+    "speaker": "Olga Skarsgard",
+    "reference": "sid23_bf_lily",
+    "text_raw": "Have you completed your assignment, worm?",
+    "text_normalized": "Have you completed your assignment, worm?",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7916666666666666,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "705ce0563e7a1ceddf12b40a3f91d66ff495a3f0c5661b94d6feb3f5c13bb59d.ogg"
+  },
+  "da43c9579896ac288a756c4b204139145aeeae3c21fe657706796998588faeeb": {
+    "key": "da43c9579896ac288a756c4b204139145aeeae3c21fe657706796998588faeeb",
+    "speaker": "Olga Skarsgard",
+    "reference": "sid23_bf_lily",
+    "text_raw": "Unbelievable. Is this the quality of new recruits these days?",
+    "text_normalized": "Unbelievable. Is this the quality of new recruits these days?",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7916666666666666,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "da43c9579896ac288a756c4b204139145aeeae3c21fe657706796998588faeeb.ogg"
+  },
+  "5ab9725f0aa9cd06ebb62a791e9ce93b46c0560034f1dfd8c4a614121262da07": {
+    "key": "5ab9725f0aa9cd06ebb62a791e9ce93b46c0560034f1dfd8c4a614121262da07",
+    "speaker": "Olga Skarsgard",
+    "reference": "sid23_bf_lily",
+    "text_raw": "Yeah, you better be. You just set foot onto a bastion of Orsanon Security, but you look like you sauntered into a supermarket. Shape up, recruit!",
+    "text_normalized": "Yeah, you better be. You just set foot onto a bastion of Orsanon Security, but you look like you sauntered into a supermarket. Shape up, recruit!",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.95,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 0.7,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "5ab9725f0aa9cd06ebb62a791e9ce93b46c0560034f1dfd8c4a614121262da07.ogg"
+  },
+  "59bd38f474d16fa2c8e5c4f1c65b67d65d675c0bba8f12ea44f54c1100e24467": {
+    "key": "59bd38f474d16fa2c8e5c4f1c65b67d65d675c0bba8f12ea44f54c1100e24467",
+    "speaker": "Olga Skarsgard",
+    "reference": "sid23_bf_lily",
+    "text_raw": "You want combat training? Prove to me that you're not some lowly worm-creature first. There's some autonomous drones flying around in this system. Destroy them, then return to me, along with your application fee.",
+    "text_normalized": "You want combat training? Prove to me that you're not some lowly worm-creature first. There's some autonomous drones flying around in this system. Destroy them, then return to me, along with your application fee.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "59bd38f474d16fa2c8e5c4f1c65b67d65d675c0bba8f12ea44f54c1100e24467.ogg"
+  },
+  "f57b9280f263094f249809cd37da3421a2c45af8051130e08ebe7052c70a8834": {
+    "key": "f57b9280f263094f249809cd37da3421a2c45af8051130e08ebe7052c70a8834",
+    "speaker": "Olga Skarsgard",
+    "reference": "sid23_bf_lily",
+    "text_raw": "I can't believe it. Looks like we've got a new chief pirate hunter!",
+    "text_normalized": "I can't believe it. Looks like we've got a new chief pirate hunter!",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "f57b9280f263094f249809cd37da3421a2c45af8051130e08ebe7052c70a8834.ogg"
+  },
+  "f3e91a28b2de23324c489cec8df0beedbcdd8089befcbc7e18f06b8e2288607e": {
+    "key": "f3e91a28b2de23324c489cec8df0beedbcdd8089befcbc7e18f06b8e2288607e",
+    "speaker": "Olga Skarsgard",
+    "reference": "sid23_bf_lily",
+    "text_raw": "Good job, recruit. You've earned this skill point fair and square.",
+    "text_normalized": "Good job, recruit. You've earned this skill point fair and square.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "f3e91a28b2de23324c489cec8df0beedbcdd8089befcbc7e18f06b8e2288607e.ogg"
+  },
+  "3786ee97efd44a3f745a03db57876aca85cd4fa46821d3a9319f80414aa7c857": {
+    "key": "3786ee97efd44a3f745a03db57876aca85cd4fa46821d3a9319f80414aa7c857",
+    "speaker": "Olga Skarsgard",
+    "reference": "sid23_bf_lily",
+    "text_raw": "How's the pirate hunt going?",
+    "text_normalized": "How's the pirate hunt going?",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7916666666666666,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "3786ee97efd44a3f745a03db57876aca85cd4fa46821d3a9319f80414aa7c857.ogg"
+  },
+  "bc4b0ed8752270e2bcd776ce0bed0fd05e31e0c34bb43f610b78d4faa71e210e": {
+    "key": "bc4b0ed8752270e2bcd776ce0bed0fd05e31e0c34bb43f610b78d4faa71e210e",
+    "speaker": "Olga Skarsgard",
+    "reference": "sid23_bf_lily",
+    "text_raw": "You look like you've fired a few guns in your time. How about some friendly competition?",
+    "text_normalized": "You look like you've fired a few guns in your time. How about some friendly competition?",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7916666666666666,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "bc4b0ed8752270e2bcd776ce0bed0fd05e31e0c34bb43f610b78d4faa71e210e.ogg"
+  },
+  "e5a792ae1739378da5e1cbbda93efe01d26f9d2d66b732575d43375ec2650f12": {
+    "key": "e5a792ae1739378da5e1cbbda93efe01d26f9d2d66b732575d43375ec2650f12",
+    "speaker": "Olga Skarsgard",
+    "reference": "sid23_bf_lily",
+    "text_raw": "Orsanon Security is keeping leaderboards for pirate eliminations. Sign up, and you may even win a prize!",
+    "text_normalized": "Orsanon Security is keeping leaderboards for pirate eliminations. Sign up, and you may even win a prize!",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 1.0,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "e5a792ae1739378da5e1cbbda93efe01d26f9d2d66b732575d43375ec2650f12.ogg"
+  },
+  "39b232f803f2240ae1417890dddf2a9a207bb282068a7937c30d2cdb14ce1b46": {
+    "key": "39b232f803f2240ae1417890dddf2a9a207bb282068a7937c30d2cdb14ce1b46",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "Hello there...",
+    "text_normalized": "Hello there.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.7013888888888888,
+    "score_components": {
+      "duration_sanity": 0.3,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 0.0,
+      "ending_trend": 0.7,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "39b232f803f2240ae1417890dddf2a9a207bb282068a7937c30d2cdb14ce1b46.ogg"
+  },
+  "c25d95b80f3455aef268ebde57863281afc57869439a3723bbe91b4f07d22ef5": {
+    "key": "c25d95b80f3455aef268ebde57863281afc57869439a3723bbe91b4f07d22ef5",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "I wanted to come back but my new boss wouldn't allow it.",
+    "text_normalized": "I wanted to come back but my new boss wouldn't allow it.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8537545617861265,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.49802189657340723,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "c25d95b80f3455aef268ebde57863281afc57869439a3723bbe91b4f07d22ef5.ogg"
+  },
+  "498ca9c2ed7d5b32869713529a14a2a92d4ab2703d58d9a579284b1939c4e613": {
+    "key": "498ca9c2ed7d5b32869713529a14a2a92d4ab2703d58d9a579284b1939c4e613",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "I felt obligated to join, seeing as they took me in after I almost got scrapped alive by the ",
+    "text_normalized": "I felt obligated to join, seeing as they took me in after I almost got scrapped alive by the",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8673749026855639,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.3633995328907067,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "498ca9c2ed7d5b32869713529a14a2a92d4ab2703d58d9a579284b1939c4e613.ogg"
+  },
+  "29911091812a4339c5fff23944a0318890bfa2949f3955433bbf5c4b9eef9f0f": {
+    "key": "29911091812a4339c5fff23944a0318890bfa2949f3955433bbf5c4b9eef9f0f",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "You know of the Computer? I... could not retrieve it, I suspect the ",
+    "text_normalized": "You know of the Computer? I, could not retrieve it, I suspect the",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.75,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "29911091812a4339c5fff23944a0318890bfa2949f3955433bbf5c4b9eef9f0f.ogg"
+  },
+  "f49950ee906e2b7b55a061b0e556f568c9f39bdb129e9c7e25430f63f1582b4d": {
+    "key": "f49950ee906e2b7b55a061b0e556f568c9f39bdb129e9c7e25430f63f1582b4d",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "We are actually about to attack one of their outposts.",
+    "text_normalized": "We are actually about to attack one of their outposts.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.8958333333333333,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.7,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "f49950ee906e2b7b55a061b0e556f568c9f39bdb129e9c7e25430f63f1582b4d.ogg"
+  },
+  "268dc8c4e94feaa9e2e889137bbe24c3f72d80ae821dfd06c5eb735befcccd16": {
+    "key": "268dc8c4e94feaa9e2e889137bbe24c3f72d80ae821dfd06c5eb735befcccd16",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "Let me know if you want to join in, I'll be here when you are ready.",
+    "text_normalized": "Let me know if you want to join in, I'll be here when you are ready.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.75,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 0.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "268dc8c4e94feaa9e2e889137bbe24c3f72d80ae821dfd06c5eb735befcccd16.ogg"
+  },
+  "4dbcd15125e0fd579a3540943e2a4b2d2d5199d91ccfe113cc208427d350afb2": {
+    "key": "4dbcd15125e0fd579a3540943e2a4b2d2d5199d91ccfe113cc208427d350afb2",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "Captain ",
+    "text_normalized": "Captain",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9097222222222222,
+    "score_components": {
+      "duration_sanity": 1.0,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 0.8,
+      "ending_trend": 0.7,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "4dbcd15125e0fd579a3540943e2a4b2d2d5199d91ccfe113cc208427d350afb2.ogg"
+  },
+  "698777472f41ed8f305a870439f4efb357e694f1a1202c93a86eef9fb755c946": {
+    "key": "698777472f41ed8f305a870439f4efb357e694f1a1202c93a86eef9fb755c946",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "Don't worry about your standing, there won't be any evidence of your involvement.",
+    "text_normalized": "Don't worry about your standing, there won't be any evidence of your involvement.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9583333333333334,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 1.0,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "698777472f41ed8f305a870439f4efb357e694f1a1202c93a86eef9fb755c946.ogg"
+  },
+  "ef867989b9421db2d7aa8574e746026a3845df083b2adbb70424f50ff243fc57": {
+    "key": "ef867989b9421db2d7aa8574e746026a3845df083b2adbb70424f50ff243fc57",
+    "speaker": "Keril",
+    "reference": "sid16_am_michael",
+    "text_raw": "They'll all be dead.",
+    "text_normalized": "They'll all be dead.",
+    "engine": "f5",
+    "params": {
+      "seed": 0,
+      "speed": 1.0
+    },
+    "score_total": 0.9305555555555556,
+    "score_components": {
+      "duration_sanity": 0.7,
+      "loudness_sanity": 1.0,
+      "edge_silence": 1.0,
+      "f0_range": 0.8,
+      "ending_trend": 1.0,
+      "voicing_holes": 1.0,
+      "repeat_fidelity": 1.0
+    },
+    "ogg": "ef867989b9421db2d7aa8574e746026a3845df083b2adbb70424f50ff243fc57.ogg"
   }
 }
