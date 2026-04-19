@@ -17,8 +17,7 @@ import json, re, sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-# Reuse the v2 extractor's helpers
-from extract_dialogue_v2 import (
+from extract_dialogue import (
     DECOMP, DIALOGUE_FILES, balance_parens, split_top_level_commas,
     build_character_name_map, unescape_cs,
 )

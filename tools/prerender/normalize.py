@@ -45,13 +45,14 @@ def prerender_key(text: str, speaker: str) -> str:
 
 
 if __name__ == "__main__":
-    # Smoke test
+    # Parity dump — runs normalization over every ECHO tip and prints
+    # (tip_id, raw, normalized, key) as TSV so a C# harness can diff and
+    # catch any regressions in the Python ↔ C# normalizer pair.
+    # A mismatch at runtime = cache miss = prerender doesn't kick in.
     import json
-    tips = json.load(open("tools/prerender/echo_tips.json"))
-    print(f"Loaded {len(tips)} ECHO tips")
-    for i, (key, text) in enumerate(list(tips.items())[:5]):
-        norm = for_tts(text)
-        print(f"\n{key}:")
-        print(f"  raw:  {text!r}")
-        print(f"  norm: {norm!r}")
-        print(f"  key:  {prerender_key(text, 'ECHO')}")
+    from pathlib import Path
+    tips = json.load(open(Path(__file__).parent / "echo_tips.json"))
+    print("tip_id\traw\tnormalized\tkey")
+    for k, v in sorted(tips.items()):
+        v = v.strip()
+        print(f"{k}\t{v!r}\t{for_tts(v)!r}\t{prerender_key(v, 'ECHO')}")
