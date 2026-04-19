@@ -57,28 +57,32 @@ jobs:
         run: |
           VERSION=$(grep 'PluginVersion =' VGTTS/Plugin.cs | head -1 | sed 's/.*"\(.*\)".*/\1/')
           PKG_NAME="VGTTS-v${VERSION}"
-          PKG_DIR="dist/${PKG_NAME}"
+          # Nested VGTTS/ is intentional: it's the folder the user drops
+          # into BepInEx/plugins/. Inside it: DLL + prerender/ + tools/
+          # side-by-side. The plugin resolves paths relative to itself so
+          # there's no extra subfolder nesting.
+          PKG_DIR="dist/${PKG_NAME}/VGTTS"
 
-          rm -rf "$PKG_DIR"
-          mkdir -p "$PKG_DIR/VGTTS/prerender" "$PKG_DIR/VGTTS/tools"
+          rm -rf "dist/${PKG_NAME}"
+          mkdir -p "$PKG_DIR/prerender" "$PKG_DIR/tools"
 
           cp VGTTS/bin/Debug/netstandard2.1/VGTTS.dll "$PKG_DIR/"
           cp LICENSE THIRD_PARTY_NOTICES.md README.md "$PKG_DIR/"
 
           # Prerender pack — preserve speaker-folder tree, skip variants/
-          cp prerender/manifest.json "$PKG_DIR/VGTTS/prerender/"
+          cp prerender/manifest.json "$PKG_DIR/prerender/"
           if [ -f prerender/captain_name_templates.json ]; then
-            cp prerender/captain_name_templates.json "$PKG_DIR/VGTTS/prerender/"
+            cp prerender/captain_name_templates.json "$PKG_DIR/prerender/"
           fi
           for d in prerender/*/; do
             case "$d" in prerender/variants/) continue ;; esac
-            cp -r "$d" "$PKG_DIR/VGTTS/prerender/"
+            cp -r "$d" "$PKG_DIR/prerender/"
           done
 
           # Kokoro + sherpa-onnx bundle
-          cp -r tools/kokoro tools/sherpa "$PKG_DIR/VGTTS/tools/"
+          cp -r tools/kokoro tools/sherpa "$PKG_DIR/tools/"
 
-          OGGS=$(find "$PKG_DIR/VGTTS/prerender/" -name "*.ogg" | wc -l)
+          OGGS=$(find "$PKG_DIR/prerender/" -name "*.ogg" | wc -l)
           SIZE=$(du -sh "$PKG_DIR" | cut -f1)
           echo "Staged $OGGS OGGs + DLL + Kokoro bundle — $SIZE at $PKG_DIR"
 
@@ -86,8 +90,9 @@ jobs:
 
       - name: Zip release bundle
         run: |
-          cd dist && zip -qr "${{ steps.stage.outputs.pkg_name }}.zip" "${{ steps.stage.outputs.pkg_name }}"
-          ls -lh "${{ steps.stage.outputs.pkg_name }}.zip"
+          cd dist/${{ steps.stage.outputs.pkg_name }} && \
+            zip -qr "../${{ steps.stage.outputs.pkg_name }}.zip" VGTTS
+          ls -lh "dist/${{ steps.stage.outputs.pkg_name }}.zip"
 
       - name: Upload zip to release
         env:

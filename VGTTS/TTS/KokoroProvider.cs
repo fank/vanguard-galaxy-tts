@@ -14,12 +14,12 @@ namespace VGTTS.TTS;
 ///
 /// Expected bundle layout (relative to the plugin DLL):
 /// <code>
-///   VGTTS/tools/sherpa/sherpa-onnx-tts.exe
-///   VGTTS/tools/kokoro/model.onnx
-///   VGTTS/tools/kokoro/voices.bin
-///   VGTTS/tools/kokoro/tokens.txt
-///   VGTTS/tools/kokoro/lexicon-us-en.txt
-///   VGTTS/tools/kokoro/espeak-ng-data/
+///   tools/sherpa/sherpa-onnx-tts.exe
+///   tools/kokoro/model.onnx
+///   tools/kokoro/voices.bin
+///   tools/kokoro/tokens.txt
+///   tools/kokoro/lexicon-us-en.txt
+///   tools/kokoro/espeak-ng-data/
 /// </code>
 /// </summary>
 internal sealed class KokoroProvider
@@ -33,7 +33,7 @@ internal sealed class KokoroProvider
     public KokoroProvider()
     {
         var pluginDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)!;
-        var bundle = Path.Combine(pluginDir, "VGTTS", "tools");
+        var bundle = Path.Combine(pluginDir, "tools");
         _sherpaExe = Path.Combine(bundle, "sherpa", "sherpa-onnx-tts.exe");
         _kokoroDir = Path.Combine(bundle, "kokoro");
 
