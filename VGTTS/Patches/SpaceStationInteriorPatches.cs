@@ -1,3 +1,5 @@
+using System.Diagnostics;
+using System.Threading.Tasks;
 using HarmonyLib;
 using Source.Galaxy.POI;
 
@@ -38,8 +40,38 @@ internal static class SpaceStationInteriorPatches
         if (bar == null) return;
         try
         {
+            var sw = Stopwatch.StartNew();
+
+            // 1. CheckUpdatePatrons rolls new patrons once per in-game day.
+            //    On same-day re-entry this is a no-op (patrons came from save).
             bar.CheckUpdatePatrons();
-            Plugin.Log.LogInfo($"[station-warm] Pre-populated bar patrons on dock — {bar.availablePatrons.Count} patron(s)");
+
+            // 2. Regardless of whether step 1 rolled new ones, ensure every
+            //    patron has had Initialize() called. Save-restored patrons
+            //    are still un-initialized (initialized=false, dialogueLines
+            //    null for Salesman) until something triggers it — the game
+            //    normally does this lazily in BarUI at bar-open time. By
+            //    calling Initialize here we flip our warm trigger from
+            //    bar-open to station-dock for same-day re-entries.
+            //    Initialize is idempotent via its own !initialized guard.
+            foreach (var patron in bar.availablePatrons) patron.Initialize();
+
+            Plugin.Log.LogDebug(
+                $"[station-warm] Initialized {bar.availablePatrons.Count} bar patron(s) on dock");
+
+            var pending = BarPatronPatches.DrainPendingWarms();
+            if (pending.Count == 0)
+            {
+                Plugin.Log.LogDebug(
+                    $"[station-warm] No new warm tasks (all cached); setup took {sw.ElapsedMilliseconds}ms");
+                return;
+            }
+            _ = Task.Run(async () =>
+            {
+                await Task.WhenAll(pending).ConfigureAwait(false);
+                Plugin.Log.LogDebug(
+                    $"[station-warm] All {pending.Count} bar warm task(s) finished in {sw.ElapsedMilliseconds}ms");
+            });
         }
         catch (System.Exception ex)
         {
