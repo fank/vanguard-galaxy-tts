@@ -33,6 +33,15 @@ Each is distributed under its own license, reproduced or linked below.
 
 ## Build-time tools (not shipped in the release zip)
 
+### BepInEx.AssemblyPublicizer
+- **Project:** https://github.com/BepInEx/BepInEx.AssemblyPublicizer
+- **License:** MIT
+- **Use:** Generates a "publicized" reference copy of the game's
+  `Assembly-CSharp.dll` — method signatures only, no IL bodies — committed
+  at `VGTTS/lib/Assembly-CSharp.dll` so CI can compile VGTTS without the
+  proprietary game code. The real game assembly takes over at runtime.
+
+
 ### F5-TTS
 - **Project:** https://github.com/SWivid/F5-TTS
 - **License:** MIT

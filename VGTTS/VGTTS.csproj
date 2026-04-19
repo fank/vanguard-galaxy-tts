@@ -22,15 +22,15 @@
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
     <PackageReference Include="UnityEngine.Modules" Version="6000.2.6" IncludeAssets="compile" />
     <PackageReference Include="HarmonyX" Version="2.10.*" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" IncludeAssets="compile" />
   </ItemGroup>
 
   <ItemGroup>
+    <!-- Publicized stub of the game's Assembly-CSharp.dll. Committed so CI
+         can build without the proprietary game code. Regenerate via:
+         assembly-publicizer <game>/Assembly-CSharp.dll -o VGTTS/lib/Assembly-CSharp.dll -->
     <Reference Include="Assembly-CSharp">
       <HintPath>lib/Assembly-CSharp.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>lib/Newtonsoft.Json.dll</HintPath>
       <Private>false</Private>
     </Reference>
   </ItemGroup>
