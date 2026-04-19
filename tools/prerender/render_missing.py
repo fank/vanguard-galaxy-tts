@@ -94,12 +94,13 @@ def main():
         write_wav(wav_path, x, sr)
         encode_ogg(wav_path, ogg_path)
         manifest[key] = {
-            "key": key, "speaker": speaker, "reference": ref,
-            "text_normalized": text, "text_raw": text,
-            "engine": "kokoro", "params": {"sid": int(sid), "speed": 1.0},
+            "text_raw": text, "text_normalized": text,
+            "speaker": speaker,
+            "engine": "kokoro", "reference": ref,
+            "params": {"sid": int(sid), "speed": 1.0},
             "score_total": s.total,
-            "ogg": manifest_ogg_rel(speaker, key),
             "source": "delta-render",
+            "ogg": manifest_ogg_rel(speaker, key),
         }
         print(f"[{i+1}/{len(rows)}] {speaker:<25s} kokoro:{sid}  s={s.total:.2f}")
         if (i + 1) % 20 == 0:
