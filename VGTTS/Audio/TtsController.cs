@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Behaviour.AudioSystem;
@@ -29,6 +30,29 @@ internal sealed class TtsController
     private CancellationTokenSource? _currentCts;
     private SoundEmitter? _currentEmitter;
     private GameObject? _fallbackGo;
+
+    /// <summary>
+    /// In-flight synthesis dedupe. Keyed by cache path — if a warm task is
+    /// already writing to a path, a concurrent Speak() call awaits it instead
+    /// of starting a competing synth that would corrupt the output file.
+    /// </summary>
+    private readonly Dictionary<string, Task> _inflightSynths = new();
+    private readonly object _inflightLock = new();
+
+    private Task SynthDedup(string synthText, string voice, string path)
+    {
+        lock (_inflightLock)
+        {
+            if (_inflightSynths.TryGetValue(path, out var existing)) return existing;
+            // Internal token is None so canceled callers don't kill the underlying synth.
+            var task = _provider.SynthesizeAsync(synthText, voice, path, CancellationToken.None);
+            _inflightSynths[path] = task;
+            // Remove from map when done, regardless of outcome.
+            task.ContinueWith(_ => { lock (_inflightLock) _inflightSynths.Remove(path); },
+                TaskContinuationOptions.ExecuteSynchronously);
+            return task;
+        }
+    }
 
     public TtsController(KokoroProvider provider, DiskCache cache, VoiceMapper voices,
                          PrerenderLookup prerender, UnprerenderedLog unprerendered)
@@ -65,7 +89,7 @@ internal sealed class TtsController
         var persistent = _voices.IsKnownSpeaker(speaker);
         var path = _cache.PathFor(synthText, voice, persistent);
         if (_cache.Exists(path)) return WarmResult.AlreadyCached;
-        await _provider.SynthesizeAsync(synthText, voice, path, ct).ConfigureAwait(false);
+        await SynthDedup(synthText, voice, path).ConfigureAwait(false);
         return WarmResult.Synthesized;
     }
 
@@ -145,7 +169,9 @@ internal sealed class TtsController
 
         if (!_cache.Exists(path))
         {
-            var task = _provider.SynthesizeAsync(synthText, voice, path, ct);
+            // Await the existing warm synth if one's in flight, else start our own.
+            // Either way the file at `path` is what we load next.
+            var task = SynthDedup(synthText, voice, path);
             while (!task.IsCompleted)
             {
                 if (ct.IsCancellationRequested) yield break;
