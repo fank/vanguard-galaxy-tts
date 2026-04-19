@@ -54,6 +54,14 @@ internal static class BarPatronPatches
     [HarmonyPatch(nameof(BarPatron.Initialize))]
     private static void Initialize_Postfix(BarPatron __instance)
     {
+        // Diagnostic: always log so we can tell whether Harmony actually
+        // patched this method. If you see NO [bar-hook] lines around a
+        // bar UI open, the patch isn't firing and we need to investigate
+        // further (patch target mismatch, PatchAll ordering, etc.).
+        var type = __instance?.GetType().Name ?? "<null>";
+        var hasCrew = (__instance as CrewMember)?.crewMember != null;
+        Plugin.Log.LogInfo($"[bar-hook] {type} Initialize fired (name={__instance?.name ?? "<null>"} hasCrewData={hasCrew})");
+
         var controller = TtsController.Instance;
         if (controller == null) return;
         if (Plugin.Instance == null || !Plugin.Instance.CfgEnabled.Value || !Plugin.Instance.CfgDialogue.Value) return;
