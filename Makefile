@@ -55,11 +55,16 @@ link-asm:
 build: link-asm
 	DOTNET_ROOT=$(dir $(DOTNET)) $(DOTNET) build VGTTS/VGTTS.csproj -c $(CONFIG)
 
+# Install layout: everything under $(PLUGIN_DIR)/VGTTS/ — the plugin resolves
+# prerender/ and tools/ relative to its own DLL location (no extra VGTTS/
+# nesting). One folder, self-contained.
+VGTTS_DIR := $(PLUGIN_DIR)/VGTTS
+
 deploy: build check-bepinex
-	@mkdir -p "$(PLUGIN_DIR)"
-	cp "$(BUILDDLL)" "$(PLUGIN_DIR)/"
-	@if [ -f "$(BUILDDIR)/VGTTS.pdb" ]; then cp "$(BUILDDIR)/VGTTS.pdb" "$(PLUGIN_DIR)/"; fi
-	@echo "Deployed $(DLL) to $(PLUGIN_DIR)"
+	@mkdir -p "$(VGTTS_DIR)"
+	cp "$(BUILDDLL)" "$(VGTTS_DIR)/"
+	@if [ -f "$(BUILDDIR)/VGTTS.pdb" ]; then cp "$(BUILDDIR)/VGTTS.pdb" "$(VGTTS_DIR)/"; fi
+	@echo "Deployed $(DLL) to $(VGTTS_DIR)"
 	@$(MAKE) deploy-bundle
 	@$(MAKE) deploy-prerender
 
@@ -69,17 +74,17 @@ deploy: build check-bepinex
 # The variants/ folder is debug-only and excluded from the deploy.
 deploy-prerender:
 	@if [ -f prerender/manifest.json ]; then \
-		mkdir -p "$(PLUGIN_DIR)/VGTTS/prerender" ; \
-		cp prerender/manifest.json "$(PLUGIN_DIR)/VGTTS/prerender/" ; \
+		mkdir -p "$(VGTTS_DIR)/prerender" ; \
+		cp prerender/manifest.json "$(VGTTS_DIR)/prerender/" ; \
 		if [ -f prerender/captain_name_templates.json ]; then \
-			cp prerender/captain_name_templates.json "$(PLUGIN_DIR)/VGTTS/prerender/" ; \
+			cp prerender/captain_name_templates.json "$(VGTTS_DIR)/prerender/" ; \
 		fi ; \
 		for d in prerender/*/ ; do \
 			case "$$d" in prerender/variants/) continue ;; esac ; \
-			cp -r "$$d" "$(PLUGIN_DIR)/VGTTS/prerender/" ; \
+			cp -r "$$d" "$(VGTTS_DIR)/prerender/" ; \
 		done ; \
-		count=$$(find "$(PLUGIN_DIR)/VGTTS/prerender/" -name "*.ogg" | wc -l) ; \
-		echo "Deployed $$count prerendered OGGs to $(PLUGIN_DIR)/VGTTS/prerender/" ; \
+		count=$$(find "$(VGTTS_DIR)/prerender/" -name "*.ogg" | wc -l) ; \
+		echo "Deployed $$count prerendered OGGs to $(VGTTS_DIR)/prerender/" ; \
 	else \
 		echo "No prerender/manifest.json — skipping prerender deploy" ; \
 	fi
@@ -87,9 +92,9 @@ deploy-prerender:
 # Deploy the Kokoro + sherpa-onnx bundle (required for live TTS fallback).
 deploy-bundle:
 	@if [ -d tools/kokoro ] && [ -d tools/sherpa ]; then \
-		mkdir -p "$(PLUGIN_DIR)/VGTTS/tools" ; \
-		cp -r tools/kokoro tools/sherpa "$(PLUGIN_DIR)/VGTTS/tools/" ; \
-		echo "Deployed Kokoro + sherpa-onnx bundle to $(PLUGIN_DIR)/VGTTS/tools/" ; \
+		mkdir -p "$(VGTTS_DIR)/tools" ; \
+		cp -r tools/kokoro tools/sherpa "$(VGTTS_DIR)/tools/" ; \
+		echo "Deployed Kokoro + sherpa-onnx bundle to $(VGTTS_DIR)/tools/" ; \
 	else \
 		echo "tools/kokoro or tools/sherpa missing — run 'make download-kokoro'" ; \
 	fi
@@ -128,9 +133,11 @@ PKG_DIR     := dist/$(PKG_NAME)
 package: build
 	@echo "Packaging $(PKG_NAME) into $(PKG_DIR)/"
 	@rm -rf "$(PKG_DIR)"
+	@# Nested VGTTS/ is intentional — it's the folder the user drops into
+	@# BepInEx/plugins/. Inside it: DLL + prerender/ + tools/ side-by-side.
 	@mkdir -p "$(PKG_DIR)/VGTTS/prerender" "$(PKG_DIR)/VGTTS/tools"
-	@cp "$(BUILDDLL)" "$(PKG_DIR)/"
-	@cp LICENSE THIRD_PARTY_NOTICES.md README.md "$(PKG_DIR)/" 2>/dev/null || true
+	@cp "$(BUILDDLL)" "$(PKG_DIR)/VGTTS/"
+	@cp LICENSE THIRD_PARTY_NOTICES.md README.md "$(PKG_DIR)/VGTTS/" 2>/dev/null || true
 	@# Prerender pack — preserve speaker-folder tree, skip variants/
 	@cp prerender/manifest.json "$(PKG_DIR)/VGTTS/prerender/"
 	@if [ -f prerender/captain_name_templates.json ]; then \
@@ -150,7 +157,7 @@ package: build
 	@oggs=$$(find "$(PKG_DIR)/VGTTS/prerender/" -name "*.ogg" | wc -l) ; \
 	 size=$$(du -sh "$(PKG_DIR)" | cut -f1) ; \
 	 echo "Packaged $$oggs OGGs + DLL + Kokoro bundle — $$size at $(PKG_DIR)/"
-	@echo "Zip it manually with: (cd dist && zip -qr $(PKG_NAME).zip $(PKG_NAME))"
+	@echo "Zip it manually with: (cd $(PKG_DIR) && zip -qr ../$(PKG_NAME).zip VGTTS)"
 
 clean:
 	$(DOTNET) clean VGTTS/VGTTS.csproj

@@ -84,7 +84,7 @@ internal static class CaptainNameCache
     private static List<CaptainNameTemplate> LoadTemplates()
     {
         var pluginDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)!;
-        var path = Path.Combine(pluginDir, "VGTTS", "prerender", "captain_name_templates.json");
+        var path = Path.Combine(pluginDir, "prerender", "captain_name_templates.json");
         if (!File.Exists(path))
         {
             Plugin.Log.LogWarning($"[captain-warm] Templates not found at {path}; skipping warm-up.");

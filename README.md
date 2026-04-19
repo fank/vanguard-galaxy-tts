@@ -12,13 +12,14 @@ A BepInEx mod that voices every dialogue line in [Vanguard Galaxy](https://store
 1. **Install BepInEx 5.x** into the game folder — grab the `BepInEx_win_x64_5.4.x.zip` from the [BepInEx releases](https://github.com/BepInEx/BepInEx/releases) and unzip it into your Vanguard Galaxy install folder (next to `VanguardGalaxy.exe`).
 2. **Launch the game once** so BepInEx creates its `BepInEx/plugins/` and `BepInEx/config/` subfolders, then close it.
 3. **Download the VGTTS release** from Nexus Mods.
-4. **Unzip** the contents into your Vanguard Galaxy install folder. You should end up with:
+4. **Unzip** into `BepInEx/plugins/`. The zip contains a single `VGTTS/` folder that drops in cleanly:
    ```
-   VanguardGalaxy/
-     BepInEx/plugins/VGTTS.dll
-     BepInEx/plugins/VGTTS/prerender/...     (2831 OGG files + manifest)
-     BepInEx/plugins/VGTTS/tools/kokoro/...  (neural TTS model)
-     BepInEx/plugins/VGTTS/tools/sherpa/...  (inference binary)
+   VanguardGalaxy/BepInEx/plugins/
+     VGTTS/
+       VGTTS.dll
+       prerender/...     (2831 OGG files + manifest)
+       tools/kokoro/...  (neural TTS model)
+       tools/sherpa/...  (inference binary)
    ```
 5. **Launch the game.** Dialogue lines should start speaking.
 

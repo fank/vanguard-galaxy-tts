@@ -14,8 +14,8 @@ namespace VGTTS.Prerender;
 /// TTS). Manifest is loaded once on Awake; lookups are O(1) on a SHA-256 hex key.
 ///
 /// Bundle layout (relative to plugin DLL):
-///   VGTTS/prerender/manifest.json
-///   VGTTS/prerender/&lt;sha256&gt;.ogg       ← one per pre-rendered line
+///   prerender/manifest.json
+///   prerender/&lt;speaker&gt;/&lt;sha256&gt;.ogg   ← one per pre-rendered line
 /// </summary>
 internal sealed class PrerenderLookup
 {
@@ -27,7 +27,7 @@ internal sealed class PrerenderLookup
     {
         _keyToPath = new Dictionary<string, string>();
         var pluginDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)!;
-        _packDir = Path.Combine(pluginDir, "VGTTS", "prerender");
+        _packDir = Path.Combine(pluginDir, "prerender");
         LoadManifest();
     }
 
