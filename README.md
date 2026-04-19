@@ -25,7 +25,7 @@ A BepInEx mod that voices every dialogue line in [Vanguard Galaxy](https://store
 
 ## Config
 
-BepInEx writes the config to `BepInEx/config/dev.fankserver.vgtts.cfg` after the first launch. Key knobs:
+BepInEx writes the config to `BepInEx/config/vgtts.cfg` after the first launch. Key knobs:
 
 ```ini
 [General]
@@ -58,8 +58,7 @@ The `[Voices]` section lists every known NPC with its default Kokoro speaker ID.
 - If instead you see `Kokoro bundle missing, TTS disabled`, the `VGTTS/tools/kokoro/` or `VGTTS/tools/sherpa/` folder didn't unpack correctly. Re-download and re-extract.
 
 **Wrong voice / wrong gender for a specific NPC**
-- If you updated from v1.1.x, the plugin should auto-migrate your config on the first launch (look for a `[config-migration]` line in the BepInEx console). If that didn't fire, delete the `[Voices]` section from `dev.fankserver.vgtts.cfg` manually and relaunch.
-- If you previously edited `[Voices]` intentionally, your edits were backed up to `dev.fankserver.vgtts.cfg.v1.bak`.
+- Edit the `[Voices]` section in `vgtts.cfg` and set the speaker to a different Kokoro SID (e.g. `Arle = kokoro:3`). Delete the entry entirely and relaunch to restore the default.
 
 **Some dialogue lines play with a noticeable delay on first utterance**
 - That's the live-TTS fallback synthesizing a line the pack doesn't cover. Once synthesized it's cached — the same line plays instantly the second time. Common causes: game patches added new text, commander-name lines during the first ~20 seconds of a save load before the warm-up finishes, station names in procedurally-generated systems.
