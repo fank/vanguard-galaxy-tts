@@ -75,19 +75,24 @@ The `[Voices]` section lists every known NPC with its default Kokoro speaker ID.
 
 ## Releasing (for maintainers)
 
-Every release on GitHub auto-packages the downloadable zip via `.github/workflows/release.yml`. The workflow needs one thing from you: the built `VGTTS.dll`, because Assembly-CSharp.dll can't live on CI.
+Creating a GitHub Release auto-builds and uploads the zip via `.github/workflows/release.yml`. CI compiles `VGTTS.dll` against a **publicized stub** of `Assembly-CSharp.dll` committed at `VGTTS/lib/Assembly-CSharp.dll` (method signatures only — no game code). The real game assembly takes over at runtime via Mono's late binding.
 
 ```bash
-# Build locally (requires the game's Assembly-CSharp.dll symlinked via `make link-asm`)
-make build
+# One-time per game update — regenerate the publicized stub from your
+# current install and commit it. BepInEx-standard tool, MIT-licensed:
+dotnet tool install -g BepInEx.AssemblyPublicizer.Cli
+assembly-publicizer \
+  "$GAME_DIR/VanguardGalaxy_Data/Managed/Assembly-CSharp.dll" \
+  -o VGTTS/lib/Assembly-CSharp.dll
+git add VGTTS/lib/Assembly-CSharp.dll && git commit -m "chore: refresh publicized stub for game vX.Y"
 
-# Create the GitHub release with the DLL attached
-gh release create v1.2.0 VGTTS/bin/Debug/netstandard2.1/VGTTS.dll \
-  --title "v1.2.0 — Kokoro-only, captain presets, auto-migration" \
-  --notes-file CHANGELOG-v1.2.0.md
+# Tag + release
+gh release create v1.2.0 --title "v1.2.0 …" --notes-file CHANGELOG-v1.2.0.md
 ```
 
-GitHub Actions then downloads the DLL, fetches the Kokoro + sherpa-onnx bundles, stages the shipping layout, and uploads `VGTTS-v1.2.0.zip` back to the same release.
+GitHub Actions then: checks out the tag, verifies the stub is present, runs `dotnet build`, fetches the Kokoro + sherpa-onnx bundles, stages the shipping layout, and uploads `VGTTS-v1.2.0.zip` back to the release.
+
+To re-run on a failed release without recreating it: `gh workflow run release.yml -f tag=v1.2.0`.
 
 ## Contributing
 
