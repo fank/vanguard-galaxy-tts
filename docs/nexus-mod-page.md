@@ -47,7 +47,7 @@ Full install guide and troubleshooting in the README.
 
 ### Configuration
 
-The mod creates `BepInEx/config/dev.fankserver.vgtts.cfg` on first launch. Key settings:
+The mod creates `BepInEx/config/vgtts.cfg` on first launch. Key settings:
 
 - `[General] Enabled` / `DialogueTTS` / `EchoTTS` — master toggles
 - `[Voice] CaptainPreset` — `auto` / `m1..m3` / `f1..f3` — pick your captain's voice

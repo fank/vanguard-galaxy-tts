@@ -5,7 +5,6 @@ using BepInEx.Logging;
 using HarmonyLib;
 using VGTTS.Audio;
 using VGTTS.Cache;
-using VGTTS.Config;
 using VGTTS.Prerender;
 using VGTTS.TTS;
 using VGTTS.Voice;
@@ -16,11 +15,11 @@ namespace VGTTS;
 [BepInProcess("VanguardGalaxy.exe")]
 public class Plugin : BaseUnityPlugin
 {
-    public const string PluginGuid = "dev.fankserver.vgtts";
+    public const string PluginGuid = "vgtts";
     public const string PluginName = "Vanguard Galaxy TTS";
     // BepInEx parses PluginVersion through System.Version which rejects SemVer
     // pre-release suffixes, so stick to the plain N.N.N form.
-    public const string PluginVersion = "1.5.0";
+    public const string PluginVersion = "1.6.0";
 
     internal static Plugin Instance { get; private set; } = null!;
     internal static ManualLogSource Log { get; private set; } = null!;
@@ -36,11 +35,6 @@ public class Plugin : BaseUnityPlugin
     {
         Instance = this;
         Log = Logger;
-
-        // Strip stale [Pitch] + [Voices] sections from pre-v1.2 configs before
-        // Bind() cements the old values. Users upgrading from v1.1 would
-        // otherwise hear wrong voices for ~27 NPCs.
-        ConfigMigration.MigrateIfNeeded(Config);
 
         CfgEnabled = Config.Bind("General", "Enabled", true, "Master enable/disable for TTS.");
         CfgDialogue = Config.Bind("General", "DialogueTTS", true, "Speak NPC dialogue lines.");
