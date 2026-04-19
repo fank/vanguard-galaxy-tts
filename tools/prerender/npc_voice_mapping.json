@@ -13,7 +13,8 @@
       "German": "Sergio Weisartz — need German-accented ENGLISH. Same sources.",
       "Nordic": "Olga Skarsgard — need Swedish/Norwegian-accented ENGLISH.",
       "_note": "Piper voices tagged ru_RU / de_DE / sv_SE were wrongly assumed to speak English with accent; in reality they're single-language trained and produce unintelligible output when fed English text. Reverted these to English-native placeholders on 2026-04-18.",
-      "Scottish": "Elias McIntire — need Scottish-accented MALE ENGLISH. Previously used Piper en_GB-alba-medium but verified 2026-04-19 that Alba is female despite the Scottish-Gaelic name meaning 'Scotland'. Candidates: Common Voice accent='Scottish' samples, ElevenLabs Scottish male voices."
+      "Scottish": "Elias McIntire — need Scottish-accented MALE ENGLISH. Previously used Piper en_GB-alba-medium but verified 2026-04-19 that Alba is female despite the Scottish-Gaelic name meaning 'Scotland'. Candidates: Common Voice accent='Scottish' samples, ElevenLabs Scottish male voices.",
+      "French-male": "Claude + Etienne Briggs — need French-accented MALE ENGLISH. Kokoro v1.0 has only ff_siwis (French female). Using Italian im_nicola as Romance-language stand-in. Candidates: Common Voice accent='French', ElevenLabs."
     },
     "lessons_learned": "Automated scoring (F0 rise, loudness, duration) cannot detect phonetic unintelligibility — a Piper voice happily produces correct F0 contours while saying nonsense words. Always audibly verify new reference voices before locking them into the mapping."
   },
@@ -188,9 +189,9 @@
     },
     {
       "name": "Claude",
-      "reference": "kokoro:30",
-      "fidelity": "strong",
-      "notes": "MIGRATED 2026-04-19 from F5: French smuggler — ff_siwis is authentic French",
+      "reference": "kokoro:36",
+      "fidelity": "workable",
+      "notes": "im_nicola (Italian M) — SWITCHED 2026-04-19: was ff_siwis (French F) but Claude is male. Kokoro v1.0 has no French male; using Italian as closest Romance-language approximation. MIGRATED 2026-04-19 from F5: French smuggler — ff_siwis is authentic French",
       "engine": "kokoro"
     },
     {
@@ -258,9 +259,9 @@
     },
     {
       "name": "Etienne Briggs",
-      "reference": "kokoro:30",
-      "fidelity": "strong",
-      "notes": "MIGRATED 2026-04-19 from F5: Etienne = French name; ff_siwis authentic French",
+      "reference": "kokoro:36",
+      "fidelity": "workable",
+      "notes": "im_nicola (Italian M) — SWITCHED 2026-04-19: was ff_siwis (French F) but Etienne Briggs is male. Kokoro v1.0 has no French male; using Italian as closest Romance-language approximation. MIGRATED 2026-04-19 from F5: Etienne = French name; ff_siwis authentic French",
       "engine": "kokoro"
     },
     {

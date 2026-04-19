@@ -67,11 +67,11 @@ internal static class DefaultVoiceMap
             ["Arle"]              = "kokoro:32",  // hf_beta      (Hindi F, commanding)
             ["Mick Flank"]        = "kokoro:41",  // jm_kumo      (Japanese M)
             ["Stella Chion"]      = "kokoro:40",  // jf_tebukuro  (Japanese F, soft)
-            ["Claude"]            = "kokoro:30",  // ff_siwis     (French F)
+            ["Claude"]            = "kokoro:36",  // im_nicola    (Italian M — French-male gap, closest Romance option)
             ["Alice Okono"]       = "kokoro:31",  // hf_alpha     (Hindi F, warm)
             ["Oron"]              = "kokoro:43",  // pm_alex      (Portuguese M)
             ["Triane Solis"]      = "kokoro:31",  // hf_alpha     (Hindi F, mystical)
-            ["Etienne Briggs"]    = "kokoro:30",  // ff_siwis     (French F)
+            ["Etienne Briggs"]    = "kokoro:36",  // im_nicola    (Italian M — French-male gap, closest Romance option)
             ["Amalia Rodriguez"]  = "kokoro:28",  // ef_dora      (Spanish F)
             ["Gabriel Ramos"]     = "kokoro:29",  // em_alex      (Spanish M)
 

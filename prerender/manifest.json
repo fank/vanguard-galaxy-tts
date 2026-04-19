@@ -2829,101 +2829,101 @@
   },
   "1336b13e9d37b565feae8dd1604b1aaed51cbaacee0d6c4baac0ed80d09173b0": {
     "speaker": "Etienne Briggs",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "Welcome back, recruit. System tells me you completed your patrol, well done!",
     "text_normalized": "Welcome back, recruit. System tells me you completed your patrol, well done!",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 1.0,
+    "score_total": 0.7652917754683146,
     "ogg": "Etienne_Briggs/1336b13e9d37b565feae8dd1604b1aaed51cbaacee0d6c4baac0ed80d09173b0.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "8ad7e3fcb1157c0429eaffff52477dbac9b1056f4f2e613305cb4f42d89594c0": {
     "speaker": "Etienne Briggs",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "Nobody said this would be easy. Luckily for you, that's why the rewards are quite substantial.",
     "text_normalized": "Nobody said this would be easy. Luckily for you, that's why the rewards are quite substantial.",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 1.0,
+    "score_total": 0.7916666666666666,
     "ogg": "Etienne_Briggs/8ad7e3fcb1157c0429eaffff52477dbac9b1056f4f2e613305cb4f42d89594c0.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "4b8026c7120a2312f98a4e8568c718fa8fc90a92f1abb750c3fa62109dbf17a4": {
     "speaker": "Etienne Briggs",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "That's what you say now. Soon, you'll be back here day after day, measuring yourself against the most hardy foes this Galaxy has to offer.",
     "text_normalized": "That's what you say now. Soon, you'll be back here day after day, measuring yourself against the most hardy foes this Galaxy has to offer.",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 0.9375,
+    "score_total": 0.8898728759764656,
     "ogg": "Etienne_Briggs/4b8026c7120a2312f98a4e8568c718fa8fc90a92f1abb750c3fa62109dbf17a4.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "fb39800bfce8003fa1e3628ac68bebf60daf9b25ef3d270b54e686a389f59e19": {
     "speaker": "Etienne Briggs",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "How's your patrol coming along, recruit?",
     "text_normalized": "How's your patrol coming along, recruit?",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 0.7916666666666666,
+    "score_total": 0.9375,
     "ogg": "Etienne_Briggs/fb39800bfce8003fa1e3628ac68bebf60daf9b25ef3d270b54e686a389f59e19.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "1a8b1c1dc6d02a39788d0edd8367b8ed8170b0351859b03ee8bf25e821d054cb": {
     "speaker": "Etienne Briggs",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "Welcome to Canisec, your most trustworthy defense partner in the Galaxy. What can I do for you?",
     "text_normalized": "Welcome to Canisec, your most trustworthy defense partner in the Galaxy. What can I do for you?",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
     "score_total": 0.7916666666666666,
     "ogg": "Etienne_Briggs/1a8b1c1dc6d02a39788d0edd8367b8ed8170b0351859b03ee8bf25e821d054cb.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "af04ebc93fa3ed1994b1e024ff93ee70b335a49a2e7c6c242a87f75052dd54d6": {
     "speaker": "Etienne Briggs",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "Simple, you go to any point of interest that we post on the patrol board, and eliminate any hostile forces that you encounter. Then you collect your reward, rinse, and repeat. Interested?",
     "text_normalized": "Simple, you go to any point of interest that we post on the patrol board, and eliminate any hostile forces that you encounter. Then you collect your reward, rinse, and repeat. Interested?",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 0.7916666666666666,
+    "score_total": 0.9375,
     "ogg": "Etienne_Briggs/af04ebc93fa3ed1994b1e024ff93ee70b335a49a2e7c6c242a87f75052dd54d6.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "63fe20f017776e7a8bb2e4c6d33e1d36dab35dd6b6d46f48c3531e000e4b0f86": {
     "speaker": "Etienne Briggs",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "Excellent. We do have a one-time sign up bonus for new recruits, so check out our offer in your mission log. See you back soon!",
     "text_normalized": "Excellent. We do have a one-time sign up bonus for new recruits, so check out our offer in your mission log. See you back soon!",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 1.0,
+    "score_total": 0.858102590028778,
     "ogg": "Etienne_Briggs/63fe20f017776e7a8bb2e4c6d33e1d36dab35dd6b6d46f48c3531e000e4b0f86.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "6cf034ab74b4d0731b82549ba329c7d23cbbdff5b9bc87e80cd630af4a770f1f": {
     "speaker": "Amalia Rodriguez",
@@ -5881,87 +5881,87 @@
   },
   "e312233c5a08a634c7921b9eb9d52f3238dadba61568cfd047809f1a76ba28a4": {
     "speaker": "Claude",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "Captain ",
     "text_normalized": "Captain",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
     "score_total": 0.8680555555555556,
     "ogg": "Claude/e312233c5a08a634c7921b9eb9d52f3238dadba61568cfd047809f1a76ba28a4.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "6bd5c4b06ff49d1c10978dd28e737f216dd5f1ab424d27644a5c683b7d2c8f42": {
     "speaker": "Claude",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "Wouldn't have our outpost anymore if it wasn't for you.",
     "text_normalized": "Wouldn't have our outpost anymore if it wasn't for you.",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 1.0,
+    "score_total": 0.75,
     "ogg": "Claude/6bd5c4b06ff49d1c10978dd28e737f216dd5f1ab424d27644a5c683b7d2c8f42.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "8643883bc94dd4db908a433bac2d84b9f54ee71c5f06559bf767fc404d06e45d": {
     "speaker": "Claude",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "Let's get you your next mission. The one that pays quite a bit.",
     "text_normalized": "Let's get you your next mission. The one that pays quite a bit.",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 1.0,
+    "score_total": 0.9375,
     "ogg": "Claude/8643883bc94dd4db908a433bac2d84b9f54ee71c5f06559bf767fc404d06e45d.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "48e4836e094dfee39bfdd8e2d972e15f5e306d1afaa4d99f0c56017452a48a7c": {
     "speaker": "Claude",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "We have a ",
     "text_normalized": "We have a",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 0.9097222222222222,
+    "score_total": 0.8680555555555556,
     "ogg": "Claude/48e4836e094dfee39bfdd8e2d972e15f5e306d1afaa4d99f0c56017452a48a7c.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "890988ce0374ea0888dea1816a4c976ae2ca4357f5f907f79c703168b2fb7c81": {
     "speaker": "Claude",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "Just some... regular cargo we need you to bring over there.",
     "text_normalized": "Just some, regular cargo we need you to bring over there.",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 1.0,
+    "score_total": 0.7916666666666666,
     "ogg": "Claude/890988ce0374ea0888dea1816a4c976ae2ca4357f5f907f79c703168b2fb7c81.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "be3b67e76a93e39aa9e1111cf9ec999a34a6fe17ee6bbb4a9f999e51478d016d": {
     "speaker": "Claude",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "Nothing too fancy, just don't go snooping around the cargo.",
     "text_normalized": "Nothing too fancy, just don't go snooping around the cargo.",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 1.0,
+    "score_total": 0.7916666666666666,
     "ogg": "Claude/be3b67e76a93e39aa9e1111cf9ec999a34a6fe17ee6bbb4a9f999e51478d016d.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "2377828a21bfe0ff7638379491856f4fcedb04573064246fdd6cf507e49cb04e": {
     "speaker": "Stella Chion",
@@ -6203,17 +6203,17 @@
   },
   "a30926c884060e16d6722b4d71f7e81ea8995cd69429e2dcb0b854ce50e53b6a": {
     "speaker": "Claude",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "Well done, Captain.",
     "text_normalized": "Well done, Captain.",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
     "score_total": 0.9375,
     "ogg": "Claude/a30926c884060e16d6722b4d71f7e81ea8995cd69429e2dcb0b854ce50e53b6a.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "405e7c5b96ce734fdb4caaefd4132c8987256911733dc01e604742a4c7d9a083": {
     "speaker": "James Fleddon",
@@ -6231,31 +6231,31 @@
   },
   "298061c0e53091bf7b0b9a9d3d08cbc3b6b6f6f5f7978cd6c4c71738f1984678": {
     "speaker": "Claude",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "No, James... Ah, I guess you've earned our trust, Captain.",
     "text_normalized": "No, James. Ah, I guess you've earned our trust, Captain.",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 1.0,
+    "score_total": 0.8772477940797521,
     "ogg": "Claude/298061c0e53091bf7b0b9a9d3d08cbc3b6b6f6f5f7978cd6c4c71738f1984678.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "861a569ee2a1e331ce390813ac3cf8c95bffb9e9504eb04bcb9a2a12abfd8def": {
     "speaker": "Claude",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "You were protecting a shipment full of Metafiber, at least that should have been in there.",
     "text_normalized": "You were protecting a shipment full of Metafiber, at least that should have been in there.",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 0.9083333333333333,
+    "score_total": 0.75,
     "ogg": "Claude/861a569ee2a1e331ce390813ac3cf8c95bffb9e9504eb04bcb9a2a12abfd8def.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "e156f08bda8a25414f1a1ceea4d5f37573dd4deef6eba9fbc549f2632d8fab5a": {
     "speaker": "ECHO",
@@ -6273,73 +6273,73 @@
   },
   "696c571840f7060558938f50dcecc2673dd2c748695d675e1d36cb537d4bf6da": {
     "speaker": "Claude",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "Well, that would require more time to explain. Right now, we need to get after the missing shipment.",
     "text_normalized": "Well, that would require more time to explain. Right now, we need to get after the missing shipment.",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 1.0,
+    "score_total": 0.8958333333333333,
     "ogg": "Claude/696c571840f7060558938f50dcecc2673dd2c748695d675e1d36cb537d4bf6da.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "c43ca224215f8a3a3e575efd885df96f9e63c816d62439320c841531d20574cc": {
     "speaker": "Claude",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "I see.. well you're going to meet them.",
     "text_normalized": "I see, well you're going to meet them.",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 1.0,
+    "score_total": 0.7847222222222222,
     "ogg": "Claude/c43ca224215f8a3a3e575efd885df96f9e63c816d62439320c841531d20574cc.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "11c3d0c53c489d5b69b9231dd96873bad3fce5ae8cc2cc29e85069e9a68be8c6": {
     "speaker": "Claude",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "They are our suppliers, so our best bet is to see what they know.",
     "text_normalized": "They are our suppliers, so our best bet is to see what they know.",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 1.0,
+    "score_total": 0.75,
     "ogg": "Claude/11c3d0c53c489d5b69b9231dd96873bad3fce5ae8cc2cc29e85069e9a68be8c6.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "d409122da8cce3ce776cce237b021bd2237abea57c3e736c9c590e95f8243e0c": {
     "speaker": "Claude",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "Head over to one of their hideouts, and ask where the shipment is.",
     "text_normalized": "Head over to one of their hideouts, and ask where the shipment is.",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 1.0,
+    "score_total": 0.9583333333333334,
     "ogg": "Claude/d409122da8cce3ce776cce237b021bd2237abea57c3e736c9c590e95f8243e0c.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "38f8176615c8dadee0252505519940e812405e403351363edb04de31fe9c0db5": {
     "speaker": "Claude",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "I know what you are thinking, and yes that's possible... but you are more than capable from what we've seen.",
     "text_normalized": "I know what you are thinking, and yes that's possible, but you are more than capable from what we've seen.",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 1.0,
+    "score_total": 0.8958333333333333,
     "ogg": "Claude/38f8176615c8dadee0252505519940e812405e403351363edb04de31fe9c0db5.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "151fa7052040c43805771fc0907984aca9f6dad41dce831e52ee53fd8f06a11c": {
     "speaker": "James Fleddon",
@@ -6357,17 +6357,17 @@
   },
   "f97eb1b250073325ab1e8d92f12c3ff4256662da529820fa96a625d5a063a9ab": {
     "speaker": "Claude",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_raw": "James, relax. Captain, I believe you'll manage, bring the shipment back here to James.",
     "text_normalized": "James, relax. Captain, I believe you'll manage, bring the shipment back here to James.",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 1.0,
+    "score_total": 0.8541666666666667,
     "ogg": "Claude/f97eb1b250073325ab1e8d92f12c3ff4256662da529820fa96a625d5a063a9ab.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "16e07342d179d70148dd0b82cf0f54176fdc6a5b22a8a83bb83dc2742e7a8cf2": {
     "speaker": "James Fleddon",
@@ -39495,17 +39495,17 @@
   },
   "7d260c3650a81774b556707ada941dc2394725aba973293244dc4ddc7950938d": {
     "speaker": "Claude",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_normalized": "We have a Stellar Industries spy who needs help.",
     "text_raw": "We have a Stellar Industries spy who needs help.",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 1.0,
+    "score_total": 0.9375,
     "ogg": "Claude/7d260c3650a81774b556707ada941dc2394725aba973293244dc4ddc7950938d.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "e69db61bf6d7ded17d955991653db54b4076e069ac1694a52d949f2ce84102ae": {
     "speaker": "Stella Chion",
@@ -39551,17 +39551,17 @@
   },
   "7ed50fd8c1525022ef6d9f01fd3797239d729a14f97b7c730e687525ad4f6e60": {
     "speaker": "Claude",
-    "reference": "kokoro:30",
+    "reference": "kokoro:36",
     "text_normalized": "Stella Chion will have told you about the Darkspace Compact, correct?",
     "text_raw": "Stella Chion will have told you about the Darkspace Compact, correct?",
     "engine": "kokoro",
     "params": {
-      "sid": 30,
+      "sid": 36,
       "speed": 1.0
     },
-    "score_total": 0.9375,
+    "score_total": 0.9583333333333334,
     "ogg": "Claude/7ed50fd8c1525022ef6d9f01fd3797239d729a14f97b7c730e687525ad4f6e60.ogg",
-    "source": "f5-accent-to-kokoro-migration"
+    "source": "french-male-to-italian-male-fix"
   },
   "10d902194297f5ea65224276b43f550adea402e6d43117520d29acec87cb1915": {
     "speaker": "Midas",
