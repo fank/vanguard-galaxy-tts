@@ -156,6 +156,13 @@ internal sealed class TtsController
                 {
                     Plugin.Log.LogInfo($"[captain-warmed] {speaker}: \"{synthText}\" — playing from warm cache.");
                 }
+                else if (!_voices.IsKnownSpeaker(speaker))
+                {
+                    // Procedural NPC (bar patron, rescue victim, etc.) — can never
+                    // be in the prerender pack by design; name varies per encounter.
+                    // Live-synth path handles it; no harvest needed. INFO, not WARN.
+                    Plugin.Log.LogInfo($"[procedural] {speaker}: \"{synthText}\" — live TTS (expected for procedurally-named NPCs).");
+                }
                 else
                 {
                     Plugin.Log.LogWarning(
