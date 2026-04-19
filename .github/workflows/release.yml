@@ -1,0 +1,97 @@
+name: Package release
+
+# Triggers when a GitHub Release is published (from a tag or the release UI).
+# Also runnable manually for testing.
+#
+# Flow:
+#   1. Developer runs `make build` locally → VGTTS.dll
+#   2. Developer creates a GitHub Release and attaches VGTTS.dll as an asset
+#      (The Assembly-CSharp.dll reference needed to build the plugin is game-
+#       proprietary and can't live on CI.)
+#   3. This workflow triggers, downloads the DLL from the release, pulls the
+#      Kokoro + sherpa-onnx bundles, stages the shipping layout, and uploads
+#      `VGTTS-v<version>.zip` to the same release.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to (re)package"
+        required: true
+        type: string
+
+permissions:
+  contents: write  # needed for gh release upload
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    env:
+      TAG: ${{ github.event.release.tag_name || inputs.tag }}
+
+    steps:
+      - name: Checkout repo at release tag
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.TAG }}
+
+      - name: Download VGTTS.dll from the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p build
+          if ! gh release download "$TAG" --pattern 'VGTTS.dll' --dir build/; then
+            echo "::error::No VGTTS.dll attached to release $TAG. Build it locally with 'make build' and upload it to the release before this workflow runs."
+            exit 1
+          fi
+          ls -la build/VGTTS.dll
+
+      - name: Fetch Kokoro + sherpa-onnx bundles
+        run: make download-kokoro
+
+      - name: Stage release layout
+        id: stage
+        run: |
+          VERSION=$(grep 'PluginVersion =' VGTTS/Plugin.cs | head -1 | sed 's/.*"\(.*\)".*/\1/')
+          PKG_NAME="VGTTS-v${VERSION}"
+          PKG_DIR="dist/${PKG_NAME}"
+
+          rm -rf "$PKG_DIR"
+          mkdir -p "$PKG_DIR/VGTTS/prerender" "$PKG_DIR/VGTTS/tools"
+
+          cp build/VGTTS.dll "$PKG_DIR/"
+          cp LICENSE THIRD_PARTY_NOTICES.md README.md "$PKG_DIR/"
+
+          # Prerender pack — preserve speaker-folder tree, skip variants/
+          cp prerender/manifest.json "$PKG_DIR/VGTTS/prerender/"
+          if [ -f prerender/captain_name_templates.json ]; then
+            cp prerender/captain_name_templates.json "$PKG_DIR/VGTTS/prerender/"
+          fi
+          for d in prerender/*/; do
+            case "$d" in prerender/variants/) continue ;; esac
+            cp -r "$d" "$PKG_DIR/VGTTS/prerender/"
+          done
+
+          # Kokoro + sherpa-onnx bundle
+          cp -r tools/kokoro tools/sherpa "$PKG_DIR/VGTTS/tools/"
+
+          OGGS=$(find "$PKG_DIR/VGTTS/prerender/" -name "*.ogg" | wc -l)
+          SIZE=$(du -sh "$PKG_DIR" | cut -f1)
+          echo "Staged $OGGS OGGs + DLL + Kokoro bundle — $SIZE at $PKG_DIR"
+
+          echo "pkg_name=${PKG_NAME}" >> "$GITHUB_OUTPUT"
+          echo "pkg_dir=${PKG_DIR}" >> "$GITHUB_OUTPUT"
+
+      - name: Zip release bundle
+        run: |
+          cd dist && zip -qr "${{ steps.stage.outputs.pkg_name }}.zip" "${{ steps.stage.outputs.pkg_name }}"
+          ls -lh "${{ steps.stage.outputs.pkg_name }}.zip"
+
+      - name: Upload zip to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload "$TAG" "dist/${{ steps.stage.outputs.pkg_name }}.zip" --clobber
+          echo "✓ Uploaded ${{ steps.stage.outputs.pkg_name }}.zip to release $TAG"
