@@ -90,6 +90,7 @@ internal static class BarPatronPatches
         if (pairs.Count == 0) return;
 
         _patronLines.AddOrUpdate(__instance, pairs);
+        Plugin.Log.LogInfo($"[bar-warm] {__instance.GetType().Name} '{__instance.name}' — warming {pairs.Count} line(s)");
 
         _ = Task.Run(async () =>
         {
