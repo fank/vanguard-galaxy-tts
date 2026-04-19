@@ -73,6 +73,22 @@ The `[Voices]` section lists every known NPC with its default Kokoro speaker ID.
 - **Scottish accent** — Kokoro has no Scottish speaker, so Elias McIntire uses a plain American male voice. Tracked as an open gap.
 - **Game version drift** — when the game patches add new dialogue, those lines will miss the pack and fall through to live TTS. Sounds fine but uses the English-Kokoro voice for accent NPCs. To contribute a delta for a new patch, see "Contributing" below.
 
+## Releasing (for maintainers)
+
+Every release on GitHub auto-packages the downloadable zip via `.github/workflows/release.yml`. The workflow needs one thing from you: the built `VGTTS.dll`, because Assembly-CSharp.dll can't live on CI.
+
+```bash
+# Build locally (requires the game's Assembly-CSharp.dll symlinked via `make link-asm`)
+make build
+
+# Create the GitHub release with the DLL attached
+gh release create v1.2.0 VGTTS/bin/Debug/netstandard2.1/VGTTS.dll \
+  --title "v1.2.0 — Kokoro-only, captain presets, auto-migration" \
+  --notes-file CHANGELOG-v1.2.0.md
+```
+
+GitHub Actions then downloads the DLL, fetches the Kokoro + sherpa-onnx bundles, stages the shipping layout, and uploads `VGTTS-v1.2.0.zip` back to the same release.
+
 ## Contributing
 
 The dialogue pack is built from the game's decompiled source, so when a patch adds new lines, someone has to re-extract and re-render. Workflow:
