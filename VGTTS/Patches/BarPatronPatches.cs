@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
 using HarmonyLib;
@@ -31,6 +32,23 @@ namespace VGTTS.Patches;
 internal static class BarPatronPatches
 {
     private const string CrewRecruitLine = "Heya, heard you're looking for crew?";
+
+    /// <summary>Per-patron record of the (speaker, text) pairs we warmed.
+    /// ConditionalWeakTable so the entries GC when the BarPatron does.</summary>
+    private static readonly ConditionalWeakTable<BarPatron, List<(string Speaker, string Text)>> _patronLines = new();
+
+    /// <summary>Internal accessor for BarRefreshPatches — hands over the warmed
+    /// lines for a patron about to go out of scope so they can be evicted.</summary>
+    internal static bool TryTakeLines(BarPatron patron, out List<(string Speaker, string Text)> lines)
+    {
+        if (_patronLines.TryGetValue(patron, out lines))
+        {
+            _patronLines.Remove(patron);
+            return true;
+        }
+        lines = null!;
+        return false;
+    }
 
     [HarmonyPostfix]
     [HarmonyPatch(nameof(BarPatron.Initialize))]
@@ -71,6 +89,8 @@ internal static class BarPatronPatches
 
         if (pairs.Count == 0) return;
 
+        _patronLines.AddOrUpdate(__instance, pairs);
+
         _ = Task.Run(async () =>
         {
             foreach (var (speaker, text) in pairs)
@@ -93,5 +113,51 @@ internal static class BarPatronPatches
         if (cfg is "m1" or "m2" or "m3" or "f1" or "f2" or "f3") return "captain_" + cfg;
         var isFemale = Source.Player.GamePlayer.current?.commander?.gender == Source.Crew.Gender.Female;
         return isFemale ? "captain_f1" : "captain_m1";
+    }
+}
+
+/// <summary>
+/// Evicts procedural-patron WAVs from the session cache when a bar refreshes
+/// its roster (the game does this once per in-game day, wiping the old 5
+/// patrons and rolling 5 new ones). Without this, the session cache carries
+/// every patron the player has ever seen in any bar today.
+///
+/// Hooks <c>Bar.CheckUpdatePatrons</c> as prefix+postfix. The prefix snapshots
+/// the current availablePatrons; the postfix diffs against the new list and
+/// drops cache entries for any patron that left.
+/// </summary>
+[HarmonyPatch(typeof(Bar))]
+internal static class BarRefreshPatches
+{
+    private static readonly ConditionalWeakTable<Bar, List<BarPatron>> _snapshots = new();
+
+    [HarmonyPrefix]
+    [HarmonyPatch(nameof(Bar.CheckUpdatePatrons))]
+    private static void CheckUpdatePatrons_Prefix(Bar __instance)
+    {
+        _snapshots.AddOrUpdate(__instance, new List<BarPatron>(__instance.availablePatrons));
+    }
+
+    [HarmonyPostfix]
+    [HarmonyPatch(nameof(Bar.CheckUpdatePatrons))]
+    private static void CheckUpdatePatrons_Postfix(Bar __instance)
+    {
+        if (!_snapshots.TryGetValue(__instance, out var before)) return;
+        _snapshots.Remove(__instance);
+
+        var controller = TtsController.Instance;
+        if (controller == null) return;
+
+        var after = new HashSet<BarPatron>(__instance.availablePatrons);
+        foreach (var patron in before)
+        {
+            if (after.Contains(patron)) continue;
+            // Patron rolled off the roster — drop its warmed audio
+            if (BarPatronPatches.TryTakeLines(patron, out var lines))
+            {
+                foreach (var (speaker, text) in lines)
+                    controller.DropCache(speaker, text);
+            }
+        }
     }
 }

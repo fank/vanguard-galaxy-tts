@@ -26,6 +26,15 @@ namespace VGTTS.Patches;
 /// grab its firstName and warm the 2 procedural dialogue lines
 /// (captain's reply line is already covered by DefaultVoiceMap). This
 /// fires exactly once per encounter — no per-frame overhead.
+///
+/// TODO: evict the warmed WAVs when the POI is removed
+/// (<c>SystemMapData.RemovePointOfInterest</c>). Today the session/
+/// cache dir is wiped on plugin load, which bounds growth to a single
+/// launch. Tighter scoping would track POI → warmed paths via
+/// ConditionalWeakTable the same way BarRefreshPatches does for bar
+/// patrons, and call TtsController.DropCache when the POI exits.
+/// Saves a few MB mid-session; not urgent while session wipe handles
+/// the flooding concern.
 /// </summary>
 [HarmonyPatch(typeof(Source.Simulation.TravelEvents.DistressCombat))]
 internal static class DistressCombatPatches
