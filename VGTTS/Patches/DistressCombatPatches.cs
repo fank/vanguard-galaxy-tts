@@ -1,8 +1,8 @@
-using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using HarmonyLib;
 using Source.Data;
+using Source.Galaxy;
 using Source.SpaceShip;
 using VGTTS.Audio;
 using VGTTS.Text;
@@ -10,59 +10,42 @@ using VGTTS.Text;
 namespace VGTTS.Patches;
 
 /// <summary>
-/// Pre-warms the rescue dialogue for distress-combat encounters during the
-/// combat itself, before the dialogue even triggers.
+/// Pre-warms the rescue dialogue for distress-combat encounters at the
+/// moment they're generated — during jump travel, before the player even
+/// arrives at the POI.
 ///
-/// The encounter works like this (Source.Simulation.World.POI.DistressCombat):
-///   1. Player enters the POI, combat starts, friendly ship + pirates spawn
-///   2. Player kills pirates
-///   3. Game ticks UpdateActive every frame — checks for no-more-enemies
-///      and spawns the 3-line rescue dialogue
+/// Flow (Source.Simulation.TravelEvents.DistressCombat.CreateDynamicPOI):
+///   1. Jump engine rolls a dynamic event, decides "distress call"
+///   2. <c>CreateDynamicPOI</c> builds the Combat POI, spawns the
+///      friendly ship (random commander firstName) + pirate guards
+///   3. POI is returned; player eventually arrives and engages combat
+///   4. Combat ends → DistressCombat.UpdateActive triggers the rescue
+///      dialogue using the friend ship's commanderData.firstName
 ///
-/// The friendly ship's commanderData.firstName is known from step 1 onward,
-/// and it becomes the DialogueLine speaker for 2 of the 3 lines. Without
-/// warm-up those lines hit live-TTS on first utterance (~1s delay) because
-/// the procedural name is never in the prerender pack.
-///
-/// This patch spots the encounter on the first UpdateActive tick where a
-/// friendly ship is present, and fires a background task to warm both
-/// procedural lines. By the time the player finishes combat, the WAVs are
-/// in DiskCache and the dialogue plays instantly.
-///
-/// Captain's reply line comes from DefaultVoiceMap + the captain preset
-/// warm on save load, so it's already covered.
+/// We postfix step 2: by then the friend ship is in the POI, so we can
+/// grab its firstName and warm the 2 procedural dialogue lines
+/// (captain's reply line is already covered by DefaultVoiceMap). This
+/// fires exactly once per encounter — no per-frame overhead.
 /// </summary>
-[HarmonyPatch(typeof(Source.Simulation.World.POI.DistressCombat))]
+[HarmonyPatch(typeof(Source.Simulation.TravelEvents.DistressCombat))]
 internal static class DistressCombatPatches
 {
-    // Guard against re-warming every frame — UpdateActive fires ~60Hz during
-    // combat. Keyed by the storyteller instance (GC'd when the encounter ends).
-    private static readonly HashSet<Source.Simulation.World.POI.DistressCombat> _warmed = new();
-    private static readonly object _warmedLock = new();
-
     private const string LineRescued =
         "Phew, that was a close call! Those pirates disabled our warp drive, they would've had us for lunch! Thanks for the help!";
     private const string LineReward =
         "Err, yes, of course. Here you go.";
 
-    [HarmonyPrefix]
-    [HarmonyPatch(nameof(Source.Simulation.World.POI.DistressCombat.UpdateActive))]
-    private static void UpdateActive_Prefix(Source.Simulation.World.POI.DistressCombat __instance)
+    [HarmonyPostfix]
+    [HarmonyPatch(nameof(Source.Simulation.TravelEvents.DistressCombat.CreateDynamicPOI))]
+    private static void CreateDynamicPOI_Postfix(MapPointOfInterest __result)
     {
-        if (__instance == null || __instance.rewardClaimed) return;
-        lock (_warmedLock)
-        {
-            if (_warmed.Contains(__instance)) return;
-        }
-
+        if (__result == null) return;
         var controller = TtsController.Instance;
         if (controller == null) return;
         if (Plugin.Instance == null || !Plugin.Instance.CfgEnabled.Value || !Plugin.Instance.CfgDialogue.Value) return;
 
-        // Find the friendly ship — same iteration the game uses to spot a
-        // rescue-target candidate. If none spawned yet, we'll retry next tick.
         string? friendName = null;
-        foreach (AbstractUnitData unit in __instance.poi.GetUnits())
+        foreach (AbstractUnitData unit in __result.GetUnits())
         {
             if (unit.IsPlayerEnemy()) continue;
             if (unit is SpaceShipData ship && ship.commanderData != null)
@@ -73,9 +56,7 @@ internal static class DistressCombatPatches
         }
         if (string.IsNullOrEmpty(friendName)) return;
 
-        lock (_warmedLock) _warmed.Add(__instance);
-
-        Plugin.Log.LogInfo($"[distress-warm] Pre-warming rescue dialogue for '{friendName}' during combat");
+        Plugin.Log.LogInfo($"[distress-warm] Rescue POI spawned — pre-warming dialogue for '{friendName}'");
         _ = Task.Run(async () =>
         {
             foreach (var line in new[] { LineRescued, LineReward })
