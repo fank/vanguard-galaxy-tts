@@ -1,66 +1,106 @@
-# Vanguard Galaxy TTS (VGTTS)
+# Vanguard Galaxy TTS
 
-BepInEx plugin that speaks dialogue lines in Vanguard Galaxy using text-to-speech.
+A BepInEx mod that voices every dialogue line in [Vanguard Galaxy](https://store.steampowered.com/app/2395170/Vanguard_Galaxy/) using neural text-to-speech.
 
-Strategy: **pre-rendered pack primary, offline TTS fallback.** The 66 known ECHO travel tips are synthesized once (GPU, F5-TTS with Kokoro-cloned British female) at build time, encoded as OGG Vorbis, and shipped with the plugin. At runtime, dialogue lines hit the pack first; anything not in the pack (new lines from future game patches) falls through to live Kokoro TTS.
+- **2831 pre-rendered OGG clips** cover every story and side-quest dialogue line the game currently ships with
+- **42+ NPCs get distinct voices** from Kokoro v1.0's multilingual speaker bank — Japanese, Hindi, Spanish, French, Portuguese accents where the character calls for it
+- **ECHO** (your ship AI) and the **player captain** get hand-picked voices, with 6 captain presets (3 male + 3 female) selectable in config
+- **Live fallback** via the bundled Kokoro engine catches anything the pack misses (dynamic commander-name lines, post-patch additions, procedural station names)
 
-Benefits of the tiered design:
-- Every shipped ECHO line has the voice, prosody, and emotional contour we picked offline with unlimited compute budget
-- Forward-compatible with game patches (new text works, just sounds different)
-- Fast: OGG load is ~100 ms vs. ~3-5 s for live Kokoro synth on cold start
+## Install
 
-## Status
+1. **Install BepInEx 5.x** into the game folder — grab the `BepInEx_win_x64_5.4.x.zip` from the [BepInEx releases](https://github.com/BepInEx/BepInEx/releases) and unzip it into your Vanguard Galaxy install folder (next to `VanguardGalaxy.exe`).
+2. **Launch the game once** so BepInEx creates its `BepInEx/plugins/` and `BepInEx/config/` subfolders, then close it.
+3. **Download the VGTTS release** from Nexus Mods.
+4. **Unzip** the contents into your Vanguard Galaxy install folder. You should end up with:
+   ```
+   VanguardGalaxy/
+     BepInEx/plugins/VGTTS.dll
+     BepInEx/plugins/VGTTS/prerender/...     (2831 OGG files + manifest)
+     BepInEx/plugins/VGTTS/tools/kokoro/...  (neural TTS model)
+     BepInEx/plugins/VGTTS/tools/sherpa/...  (inference binary)
+   ```
+5. **Launch the game.** Dialogue lines should start speaking.
 
-Early scaffold. Current milestone: logs every dialogue line to the BepInEx console to verify the Harmony hook fires correctly. No audio yet.
+## Config
 
-## Requirements
+BepInEx writes the config to `BepInEx/config/dev.fankserver.vgtts.cfg` after the first launch. Key knobs:
 
-- Vanguard Galaxy (Steam)
-- [BepInEx 5.x](https://github.com/BepInEx/BepInEx/releases) installed into the game folder (`make install-bepinex`)
-- .NET SDK 8+ for building
-- ~1.1 GB free for the bundled Kokoro + Piper voice models
+```ini
+[General]
+Enabled = true                  # master on/off
+DialogueTTS = true              # speak NPC dialogue
+EchoTTS = true                  # speak ECHO's ambient HUD hints
 
-## One-shot setup
+[Voice]
+CaptainPreset = auto            # auto | m1 | m2 | m3 | f1 | f2 | f3
+```
+
+**Captain voice presets:**
+
+| Preset | Voice | Character |
+|---|---|---|
+| `m1` | Kokoro am_fenrir | rugged American explorer |
+| `m2` | Kokoro am_onyx | deep, confident |
+| `m3` | Kokoro bm_fable | British rogue |
+| `f1` | Kokoro af_alloy | calm, measured |
+| `f2` | Kokoro bf_alice | British female |
+| `f3` | Kokoro af_heart | warm flagship |
+| `auto` | picks `m1` or `f1` based on your commander's gender |
+
+The `[Voices]` section lists every known NPC with its default Kokoro speaker ID. Override any NPC by changing the value — e.g. `Arle = kokoro:3` would swap Arle to the warm flagship female voice. See the full Kokoro speaker list at [hexgrad/Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M).
+
+## Troubleshooting
+
+**No audio at all**
+- Check the BepInEx console (enable via `BepInEx/config/BepInEx.cfg` → `[Logging.Console]` → `Enabled = true`). You should see `Kokoro TTS loaded. NPC profiles seeded: 49, prerender entries: 2831, ...` on startup.
+- If instead you see `Kokoro bundle missing, TTS disabled`, the `VGTTS/tools/kokoro/` or `VGTTS/tools/sherpa/` folder didn't unpack correctly. Re-download and re-extract.
+
+**Wrong voice / wrong gender for a specific NPC**
+- If you updated from v1.1.x, the plugin should auto-migrate your config on the first launch (look for a `[config-migration]` line in the BepInEx console). If that didn't fire, delete the `[Voices]` section from `dev.fankserver.vgtts.cfg` manually and relaunch.
+- If you previously edited `[Voices]` intentionally, your edits were backed up to `dev.fankserver.vgtts.cfg.v1.bak`.
+
+**Some dialogue lines play with a noticeable delay on first utterance**
+- That's the live-TTS fallback synthesizing a line the pack doesn't cover. Once synthesized it's cached — the same line plays instantly the second time. Common causes: game patches added new text, commander-name lines during the first ~20 seconds of a save load before the warm-up finishes, station names in procedurally-generated systems.
+
+**"Captain Fank" etc. lines don't match your callsign**
+- The plugin reads your commander's callsign at save load and pre-warms those lines. If you rename mid-save, re-load the save to trigger a fresh warm-up.
+
+## Known limitations
+
+- **Procedural station names** (e.g. "Welcome to The Oracle Spire") are built from random word lists at runtime and can't be pre-rendered. These always use live TTS.
+- **Conquest rank titles** vary with your progression and also stay on live TTS.
+- **Scottish accent** — Kokoro has no Scottish speaker, so Elias McIntire uses a plain American male voice. Tracked as an open gap.
+- **Game version drift** — when the game patches add new dialogue, those lines will miss the pack and fall through to live TTS. Sounds fine but uses the English-Kokoro voice for accent NPCs. To contribute a delta for a new patch, see "Contributing" below.
+
+## Contributing
+
+The dialogue pack is built from the game's decompiled source, so when a patch adds new lines, someone has to re-extract and re-render. Workflow:
 
 ```bash
-make install-bepinex        # downloads + unpacks BepInEx into the game folder
-make download-tools         # fetches piper + sherpa + Kokoro v1.0 (~1 GB total)
-make deploy                 # builds and copies everything into BepInEx/plugins/
+# 1. Harvest your session's misses
+cp "$GAME/BepInEx/cache/VGTTS/unprerendered.tsv" .
+
+# 2. Render them (needs ~400 MB Kokoro bundle)
+make download-kokoro
+python tools/prerender/render_missing.py --input unprerendered.tsv
+
+# 3. Commit + PR
+git add prerender/ && git commit -m "chore: delta for patch X.Y"
 ```
 
-## Build + deploy (WSL)
+Full rebuild from scratch is also supported — see `tools/prerender/extract_dialogue.py` + `tools/prerender/render_missing.py`.
 
-```bash
-make deploy
-```
+## Credits
 
-This:
-1. Symlinks the game's `Assembly-CSharp.dll` into `VGTTS/lib/` for compile-time references
-2. Builds the plugin
-3. Copies the DLL into `<game>/BepInEx/plugins/`
+- **Vanguard Galaxy** by [Bat Roost Games](https://store.steampowered.com/developer/BatRoostGames/) — the game all this dialogue comes from
+- **Kokoro v1.0** ([hexgrad/Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M)) — the TTS model voicing every line
+- **sherpa-onnx** ([k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx)) — runtime inference
+- **BepInEx 5** — mod loader
+- **HarmonyX** — runtime patching
 
-If your Steam install is elsewhere, set `GAME_DIR` on the command line:
+See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for full attribution.
 
-```bash
-make deploy GAME_DIR="/mnt/d/SteamLibrary/steamapps/common/Vanguard Galaxy"
-```
+## License
 
-## First-run verification
-
-1. Launch the game once with BepInEx installed (creates `BepInEx/` subfolders)
-2. `make deploy`
-3. Launch the game, open the BepInEx console (enable via `BepInEx/config/BepInEx.cfg` → `[Logging.Console]` → `Enabled = true`)
-4. Talk to any NPC — every dialogue line should print as `[dialogue] Name: "..."`
-
-## Architecture (planned)
-
-```
-VGTTS/
-├── Plugin.cs                 BepInEx entry, applies patches
-├── Patches/                  Harmony hooks into DialogueManager
-├── TTS/                      ITtsProvider + SAPI / Piper / cloud implementations
-├── Audio/                    byte[] → Unity AudioClip, routed through SoundBuilder
-├── Cache/                    sha256(text+voice) → .wav on disk
-├── Voice/                    Character.name → voice config mapping
-└── Config/                   BepInEx ConfigFile bindings
-```
+MIT. See [LICENSE](LICENSE).

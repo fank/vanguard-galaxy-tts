@@ -28,6 +28,8 @@ internal static class CaptainNameCache
 {
     private const string CaptainPlaceholder = "{captain}";
     private static string? _lastWarmedName;
+    private static readonly HashSet<(string Speaker, string Text)> _warmedLines = new();
+    private static readonly object _warmedLock = new();
 
     public static void WarmInBackground(string commanderName)
     {
@@ -36,6 +38,16 @@ internal static class CaptainNameCache
         _lastWarmedName = commanderName;
 
         _ = Task.Run(() => WarmAsync(commanderName, CancellationToken.None));
+    }
+
+    /// <summary>Returns true if (speaker, text) is a captain-name substitution line
+    /// that was warmed into the DiskCache at game start. Used by TtsController to
+    /// downgrade the misleading <c>[prerender-miss]</c> warning to INFO for these
+    /// lines — they miss the manifest by design but play from warm cache without
+    /// synthesis lag.</summary>
+    public static bool IsWarmedLine(string speaker, string text)
+    {
+        lock (_warmedLock) return _warmedLines.Contains((speaker, text));
     }
 
     private static async Task WarmAsync(string commanderName, CancellationToken ct)
@@ -48,6 +60,7 @@ internal static class CaptainNameCache
 
         Plugin.Log.LogInfo($"[captain-warm] Warming {templates.Count} captain.name lines for '{commanderName}'");
         int warmed = 0, cached = 0, failed = 0;
+        lock (_warmedLock) _warmedLines.Clear();
         foreach (var t in templates)
         {
             if (ct.IsCancellationRequested) break;
@@ -57,6 +70,7 @@ internal static class CaptainNameCache
                 var result = await controller.WarmCacheAsync(t.Speaker, text, ct).ConfigureAwait(false);
                 if (result == WarmResult.Synthesized) warmed++;
                 else if (result == WarmResult.AlreadyCached) cached++;
+                lock (_warmedLock) _warmedLines.Add((t.Speaker, text));
             }
             catch (Exception ex)
             {

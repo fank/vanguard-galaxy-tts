@@ -99,12 +99,22 @@ internal sealed class TtsController
         {
             // Miss — log once per (speaker, text) so users can see at a glance which lines
             // fell through to live TTS and harvest them for the next render pass.
+            // Captain-name substitution lines are warmed into DiskCache at save load
+            // and WILL always miss the manifest by design — downgrade to Info for those
+            // so users don't think something's broken.
             var key = PrerenderLookup.ComputeKey(synthText, speaker);
             if (_unprerendered.Record(speaker, synthText, key))
             {
-                Plugin.Log.LogWarning(
-                    $"[prerender-miss] {speaker}: \"{synthText}\" — falling back to live TTS. " +
-                    $"Harvest BepInEx/cache/VGTTS/unprerendered.tsv for the next render pass.");
+                if (CaptainNameCache.IsWarmedLine(speaker, synthText))
+                {
+                    Plugin.Log.LogInfo($"[captain-warmed] {speaker}: \"{synthText}\" — playing from warm cache.");
+                }
+                else
+                {
+                    Plugin.Log.LogWarning(
+                        $"[prerender-miss] {speaker}: \"{synthText}\" — falling back to live TTS. " +
+                        $"Harvest BepInEx/cache/VGTTS/unprerendered.tsv for the next render pass.");
+                }
             }
         }
 

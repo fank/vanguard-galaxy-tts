@@ -14,7 +14,8 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
-ROOT = Path("/home/fank/repo/vanguard-galaxy")
+# Repo root = two levels up from this file (tools/prerender/paths.py → repo).
+ROOT = Path(__file__).resolve().parents[2]
 PACK = ROOT / "prerender"
 VARDIR = PACK / "variants"
 MANIFEST = PACK / "manifest.json"

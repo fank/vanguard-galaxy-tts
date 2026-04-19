@@ -48,3 +48,4 @@ tools/prerender/resolved_lines.json
 !tools/prerender/references/
 !tools/prerender/references/*.wav
 .claude/
+dist/
