@@ -17,7 +17,7 @@ BEPINEX_URL     := https://github.com/BepInEx/BepInEx/releases/download/v$(BEPIN
 
 .PHONY: all build link-asm clean deploy deploy-bundle deploy-prerender \
         install-bepinex check-bepinex \
-        download-tools download-piper download-kokoro
+        download-kokoro
 
 all: build
 
@@ -84,47 +84,15 @@ deploy-prerender:
 		echo "No prerender/manifest.json — skipping prerender deploy" ; \
 	fi
 
-# Deploy the Piper bundle (piper.exe + voice models) if present.
+# Deploy the Kokoro + sherpa-onnx bundle (required for live TTS fallback).
 deploy-bundle:
-	@if [ -d tools ]; then \
-		mkdir -p "$(PLUGIN_DIR)/VGTTS" ; \
-		cp -r tools "$(PLUGIN_DIR)/VGTTS/" ; \
-		echo "Deployed tools bundle to $(PLUGIN_DIR)/VGTTS/tools" ; \
+	@if [ -d tools/kokoro ] && [ -d tools/sherpa ]; then \
+		mkdir -p "$(PLUGIN_DIR)/VGTTS/tools" ; \
+		cp -r tools/kokoro tools/sherpa "$(PLUGIN_DIR)/VGTTS/tools/" ; \
+		echo "Deployed Kokoro + sherpa-onnx bundle to $(PLUGIN_DIR)/VGTTS/tools/" ; \
 	else \
-		echo "tools/ not found — skipping bundle deploy (run 'make download-piper')" ; \
+		echo "tools/kokoro or tools/sherpa missing — run 'make download-kokoro'" ; \
 	fi
-
-PIPER_URL := https://github.com/rhasspy/piper/releases/download/2023.11.14-2/piper_windows_amd64.zip
-VOICE_BASE := https://huggingface.co/rhasspy/piper-voices/resolve/main/en
-VOICES := \
-  en_US-amy-medium:en_US/amy/medium \
-  en_US-ryan-medium:en_US/ryan/medium \
-  en_GB-alan-medium:en_GB/alan/medium \
-  en_US-hfc_female-medium:en_US/hfc_female/medium \
-  en_US-kristin-medium:en_US/kristin/medium \
-  en_GB-jenny_dioco-medium:en_GB/jenny_dioco/medium \
-  en_US-lessac-high:en_US/lessac/high \
-  en_US-ryan-high:en_US/ryan/high \
-  en_US-libritts_r-medium:en_US/libritts_r/medium
-
-download-piper:
-	@mkdir -p tools/piper tools/voices /tmp/piper-dl
-	@if [ ! -f tools/piper/piper.exe ]; then \
-		echo "Downloading piper..." ; \
-		curl -sSL -o /tmp/piper-dl/piper.zip "$(PIPER_URL)" ; \
-		rm -rf /tmp/piper-dl/extracted && mkdir -p /tmp/piper-dl/extracted ; \
-		unzip -q /tmp/piper-dl/piper.zip -d /tmp/piper-dl/extracted ; \
-		cp -r /tmp/piper-dl/extracted/piper/* tools/piper/ ; \
-	fi
-	@for entry in $(VOICES); do \
-		name=$${entry%%:*} ; path=$${entry##*:} ; \
-		if [ ! -f "tools/voices/$$name.onnx" ]; then \
-			echo "Downloading voice $$name..." ; \
-			curl -sSL -o "tools/voices/$$name.onnx"      "$(VOICE_BASE)/$$path/$$name.onnx" ; \
-			curl -sSL -o "tools/voices/$$name.onnx.json" "$(VOICE_BASE)/$$path/$$name.onnx.json" ; \
-		fi ; \
-	done
-	@echo "Piper bundle ready in tools/"
 
 # Sherpa-onnx-tts CLI + Kokoro v1.0 multi-lang model bundle (~400 MB extracted)
 SHERPA_VERSION := 1.12.39
@@ -149,7 +117,6 @@ download-kokoro:
 	@echo "Kokoro bundle ready in tools/"
 
 # Fetch both Piper and Kokoro — run once on a fresh clone.
-download-tools: download-piper download-kokoro
 
 clean:
 	$(DOTNET) clean VGTTS/VGTTS.csproj

@@ -21,7 +21,7 @@ internal sealed class TtsController
 {
     public static TtsController? Instance { get; set; }
 
-    private readonly ITtsProvider _provider;
+    private readonly KokoroProvider _provider;
     private readonly DiskCache _cache;
     private readonly VoiceMapper _voices;
     private readonly PrerenderLookup _prerender;
@@ -30,7 +30,7 @@ internal sealed class TtsController
     private SoundEmitter? _currentEmitter;
     private GameObject? _fallbackGo;
 
-    public TtsController(ITtsProvider provider, DiskCache cache, VoiceMapper voices,
+    public TtsController(KokoroProvider provider, DiskCache cache, VoiceMapper voices,
                          PrerenderLookup prerender, UnprerenderedLog unprerendered)
     {
         _provider = provider;
@@ -122,7 +122,7 @@ internal sealed class TtsController
             }
             if (task.IsFaulted)
             {
-                Plugin.Log.LogError($"[tts] {_provider.Name} synth failed: {task.Exception?.GetBaseException().Message}");
+                Plugin.Log.LogError($"[tts] Kokoro synth failed: {task.Exception?.GetBaseException().Message}");
                 yield break;
             }
         }
