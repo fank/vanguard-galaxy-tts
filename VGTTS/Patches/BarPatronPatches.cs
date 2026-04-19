@@ -80,9 +80,12 @@ internal static class BarPatronPatches
     [HarmonyPatch(nameof(BarPatron.Initialize))]
     private static void Initialize_Postfix(BarPatron __instance)
     {
-        // Diagnostic: enable BepInEx's debug log level to see this. If the
-        // [bar-hook] line doesn't appear around a bar UI open, the patch
-        // isn't firing (target mismatch / PatchAll ordering / etc.).
+        // Initialize() fires on every BarUI open (and every dialogue close
+        // that triggers a UI refresh), for the SAME patrons. Skip if we've
+        // already warmed this instance — cache is already hot, no need to
+        // re-register voices or re-queue tasks.
+        if (__instance != null && _patronLines.TryGetValue(__instance, out _)) return;
+
         var type = __instance?.GetType().Name ?? "<null>";
         var hasCrew = (__instance as CrewMember)?.crewMember != null;
         Plugin.Log.LogDebug($"[bar-hook] {type} Initialize fired (name={__instance?.name ?? "<null>"} hasCrewData={hasCrew})");
