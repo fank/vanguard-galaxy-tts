@@ -36,6 +36,13 @@ internal sealed class VoiceMapper
         return Bind(speaker).Value;
     }
 
+    /// <summary>True if the speaker has a pre-seeded entry in DefaultVoiceMap —
+    /// i.e. a known named NPC with bounded dialogue. False for procedurally
+    /// named speakers (station salesmen, distress rescue victims, etc.) which
+    /// shouldn't accumulate WAVs in the persistent disk cache.</summary>
+    public bool IsKnownSpeaker(string speaker) =>
+        !string.IsNullOrEmpty(speaker) && _seeds.ContainsKey(speaker);
+
     private ConfigEntry<string> Bind(string speaker)
     {
         if (_cache.TryGetValue(speaker, out var cached)) return cached;

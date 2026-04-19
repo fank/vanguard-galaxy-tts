@@ -62,7 +62,8 @@ internal sealed class TtsController
         if (string.IsNullOrWhiteSpace(text)) return WarmResult.Skipped;
         var synthText = TextNormalizer.ForTts(text);
         var voice = _voices.Resolve(speaker);
-        var path = _cache.PathFor(synthText, voice);
+        var persistent = _voices.IsKnownSpeaker(speaker);
+        var path = _cache.PathFor(synthText, voice, persistent);
         if (_cache.Exists(path)) return WarmResult.AlreadyCached;
         await _provider.SynthesizeAsync(synthText, voice, path, ct).ConfigureAwait(false);
         return WarmResult.Synthesized;
@@ -119,8 +120,11 @@ internal sealed class TtsController
         }
 
         // 2. Live fallback — Kokoro (or configured provider) with per-character voice mapping.
+        // Persistent cache dir for named NPCs (kept across launches); session dir for
+        // procedurally-named speakers (wiped on next plugin load so WAVs don't accumulate).
         var voice = _voices.Resolve(speaker);
-        var path = _cache.PathFor(synthText, voice);
+        var persistent = _voices.IsKnownSpeaker(speaker);
+        var path = _cache.PathFor(synthText, voice, persistent);
 
         if (!_cache.Exists(path))
         {
