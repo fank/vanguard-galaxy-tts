@@ -90,8 +90,8 @@ jobs:
 
       - name: Zip release bundle
         run: |
-          cd dist/${{ steps.stage.outputs.pkg_name }} && \
-            zip -qr "../${{ steps.stage.outputs.pkg_name }}.zip" VGTTS
+          (cd "dist/${{ steps.stage.outputs.pkg_name }}" && \
+             zip -qr "../${{ steps.stage.outputs.pkg_name }}.zip" VGTTS)
           ls -lh "dist/${{ steps.stage.outputs.pkg_name }}.zip"
 
       - name: Upload zip to release
