@@ -43,6 +43,23 @@ internal sealed class VoiceMapper
     public bool IsKnownSpeaker(string speaker) =>
         !string.IsNullOrEmpty(speaker) && _seeds.ContainsKey(speaker);
 
+    /// <summary>
+    /// Pre-bind a voice for a speaker that wasn't in the seed map. Used by
+    /// lifecycle patches to set a gender-appropriate voice for procedural
+    /// NPCs (bar patrons, rescue victims) before WarmCacheAsync picks the
+    /// <see cref="_defaultVoice"/> fallback. No-op if the speaker is already
+    /// bound (user overrides via [Voices] config take precedence).
+    /// </summary>
+    public void Register(string speaker, string voice)
+    {
+        if (string.IsNullOrWhiteSpace(speaker) || string.IsNullOrWhiteSpace(voice)) return;
+        if (_cache.ContainsKey(speaker)) return;
+        var entry = _config.Bind(VoiceSection, speaker, voice,
+            $"Voice for '{speaker}' (procedurally discovered at runtime). Format: 'model' or 'kokoro:N'. " +
+            $"Change here to override the auto-picked gender default for this specific NPC.");
+        _cache[speaker] = entry;
+    }
+
     private ConfigEntry<string> Bind(string speaker)
     {
         if (_cache.TryGetValue(speaker, out var cached)) return cached;

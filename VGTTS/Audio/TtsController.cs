@@ -99,6 +99,11 @@ internal sealed class TtsController
     /// the game (bar patron refresh, POI removal, etc.). Best-effort — silent
     /// on failure, files get wiped on next plugin load either way.
     /// </summary>
+    /// <summary>Seed the voice mapping for a procedural speaker so the
+    /// gender-appropriate default kicks in before the first WarmCacheAsync
+    /// call. No-op if already bound. See <see cref="Voice.VoiceMapper.Register"/>.</summary>
+    public void RegisterVoice(string speaker, string voice) => _voices.Register(speaker, voice);
+
     public void DropCache(string speaker, string text)
     {
         if (string.IsNullOrWhiteSpace(text)) return;

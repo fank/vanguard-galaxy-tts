@@ -33,6 +33,11 @@ internal static class BarPatronPatches
 {
     private const string CrewRecruitLine = "Heya, heard you're looking for crew?";
 
+    // Procedural-NPC defaults — chosen to be Kokoro SIDs no named NPC uses,
+    // so random bar patrons don't accidentally sound like Greg or Elena.
+    private const string ProceduralMaleVoice   = "kokoro:12";  // am_echo
+    private const string ProceduralFemaleVoice = "kokoro:9";   // af_sarah
+
     /// <summary>Per-patron record of the (speaker, text) pairs we warmed.
     /// ConditionalWeakTable so the entries GC when the BarPatron does.</summary>
     private static readonly ConditionalWeakTable<BarPatron, List<(string Speaker, string Text)>> _patronLines = new();
@@ -86,6 +91,12 @@ internal static class BarPatronPatches
         if (controller == null) return;
         if (Plugin.Instance == null || !Plugin.Instance.CfgEnabled.Value || !Plugin.Instance.CfgDialogue.Value) return;
 
+        // Gender-aware voice for the patron's own lines (their dialogue + any
+        // counterpart character the Salesman constructs). BarPatron exposes
+        // isMale polymorphically — Salesman reads its own _isMale, CrewMember
+        // checks crewMember.gender.
+        var patronVoice = __instance.isMale ? ProceduralMaleVoice : ProceduralFemaleVoice;
+
         var pairs = new List<(string Speaker, string Text)>();
         switch (__instance)
         {
@@ -95,6 +106,7 @@ internal static class BarPatronPatches
                 var lines = Traverse.Create(salesman).Field<List<DialogueLine>>("dialogueLines").Value;
                 if (lines == null) return;
                 var salesmanName = salesman.name;
+                controller.RegisterVoice(salesmanName, patronVoice);
                 foreach (var line in lines)
                 {
                     if (string.IsNullOrWhiteSpace(line?.text)) continue;
@@ -108,6 +120,7 @@ internal static class BarPatronPatches
             case CrewMember crew when crew.crewMember != null:
                 // Dialogue is hardcoded in CrewMember.InteractWithPatron; we know
                 // it upfront so pre-warm it with the current crewMember's firstName.
+                controller.RegisterVoice(crew.crewMember.firstName, patronVoice);
                 pairs.Add((crew.crewMember.firstName, CrewRecruitLine));
                 break;
 

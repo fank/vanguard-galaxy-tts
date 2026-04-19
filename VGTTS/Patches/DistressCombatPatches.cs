@@ -44,6 +44,12 @@ internal static class DistressCombatPatches
     private const string LineReward =
         "Err, yes, of course. Here you go.";
 
+    // Same procedural defaults as BarPatronPatches — kept out-of-sync-free by
+    // duplicating the two constants; both should map to Kokoro SIDs no named
+    // NPC uses so random rescue victims don't sound like a named character.
+    private const string ProceduralMaleVoice   = "kokoro:12";  // am_echo
+    private const string ProceduralFemaleVoice = "kokoro:9";   // af_sarah
+
     [HarmonyPostfix]
     [HarmonyPatch(nameof(Source.Simulation.TravelEvents.DistressCombat.CreateDynamicPOI))]
     private static void CreateDynamicPOI_Postfix(MapPointOfInterest __result)
@@ -54,18 +60,23 @@ internal static class DistressCombatPatches
         if (Plugin.Instance == null || !Plugin.Instance.CfgEnabled.Value || !Plugin.Instance.CfgDialogue.Value) return;
 
         string? friendName = null;
+        bool friendIsMale = true;
         foreach (AbstractUnitData unit in __result.GetUnits())
         {
             if (unit.IsPlayerEnemy()) continue;
             if (unit is SpaceShipData ship && ship.commanderData != null)
             {
                 friendName = ship.commanderData.firstName;
+                friendIsMale = ship.commanderData.gender == Source.Crew.Gender.Male;
                 break;
             }
         }
         if (string.IsNullOrEmpty(friendName)) return;
 
-        Plugin.Log.LogInfo($"[distress-warm] Rescue POI spawned — pre-warming dialogue for '{friendName}'");
+        controller.RegisterVoice(friendName!,
+            friendIsMale ? ProceduralMaleVoice : ProceduralFemaleVoice);
+
+        Plugin.Log.LogDebug($"[distress-warm] Rescue POI spawned — pre-warming dialogue for '{friendName}' ({(friendIsMale ? "M" : "F")})");
         _ = Task.Run(async () =>
         {
             foreach (var line in new[] { LineRescued, LineReward })
