@@ -17,7 +17,7 @@ BEPINEX_URL     := https://github.com/BepInEx/BepInEx/releases/download/v$(BEPIN
 
 .PHONY: all build link-asm clean deploy deploy-bundle deploy-prerender \
         install-bepinex check-bepinex \
-        download-kokoro
+        download-kokoro package
 
 all: build
 
@@ -118,6 +118,40 @@ download-kokoro:
 
 # Fetch both Piper and Kokoro — run once on a fresh clone.
 
+# Build a distributable layout under dist/VGTTS-v<version>/ that a user can
+# drop straight into their BepInEx/plugins folder. Zipping is left to the
+# human so they can inspect the contents first.
+PKG_VERSION := $(shell grep 'PluginVersion =' VGTTS/Plugin.cs | head -1 | sed 's/.*"\(.*\)".*/\1/')
+PKG_NAME    := VGTTS-v$(PKG_VERSION)
+PKG_DIR     := dist/$(PKG_NAME)
+
+package: build
+	@echo "Packaging $(PKG_NAME) into $(PKG_DIR)/"
+	@rm -rf "$(PKG_DIR)"
+	@mkdir -p "$(PKG_DIR)/VGTTS/prerender" "$(PKG_DIR)/VGTTS/tools"
+	@cp "$(BUILDDLL)" "$(PKG_DIR)/"
+	@cp LICENSE THIRD_PARTY_NOTICES.md README.md "$(PKG_DIR)/" 2>/dev/null || true
+	@# Prerender pack — preserve speaker-folder tree, skip variants/
+	@cp prerender/manifest.json "$(PKG_DIR)/VGTTS/prerender/"
+	@if [ -f prerender/captain_name_templates.json ]; then \
+		cp prerender/captain_name_templates.json "$(PKG_DIR)/VGTTS/prerender/" ; \
+	fi
+	@for d in prerender/*/ ; do \
+		case "$$d" in prerender/variants/) continue ;; esac ; \
+		cp -r "$$d" "$(PKG_DIR)/VGTTS/prerender/" ; \
+	done
+	@# Kokoro + sherpa-onnx bundle
+	@if [ -d tools/kokoro ] && [ -d tools/sherpa ]; then \
+		cp -r tools/kokoro tools/sherpa "$(PKG_DIR)/VGTTS/tools/" ; \
+	else \
+		echo "tools/kokoro or tools/sherpa missing — run 'make download-kokoro' first" ; \
+		exit 1 ; \
+	fi
+	@oggs=$$(find "$(PKG_DIR)/VGTTS/prerender/" -name "*.ogg" | wc -l) ; \
+	 size=$$(du -sh "$(PKG_DIR)" | cut -f1) ; \
+	 echo "Packaged $$oggs OGGs + DLL + Kokoro bundle — $$size at $(PKG_DIR)/"
+	@echo "Zip it manually with: (cd dist && zip -qr $(PKG_NAME).zip $(PKG_NAME))"
+
 clean:
 	$(DOTNET) clean VGTTS/VGTTS.csproj
-	rm -rf VGTTS/bin VGTTS/obj
+	rm -rf VGTTS/bin VGTTS/obj dist/

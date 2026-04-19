@@ -5,6 +5,7 @@ using BepInEx.Logging;
 using HarmonyLib;
 using VGTTS.Audio;
 using VGTTS.Cache;
+using VGTTS.Config;
 using VGTTS.Prerender;
 using VGTTS.TTS;
 using VGTTS.Voice;
@@ -35,6 +36,11 @@ public class Plugin : BaseUnityPlugin
     {
         Instance = this;
         Log = Logger;
+
+        // Strip stale [Pitch] + [Voices] sections from pre-v1.2 configs before
+        // Bind() cements the old values. Users upgrading from v1.1 would
+        // otherwise hear wrong voices for ~27 NPCs.
+        ConfigMigration.MigrateIfNeeded(Config);
 
         CfgEnabled = Config.Bind("General", "Enabled", true, "Master enable/disable for TTS.");
         CfgDialogue = Config.Bind("General", "DialogueTTS", true, "Speak NPC dialogue lines.");
