@@ -70,6 +70,23 @@ internal sealed class TtsController
     }
 
     /// <summary>
+    /// Delete the cached WAV for (speaker, text). Used by lifecycle patches to
+    /// evict audio for procedurally-named NPCs the moment they disappear from
+    /// the game (bar patron refresh, POI removal, etc.). Best-effort — silent
+    /// on failure, files get wiped on next plugin load either way.
+    /// </summary>
+    public void DropCache(string speaker, string text)
+    {
+        if (string.IsNullOrWhiteSpace(text)) return;
+        var synthText = TextNormalizer.ForTts(text);
+        var voice = _voices.Resolve(speaker);
+        var persistent = _voices.IsKnownSpeaker(speaker);
+        var path = _cache.PathFor(synthText, voice, persistent);
+        try { if (System.IO.File.Exists(path)) System.IO.File.Delete(path); }
+        catch { /* best-effort */ }
+    }
+
+    /// <summary>
     /// Interrupt any in-flight synthesis and fade out any currently playing audio.
     /// Called on dialogue advance, dialogue close, and ECHO tip dismiss.
     /// </summary>
