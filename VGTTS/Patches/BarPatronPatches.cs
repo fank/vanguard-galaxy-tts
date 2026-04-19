@@ -37,6 +37,27 @@ internal static class BarPatronPatches
     /// ConditionalWeakTable so the entries GC when the BarPatron does.</summary>
     private static readonly ConditionalWeakTable<BarPatron, List<(string Speaker, string Text)>> _patronLines = new();
 
+    /// <summary>
+    /// Tasks spawned by Initialize_Postfix are appended here so callers
+    /// that trigger a batch of Initialize() calls (e.g.
+    /// <see cref="SpaceStationInteriorPatches"/>) can await completion of the
+    /// whole batch and log timing. Reset by <see cref="DrainPendingWarms"/>.
+    /// </summary>
+    private static readonly List<Task> _pendingWarms = new();
+    private static readonly object _pendingLock = new();
+
+    /// <summary>Atomically take a snapshot of pending warm tasks and clear
+    /// the backlog. Returns the tasks the caller should <c>WhenAll</c> on.</summary>
+    internal static List<Task> DrainPendingWarms()
+    {
+        lock (_pendingLock)
+        {
+            var snapshot = new List<Task>(_pendingWarms);
+            _pendingWarms.Clear();
+            return snapshot;
+        }
+    }
+
     /// <summary>Internal accessor for BarRefreshPatches — hands over the warmed
     /// lines for a patron about to go out of scope so they can be evicted.</summary>
     internal static bool TryTakeLines(BarPatron patron, out List<(string Speaker, string Text)> lines)
@@ -54,13 +75,12 @@ internal static class BarPatronPatches
     [HarmonyPatch(nameof(BarPatron.Initialize))]
     private static void Initialize_Postfix(BarPatron __instance)
     {
-        // Diagnostic: always log so we can tell whether Harmony actually
-        // patched this method. If you see NO [bar-hook] lines around a
-        // bar UI open, the patch isn't firing and we need to investigate
-        // further (patch target mismatch, PatchAll ordering, etc.).
+        // Diagnostic: enable BepInEx's debug log level to see this. If the
+        // [bar-hook] line doesn't appear around a bar UI open, the patch
+        // isn't firing (target mismatch / PatchAll ordering / etc.).
         var type = __instance?.GetType().Name ?? "<null>";
         var hasCrew = (__instance as CrewMember)?.crewMember != null;
-        Plugin.Log.LogInfo($"[bar-hook] {type} Initialize fired (name={__instance?.name ?? "<null>"} hasCrewData={hasCrew})");
+        Plugin.Log.LogDebug($"[bar-hook] {type} Initialize fired (name={__instance?.name ?? "<null>"} hasCrewData={hasCrew})");
 
         var controller = TtsController.Instance;
         if (controller == null) return;
@@ -98,9 +118,9 @@ internal static class BarPatronPatches
         if (pairs.Count == 0) return;
 
         _patronLines.AddOrUpdate(__instance, pairs);
-        Plugin.Log.LogInfo($"[bar-warm] {__instance.GetType().Name} '{__instance.name}' — warming {pairs.Count} line(s)");
+        Plugin.Log.LogDebug($"[bar-warm] {__instance.GetType().Name} '{__instance.name}' — warming {pairs.Count} line(s)");
 
-        _ = Task.Run(async () =>
+        var task = Task.Run(async () =>
         {
             foreach (var (speaker, text) in pairs)
             {
@@ -112,6 +132,7 @@ internal static class BarPatronPatches
                 catch { /* best-effort; StartDialogue fallback warms again on click */ }
             }
         });
+        lock (_pendingLock) _pendingWarms.Add(task);
     }
 
     /// <summary>Mirror of DialogueManagerPatches.ResolveCaptainPreset — but we
