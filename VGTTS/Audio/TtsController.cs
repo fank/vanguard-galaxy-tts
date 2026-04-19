@@ -61,10 +61,10 @@ internal sealed class TtsController
     {
         if (string.IsNullOrWhiteSpace(text)) return WarmResult.Skipped;
         var synthText = TextNormalizer.ForTts(text);
-        var resolution = _voices.Resolve(speaker);
-        var path = _cache.PathFor(synthText, resolution.Voice);
+        var voice = _voices.Resolve(speaker);
+        var path = _cache.PathFor(synthText, voice);
         if (_cache.Exists(path)) return WarmResult.AlreadyCached;
-        await _provider.SynthesizeAsync(synthText, resolution.Voice, path, ct).ConfigureAwait(false);
+        await _provider.SynthesizeAsync(synthText, voice, path, ct).ConfigureAwait(false);
         return WarmResult.Synthesized;
     }
 
@@ -91,7 +91,7 @@ internal sealed class TtsController
             yield return AudioClipLoader.LoadOgg(prerenderedPath, c => prerenderedClip = c);
             if (prerenderedClip != null && !ct.IsCancellationRequested)
             {
-                PlayClip(prerenderedClip, pitch: 1.0f);
+                PlayClip(prerenderedClip);
                 yield break;
             }
         }
@@ -109,12 +109,12 @@ internal sealed class TtsController
         }
 
         // 2. Live fallback — Kokoro (or configured provider) with per-character voice mapping.
-        var resolution = _voices.Resolve(speaker);
-        var path = _cache.PathFor(synthText, resolution.Voice);
+        var voice = _voices.Resolve(speaker);
+        var path = _cache.PathFor(synthText, voice);
 
         if (!_cache.Exists(path))
         {
-            var task = _provider.SynthesizeAsync(synthText, resolution.Voice, path, ct);
+            var task = _provider.SynthesizeAsync(synthText, voice, path, ct);
             while (!task.IsCompleted)
             {
                 if (ct.IsCancellationRequested) yield break;
@@ -133,10 +133,10 @@ internal sealed class TtsController
         yield return AudioClipLoader.LoadWav(path, c => clip = c);
         if (clip == null || ct.IsCancellationRequested) yield break;
 
-        PlayClip(clip, resolution.Pitch);
+        PlayClip(clip);
     }
 
-    private void PlayClip(AudioClip clip, float pitch)
+    private void PlayClip(AudioClip clip)
     {
         StopCurrent();
 
@@ -154,15 +154,6 @@ internal sealed class TtsController
                 frequentSound = false,
             };
             _currentEmitter = mgr.CreateSound().WithSoundData(soundData).PlayReturn();
-
-            // SoundEmitter::Init sets audioSource.pitch = 1f; override here so the
-            // per-character pitch lands. [RequireComponent(AudioSource)] guarantees
-            // the component is on the same GameObject.
-            if (_currentEmitter != null && !Mathf.Approximately(pitch, 1.0f))
-            {
-                var audioSource = _currentEmitter.GetComponent<AudioSource>();
-                if (audioSource != null) audioSource.pitch = pitch;
-            }
             return;
         }
 
@@ -172,9 +163,8 @@ internal sealed class TtsController
         var src = _fallbackGo.AddComponent<AudioSource>();
         src.clip = clip;
         src.volume = 1.0f;
-        src.pitch = pitch;
         src.Play();
-        Object.Destroy(_fallbackGo, clip.length / Mathf.Max(0.1f, pitch) + 0.5f);
+        Object.Destroy(_fallbackGo, clip.length + 0.5f);
     }
 
     private void StopCurrent()
