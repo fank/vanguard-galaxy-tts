@@ -1,11 +1,11 @@
 {
   "_schema": {
     "version": 1,
-    "purpose": "Per-NPC voice picks. 'engine' is 'kokoro' for direct-Kokoro speakers (matches runtime live-TTS exactly, deterministic) or 'f5' for voice-cloned non-English accents. English-Kokoro F5 refs were migrated to Kokoro-direct on 2026-04-18 — 56% of F5 usage was redundant since Kokoro has those voices natively.",
+    "purpose": "Per-NPC voice picks. All entries use Kokoro-direct synthesis — the F5-TTS voice cloning pipeline was fully retired on 2026-04-19 after confirming that Kokoro's non-English speakers produce intelligible English-with-accent (not phonetic gibberish) when fed English text. This eliminates cloning fragments and makes runtime live-TTS deterministically byte-identical to build-time prerender.",
     "fidelity_levels": {
-      "strong": "Kokoro has a speaker in the right language family — accent transfers authentically through F5",
-      "workable": "Kokoro has a related speaker — accent flavor is present but not canonical",
-      "placeholder": "No direct match — using closest English baseline; flagged for external reference sourcing"
+      "strong": "Kokoro has a speaker that authentically matches the NPC (native accent or ideal timbre)",
+      "workable": "Kokoro has a close-enough speaker — accent flavor or timbre is present but not canonical",
+      "placeholder": "No direct match — using closest English Kokoro speaker; flagged for external sourcing"
     },
     "gaps_filled": {},
     "gaps_open": {
@@ -97,9 +97,10 @@
     },
     {
       "name": "Creed",
-      "reference": "sid33_hm_omega",
+      "reference": "kokoro:33",
       "fidelity": "workable",
-      "notes": "Deep authoritative; Hindi M provides gravitas"
+      "notes": "MIGRATED 2026-04-19 from F5: Deep authoritative; Hindi M provides gravitas",
+      "engine": "kokoro"
     },
     {
       "name": "Virgil",
@@ -131,9 +132,10 @@
     },
     {
       "name": "Arle",
-      "reference": "sid32_hf_beta",
+      "reference": "kokoro:32",
       "fidelity": "workable",
-      "notes": "Female commander — Hindi F gives commanding non-Western flavor fitting Luminate Commander role"
+      "notes": "MIGRATED 2026-04-19 from F5: Female commander — Hindi F gives commanding non-Western flavor fitting Luminate Commander role",
+      "engine": "kokoro"
     },
     {
       "name": "Prison Guard",
@@ -172,9 +174,10 @@
     },
     {
       "name": "Mick Flank",
-      "reference": "sid41_jm_kumo",
+      "reference": "kokoro:41",
       "fidelity": "strong",
-      "notes": "Asian portrait, Japanese M matches"
+      "notes": "MIGRATED 2026-04-19 from F5: Asian portrait, Japanese M matches",
+      "engine": "kokoro"
     },
     {
       "name": "James Fleddon",
@@ -185,15 +188,17 @@
     },
     {
       "name": "Claude",
-      "reference": "sid30_ff_siwis",
+      "reference": "kokoro:30",
       "fidelity": "strong",
-      "notes": "French smuggler — ff_siwis is authentic French"
+      "notes": "MIGRATED 2026-04-19 from F5: French smuggler — ff_siwis is authentic French",
+      "engine": "kokoro"
     },
     {
       "name": "Stella Chion",
-      "reference": "sid40_jf_tebukuro",
+      "reference": "kokoro:40",
       "fidelity": "strong",
-      "notes": "Japanese F — kimono portrait, soft"
+      "notes": "MIGRATED 2026-04-19 from F5: Japanese F — kimono portrait, soft",
+      "engine": "kokoro"
     },
     {
       "name": "Melloy",
@@ -218,9 +223,10 @@
     },
     {
       "name": "Alice Okono",
-      "reference": "sid31_hf_alpha",
+      "reference": "kokoro:31",
       "fidelity": "workable",
-      "notes": "Young African-descent — Hindi F gives non-Western warmth"
+      "notes": "MIGRATED 2026-04-19 from F5: Young African-descent — Hindi F gives non-Western warmth",
+      "engine": "kokoro"
     },
     {
       "name": "Brandon Wallace",
@@ -231,9 +237,10 @@
     },
     {
       "name": "Oron",
-      "reference": "sid43_pm_alex",
+      "reference": "kokoro:43",
       "fidelity": "workable",
-      "notes": "'Machine Shepherd' + dreads — Portuguese M for Caribbean/pan-African flavor"
+      "notes": "MIGRATED 2026-04-19 from F5: 'Machine Shepherd' + dreads — Portuguese M for Caribbean/pan-African flavor",
+      "engine": "kokoro"
     },
     {
       "name": "Sergeant Ogolin",
@@ -251,21 +258,24 @@
     },
     {
       "name": "Etienne Briggs",
-      "reference": "sid30_ff_siwis",
+      "reference": "kokoro:30",
       "fidelity": "strong",
-      "notes": "Etienne = French name; ff_siwis authentic French"
+      "notes": "MIGRATED 2026-04-19 from F5: Etienne = French name; ff_siwis authentic French",
+      "engine": "kokoro"
     },
     {
       "name": "Amalia Rodriguez",
-      "reference": "sid28_ef_dora",
+      "reference": "kokoro:28",
       "fidelity": "strong",
-      "notes": "Latina bounty hunter — Spanish F authentic"
+      "notes": "MIGRATED 2026-04-19 from F5: Latina bounty hunter — Spanish F authentic",
+      "engine": "kokoro"
     },
     {
       "name": "Gabriel Ramos",
-      "reference": "sid29_em_alex",
+      "reference": "kokoro:29",
       "fidelity": "strong",
-      "notes": "Latino security liaison — Spanish M"
+      "notes": "MIGRATED 2026-04-19 from F5: Latino security liaison — Spanish M",
+      "engine": "kokoro"
     },
     {
       "name": "Edar Thopter",
@@ -318,9 +328,10 @@
     },
     {
       "name": "Triane Solis",
-      "reference": "sid31_hf_alpha",
+      "reference": "kokoro:31",
       "fidelity": "strong",
-      "notes": "Mystical Luminate admin — Hindi F fits spiritual/pan-Asian aesthetic perfectly"
+      "notes": "MIGRATED 2026-04-19 from F5: Mystical Luminate admin — Hindi F fits spiritual/pan-Asian aesthetic perfectly",
+      "engine": "kokoro"
     },
     {
       "name": "Waldo Everson",

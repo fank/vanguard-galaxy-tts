@@ -3,24 +3,16 @@ using System.Collections.Generic;
 namespace VGTTS.Voice;
 
 /// <summary>
-/// Per-NPC voice profiles — all on Kokoro v1.0 for its markedly better <c>?</c>
-/// and <c>!</c> intonation compared to Piper. Each NPC gets a <c>(voice, pitch)</c>
-/// combination.
+/// Per-NPC voice profiles — all Kokoro v1.0 SIDs. Each NPC gets a
+/// <c>(voice, pitch)</c> combination. The prerender pack is built with
+/// Kokoro-direct at the same SID listed here, so runtime live-TTS (for
+/// lines that miss the manifest, e.g. commander-name substitutions or
+/// post-patch additions) produces byte-identical audio — same ONNX model,
+/// same SID, same text → deterministic.
 ///
-/// Most NPCs have their prerender audio baked at a specific Kokoro SID via
-/// Kokoro-direct synthesis. These entries intentionally use <b>pitch 1.00</b>
-/// and the same SID so that runtime live-TTS produces byte-identical output
-/// for any line that missed the prerender pack (commander-name substitutions,
-/// post-patch additions, etc.) — same ONNX model, same SID, same text →
-/// deterministic.
-///
-/// For NPCs whose prerender uses F5-TTS voice cloning on a <i>non-English</i>
-/// Kokoro reference to get accent variety (Japanese/Hindi/Spanish/French/
-/// Portuguese/Scottish), runtime live-TTS can't run F5 and falls back to the
-/// SID below. This intentionally accepts a timbre mismatch between the
-/// prerendered lines (accented) and the rare live-TTS lines (plain English)
-/// for those NPCs — the mismatch affects only commander-name dialogue lines,
-/// which are 0-3 per accented NPC.
+/// Non-English Kokoro SIDs (30/ff_siwis, 31-33/hf/hm, 40-41/jf/jm, 28-29/ef/em,
+/// 43/pm) give accent flavor on English text while remaining intelligible —
+/// verified empirically before the full F5→Kokoro migration on 2026-04-19.
 ///
 /// User overrides: edit <c>[Voices]</c> and <c>[Pitch]</c> in the config.
 /// Prefix <c>kokoro:</c> routes to Kokoro; any other value routes to Piper.
@@ -71,22 +63,20 @@ internal static class DefaultVoiceMap
             ["Prison Guard"]      = ("kokoro:10", 1.00f),  // af_sky
             ["Melloy"]            = ("kokoro:18", 1.00f),  // am_puck
 
-            // F5-cloned non-English prerender refs — live-TTS falls back to English
-            // Kokoro SID for captain-name lines. Accepted mismatch for accent variety.
-            ["Creed"]             = ("kokoro:33", 1.00f),  // hm_omega (F5 Hindi M in prerender)
-            ["Arle"]              = ("kokoro:32", 1.00f),  // hf_beta (F5 Hindi F)
-            ["Mick Flank"]        = ("kokoro:41", 1.00f),  // jm_kumo (F5 Japanese M)
-            ["Stella Chion"]      = ("kokoro:40", 1.00f),  // jf_tebukuro (F5 Japanese F)
-            ["Claude"]            = ("kokoro:30", 1.00f),  // ff_siwis (F5 French F)
-            ["Alice Okono"]       = ("kokoro:31", 1.00f),  // hf_alpha (F5 Hindi F)
-            ["Oron"]              = ("kokoro:43", 1.00f),  // pm_alex (F5 Portuguese M)
-            ["Triane Solis"]      = ("kokoro:31", 1.00f),  // hf_alpha (F5 Hindi F)
-            ["Etienne Briggs"]    = ("kokoro:30", 1.00f),  // ff_siwis (F5 French F)
-            ["Amalia Rodriguez"]  = ("kokoro:28", 1.00f),  // ef_dora (F5 Spanish F)
-            ["Gabriel Ramos"]     = ("kokoro:29", 1.00f),  // em_alex (F5 Spanish M)
+            // Non-English Kokoro SIDs — give accent flavor on English text
+            ["Creed"]             = ("kokoro:33", 1.00f),  // hm_omega     (Hindi M, deep authoritative)
+            ["Arle"]              = ("kokoro:32", 1.00f),  // hf_beta      (Hindi F, commanding)
+            ["Mick Flank"]        = ("kokoro:41", 1.00f),  // jm_kumo      (Japanese M)
+            ["Stella Chion"]      = ("kokoro:40", 1.00f),  // jf_tebukuro  (Japanese F, soft)
+            ["Claude"]            = ("kokoro:30", 1.00f),  // ff_siwis     (French F)
+            ["Alice Okono"]       = ("kokoro:31", 1.00f),  // hf_alpha     (Hindi F, warm)
+            ["Oron"]              = ("kokoro:43", 1.00f),  // pm_alex      (Portuguese M)
+            ["Triane Solis"]      = ("kokoro:31", 1.00f),  // hf_alpha     (Hindi F, mystical)
+            ["Etienne Briggs"]    = ("kokoro:30", 1.00f),  // ff_siwis     (French F)
+            ["Amalia Rodriguez"]  = ("kokoro:28", 1.00f),  // ef_dora      (Spanish F)
+            ["Gabriel Ramos"]     = ("kokoro:29", 1.00f),  // em_alex      (Spanish M)
 
-            // Scottish via Piper (Kokoro has no Scottish speaker). Live falls back to an
-            // English Kokoro equivalent for captain-name lines.
-            ["Elias McIntire"]    = ("kokoro:15", 1.00f),  // am_liam (F5 Piper en_GB-alba in prerender)
+            // Scottish accent gap — Kokoro has no Scottish speaker; using American male
+            ["Elias McIntire"]    = ("kokoro:15", 1.00f),  // am_liam      (placeholder — need Scottish male)
         };
 }
