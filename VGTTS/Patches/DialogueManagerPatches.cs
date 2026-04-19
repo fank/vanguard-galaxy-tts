@@ -1,10 +1,13 @@
 using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 using Behaviour.Dialogues;
 using HarmonyLib;
 using Source.Crew;
 using Source.Dialogues;
 using Source.Player;
 using VGTTS.Audio;
+using VGTTS.Text;
 
 namespace VGTTS.Patches;
 
@@ -69,5 +72,44 @@ internal static class DialogueManagerPatches
     private static void CloseDialogue_Prefix()
     {
         TtsController.Instance?.Stop();
+    }
+
+    /// <summary>
+    /// When a dialogue starts, pre-warm the TTS cache for every line in the
+    /// sequence. For procedural encounters (distress combat rescue, random
+    /// salesmen, etc.) the speaker name varies per encounter so those lines
+    /// miss the prerender pack — without warm-up, the first utterance pays a
+    /// ~1s synth delay. Running this on the StartDialogue prefix gives us
+    /// enough background time to have the first WAV ready by the time it's
+    /// needed, and subsequent lines are synth'd in parallel with playback.
+    /// </summary>
+    [HarmonyPrefix]
+    [HarmonyPatch(nameof(DialogueManager.StartDialogue))]
+    private static void StartDialogue_Prefix(List<DialogueLine> dialogue)
+    {
+        if (dialogue == null || dialogue.Count == 0) return;
+        var controller = TtsController.Instance;
+        if (controller == null) return;
+        if (Plugin.Instance == null || !Plugin.Instance.CfgEnabled.Value || !Plugin.Instance.CfgDialogue.Value) return;
+
+        // Snapshot (speaker, text) pairs so the background task doesn't race
+        // with the game mutating the list or the character objects.
+        var pairs = new List<(string Speaker, string Text)>(dialogue.Count);
+        foreach (var line in dialogue)
+        {
+            var speaker = ResolveSpeakerName(line?.character);
+            var text = line?.text ?? string.Empty;
+            if (!string.IsNullOrWhiteSpace(text)) pairs.Add((speaker, text));
+        }
+        if (pairs.Count == 0) return;
+
+        _ = Task.Run(async () =>
+        {
+            foreach (var (speaker, text) in pairs)
+            {
+                try { await controller.WarmCacheAsync(speaker, TextNormalizer.ForTts(text), CancellationToken.None).ConfigureAwait(false); }
+                catch { /* best-effort; live-TTS path will retry on demand */ }
+            }
+        });
     }
 }
