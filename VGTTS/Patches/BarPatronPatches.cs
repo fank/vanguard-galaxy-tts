@@ -1,9 +1,11 @@
+using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
 using HarmonyLib;
 using Source.Dialogues;
+using Source.Galaxy.POI;
 using Source.Galaxy.POI.Station;
 using Source.Galaxy.POI.Station.Patrons;
 using VGTTS.Audio;
@@ -51,6 +53,18 @@ internal static class BarPatronPatches
     private static readonly List<Task> _pendingWarms = new();
     private static readonly object _pendingLock = new();
 
+    /// <summary>Serializes the actual Kokoro synth work so save-load doesn't
+    /// queue 50 concurrent synthesis jobs. One patron at a time, highest
+    /// priority first (see <see cref="LowPriorityStagger"/>).</summary>
+    private static readonly SemaphoreSlim _warmGate = new(1, 1);
+
+    /// <summary>How long low-priority warm tasks wait before grabbing the
+    /// serial gate. Gives high-priority (currently-docked station) tasks
+    /// time to reach the gate first so they get synthesized before the
+    /// rest of the galaxy's patrons line up. 250ms is well under the time
+    /// it takes the player to walk from dock to bar.</summary>
+    private static readonly TimeSpan LowPriorityStagger = TimeSpan.FromMilliseconds(250);
+
     /// <summary>Atomically take a snapshot of pending warm tasks and clear
     /// the backlog. Returns the tasks the caller should <c>WhenAll</c> on.</summary>
     internal static List<Task> DrainPendingWarms()
@@ -85,10 +99,18 @@ internal static class BarPatronPatches
         // already warmed this instance — cache is already hot, no need to
         // re-register voices or re-queue tasks.
         if (__instance != null && _patronLines.TryGetValue(__instance, out _)) return;
+        if (__instance == null) return;
 
-        var type = __instance?.GetType().Name ?? "<null>";
+        // Priority: save-load fires Initialize on every visited station's
+        // patrons in a single burst. We want the currently-docked station's
+        // patrons to synth first so the player's nearest bar is ready before
+        // they walk in. Everyone else still gets warmed — just queued behind.
+        var currentBar = SpaceStation.current?.bar;
+        var isHighPriority = currentBar != null && currentBar.availablePatrons.Contains(__instance);
+
+        var type = __instance.GetType().Name;
         var hasCrew = (__instance as CrewMember)?.crewMember != null;
-        Plugin.Log.LogDebug($"[bar-hook] {type} Initialize fired (name={__instance?.name ?? "<null>"} hasCrewData={hasCrew})");
+        Plugin.Log.LogDebug($"[bar-hook] {type} Initialize fired (name={__instance.name} hasCrewData={hasCrew} prio={(isHighPriority ? "high" : "low")})");
 
         var controller = TtsController.Instance;
         if (controller == null) return;
@@ -138,15 +160,24 @@ internal static class BarPatronPatches
 
         var task = Task.Run(async () =>
         {
-            foreach (var (speaker, text) in pairs)
+            // Low-priority tasks briefly wait so the currently-docked
+            // station's patrons reach the serial gate first.
+            if (!isHighPriority) await Task.Delay(LowPriorityStagger).ConfigureAwait(false);
+
+            await _warmGate.WaitAsync().ConfigureAwait(false);
+            try
             {
-                try
+                foreach (var (speaker, text) in pairs)
                 {
-                    await controller.WarmCacheAsync(speaker, TextNormalizer.ForTts(text), CancellationToken.None)
-                        .ConfigureAwait(false);
+                    try
+                    {
+                        await controller.WarmCacheAsync(speaker, TextNormalizer.ForTts(text), CancellationToken.None)
+                            .ConfigureAwait(false);
+                    }
+                    catch { /* best-effort; StartDialogue fallback warms again on click */ }
                 }
-                catch { /* best-effort; StartDialogue fallback warms again on click */ }
             }
+            finally { _warmGate.Release(); }
         });
         lock (_pendingLock) _pendingWarms.Add(task);
     }
