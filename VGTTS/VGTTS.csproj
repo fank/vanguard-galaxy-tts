@@ -22,7 +22,7 @@
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
     <PackageReference Include="UnityEngine.Modules" Version="6000.2.6" IncludeAssets="compile" />
     <PackageReference Include="HarmonyX" Version="2.16.*" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" IncludeAssets="compile" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" IncludeAssets="compile" />
   </ItemGroup>
 
   <ItemGroup>
