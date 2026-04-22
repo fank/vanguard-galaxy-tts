@@ -41,10 +41,18 @@ jobs:
       - name: Verify publicized game reference is committed
         run: |
           if [ ! -s VGTTS/lib/Assembly-CSharp.dll ]; then
-            echo "::error::VGTTS/lib/Assembly-CSharp.dll is missing or empty. Regenerate via 'assembly-publicizer ... -o VGTTS/lib/Assembly-CSharp.dll' and commit."
+            echo "::error::VGTTS/lib/Assembly-CSharp.dll is missing or empty. Regenerate via 'assembly-publicizer --strip <game>/Assembly-CSharp.dll -o VGTTS/lib/Assembly-CSharp.dll' and commit. --strip is mandatory: it keeps only public signatures; without it the stub contains full game IL (copyright leak)."
             exit 1
           fi
-          echo "Publicized reference present: $(du -h VGTTS/lib/Assembly-CSharp.dll | cut -f1)"
+          # Guardrail: a stripped stub is ~35% of the real DLL. Anything
+          # north of 1.5 MiB likely means --strip was forgotten during
+          # regeneration — fail the build rather than ship leaked IL.
+          size=$(stat -c%s VGTTS/lib/Assembly-CSharp.dll)
+          if [ "$size" -gt 1572864 ]; then
+            echo "::error::VGTTS/lib/Assembly-CSharp.dll is $size bytes — too large to be stripped. Re-run assembly-publicizer WITH --strip."
+            exit 1
+          fi
+          echo "Publicized stripped reference present: $(du -h VGTTS/lib/Assembly-CSharp.dll | cut -f1)"
 
       - name: Build VGTTS.dll
         run: dotnet build VGTTS/VGTTS.csproj -c Debug --nologo

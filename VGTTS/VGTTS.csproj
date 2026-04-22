@@ -27,8 +27,12 @@
 
   <ItemGroup>
     <!-- Publicized stub of the game's Assembly-CSharp.dll. Committed so CI
-         can build without the proprietary game code. Regenerate via:
-         assembly-publicizer <game>/Assembly-CSharp.dll -o VGTTS/lib/Assembly-CSharp.dll -->
+         can build without the proprietary game code. Regenerate via
+         `assembly-publicizer` with the `strip` flag (long-option form; see
+         .gitignore and README for the exact command). The strip flag is
+         mandatory: it replaces every method body with `throw null;` so the
+         committed file has only public signatures, never real game IL.
+         Omitting it reintroduces the copyright leak. -->
     <Reference Include="Assembly-CSharp">
       <HintPath>lib/Assembly-CSharp.dll</HintPath>
       <Private>false</Private>

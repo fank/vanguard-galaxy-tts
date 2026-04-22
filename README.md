@@ -79,9 +79,13 @@ Creating a GitHub Release auto-builds and uploads the zip via `.github/workflows
 
 ```bash
 # One-time per game update — regenerate the publicized stub from your
-# current install and commit it. BepInEx-standard tool, MIT-licensed:
+# current install and commit it. BepInEx-standard tool, MIT-licensed.
+# The --strip flag is mandatory: it replaces every method body with
+# `throw null;` so the committed file contains only public signatures,
+# not the game's IL. Running without --strip reintroduces the copyright
+# leak that was purged in the 2026-04-23 history rewrite.
 dotnet tool install -g BepInEx.AssemblyPublicizer.Cli
-assembly-publicizer \
+assembly-publicizer --strip \
   "$GAME_DIR/VanguardGalaxy_Data/Managed/Assembly-CSharp.dll" \
   -o VGTTS/lib/Assembly-CSharp.dll
 git add VGTTS/lib/Assembly-CSharp.dll && git commit -m "chore: refresh publicized stub for game vX.Y"
